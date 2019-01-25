@@ -1,0 +1,44 @@
+[22:46:10.49] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Thu Jan 24 22:46:04 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[22:46:25.37] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[22:46:25.37] /i de::showOpenDesign
+[22:46:25.52] /o oa:0x24a77730
+[22:46:25.90] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[22:46:26.02] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+20+417
+[22:46:28.08] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[22:46:28.14] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[22:46:30.17] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[22:46:30.27] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[22:46:32.37] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[22:46:32.40] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[22:46:32.60] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[22:46:32.63] /# de::open [dm::findCellView {schematic} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[22:46:32.67] /o 	############################################
+[22:46:32.67] /o 	--------------------------------------------
+[22:46:32.67] /o 	PDK Name................... : SAED_PDK_90
+[22:46:32.67] /o 	PDK Release Date........... : 29-Sep-2015
+[22:46:32.67] /o 	PDK Custom Designer Version : J-2014.12-2
+[22:46:32.67] /o 	--------------------------------------------
+[22:46:32.67] /o 	############################################
+[22:46:32.67] /o 
+[22:46:32.67] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[22:46:32.67] /o SAED PDK 90: Loaded callbacks
+[22:46:32.68] /o SAED PDK 90: Loaded display resources
+[22:46:32.74] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[22:46:32.88] /r giWindowId 1
+[22:46:32.88] /r giWindowGeometry 1088x700
+[22:46:33.63] /o 0.1
+[22:46:55.38] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[22:47:01.05] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[22:47:10.24] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[22:47:11.55] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[22:47:11.81] /i gi::setActiveWindow 0
+[22:47:11.83] /i gi::setActiveWindow 0 -raise true
+[22:47:14.23] /i db::setAttr iconified -of [gi::getFrames 0] -value true
