@@ -1,0 +1,897 @@
+[16:06:48.54] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Thu Jan 31 16:06:46 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[16:06:50.07] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[16:06:50.07] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[16:06:55.23] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[16:06:55.23] /i de::showOpenDesign
+[16:06:55.27] /o oa:0x23b4ec00
+[16:06:55.37] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[16:06:55.70] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+20+417
+[16:06:57.11] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[16:06:57.12] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[16:06:58.45] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[16:06:58.47] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[16:06:59.75] /i gi::setCurrentIndex {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[16:06:59.75] /i gi::setItemSelection {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[16:06:59.92] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[16:06:59.92] /# de::open [dm::findCellView {layout} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[16:06:59.97] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[16:06:59.99] /o 	############################################
+[16:06:59.99] /o 	--------------------------------------------
+[16:06:59.99] /o 	PDK Name................... : SAED_PDK_90
+[16:06:59.99] /o 	PDK Release Date........... : 29-Sep-2015
+[16:06:59.99] /o 	PDK Custom Designer Version : J-2014.12-2
+[16:06:59.99] /o 	--------------------------------------------
+[16:06:59.99] /o 	############################################
+[16:06:59.99] /o 
+[16:06:59.99] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[16:07:00.00] /o SAED PDK 90: Loaded callbacks
+[16:07:00.00] /o SAED PDK 90: Loaded display resources
+[16:07:00.05] /r giWindowId 1
+[16:07:00.05] /r giWindowGeometry 1088x700
+[16:07:00.62] /o 0.1
+[16:07:00.92] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x550
+[16:07:04.48] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:04.48] /i de::zoom -window 1 -factor 0.5 -center {0.872 1.119}
+[16:07:04.49] /o {-4.593 -5.395} {9.339 3.565}
+[16:07:04.50] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:04.50] /i de::zoom -window 1 -factor 0.5 -center {0.871 1.12}
+[16:07:04.50] /o {-10.057 -11.91} {17.807 6.01}
+[16:07:04.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:04.53] /i de::zoom -window 1 -factor 0.5 -center {0.872 1.12}
+[16:07:04.54] /o {-20.987 -24.94} {34.743 10.9}
+[16:07:05.09] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:05.09] /i de::zoom -window 1 -factor 2.0 -center {0.872 1.119}
+[16:07:05.10] /o {-10.057 -11.911} {17.807 6.01}
+[16:07:05.13] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:05.13] /i de::zoom -window 1 -factor 2.0 -center {0.872 1.119}
+[16:07:05.14] /o {-4.593 -5.396} {9.34 3.564}
+[16:07:05.14] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:05.14] /i de::zoom -window 1 -factor 2.0 -center {0.872 1.119}
+[16:07:05.15] /o {-1.86 -2.138} {5.106 2.342}
+[16:07:05.53] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:05.53] /i de::zoom -window 1 -factor 2.0 -center {0.872 1.119}
+[16:07:05.54] /o {-0.494 -0.51} {2.989 1.73}
+[16:07:05.73] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:05.73] /i de::zoom -window 1 -factor 2.0 -center {0.872 1.119}
+[16:07:05.74] /o {0.189 0.305} {1.93 1.425}
+[16:07:05.80] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:05.80] /i de::zoom -window 1 -factor 2.0 -center {0.872 1.119}
+[16:07:05.81] /o {0.53 0.712} {1.401 1.272}
+[16:07:08.21] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[16:07:08.21] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.616 1.071} -index 0 -intent none] -replace true
+[16:07:08.22] /o oa:0x2158c620
+[16:07:11.61] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:11.62] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:11.66] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:11.66] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:11.66] /i de::zoom -window 1 -factor 2.0 -center {1.116 1.098}
+[16:07:11.67] /o {0.823 0.905} {1.259 1.185}
+[16:07:11.69] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:11.69] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:12.32] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:12.47] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:12.50] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:12.50] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:12.53] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:12.55] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:12.55] /i de::zoom -window 1 -factor 0.5 -center {1.116 1.098}
+[16:07:12.55] /o {0.53 0.712} {1.401 1.272}
+[16:07:13.10] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:13.10] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:13.11] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:13.11] /i de::zoom -window 1 -factor 0.5 -center {1.116 1.098}
+[16:07:13.12] /o {-0.055 0.326} {1.686 1.446}
+[16:07:13.14] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:13.16] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:13.16] /i de::zoom -window 1 -factor 0.5 -center {1.116 1.099}
+[16:07:13.17] /o {-1.226 -0.448} {2.257 1.792}
+[16:07:13.17] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:13.18] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:07:15.08] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:15.08] /i de::zoom -window 1 -factor 0.5 -center {1.116 1.099}
+[16:07:15.09] /o {-3.568 -1.994} {3.398 2.486}
+[16:07:16.15] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:16.46] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:20.73] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:20.82] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:07:21.27] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:21.27] /i de::zoom -window 1 -factor 2.0 -center {1.379 1.304}
+[16:07:21.28] /o {-1.095 -0.345} {2.388 1.895}
+[16:07:21.33] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:21.33] /i de::zoom -window 1 -factor 2.0 -center {1.379 1.304}
+[16:07:21.34] /o {0.142 0.479} {1.884 1.599}
+[16:07:21.41] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:21.41] /i de::zoom -window 1 -factor 2.0 -center {1.379 1.304}
+[16:07:21.41] /o {0.761 0.892} {1.631 1.452}
+[16:07:21.45] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:21.45] /i de::zoom -window 1 -factor 2.0 -center {1.379 1.304}
+[16:07:21.45] /o {1.07 1.098} {1.505 1.378}
+[16:07:22.21] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:22.21] /i de::zoom -window 1 -factor 0.5 -center {1.379 1.304}
+[16:07:22.22] /o {0.761 0.892} {1.631 1.452}
+[16:07:22.39] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:22.39] /i de::zoom -window 1 -factor 0.5 -center {1.379 1.304}
+[16:07:22.40] /o {0.142 0.479} {1.884 1.599}
+[16:07:25.74] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:07:25.74] /i ile::move
+[16:07:27.46] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:07:27.46] /i de::startDrag {1.426 1.165} -window 1
+[16:07:29.24] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:07:29.24] /i de::endDrag {1.168 1.222} -window 1
+[16:07:31.66] /w Warning: Nothing is bound to the 'BackSpace' in the current active set. (WINDOW-015)
+[16:07:33.47] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[16:07:33.47] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[16:07:33.47] /o oa:0x24cb49c0
+[16:07:33.47] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.46 1.15} -index 1 -intent none] -replace true
+[16:07:33.48] /o oa:0x24c6bb30
+[16:07:35.15] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[16:07:35.15] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.63 1.167} -index 0 -intent none] -replace true
+[16:07:35.15] /o oa:0x24cb63c0
+[16:07:37.53] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[16:07:37.53] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.433 1.119} -index 0 -intent none] -replace true
+[16:07:37.53] /o oa:0x24a0fc50
+[16:07:40.01] /# gi::executeAction dePan -in [gi::getWindows 1]
+[16:07:40.01] /i ide::pan 1
+[16:07:41.11] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:07:41.11] /i de::addPoint {0.448 1.138} -window 1
+[16:07:42.76] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:07:42.76] /i de::startDrag {0.312 1.224} -window 1
+[16:07:43.63] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:07:43.63] /i de::endDrag {0.31 1.224} -window 1
+[16:07:43.64] /r dePanToPoint {0.385 1.218}
+[16:07:47.40] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[16:07:47.40] /i ile::delete
+[16:07:51.98] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:07:51.98] /i ile::move
+[16:07:53.59] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:53.59] /i de::zoom -window 1 -factor 2.0 -center {0.499 1.46}
+[16:07:53.60] /o {0.007 1.059} {0.877 1.619}
+[16:07:53.61] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:53.61] /i de::zoom -window 1 -factor 2.0 -center {0.499 1.46}
+[16:07:53.62] /o {0.253 1.26} {0.688 1.54}
+[16:07:53.64] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:07:53.64] /i de::zoom -window 1 -factor 2.0 -center {0.499 1.46}
+[16:07:53.65] /o {0.376 1.36} {0.594 1.5}
+[16:07:54.09] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:54.09] /i de::zoom -window 1 -factor 0.5 -center {0.499 1.46}
+[16:07:54.10] /o {0.253 1.26} {0.688 1.54}
+[16:07:54.10] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:54.10] /i de::zoom -window 1 -factor 0.5 -center {0.499 1.46}
+[16:07:54.12] /o {0.007 1.059} {0.877 1.619}
+[16:07:54.14] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:54.14] /i de::zoom -window 1 -factor 0.5 -center {0.499 1.46}
+[16:07:54.15] /o {-0.486 0.658} {1.256 1.778}
+[16:07:54.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:07:54.70] /i de::zoom -window 1 -factor 0.5 -center {0.499 1.46}
+[16:07:54.71] /o {-1.471 -0.144} {2.013 2.096}
+[16:07:55.70] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[16:07:55.70] /i de::pan -direction E -multiplier 0.5
+[16:07:55.72] /o {0.273 -0.144} {3.756 2.096}
+[16:07:57.92] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:07:57.92] /i de::startDrag {1.393 1.267} -window 1
+[16:07:58.60] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:07:58.60] /i de::endDrag {1.213 1.304} -window 1
+[16:07:59.72] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:07:59.72] /i de::addPoint {1.401 1.308} -window 1
+[16:08:00.65] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:00.65] /i de::addPoint {1.401 1.308} -window 1
+[16:08:01.13] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:01.13] /i de::addPoint {1.401 1.308} -window 1
+[16:08:01.33] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[16:08:01.33] /i de::completeShape -window 1
+[16:08:02.42] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:02.42] /i de::startDrag {1.401 1.308} -window 1
+[16:08:03.47] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:03.47] /i de::endDrag {1.18 1.296} -window 1
+[16:08:05.45] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:05.45] /i de::addPoint {1.389 0.824} -window 1
+[16:08:05.61] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[16:08:05.61] /i de::completeShape -window 1
+[16:08:06.06] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:06.06] /i de::addPoint {1.389 0.824} -window 1
+[16:08:06.35] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:06.35] /i de::startDrag {1.389 0.824} -window 1
+[16:08:06.93] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:06.93] /i de::endDrag {1.126 0.812} -window 1
+[16:08:07.94] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[16:08:07.94] /i de::abortCommand -window 1
+[16:08:10.41] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:10.41] /i de::zoom -window 1 -factor 0.5 -center {1.594 1.107}
+[16:08:10.41] /o {-1.048 -1.395} {5.918 3.085}
+[16:08:10.48] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:10.48] /i de::zoom -window 1 -factor 0.5 -center {1.594 1.108}
+[16:08:10.49] /o {-3.69 -3.898} {10.243 5.062}
+[16:08:10.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:10.53] /i de::zoom -window 1 -factor 0.5 -center {1.594 1.107}
+[16:08:10.53] /o {-8.974 -8.903} {18.891 9.017}
+[16:08:10.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:10.57] /i de::zoom -window 1 -factor 0.5 -center {1.595 1.107}
+[16:08:10.57] /o {-19.542 -18.913} {36.187 16.927}
+[16:08:10.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:10.57] /i de::zoom -window 1 -factor 0.5 -center {1.594 1.108}
+[16:08:10.58] /o {-40.678 -38.934} {70.78 32.746}
+[16:08:10.94] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:10.94] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:10.95] /o {-19.542 -18.914} {36.187 16.926}
+[16:08:11.00] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:11.00] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:11.01] /o {-8.974 -8.903} {18.891 9.017}
+[16:08:11.14] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:11.14] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:11.15] /o {-3.69 -3.898} {10.242 5.062}
+[16:08:11.40] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:11.40] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:11.41] /o {-1.048 -1.396} {5.918 3.084}
+[16:08:11.54] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:11.54] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:11.55] /o {0.273 -0.144} {3.756 2.096}
+[16:08:11.85] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:11.85] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:11.86] /o {0.933 0.481} {2.675 1.601}
+[16:08:12.08] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:12.08] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:12.09] /o {1.264 0.794} {2.135 1.354}
+[16:08:12.09] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:12.09] /i de::zoom -window 1 -factor 2.0 -center {1.594 1.107}
+[16:08:12.10] /o {1.429 0.951} {1.864 1.231}
+[16:08:14.39] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:08:14.41] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:08:14.45] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:08:15.42] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[16:08:15.42] /i de::pan -direction W -multiplier 0.5
+[16:08:15.42] /o {1.212 0.951} {1.647 1.231}
+[16:08:18.12] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:08:18.12] /i ile::move
+[16:08:19.20] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:19.20] /i de::addPoint {1.344 1.025} -window 1
+[16:08:22.30] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[16:08:22.30] /i de::abortCommand -window 1
+[16:08:24.22] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[16:08:24.22] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[16:08:26.46] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:26.46] /i de::zoom -window 1 -factor 2.0 -center {1.484 1.187}
+[16:08:26.47] /o {1.348 1.069} {1.566 1.209}
+[16:08:26.56] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:08:27.11] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:08:27.12] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:08:27.15] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:27.15] /i de::zoom -window 1 -factor 2.0 -center {1.484 1.187}
+[16:08:27.15] /o {1.416 1.128} {1.525 1.198}
+[16:08:27.18] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:27.18] /i de::zoom -window 1 -factor 2.0 -center {1.484 1.187}
+[16:08:27.19] /o {1.45 1.157} {1.504 1.192}
+[16:08:27.63] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.63] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.64] /o {1.416 1.128} {1.525 1.198}
+[16:08:27.66] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.66] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.67] /o {1.348 1.069} {1.566 1.209}
+[16:08:27.67] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.67] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.68] /o {1.212 0.951} {1.647 1.231}
+[16:08:27.68] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.68] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.69] /o {0.94 0.714} {1.811 1.274}
+[16:08:27.69] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.69] /i de::zoom -window 1 -factor 0.5 -center {1.483 1.187}
+[16:08:27.70] /o {0.397 0.241} {2.138 1.361}
+[16:08:27.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.70] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.70] /o {-0.69 -0.704} {2.793 1.536}
+[16:08:27.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.70] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.71] /o {-2.865 -2.596} {4.101 1.884}
+[16:08:27.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.71] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.72] /o {-7.214 -6.378} {6.719 2.582}
+[16:08:27.72] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.72] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.73] /o {-15.911 -13.943} {11.953 3.977}
+[16:08:27.74] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.74] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.75] /o {-33.306 -29.074} {22.423 6.767}
+[16:08:27.75] /w Warning: Nothing is bound to the 'Button6' in the current active set. (WINDOW-015)
+[16:08:27.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.75] /i de::zoom -window 1 -factor 0.5 -center {1.483 1.187}
+[16:08:27.76] /o {-68.096 -59.334} {43.363 12.346}
+[16:08:27.76] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.76] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.78] /o {-137.675 -119.855} {85.242 23.505}
+[16:08:27.78] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.78] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.78] /o {-276.835 -240.897} {168.999 45.823}
+[16:08:27.79] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.79] /i de::zoom -window 1 -factor 0.5 -center {1.483 1.187}
+[16:08:27.79] /o {-555.152 -482.981} {336.515 90.459}
+[16:08:27.82] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.82] /i de::zoom -window 1 -factor 0.5 -center {1.484 1.187}
+[16:08:27.83] /o {-1111.789 -967.149} {671.547 179.731}
+[16:08:27.83] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.83] /i de::zoom -window 1 -factor 0.5 -center {1.483 1.187}
+[16:08:27.83] /w Warning: Could not zoom to factor '0.000238' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[16:08:27.84] /o {-1728.967 -1503.977} {1043.018 278.713}
+[16:08:27.89] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.89] /i de::zoom -window 1 -factor 0.5 -center {1.483 1.188}
+[16:08:27.90] /w Warning: Could not zoom to factor '0.000153' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[16:08:27.90] /o {-1728.967 -1503.977} {1043.018 278.713}
+[16:08:27.95] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:27.95] /i de::zoom -window 1 -factor 0.5 -center {1.483 1.188}
+[16:08:27.96] /w Warning: Could not zoom to factor '0.000153' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[16:08:27.96] /o {-1728.967 -1503.977} {1043.018 278.713}
+[16:08:28.50] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:28.50] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:28.51] /o {-863.742 -751.395} {522.251 139.95}
+[16:08:28.56] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:28.66] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:28.67] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:28.67] /o {-431.129 -375.103} {261.867 70.569}
+[16:08:28.77] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:28.77] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:28.78] /o {-214.823 -186.958} {131.675 35.879}
+[16:08:28.78] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:28.91] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:28.91] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:28.92] /o {-106.67 -92.885} {66.579 18.533}
+[16:08:28.93] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:28.93] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:28.94] /o {-52.594 -45.848} {34.031 9.861}
+[16:08:28.94] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:29.00] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:29.00] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:29.01] /o {-25.555 -22.33} {17.757 5.524}
+[16:08:29.02] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:29.02] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:29.04] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:29.04] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:29.04] /o {-12.036 -10.571} {9.62 3.356}
+[16:08:29.05] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:29.13] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:29.15] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:29.15] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:29.15] /o {-5.277 -4.692} {5.551 2.272}
+[16:08:29.15] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:29.15] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:29.16] /o {-1.897 -1.752} {3.517 1.73}
+[16:08:29.19] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:08:29.20] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:29.20] /i de::zoom -window 1 -factor 2.0 -center {1.483 1.188}
+[16:08:29.21] /o {-0.207 -0.282} {2.5 1.459}
+[16:08:33.57] /# gi::executeAction deRedo -in [gi::getWindows 1]
+[16:08:33.57] /i de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[16:08:35.98] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:35.98] /i de::zoom -window 1 -factor 0.5 -center {1.403 0.911}
+[16:08:35.99] /o {-1.817 -1.475} {3.597 2.007}
+[16:08:36.21] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:08:36.21] /i de::zoom -window 1 -factor 0.5 -center {1.404 0.91}
+[16:08:36.22] /o {-5.038 -3.86} {5.79 3.104}
+[16:08:36.49] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:36.49] /i de::zoom -window 1 -factor 2.0 -center {1.403 0.91}
+[16:08:36.50] /o {-1.817 -1.475} {3.597 2.007}
+[16:08:36.58] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:36.58] /i de::zoom -window 1 -factor 2.0 -center {1.403 0.91}
+[16:08:36.59] /o {-0.207 -0.282} {2.5 1.459}
+[16:08:36.59] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:36.59] /i de::zoom -window 1 -factor 2.0 -center {1.403 0.91}
+[16:08:36.60] /o {0.598 0.314} {1.951 1.184}
+[16:08:36.76] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:08:36.76] /i de::zoom -window 1 -factor 2.0 -center {1.403 0.91}
+[16:08:36.77] /o {1.0 0.612} {1.677 1.047}
+[16:08:39.38] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[16:08:39.38] /i de::pan -direction N -multiplier 0.5
+[16:08:39.39] /o {1.0 0.829} {1.677 1.264}
+[16:08:42.14] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:08:42.14] /i ile::move
+[16:08:43.28] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:43.28] /i de::startDrag {1.393 0.947} -window 1
+[16:08:43.93] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:43.93] /i de::endDrag {1.234 0.954} -window 1
+[16:08:44.64] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:44.64] /i de::addPoint {1.424 0.953} -window 1
+[16:08:45.26] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:45.26] /i de::addPoint {1.424 0.953} -window 1
+[16:08:45.43] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[16:08:45.43] /i de::completeShape -window 1
+[16:08:45.59] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:45.59] /i de::addPoint {1.424 0.953} -window 1
+[16:08:45.75] /# gi::executeAction deCompleteShape -in [gi::getWindows 1]
+[16:08:45.75] /i de::completeShape -window 1
+[16:08:45.93] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:45.93] /i de::addPoint {1.424 0.953} -window 1
+[16:08:46.62] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:46.62] /i de::startDrag {1.424 0.953} -window 1
+[16:08:47.20] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:47.20] /i de::endDrag {1.351 0.955} -window 1
+[16:08:48.72] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:48.72] /i de::startDrag {1.405 0.964} -window 1
+[16:08:49.19] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:49.19] /i de::endDrag {1.314 0.99} -window 1
+[16:08:50.07] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:50.07] /i de::addPoint {1.407 0.973} -window 1
+[16:08:50.98] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:50.98] /i de::startDrag {1.407 0.973} -window 1
+[16:08:51.47] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:51.47] /i de::endDrag {1.225 0.974} -window 1
+[16:08:52.42] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:08:52.42] /i de::addPoint {1.452 0.936} -window 1
+[16:08:53.50] /# gi::executeAction leRotate90 -in [gi::getWindows 1]
+[16:08:53.50] /i de::commandOption R90 -point {1.452 0.928}
+[16:08:55.56] /# gi::executeAction leRotate90 -in [gi::getWindows 1]
+[16:08:55.56] /i de::commandOption R90 -point {1.452 0.928}
+[16:08:57.02] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:57.02] /i de::startDrag {1.452 0.928} -window 1
+[16:08:57.55] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:57.55] /i de::endDrag {1.292 0.933} -window 1
+[16:08:59.09] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:08:59.09] /i de::startDrag {1.484 0.949} -window 1
+[16:08:59.70] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:08:59.70] /i de::endDrag {1.119 0.985} -window 1
+[16:09:00.60] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[16:09:00.60] /i de::pan -direction W -multiplier 0.5
+[16:09:00.61] /o {0.662 0.829} {1.339 1.264}
+[16:09:01.16] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[16:09:01.16] /i de::pan -direction E -multiplier 0.5
+[16:09:01.17] /o {1.0 0.829} {1.677 1.264}
+[16:09:03.73] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:09:03.73] /i ile::move
+[16:09:04.73] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:09:04.73] /i de::startDrag {1.537 1.04} -window 1
+[16:09:05.25] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:09:05.25] /i de::endDrag {1.389 1.034} -window 1
+[16:09:06.50] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:09:06.50] /i de::addPoint {1.553 1.066} -window 1
+[16:09:10.56] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:09:10.56] /i de::startDrag {1.555 1.05} -window 1
+[16:09:11.92] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:09:11.92] /i de::endDrag {1.142 1.069} -window 1
+[16:09:13.87] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:09:13.87] /i de::startDrag {1.519 1.051} -window 1
+[16:09:14.40] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:09:14.40] /i de::endDrag {1.297 1.065} -window 1
+[16:09:15.97] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:09:15.97] /i de::addPoint {1.491 0.967} -window 1
+[16:09:17.52] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:09:17.52] /i de::startDrag {1.484 0.967} -window 1
+[16:09:18.13] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:09:18.13] /i de::endDrag {1.436 0.966} -window 1
+[16:09:19.45] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:09:19.45] /i de::startDrag {1.478 0.968} -window 1
+[16:09:19.94] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:09:19.94] /i de::endDrag {1.209 0.998} -window 1
+[16:09:27.94] /i gi::setField {editAngleMode} -value {Any Angle} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 1]]
+[16:09:29.11] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:09:29.11] /i de::startDrag {1.458 1.102} -window 1
+[16:09:29.65] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:09:29.65] /i de::endDrag {1.393 1.103} -window 1
+[16:09:30.41] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:09:30.41] /i de::addPoint {1.44 1.109} -window 1
+[16:09:40.76] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:09:40.76] /i de::addPoint {1.278 1.032} -window 1
+[16:09:44.24] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[16:09:44.24] /i de::abortCommand -window 1
+[16:09:46.53] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[16:09:46.53] /i de::pan -direction W -multiplier 0.5
+[16:09:46.54] /o {0.662 0.829} {1.339 1.264}
+[16:09:47.05] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[16:09:47.05] /i de::pan -direction W -multiplier 0.5
+[16:09:47.06] /o {0.325 0.829} {1.001 1.264}
+[16:09:49.93] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[16:09:49.93] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.62 1.064} -index 0 -intent none] -replace true
+[16:09:49.94] /o oa:0x21228760
+[16:09:50.89] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[16:09:50.89] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[16:09:50.89] /o oa:0x23492490
+[16:09:50.89] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.62 1.064} -index 1 -intent none] -replace true
+[16:09:50.90] /o oa:0x24cc41d0
+[16:09:52.81] /w Warning: Nothing is bound to the 'BackSpace' in the current active set. (WINDOW-015)
+[16:09:58.84] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[16:09:58.84] /i ile::delete
+[16:10:04.39] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[16:10:04.39] /i xt::showDRCSetup -job drc -window 1
+[16:10:05.80] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:10:06.49] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[16:10:07.38] /# gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:10:07.40] /w Warning: Attribute 'foreground' is deprecated for objects of type 'giCell' and scheduled for removal in a future release. See instead 'style.foreground'. For migration assistance, see the Custom Designer Tcl Reference Manual. (TCL_OBJECT-061)
+[16:10:08.26] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[16:10:08.26] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:10:08.62] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 654x337+490+65
+[16:10:15.49] /r giDialog gi::pressButton {cancel} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:10:15.53] /e Error: 'DRC' job execution aborted by user. (OPAL-006)
+[16:10:15.53] /r deInterrupt RUNNING
+[16:10:15.60] /e Error: Error: Could not get the value of preference, because the scope is invalid. (PREFERENCE-041)
+[16:10:15.76] /o oa:0x24df41b0
+[16:10:15.90] /i gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:10:17.27] /i gi::closeWindows [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:10:20.49] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[16:10:20.51] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[16:10:33.55] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[16:10:33.55] /i xt::showDRCSetup -job drc -window 1
+[16:10:34.63] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:10:34.97] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[16:10:38.61] /o oa:0x2503cde0
+[16:10:47.55] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:10:48.08] /# xt::physicalVerification::executePve drc 1
+[16:10:48.29] /r giWindowId 2
+[16:10:48.29] /r giWindowGeometry 800x600
+[16:10:48.67] /i db::setAttr geometry -of [gi::getFrames 2] -value 800x600+27+43
+[16:10:55.60] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_1
+              /c --- ERROR SUMMARY -----------
+              /c  CO.E.6: CONT is not enclosed by M1
+              /c    not ................................................ 1 violation found.
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 4 violations found.
+              /c =============================
+              /c 
+[16:10:57.16] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[16:11:13.14] /i db::setAttr iconified -of [gi::getFrames 2] -value true
+[16:11:22.29] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:11:22.29] /i de::zoom -window 1 -factor 0.5 -center {1.268 -0.854}
+[16:11:22.29] /o {1.11 -1.058} {1.614 -0.734}
+[16:11:22.31] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:11:22.31] /i de::zoom -window 1 -factor 0.5 -center {1.268 -0.854}
+[16:11:22.32] /o {0.952 -1.262} {1.96 -0.614}
+[16:11:22.32] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:11:22.32] /i de::zoom -window 1 -factor 0.5 -center {1.268 -0.855}
+[16:11:22.33] /o {0.636 -1.669} {2.652 -0.373}
+[16:11:22.33] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:11:22.33] /i de::zoom -window 1 -factor 0.5 -center {1.268 -0.855}
+[16:11:22.33] /o {0.005 -2.483} {4.035 0.109}
+[16:11:22.36] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:11:22.36] /i de::zoom -window 1 -factor 0.5 -center {1.268 -0.855}
+[16:11:22.37] /o {-1.258 -4.111} {6.802 1.073}
+[16:11:22.37] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:11:22.37] /i de::zoom -window 1 -factor 0.5 -center {1.267 -0.854}
+[16:11:22.37] /o {-3.784 -7.368} {12.338 3.0}
+[16:11:22.38] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:11:22.38] /i de::zoom -window 1 -factor 0.5 -center {1.267 -0.855}
+[16:11:22.38] /o {-8.835 -13.881} {23.409 6.855}
+[16:11:23.44] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:11:23.44] /i de::zoom -window 1 -factor 2.0 -center {1.267 -0.855}
+[16:11:23.45] /o {-3.784 -7.368} {12.338 3.0}
+[16:11:23.67] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:11:23.67] /i de::zoom -window 1 -factor 2.0 -center {1.267 -0.855}
+[16:11:23.68] /o {-1.258 -4.111} {6.802 1.073}
+[16:11:24.56] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:11:24.56] /i de::zoom -window 1 -factor 2.0 -center {1.267 -0.855}
+[16:11:24.57] /o {0.004 -2.483} {4.035 0.109}
+[16:11:30.06] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[16:11:30.06] /i de::pan -direction N -multiplier 0.5
+[16:11:30.06] /o {0.004 -1.187} {4.035 1.405}
+[16:11:30.70] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[16:11:30.70] /i de::pan -direction N -multiplier 0.5
+[16:11:30.71] /o {0.004 0.109} {4.035 2.701}
+[16:11:31.48] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[16:11:31.48] /i de::pan -direction N -multiplier 0.5
+[16:11:31.49] /o {0.004 1.405} {4.035 3.997}
+[16:11:32.02] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:11:32.02] /i de::pan -direction S -multiplier 0.5
+[16:11:32.03] /o {0.004 0.109} {4.035 2.701}
+[16:15:05.13] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:05.13] /i de::zoom -window 1 -factor 0.5 -center {1.675 1.144}
+[16:15:05.15] /o {-1.666 -0.926} {6.394 4.258}
+[16:15:05.16] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:05.16] /i de::zoom -window 1 -factor 0.5 -center {1.676 1.143}
+[16:15:05.17] /o {-5.009 -2.996} {11.113 7.372}
+[16:15:05.20] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:05.20] /i de::zoom -window 1 -factor 0.5 -center {1.675 1.144}
+[16:15:05.22] /o {-11.693 -7.136} {20.551 13.6}
+[16:15:06.12] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:06.12] /i de::zoom -window 1 -factor 2.0 -center {1.676 1.143}
+[16:15:06.14] /o {-5.008 -2.997} {11.113 7.371}
+[16:15:06.49] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:06.49] /i de::zoom -window 1 -factor 2.0 -center {1.676 1.143}
+[16:15:06.50] /o {-1.666 -0.927} {6.395 4.257}
+[16:15:09.20] /# gi::executeAction deSelectByWindow -in [gi::getWindows 1]
+[16:15:09.20] /i de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {1.325 1.62} 
+[16:15:10.00] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:15:10.00] /i de::endDrag {1.372 1.352} -window 1
+[16:15:11.74] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:15:11.74] /i ile::move
+[16:15:14.37] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:15:14.37] /i de::startDrag {1.268 2.472} -window 1
+[16:15:15.86] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:15:15.86] /i de::endDrag {1.268 2.453} -window 1
+[16:15:16.25] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:15:16.25] /i de::addPoint {1.268 2.453} -window 1
+[16:15:17.40] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:17.40] /i de::zoom -window 1 -factor 2.0 -center {1.268 2.453}
+[16:15:17.42] /o {-0.199 0.763} {3.831 3.355}
+[16:15:17.47] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:17.47] /i de::zoom -window 1 -factor 2.0 -center {1.268 2.453}
+[16:15:17.49] /o {0.534 1.608} {2.55 2.904}
+[16:15:17.73] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:17.73] /i de::zoom -window 1 -factor 2.0 -center {1.268 2.453}
+[16:15:17.75] /o {0.901 2.031} {1.909 2.679}
+[16:15:18.25] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:18.25] /i de::zoom -window 1 -factor 0.5 -center {1.268 2.453}
+[16:15:18.28] /o {0.534 1.608} {2.55 2.904}
+[16:15:19.11] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:19.11] /i de::zoom -window 1 -factor 0.5 -center {1.268 2.453}
+[16:15:19.13] /o {-0.199 0.763} {3.831 3.355}
+[16:15:19.23] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:19.23] /i de::zoom -window 1 -factor 0.5 -center {1.268 2.453}
+[16:15:19.34] /o {-1.666 -0.927} {6.395 4.257}
+[16:15:19.42] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[16:15:33.79] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:15:33.79] /i de::addPoint {1.268 1.172} -window 1
+[16:15:36.86] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[16:15:36.86] /i de::abortCommand -window 1
+[16:15:37.93] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:37.93] /i de::zoom -window 1 -factor 0.5 -center {4.762 0.478}
+[16:15:37.95] /o {-8.094 -2.331} {8.027 8.037}
+[16:15:37.96] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:37.96] /i de::zoom -window 1 -factor 0.5 -center {4.761 0.479}
+[16:15:37.97] /o {-20.95 -5.142} {11.294 15.594}
+[16:15:37.98] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:37.98] /i de::zoom -window 1 -factor 0.5 -center {4.761 0.479}
+[16:15:38.00] /o {-46.66 -10.763} {17.826 30.709}
+[16:15:38.00] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:38.00] /i de::zoom -window 1 -factor 0.5 -center {4.762 0.478}
+[16:15:38.01] /o {-98.083 -22.004} {30.891 60.94}
+[16:15:38.14] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:15:38.14] /i de::zoom -window 1 -factor 0.5 -center {4.762 0.479}
+[16:15:38.17] /o {-200.927 -44.487} {57.019 121.401}
+[16:15:38.70] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:38.70] /i de::zoom -window 1 -factor 2.0 -center {4.762 0.479}
+[16:15:38.71] /o {-98.083 -22.004} {30.891 60.94}
+[16:15:38.91] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:38.91] /i de::zoom -window 1 -factor 2.0 -center {4.762 0.479}
+[16:15:38.93] /o {-46.66 -10.763} {17.826 30.709}
+[16:15:39.23] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:39.23] /i de::zoom -window 1 -factor 2.0 -center {4.762 0.479}
+[16:15:39.24] /o {-20.949 -5.142} {11.294 15.594}
+[16:15:39.30] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:39.30] /i de::zoom -window 1 -factor 2.0 -center {4.762 0.479}
+[16:15:39.31] /o {-8.094 -2.331} {8.028 8.037}
+[16:15:40.01] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:40.01] /i de::zoom -window 1 -factor 2.0 -center {4.762 0.479}
+[16:15:40.02] /o {-1.666 -0.926} {6.395 4.258}
+[16:15:40.28] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:15:40.28] /i de::zoom -window 1 -factor 2.0 -center {4.762 0.479}
+[16:15:40.34] /o {1.548 -0.224} {5.579 2.368}
+[16:15:41.76] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[16:15:41.76] /i de::pan -direction W -multiplier 0.5
+[16:15:41.77] /o {-0.465 -0.224} {3.566 2.368}
+[16:15:42.18] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[16:15:42.18] /i de::pan -direction W -multiplier 0.5
+[16:15:42.20] /o {-2.478 -0.224} {1.553 2.368}
+[16:15:42.52] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:15:42.52] /i de::pan -direction S -multiplier 0.5
+[16:15:42.54] /o {-2.478 -1.52} {1.553 1.072}
+[16:15:43.64] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[16:15:43.64] /i de::pan -direction N -multiplier 0.5
+[16:15:43.71] /o {-2.478 -0.224} {1.553 2.368}
+[16:15:45.94] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[16:15:45.94] /i de::pan -direction E -multiplier 0.5
+[16:15:45.95] /o {-0.465 -0.224} {3.566 2.368}
+[16:15:48.97] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:15:48.97] /i ile::move
+[16:15:51.55] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:15:51.55] /i de::addPoint {1.315 1.262} -window 1
+[16:15:59.20] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:15:59.20] /i de::addPoint {1.315 1.281} -window 1
+[16:16:02.34] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:16:02.34] /i de::zoom -window 1 -factor 0.5 -center {1.501 0.854}
+[16:16:02.36] /o {-2.43 -1.301} {5.63 3.883}
+[16:16:03.12] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:16:03.12] /i de::zoom -window 1 -factor 2.0 -center {1.5 0.854}
+[16:16:03.15] /o {-0.465 -0.224} {3.565 2.368}
+[16:16:03.15] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:16:03.15] /i de::zoom -window 1 -factor 2.0 -center {1.5 0.854}
+[16:16:03.17] /o {0.517 0.315} {2.533 1.611}
+[16:16:04.73] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:16:04.73] /i de::pan -direction S -multiplier 0.5
+[16:16:04.75] /o {0.517 -0.333} {2.533 0.963}
+[16:16:05.58] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:16:05.58] /i de::pan -direction S -multiplier 0.5
+[16:16:05.60] /o {0.517 -0.981} {2.533 0.315}
+[16:16:06.22] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:16:06.22] /i de::pan -direction S -multiplier 0.5
+[16:16:06.25] /o {0.517 -1.629} {2.533 -0.333}
+[16:16:21.56] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[16:16:21.58] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[16:16:27.85] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[16:16:27.85] /i xt::showDRCSetup -job drc -window 1
+[16:16:29.63] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[16:16:29.69] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:16:30.08] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[16:16:32.82] /o oa:0x25420630
+[16:16:40.55] /i db::setAttr iconified -of [gi::getFrames 2] -value false
+[16:16:40.58] /i gi::setActiveWindow 2
+[16:16:40.59] /i gi::setActiveWindow 2 -raise true
+[16:16:41.73] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[16:16:42.83] /i gi::setActiveWindow 1
+[16:16:42.84] /i gi::setActiveWindow 1 -raise true
+[16:16:45.76] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[16:16:47.32] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:16:47.81] /# xt::physicalVerification::executePve drc 1
+[16:16:48.02] /r giWindowId 3
+[16:16:48.02] /r giWindowGeometry 800x600
+[16:16:48.48] /i db::setAttr geometry -of [gi::getFrames 3] -value 800x600+27+43
+[16:16:55.17] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_2
+              /c --- ERROR SUMMARY -----------
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 5 violations found.
+              /c =============================
+              /c 
+[16:16:57.95] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[16:17:11.62] /i db::setAttr iconified -of [gi::getFrames 3] -value true
+[16:17:20.45] /# gi::executeAction leMove -in [gi::getWindows 1]
+[16:17:20.45] /i ile::move
+[16:17:22.70] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:17:22.70] /i de::addPoint {0.684 1.121} -window 1
+[16:17:28.39] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:17:28.39] /i de::addPoint {0.685 1.121} -window 1
+[16:17:31.55] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:17:31.55] /i de::addPoint {0.7 1.156} -window 1
+[16:17:32.55] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:17:32.55] /i de::addPoint {0.7 1.156} -window 1
+[16:17:38.37] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:17:38.37] /i de::addPoint {0.703 1.155} -window 1
+[16:17:39.09] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:17:39.09] /i de::addPoint {0.703 1.155} -window 1
+[16:17:40.12] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:17:40.12] /i de::startDrag {0.703 1.155} -window 1
+[16:17:40.69] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:17:40.69] /i de::endDrag {0.68 1.157} -window 1
+[16:17:51.40] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[16:17:51.44] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[16:17:55.14] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[16:17:55.14] /i xt::showDRCSetup -job drc -window 1
+[16:17:56.11] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:17:56.45] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[16:18:00.13] /o oa:0x24f5ec10
+[16:18:00.33] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[16:18:02.15] /i db::setAttr iconified -of [gi::getFrames 3] -value false
+[16:18:02.20] /i gi::setActiveWindow 3
+[16:18:02.21] /i gi::setActiveWindow 3 -raise true
+[16:18:04.20] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[16:18:04.87] /i gi::setActiveWindow 1
+[16:18:04.89] /i gi::setActiveWindow 1 -raise true
+[16:18:05.93] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[16:18:06.42] /# xt::physicalVerification::executePve drc 1
+[16:18:06.62] /r giWindowId 4
+[16:18:06.62] /r giWindowGeometry 800x600
+[16:18:07.07] /i db::setAttr geometry -of [gi::getFrames 4] -value 800x600+27+43
+[16:18:13.77] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_3
+              /c --- ERROR SUMMARY -----------
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 5 violations found.
+              /c =============================
+              /c 
+[16:18:15.33] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[16:18:22.67] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[16:18:22.75] /i gi::setActiveWindow 1
+[16:18:22.76] /i gi::setActiveWindow 1 -raise true
+[16:18:28.47] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[16:18:28.79] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x574
+[16:18:28.80] /i db::setAttr geometry -of [gi::getFrames 1] -value 1280x724+0+22
+[16:18:31.23] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:18:31.23] /i de::addPoint {0.727 1.107} -window 1
+[16:18:31.82] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:18:31.82] /i de::addPoint {0.727 1.107} -window 1
+[16:18:32.57] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:18:32.57] /i de::addPoint {0.727 1.107} -window 1
+[16:18:33.64] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[16:18:33.64] /i de::startDrag {0.727 1.107} -window 1
+[16:18:34.52] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[16:18:34.52] /i de::endDrag {0.742 1.108} -window 1
+[16:18:35.77] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:18:35.77] /i de::addPoint {0.748 1.11} -window 1
+[16:18:40.63] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:18:40.63] /i de::addPoint {0.75 1.116} -window 1
+[16:18:46.18] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:18:46.18] /i de::zoom -window 1 -factor 2.0 -center {0.806 1.16}
+[16:18:46.19] /o {0.683 1.096} {0.837 1.181}
+[16:18:46.23] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:18:46.23] /i de::zoom -window 1 -factor 2.0 -center {0.806 1.16}
+[16:18:46.25] /o {0.744 1.128} {0.821 1.17}
+[16:18:46.86] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:18:46.86] /i de::zoom -window 1 -factor 0.5 -center {0.806 1.16}
+[16:18:46.87] /o {0.683 1.096} {0.837 1.181}
+[16:18:47.00] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:18:47.00] /i de::zoom -window 1 -factor 0.5 -center {0.806 1.16}
+[16:18:47.01] /o {0.559 1.032} {0.868 1.201}
+[16:18:47.24] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:18:47.24] /i de::zoom -window 1 -factor 0.5 -center {0.806 1.16}
+[16:18:47.25] /o {0.312 0.904} {0.93 1.242}
+[16:18:47.25] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:18:47.25] /i de::zoom -window 1 -factor 0.5 -center {0.805 1.16}
+[16:18:47.28] /o {-0.181 0.648} {1.055 1.324}
+[16:18:47.30] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:18:47.30] /i de::zoom -window 1 -factor 0.5 -center {0.805 1.16}
+[16:18:47.52] /o {-1.167 0.135} {1.304 1.488}
+[16:18:48.84] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:18:48.84] /i de::zoom -window 1 -factor 2.0 -center {0.806 1.16}
+[16:18:48.86] /o {-0.18 0.648} {1.055 1.324}
+[16:18:51.47] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[16:18:51.47] /i de::pan -direction N -multiplier 0.5
+[16:18:51.48] /o {-0.18 0.986} {1.055 1.662}
+[16:18:54.89] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:18:54.89] /i de::addPoint {0.736 1.387} -window 1
+[16:19:02.05] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:02.05] /i de::addPoint {0.741 1.385} -window 1
+[16:19:03.72] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[16:19:03.72] /i de::pan -direction E -multiplier 0.5
+[16:19:03.77] /o {0.437 0.986} {1.672 1.662}
+[16:19:05.83] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:05.83] /i de::addPoint {1.363 1.405} -window 1
+[16:19:13.57] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:13.57] /i de::addPoint {1.373 1.405} -window 1
+[16:19:16.79] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:16.79] /i de::addPoint {1.386 1.404} -window 1
+[16:19:18.94] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:18.94] /i de::addPoint {1.38 1.406} -window 1
+[16:19:21.17] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:21.17] /i de::addPoint {1.376 1.173} -window 1
+[16:19:26.72] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:26.72] /i de::addPoint {1.382 1.165} -window 1
+[16:19:28.23] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:19:28.23] /i de::zoom -window 1 -factor 0.5 -center {1.52 1.224}
+[16:19:28.24] /o {-0.646 0.748} {1.825 2.1}
+[16:19:28.27] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:19:28.27] /i de::zoom -window 1 -factor 0.5 -center {1.521 1.225}
+[16:19:28.28] /o {-2.814 0.27} {2.128 2.976}
+[16:19:28.35] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[16:19:28.35] /i de::zoom -window 1 -factor 0.5 -center {1.521 1.224}
+[16:19:28.37] /o {-7.148 -0.684} {2.736 4.728}
+[16:19:28.83] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:19:28.83] /i de::zoom -window 1 -factor 2.0 -center {1.52 1.224}
+[16:19:28.84] /o {-2.814 0.27} {2.128 2.976}
+[16:19:29.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[16:19:29.38] /i de::zoom -window 1 -factor 2.0 -center {1.52 1.224}
+[16:19:29.39] /o {-0.647 0.747} {1.824 2.1}
+[16:19:30.59] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[16:19:30.59] /i de::pan -direction E -multiplier 0.5
+[16:19:30.60] /o {0.587 0.747} {3.058 2.1}
+[16:19:33.62] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:19:33.62] /i de::pan -direction S -multiplier 0.5
+[16:19:33.66] /o {0.587 0.071} {3.058 1.424}
+[16:19:34.27] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:19:34.27] /i de::pan -direction S -multiplier 0.5
+[16:19:34.32] /o {0.587 -0.606} {3.058 0.747}
+[16:19:34.52] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[16:19:34.52] /i de::pan -direction S -multiplier 0.5
+[16:19:34.53] /o {0.587 -1.282} {3.058 0.071}
+[16:19:36.97] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:36.98] /i de::addPoint {2.204 -0.846} -window 1
+[16:19:40.69] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:40.69] /i de::addPoint {2.216 -0.848} -window 1
+[16:19:44.30] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:44.30] /i de::addPoint {1.368 -0.836} -window 1
+[16:19:49.22] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:49.22] /i de::addPoint {1.382 -0.843} -window 1
+[16:19:50.32] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[16:19:50.32] /i de::pan -direction W -multiplier 0.5
+[16:19:50.38] /o {-0.647 -1.282} {1.824 0.071}
+[16:19:53.06] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:53.06] /i de::addPoint {0.718 -0.867} -window 1
+[16:19:59.91] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[16:19:59.91] /i de::addPoint {0.72 -0.865} -window 1
+[16:20:06.40] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[16:20:06.44] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[16:20:10.29] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[16:20:11.68] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[16:20:13.14] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[16:20:13.25] /i gi::setActiveWindow 0
+[16:20:13.26] /i gi::setActiveWindow 0 -raise true
+[16:20:22.94] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[16:20:23.06] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[16:20:23.52] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[16:20:24.67] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[16:20:24.78] /o Shutdown time: Thu Jan 31 16:20:24 2019
+[16:20:24.78] /o Elapsed session real time: 13.6 minutes
+[16:20:24.78] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.log

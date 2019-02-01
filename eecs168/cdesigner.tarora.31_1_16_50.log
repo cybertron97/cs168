@@ -1,0 +1,37 @@
+[18:10:59.34] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Thu Jan 31 18:10:56 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[18:11:00.86] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[18:11:00.86] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[18:11:05.53] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[18:11:05.53] /i de::showOpenDesign
+[18:11:05.57] /o oa:0x247688f0
+[18:11:05.65] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[18:11:05.91] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+20+417
+[18:11:08.22] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[18:11:08.27] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[18:11:09.97] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[18:11:10.00] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[18:11:12.51] /i gi::setCurrentIndex {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[18:11:12.52] /i gi::setItemSelection {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[18:11:47.61] /i gi::closeWindows [gi::getDialogs {deOpenDesign}]
+[18:11:49.04] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[18:11:49.04] /i de::showOpenDesign
+[18:11:49.06] /o oa:0x23317300
+[18:11:49.14] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[18:11:49.35] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+308+126
+[18:11:51.13] /i gi::pressButton {cancel} -in [gi::getDialogs {deOpenDesign}]
+[18:11:51.14] /i gi::closeWindows [gi::getDialogs {deOpenDesign}]
+[18:11:52.73] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[18:11:52.86] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[18:11:53.17] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[18:11:55.82] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[18:11:55.88] /o Shutdown time: Thu Jan 31 18:11:55 2019
+[18:11:55.88] /o Elapsed session real time: 0.93 minutes
+[18:11:55.88] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.tarora.31_1_16_50.log

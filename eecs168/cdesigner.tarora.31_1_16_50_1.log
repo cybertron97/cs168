@@ -1,0 +1,70 @@
+[18:26:17.58] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Thu Jan 31 18:26:14 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[18:26:19.05] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[18:26:19.06] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[18:26:23.05] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[18:26:23.05] /i de::showOpenDesign
+[18:26:23.09] /o oa:0x23444b60
+[18:26:23.21] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[18:26:23.45] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+20+417
+[18:26:24.60] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[18:26:24.61] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[18:26:26.34] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[18:26:26.35] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[18:26:27.47] /i gi::setCurrentIndex {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[18:26:27.48] /i gi::setItemSelection {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[18:26:27.66] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[18:26:27.67] /# de::open [dm::findCellView {layout} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[18:26:27.72] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[18:26:27.74] /o 	############################################
+[18:26:27.74] /o 	--------------------------------------------
+[18:26:27.74] /o 	PDK Name................... : SAED_PDK_90
+[18:26:27.74] /o 	PDK Release Date........... : 29-Sep-2015
+[18:26:27.74] /o 	PDK Custom Designer Version : J-2014.12-2
+[18:26:27.74] /o 	--------------------------------------------
+[18:26:27.74] /o 	############################################
+[18:26:27.74] /o 
+[18:26:27.74] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[18:26:27.75] /o SAED PDK 90: Loaded callbacks
+[18:26:27.75] /o SAED PDK 90: Loaded display resources
+[18:26:27.79] /r giWindowId 1
+[18:26:27.80] /r giWindowGeometry 1088x700
+[18:26:28.39] /o 0.1
+[18:26:28.83] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x550
+[18:26:32.79] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[18:26:32.79] /i xt::showDRCSetup -job drc -window 1
+[18:26:34.02] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[18:26:34.65] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[18:26:42.54] /o oa:0x24addc50
+[18:27:09.90] /i gi::setField {/tabGroup/mainTab/jobParametersGroup/runsetFile/entryField} -value {/usr/local/synopsys/pdk/SAED_PDK90nm/icv/drc/rules.drc.9m_saed90_icv.rs} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[18:27:10.15] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[18:27:10.17] /w Warning: Attribute 'foreground' is deprecated for objects of type 'giCell' and scheduled for removal in a future release. See instead 'style.foreground'. For migration assistance, see the Custom Designer Tcl Reference Manual. (TCL_OBJECT-061)
+[18:27:10.66] /# xt::physicalVerification::executePve drc 1
+[18:27:10.86] /r giWindowId 2
+[18:27:10.86] /r giWindowGeometry 800x600
+[18:27:11.25] /i db::setAttr geometry -of [gi::getFrames 2] -value 800x600+27+43
+[18:27:14.70] /r giWindowId 3
+[18:27:14.70] /r giWindowGeometry 800x600
+[18:27:14.85] /e Error: The job 'icv_drc_2' started on host 'localhost' with process id 19235 failed to start or complete successfully; the job's return code is 33.
+[18:27:15.16] /i db::setAttr geometry -of [gi::getFrames 3] -value 800x600+47+63
+[18:27:21.24] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[18:27:21.30] /i gi::setActiveWindow 2
+[18:27:21.30] /i gi::setActiveWindow 2 -raise true
+[18:27:29.08] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[18:27:29.15] /i gi::setActiveWindow 1
+[18:27:29.16] /i gi::setActiveWindow 1 -raise true
+[18:27:35.55] /e Error: Can not execute 'u' binding because target action deUndo is disabled. (WINDOW-118)
+[18:27:36.64] /e Error: Can not execute 'u' binding because target action deUndo is disabled. (WINDOW-118)
+[18:27:37.30] /e Error: Can not execute 'u' binding because target action deUndo is disabled. (WINDOW-118)
+[18:27:37.79] /e Error: Can not execute 'u' binding because target action deUndo is disabled. (WINDOW-118)
+[18:27:45.03] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[18:27:45.73] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[18:27:45.83] /i gi::setActiveWindow 0
+[18:27:45.83] /i gi::setActiveWindow 0 -raise true

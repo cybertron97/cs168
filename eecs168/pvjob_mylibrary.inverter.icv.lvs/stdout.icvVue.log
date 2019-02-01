@@ -1,0 +1,2 @@
+icv_vue: cannot connect to X server localhost:10.0
+Please set the correct DISPLAY environment variable before starting the application
