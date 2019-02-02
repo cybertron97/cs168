@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
-<!-- created by Custom Designer (TM), build #, on Thu Jan 31 19:09:35 2019
+<!-- created by Custom Designer (TM), build #, on Fri Feb  1 16:21:37 2019
 -->
 <synopsysFile version="1.1" name="synopsysRecentFiles">
         <recentFiles>
-                <file cell="inverter" mode="read" view="layout" file="maskLayout" application="leLayout" library="mylibrary"/>
-                <file cell="inverter" mode="write" view="layout_recovery_bender.engr.ucr.edu_32532" file="maskLayout" application="leLayout" library="mylibrary"/>
+                <file cell="nand_testbench" mode="write" view="schematic" file="schematic" application="seSchematic" library="mylibrary"/>
+                <file cell="nand_testbench" mode="write" view="Tran_SAE" file="saeState" application="saLaunchSAE" library="mylibrary"/>
+                <file cell="nand" mode="write" view="layout" file="maskLayout" application="leLayout" library="mylibrary"/>
+                <file cell="inverter" mode="write" view="layout" file="maskLayout" application="leLayout" library="mylibrary"/>
+                <file cell="nand" mode="read" view="schematic" file="schematic" application="seSchematic" library="mylibrary"/>
         </recentFiles>
 </synopsysFile>

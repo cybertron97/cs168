@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- created by Custom Designer build#  ,on -->
+<file-format version="1.0" name="synopsysPrefs">
+        <preferences>
+                <pref value="true" name="xtLVSCalibreUseSVRFTranscript"/>
+                <pref value="nand" name="xtLVSLayCell"/>
+                <pref value="/home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.lvs/nand.net" name="xtLVSLayInputNetlist"/>
+                <pref value="mylibrary/nand/layout" name="xtLVSLayLCV"/>
+                <pref value="/home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.lvs/nand.cdesigner.gds" name="xtLVSLayStreamFile"/>
+                <pref value="nand" name="xtLVSSchCell"/>
+                <pref value="/home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.lvs/nand.cdesigner.sp" name="xtLVSSchInputNetlist"/>
+                <pref value="CDL" name="xtLVSSchInputNetlistFormat"/>
+                <pref value="mylibrary/nand/schematic" name="xtLVSSchLCV"/>
+                <pref value="/home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.lvs/nand.cdesigner.sp" name="xtLVSSchOutputNetlist"/>
+                <pref value="IC Validator" name="xtLVSTool"/>
+                <pref value="true" name="xtLVSViewOutput"/>
+        </preferences>
+</file-format>

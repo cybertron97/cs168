@@ -1,0 +1,25 @@
+# Fri Feb 1 16:01:15 2019
+
+# icv_vue: RHEL64 K-2015.12-3.3052145 2015/12/17
+#   libhiBase.a   : RHEL64 K-2015.12-3.3052145 2015/12/17
+#   libhiComm.a   : RHEL64 K-2015.12-3.3052145 2015/12/17
+#   libhiGUI.a    : RHEL64 K-2015.12-3.3052145 2015/12/17
+#   libhiSystem.a : RHEL64 K-2015.12-3.3052145 2015/12/17
+
+# Hostname     : bender.engr.ucr.edu
+# Platform type: LINUX.64
+
+# Called as: 
+# icv_vue 
+
+vue_loadFile {HiLoadPage} {/home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.drc/nand.vue}
+vue_select {mainTab} {DRC Errors}
+vue_select {drcCellListView} 0
+vue_select {drcErrorListView} [list 0 ]
+vue_select {drcViolationTreeView} {:1;0}
+vue_click {drcViolationTreeView} {:1;3}
+vue_select {drcViolationTreeView} {:2;0}
+vue_click {drcViolationTreeView} {:2;3}
+vue_select {drcViolationTreeView} {:0;0}
+vue_click {drcViolationTreeView} {:0;5}
+vue_close {HiMain}

@@ -1,0 +1,2029 @@
+[19:11:39.00] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Thu Jan 31 19:11:36 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[19:11:40.49] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[19:11:40.49] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[19:11:43.90] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[19:11:43.90] /i de::showOpenDesign
+[19:11:43.93] /o oa:0x2504c040
+[19:11:44.03] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[19:11:44.43] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+20+417
+[19:11:45.80] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[19:11:45.81] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[19:11:47.10] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[19:11:47.11] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[19:11:48.29] /i gi::setCurrentIndex {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[19:11:48.30] /i gi::setItemSelection {designViews} -index {layout} -in [gi::getDialogs {deOpenDesign}]
+[19:11:49.70] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[19:11:49.71] /# de::open [dm::findCellView {layout} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[19:11:49.76] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[19:11:49.78] /o 	############################################
+[19:11:49.78] /o 	--------------------------------------------
+[19:11:49.78] /o 	PDK Name................... : SAED_PDK_90
+[19:11:49.78] /o 	PDK Release Date........... : 29-Sep-2015
+[19:11:49.78] /o 	PDK Custom Designer Version : J-2014.12-2
+[19:11:49.78] /o 	--------------------------------------------
+[19:11:49.78] /o 	############################################
+[19:11:49.78] /o 
+[19:11:49.78] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[19:11:49.78] /o SAED PDK 90: Loaded callbacks
+[19:11:49.79] /o SAED PDK 90: Loaded display resources
+[19:11:49.84] /r giWindowId 1
+[19:11:49.84] /r giWindowGeometry 1088x700
+[19:11:50.46] /o 0.1
+[19:11:50.74] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]] -value 190x550
+[19:11:55.21] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:11:55.21] /i xt::showDRCSetup -job drc -window 1
+[19:11:56.72] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:11:57.29] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:11:58.33] /# gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:11:58.35] /w Warning: Attribute 'foreground' is deprecated for objects of type 'giCell' and scheduled for removal in a future release. See instead 'style.foreground'. For migration assistance, see the Custom Designer Tcl Reference Manual. (TCL_OBJECT-061)
+[19:11:58.83] /# xt::physicalVerification::executePve drc 1
+[19:11:58.93] /e Error: Error: The specified object does not have attribute 'defaultScopeName'. (TCL_OBJECT-003) (OPAL-006)
+[19:11:59.10] /r giWindowId 2
+[19:11:59.10] /r giWindowGeometry 800x600
+[19:12:05.30] /e Error: Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:12:05.30] /e Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:12:05.40] /i db::setAttr geometry -of [gi::getFrames 2] -value 800x600+27+43
+[19:12:06.72] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_1
+              /c --- ERROR SUMMARY -----------
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 1 violation found.
+              /c =============================
+              /c 
+[19:12:09.25] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:12:21.35] /i db::setAttr iconified -of [gi::getFrames 2] -value true
+[19:12:27.89] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:12:27.89] /i de::pan -direction S -multiplier 0.5
+[19:12:27.90] /o {1.199 1.218} {1.451 1.38}
+[19:12:28.45] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:12:28.45] /i de::pan -direction S -multiplier 0.5
+[19:12:28.46] /o {1.199 1.137} {1.451 1.299}
+[19:12:29.22] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:12:29.22] /i de::pan -direction N -multiplier 0.5
+[19:12:29.23] /o {1.199 1.218} {1.451 1.38}
+[19:12:29.75] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:12:29.75] /i de::pan -direction N -multiplier 0.5
+[19:12:29.75] /o {1.199 1.299} {1.451 1.461}
+[19:12:30.19] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:12:30.19] /i de::pan -direction N -multiplier 0.5
+[19:12:30.20] /o {1.199 1.38} {1.451 1.542}
+[19:12:34.00] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:12:34.00] /i ile::createRuler
+[19:12:36.09] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:12:36.09] /i de::addPoint {1.343 1.445} -window 1
+[19:12:37.47] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:12:37.47] /i de::addPoint {1.346 1.48} -window 1
+[19:12:44.02] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:12:44.02] /i ile::stretch
+[19:12:48.09] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:12:48.09] /i de::addPoint {1.296 1.48} -window 1
+[19:12:49.54] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:12:49.54] /i de::abortCommand -window 1
+[19:12:51.23] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:12:51.23] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.317 1.471} -index 0 -intent none] -replace true
+[19:12:51.24] /o oa:0x26773060
+[19:12:53.63] /# gi::executeAction leMove -in [gi::getWindows 1]
+[19:12:53.63] /i ile::move
+[19:12:55.26] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:12:55.26] /i ile::stretch
+[19:12:57.06] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:12:57.06] /i de::addPoint {1.27 1.479} -window 1
+[19:13:04.84] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:13:04.84] /i de::addPoint {1.274 1.495} -window 1
+[19:13:09.34] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:13:09.34] /i ile::createRuler
+[19:13:11.07] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:13:11.07] /i de::addPoint {1.303 1.443} -window 1
+[19:13:13.57] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:13:13.57] /i de::addPoint {1.302 1.494} -window 1
+[19:13:15.41] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:13:15.41] /i de::abortCommand -window 1
+[19:13:20.90] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:13:24.01] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[19:13:24.05] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[19:13:27.17] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:13:27.17] /i xt::showDRCSetup -job drc -window 1
+[19:13:28.25] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:13:28.59] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:13:30.50] /# gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:13:30.98] /# xt::physicalVerification::executePve drc 1
+[19:13:31.03] /e Error: Error: The specified object does not have attribute 'defaultScopeName'. (TCL_OBJECT-003) (OPAL-006)
+[19:13:31.27] /r giWindowId 3
+[19:13:31.27] /r giWindowGeometry 800x600
+[19:13:32.23] /e Error: Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:13:32.23] /e Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:13:32.41] /i db::setAttr geometry -of [gi::getFrames 3] -value 800x600+27+43
+[19:13:38.67] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_2
+              /c --- ERROR SUMMARY -----------
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 1 violation found.
+              /c =============================
+              /c 
+[19:13:41.32] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:14:00.81] /i db::setAttr iconified -of [gi::getFrames 3] -value true
+[19:14:19.84] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:14:19.84] /i de::zoom -window 1 -factor 0.5 -center {1.37 -0.853}
+[19:14:19.85] /o {1.028 -1.059} {1.532 -0.735}
+[19:14:19.87] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:14:19.87] /i de::zoom -window 1 -factor 0.5 -center {1.37 -0.852}
+[19:14:19.88] /o {0.686 -1.266} {1.694 -0.618}
+[19:14:19.88] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:14:19.88] /i de::zoom -window 1 -factor 0.5 -center {1.37 -0.853}
+[19:14:19.89] /o {0.002 -1.679} {2.018 -0.383}
+[19:14:19.98] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:14:19.98] /i de::zoom -window 1 -factor 0.5 -center {1.37 -0.853}
+[19:14:19.98] /o {-1.365 -2.505} {2.665 0.087}
+[19:14:20.78] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:14:20.78] /i de::zoom -window 1 -factor 2.0 -center {1.369 -0.853}
+[19:14:20.79] /o {0.002 -1.679} {2.017 -0.383}
+[19:14:21.62] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:14:21.62] /i de::zoom -window 1 -factor 2.0 -center {1.369 -0.853}
+[19:14:21.68] /o {0.685 -1.266} {1.693 -0.618}
+[19:14:22.51] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:14:22.51] /i de::zoom -window 1 -factor 2.0 -center {1.369 -0.853}
+[19:14:22.51] /o {1.027 -1.059} {1.531 -0.735}
+[19:14:23.74] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:14:23.74] /i de::zoom -window 1 -factor 2.0 -center {1.369 -0.853}
+[19:14:23.75] /o {1.198 -0.956} {1.45 -0.794}
+[19:14:23.81] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:14:23.81] /i de::zoom -window 1 -factor 2.0 -center {1.369 -0.853}
+[19:14:23.82] /o {1.284 -0.905} {1.41 -0.824}
+[19:14:24.29] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:14:24.29] /i de::zoom -window 1 -factor 0.5 -center {1.369 -0.853}
+[19:14:24.30] /o {1.198 -0.956} {1.45 -0.794}
+[19:14:24.33] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:14:24.33] /i de::zoom -window 1 -factor 0.5 -center {1.369 -0.853}
+[19:14:24.34] /o {1.027 -1.059} {1.531 -0.735}
+[19:14:26.49] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:14:26.49] /i de::zoom -window 1 -factor 2.0 -center {1.369 -0.853}
+[19:14:26.50] /o {1.198 -0.956} {1.45 -0.794}
+[19:14:35.32] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:14:35.32] /i ile::createRuler
+[19:14:37.60] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:14:37.60] /i de::pan -direction S -multiplier 0.5
+[19:14:37.60] /o {1.198 -1.037} {1.45 -0.875}
+[19:14:40.14] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:14:40.14] /i de::addPoint {1.356 -0.941} -window 1
+[19:14:41.97] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:14:41.97] /i de::addPoint {1.359 -0.979} -window 1
+[19:14:45.04] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:14:45.04] /i de::addPoint {1.262 -0.953} -window 1
+[19:14:48.16] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:14:48.16] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:14:49.37] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:14:49.37] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:14:50.86] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:14:50.86] /i de::addPoint {1.402 -0.957} -window 1
+[19:14:51.70] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:14:51.70] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:14:56.54] /# gi::executeAction deRedo -in [gi::getWindows 1]
+[19:14:56.54] /i de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:14:58.60] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:14:58.60] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:15:00.95] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:15:00.95] /i ile::createRuler
+[19:15:01.48] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:15:01.48] /i ile::createRuler
+[19:15:08.19] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:15:08.19] /i de::abortCommand -window 1
+[19:15:09.79] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:15:09.79] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.252 -0.951} -index 0 -intent none] -replace true
+[19:15:09.80] /o oa:0x2714c350
+[19:15:17.62] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:15:17.62] /i ile::stretch
+[19:15:19.51] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:15:19.51] /i de::addPoint {1.257 -0.98} -window 1
+[19:15:20.64] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:15:20.64] /i de::abortCommand -window 1
+[19:15:21.97] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:15:21.97] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:15:21.97] /o oa:0x26ea81c0
+[19:15:21.97] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.261 -0.96} -index 1 -intent none] -replace true
+[19:15:21.98] /o oa:0x22dcd110
+[19:15:25.69] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:15:25.69] /i ile::stretch
+[19:15:27.04] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:15:27.04] /i de::addPoint {1.247 -0.981} -window 1
+[19:15:30.37] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:15:30.37] /i de::addPoint {1.247 -0.994} -window 1
+[19:15:31.39] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[19:15:35.68] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:15:35.68] /i ile::createRuler
+[19:15:38.16] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:15:38.16] /i de::addPoint {1.262 -0.94} -window 1
+[19:15:39.89] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:15:39.89] /i de::addPoint {1.265 -0.994} -window 1
+[19:15:40.72] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:15:40.72] /i de::abortCommand -window 1
+[19:15:42.13] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:15:42.13] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:15:47.02] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[19:15:47.05] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[19:15:53.16] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:15:53.16] /i xt::showDRCSetup -job drc -window 1
+[19:15:54.27] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:15:54.61] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:15:55.90] /# gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:15:56.39] /# xt::physicalVerification::executePve drc 1
+[19:15:56.45] /e Error: Error: The specified object does not have attribute 'defaultScopeName'. (TCL_OBJECT-003) (OPAL-006)
+[19:15:56.64] /r giWindowId 4
+[19:15:56.65] /r giWindowGeometry 800x600
+[19:15:58.18] /e Error: Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:15:58.19] /e Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:15:58.41] /i db::setAttr geometry -of [gi::getFrames 4] -value 800x600+27+43
+[19:16:04.32] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_3
+              /c --- ERROR SUMMARY -----------
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 1 violation found.
+              /c =============================
+              /c 
+[19:16:04.85] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:16:11.51] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[19:16:31.66] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:16:31.66] /i de::pan -direction N -multiplier 0.5
+[19:16:31.67] /o {1.199 1.38} {1.451 1.542}
+[19:16:41.50] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:16:41.50] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.253 1.476} -index 0 -intent none] -replace true
+[19:16:41.51] /o oa:0x269aa700
+[19:16:42.19] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:16:42.19] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:16:42.19] /o oa:0x26ea29d0
+[19:16:42.19] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.253 1.476} -index 1 -intent none] -replace true
+[19:16:42.20] /o oa:0x27229c40
+[19:16:44.70] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:16:44.70] /i ile::stretch
+[19:16:47.81] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:16:47.81] /i de::addPoint {1.27 1.48} -window 1
+[19:16:51.03] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:16:51.03] /i de::addPoint {1.27 1.494} -window 1
+[19:16:54.72] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:16:54.72] /i ile::createRuler
+[19:16:56.44] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:16:56.44] /i de::addPoint {1.282 1.446} -window 1
+[19:16:58.64] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:16:58.64] /i de::addPoint {1.282 1.494} -window 1
+[19:17:00.84] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:17:00.84] /i de::abortCommand -window 1
+[19:17:03.81] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[19:17:03.85] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[19:17:07.12] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:17:07.12] /i xt::showDRCSetup -job drc -window 1
+[19:17:08.35] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:17:08.69] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:17:12.52] /o oa:0x268f8a00
+[19:17:14.43] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:17:16.09] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:17:16.57] /# xt::physicalVerification::executePve drc 1
+[19:17:16.72] /r giWindowId 5
+[19:17:16.73] /r giWindowGeometry 800x600
+[19:17:16.86] /i gi::setActiveWindow 1
+[19:17:16.86] /i gi::setActiveWindow 1 -raise true
+[19:17:16.95] /i gi::setActiveWindow 5
+[19:17:16.95] /i gi::setActiveWindow 5 -raise true
+[19:17:17.18] /i db::setAttr geometry -of [gi::getFrames 5] -value 800x600+27+43
+[19:17:24.30] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_4
+              /c --- ERROR SUMMARY -----------
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 1 violation found.
+              /c =============================
+              /c 
+[19:17:24.76] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:17:35.84] /i db::setAttr iconified -of [gi::getFrames 5] -value true
+[19:17:45.91] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:45.91] /i de::zoom -window 1 -factor 0.5 -center {1.436 -0.866}
+[19:17:45.91] /o {0.962 -1.046} {1.466 -0.722}
+[19:17:45.93] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:45.93] /i de::zoom -window 1 -factor 0.5 -center {1.436 -0.865}
+[19:17:45.94] /o {0.488 -1.227} {1.496 -0.579}
+[19:17:45.94] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:45.94] /i de::zoom -window 1 -factor 0.5 -center {1.436 -0.865}
+[19:17:45.95] /o {-0.46 -1.589} {1.556 -0.293}
+[19:17:45.95] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:45.95] /i de::zoom -window 1 -factor 0.5 -center {1.437 -0.865}
+[19:17:45.96] /o {-2.356 -2.313} {1.674 0.279}
+[19:17:45.98] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:45.98] /i de::zoom -window 1 -factor 0.5 -center {1.437 -0.865}
+[19:17:45.99] /o {-6.149 -3.761} {1.911 1.423}
+[19:17:46.01] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:46.01] /i de::zoom -window 1 -factor 0.5 -center {1.437 -0.865}
+[19:17:46.02] /o {-13.736 -6.657} {2.386 3.711}
+[19:17:46.02] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:46.02] /i de::zoom -window 1 -factor 0.5 -center {1.436 -0.865}
+[19:17:46.03] /o {-28.908 -12.449} {3.336 8.287}
+[19:17:46.71] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:46.71] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:46.72] /o {-13.735 -6.657} {2.386 3.711}
+[19:17:46.72] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:46.72] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:46.72] /o {-6.149 -3.762} {1.912 1.422}
+[19:17:46.84] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:46.84] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:46.85] /o {-2.356 -2.314} {1.674 0.278}
+[19:17:47.39] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:47.39] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:47.40] /o {-0.46 -1.59} {1.556 -0.294}
+[19:17:47.66] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:47.66] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:47.67] /o {0.489 -1.228} {1.496 -0.58}
+[19:17:48.54] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:48.54] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:48.55] /o {0.963 -1.047} {1.467 -0.723}
+[19:17:49.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:49.53] /i de::zoom -window 1 -factor 0.5 -center {1.437 -0.866}
+[19:17:49.54] /o {0.489 -1.228} {1.496 -0.58}
+[19:17:49.61] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:17:49.61] /i de::zoom -window 1 -factor 0.5 -center {1.437 -0.866}
+[19:17:49.61] /o {-0.46 -1.59} {1.556 -0.294}
+[19:17:52.01] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:52.01] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:52.02] /o {0.489 -1.228} {1.496 -0.58}
+[19:17:52.27] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:17:52.27] /i de::zoom -window 1 -factor 2.0 -center {1.437 -0.866}
+[19:17:52.28] /o {0.963 -1.047} {1.467 -0.723}
+[19:17:59.59] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:17:59.59] /i ile::stretch
+[19:18:03.07] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:18:03.07] /i de::addPoint {1.248 -0.979} -window 1
+[19:18:06.60] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:18:06.60] /i de::addPoint {1.249 -0.995} -window 1
+[19:18:10.04] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[19:18:10.04] /i de::pan -direction W -multiplier 0.5
+[19:18:10.08] /o {0.711 -1.047} {1.214 -0.723}
+[19:18:10.56] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[19:18:10.56] /i de::pan -direction W -multiplier 0.5
+[19:18:10.57] /o {0.46 -1.047} {0.963 -0.723}
+[19:18:14.71] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[19:18:14.74] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[19:18:17.58] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:18:17.58] /i xt::showDRCSetup -job drc -window 1
+[19:18:18.59] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:18:18.93] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:18:22.15] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:18:22.79] /o oa:0x26cd3800
+[19:18:23.95] /i db::setAttr iconified -of [gi::getFrames 5] -value false
+[19:18:23.95] /i gi::setActiveWindow 5
+[19:18:23.96] /i gi::setActiveWindow 5 -raise true
+[19:18:27.14] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[19:18:27.77] /i gi::setActiveWindow 1
+[19:18:27.77] /i gi::setActiveWindow 1 -raise true
+[19:18:32.38] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:18:32.92] /# xt::physicalVerification::executePve drc 1
+[19:18:33.26] /r giWindowId 6
+[19:18:33.27] /r giWindowGeometry 800x600
+[19:18:33.66] /i db::setAttr geometry -of [gi::getFrames 6] -value 800x600+27+43
+[19:18:40.76] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_5
+              /c --- ERROR SUMMARY -----------
+              /c  R.CO.E7: Min enclosure of contact at end of line
+              /c    not_covered_by ..................................... 1 violation found.
+              /c =============================
+              /c 
+[19:18:41.35] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:18:52.91] /i db::setAttr iconified -of [gi::getFrames 6] -value true
+[19:18:55.69] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:18:55.69] /i de::pan -direction S -multiplier 0.5
+[19:18:55.70] /o {1.199 1.218} {1.451 1.38}
+[19:18:56.37] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:18:56.37] /i de::pan -direction N -multiplier 0.5
+[19:18:56.38] /o {1.199 1.299} {1.451 1.461}
+[19:18:56.60] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:18:56.60] /i de::pan -direction N -multiplier 0.5
+[19:18:56.61] /o {1.199 1.38} {1.451 1.542}
+[19:19:09.35] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:09.35] /i de::pan -direction S -multiplier 0.5
+[19:19:09.36] /o {1.199 1.299} {1.451 1.461}
+[19:19:09.79] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:09.79] /i de::pan -direction S -multiplier 0.5
+[19:19:09.80] /o {1.199 1.218} {1.451 1.38}
+[19:19:10.03] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:10.03] /i de::pan -direction S -multiplier 0.5
+[19:19:10.04] /o {1.199 1.137} {1.451 1.299}
+[19:19:10.25] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:10.25] /i de::pan -direction S -multiplier 0.5
+[19:19:10.26] /o {1.199 1.056} {1.451 1.218}
+[19:19:10.46] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:10.46] /i de::pan -direction S -multiplier 0.5
+[19:19:10.47] /o {1.199 0.975} {1.451 1.137}
+[19:19:10.63] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:10.63] /i de::pan -direction S -multiplier 0.5
+[19:19:10.64] /o {1.199 0.894} {1.451 1.056}
+[19:19:11.23] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:11.23] /i de::pan -direction S -multiplier 0.5
+[19:19:11.24] /o {1.199 0.813} {1.451 0.975}
+[19:19:11.42] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:11.42] /i de::pan -direction S -multiplier 0.5
+[19:19:11.43] /o {1.199 0.732} {1.451 0.894}
+[19:19:11.62] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:11.62] /i de::pan -direction S -multiplier 0.5
+[19:19:11.62] /o {1.199 0.651} {1.451 0.813}
+[19:19:11.80] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:11.80] /i de::pan -direction S -multiplier 0.5
+[19:19:11.81] /o {1.199 0.57} {1.451 0.732}
+[19:19:11.98] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:11.98] /i de::pan -direction S -multiplier 0.5
+[19:19:11.99] /o {1.199 0.489} {1.451 0.651}
+[19:19:12.14] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:12.14] /i de::pan -direction S -multiplier 0.5
+[19:19:12.15] /o {1.199 0.408} {1.451 0.57}
+[19:19:12.30] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:12.30] /i de::pan -direction S -multiplier 0.5
+[19:19:12.31] /o {1.199 0.327} {1.451 0.489}
+[19:19:12.61] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:12.61] /i de::pan -direction S -multiplier 0.5
+[19:19:12.62] /o {1.199 0.246} {1.451 0.408}
+[19:19:12.84] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:12.84] /i de::pan -direction S -multiplier 0.5
+[19:19:12.85] /o {1.199 0.165} {1.451 0.327}
+[19:19:13.02] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:13.02] /i de::pan -direction S -multiplier 0.5
+[19:19:13.03] /o {1.199 0.084} {1.451 0.246}
+[19:19:13.26] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:13.26] /i de::pan -direction N -multiplier 0.5
+[19:19:13.26] /o {1.199 0.165} {1.451 0.327}
+[19:19:13.43] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:13.43] /i de::pan -direction N -multiplier 0.5
+[19:19:13.44] /o {1.199 0.246} {1.451 0.408}
+[19:19:13.59] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:13.59] /i de::pan -direction N -multiplier 0.5
+[19:19:13.60] /o {1.199 0.327} {1.451 0.489}
+[19:19:14.18] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:14.18] /i de::pan -direction N -multiplier 0.5
+[19:19:14.19] /o {1.199 0.408} {1.451 0.57}
+[19:19:14.28] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:14.28] /i de::pan -direction N -multiplier 0.5
+[19:19:14.29] /o {1.199 0.489} {1.451 0.651}
+[19:19:16.62] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:16.62] /i de::pan -direction S -multiplier 0.5
+[19:19:16.63] /o {1.199 0.408} {1.451 0.57}
+[19:19:16.81] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:16.81] /i de::pan -direction S -multiplier 0.5
+[19:19:16.82] /o {1.199 0.327} {1.451 0.489}
+[19:19:16.97] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:16.97] /i de::pan -direction S -multiplier 0.5
+[19:19:16.98] /o {1.199 0.246} {1.451 0.408}
+[19:19:17.13] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:17.13] /i de::pan -direction S -multiplier 0.5
+[19:19:17.14] /o {1.199 0.165} {1.451 0.327}
+[19:19:17.29] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:17.29] /i de::pan -direction S -multiplier 0.5
+[19:19:17.30] /o {1.199 0.084} {1.451 0.246}
+[19:19:17.45] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:17.45] /i de::pan -direction S -multiplier 0.5
+[19:19:17.46] /o {1.199 0.003} {1.451 0.165}
+[19:19:17.60] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:17.60] /i de::pan -direction S -multiplier 0.5
+[19:19:17.61] /o {1.199 -0.078} {1.451 0.084}
+[19:19:17.75] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:17.75] /i de::pan -direction S -multiplier 0.5
+[19:19:17.76] /o {1.199 -0.159} {1.451 0.003}
+[19:19:17.91] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:17.91] /i de::pan -direction S -multiplier 0.5
+[19:19:17.92] /o {1.199 -0.24} {1.451 -0.078}
+[19:19:18.09] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:18.09] /i de::pan -direction S -multiplier 0.5
+[19:19:18.10] /o {1.199 -0.321} {1.451 -0.159}
+[19:19:18.23] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:18.23] /i de::pan -direction S -multiplier 0.5
+[19:19:18.24] /o {1.199 -0.402} {1.451 -0.24}
+[19:19:18.42] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:18.42] /i de::pan -direction S -multiplier 0.5
+[19:19:18.43] /o {1.199 -0.483} {1.451 -0.321}
+[19:19:18.82] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:18.82] /i de::pan -direction N -multiplier 0.5
+[19:19:18.82] /o {1.199 -0.402} {1.451 -0.24}
+[19:19:18.99] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:18.99] /i de::pan -direction N -multiplier 0.5
+[19:19:19.00] /o {1.199 -0.321} {1.451 -0.159}
+[19:19:19.14] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:19.14] /i de::pan -direction N -multiplier 0.5
+[19:19:19.22] /o {1.199 -0.24} {1.451 -0.078}
+[19:19:19.73] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:19.73] /i de::pan -direction N -multiplier 0.5
+[19:19:19.74] /o {1.199 -0.159} {1.451 0.003}
+[19:19:19.83] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:19.83] /i de::pan -direction N -multiplier 0.5
+[19:19:19.84] /o {1.199 -0.078} {1.451 0.084}
+[19:19:19.95] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:19.95] /i de::pan -direction N -multiplier 0.5
+[19:19:19.95] /o {1.199 0.003} {1.451 0.165}
+[19:19:20.04] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.04] /i de::pan -direction N -multiplier 0.5
+[19:19:20.05] /o {1.199 0.084} {1.451 0.246}
+[19:19:20.15] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.15] /i de::pan -direction N -multiplier 0.5
+[19:19:20.16] /o {1.199 0.165} {1.451 0.327}
+[19:19:20.24] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.24] /i de::pan -direction N -multiplier 0.5
+[19:19:20.25] /o {1.199 0.246} {1.451 0.408}
+[19:19:20.34] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.34] /i de::pan -direction N -multiplier 0.5
+[19:19:20.34] /o {1.199 0.327} {1.451 0.489}
+[19:19:20.44] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.44] /i de::pan -direction N -multiplier 0.5
+[19:19:20.45] /o {1.199 0.408} {1.451 0.57}
+[19:19:20.53] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.53] /i de::pan -direction N -multiplier 0.5
+[19:19:20.54] /o {1.199 0.489} {1.451 0.651}
+[19:19:20.66] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.66] /i de::pan -direction N -multiplier 0.5
+[19:19:20.66] /o {1.199 0.57} {1.451 0.732}
+[19:19:20.75] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:20.75] /i de::pan -direction N -multiplier 0.5
+[19:19:20.76] /o {1.199 0.651} {1.451 0.813}
+[19:19:22.24] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:22.24] /i de::zoom -window 1 -factor 0.5 -center {1.32 0.74}
+[19:19:22.25] /o {1.078 0.562} {1.582 0.886}
+[19:19:22.26] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:22.26] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.741}
+[19:19:22.27] /o {0.835 0.383} {1.843 1.031}
+[19:19:22.27] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:22.27] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.74}
+[19:19:22.28] /o {0.349 0.026} {2.365 1.322}
+[19:19:22.28] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:22.28] /i de::zoom -window 1 -factor 0.5 -center {1.32 0.74}
+[19:19:22.28] /o {-0.621 -0.688} {3.409 1.904}
+[19:19:22.32] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:22.32] /i de::zoom -window 1 -factor 0.5 -center {1.32 0.741}
+[19:19:22.33] /o {-2.562 -2.117} {5.498 3.067}
+[19:19:22.33] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:22.33] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.741}
+[19:19:22.34] /o {-6.446 -4.975} {9.676 5.393}
+[19:19:23.58] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:23.58] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:23.59] /o {-2.562 -2.117} {5.498 3.067}
+[19:19:24.52] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:24.52] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:24.52] /o {-0.621 -0.688} {3.41 1.904}
+[19:19:25.92] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:25.92] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:25.93] /o {0.35 0.027} {2.365 1.323}
+[19:19:27.43] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.43] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.741}
+[19:19:27.44] /o {-0.621 -0.688} {3.41 1.904}
+[19:19:27.46] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.46] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.741}
+[19:19:27.47] /o {-2.562 -2.117} {5.498 3.067}
+[19:19:27.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.49] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.741}
+[19:19:27.50] /o {-6.446 -4.975} {9.676 5.393}
+[19:19:27.50] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.50] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.741}
+[19:19:27.51] /o {-14.213 -10.691} {18.031 10.045}
+[19:19:27.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.53] /i de::zoom -window 1 -factor 0.5 -center {1.32 0.74}
+[19:19:27.53] /o {-29.745 -22.122} {34.741 19.35}
+[19:19:27.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.56] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.741}
+[19:19:27.56] /o {-60.812 -44.985} {68.162 37.959}
+[19:19:27.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.57] /i de::zoom -window 1 -factor 0.5 -center {1.32 0.741}
+[19:19:27.57] /o {-122.943 -90.711} {135.003 75.177}
+[19:19:27.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.57] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.74}
+[19:19:27.58] /o {-247.208 -182.162} {268.686 149.614}
+[19:19:27.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.59] /i de::zoom -window 1 -factor 0.5 -center {1.32 0.74}
+[19:19:27.60] /o {-495.735 -365.064} {536.051 298.488}
+[19:19:27.60] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:19:27.60] /i de::zoom -window 1 -factor 0.5 -center {1.321 0.74}
+[19:19:27.61] /o {-992.792 -730.868} {1070.782 596.236}
+[19:19:27.98] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:27.98] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:27.99] /o {-495.735 -365.063} {536.051 298.489}
+[19:19:28.05] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.05] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.05] /o {-247.207 -182.161} {268.686 149.615}
+[19:19:28.06] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.06] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.06] /o {-122.943 -90.71} {135.004 75.178}
+[19:19:28.07] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:19:28.09] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.09] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.10] /o {-60.811 -44.985} {68.162 37.959}
+[19:19:28.22] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.22] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.22] /o {-29.745 -22.122} {34.742 19.35}
+[19:19:28.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.38] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.38] /o {-14.212 -10.69} {18.031 10.046}
+[19:19:28.45] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.45] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.46] /o {-6.446 -4.975} {9.676 5.393}
+[19:19:28.60] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.60] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.61] /o {-2.562 -2.117} {5.499 3.067}
+[19:19:28.61] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.61] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.62] /o {-0.621 -0.688} {3.41 1.904}
+[19:19:28.77] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:19:28.77] /i de::zoom -window 1 -factor 2.0 -center {1.321 0.741}
+[19:19:28.78] /o {0.35 0.027} {2.365 1.323}
+[19:19:29.84] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:29.84] /i de::pan -direction S -multiplier 0.5
+[19:19:29.85] /o {0.35 -0.621} {2.365 0.675}
+[19:19:30.39] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:30.39] /i de::pan -direction S -multiplier 0.5
+[19:19:30.40] /o {0.35 -1.269} {2.365 0.027}
+[19:19:33.64] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:33.64] /i de::pan -direction N -multiplier 0.5
+[19:19:33.65] /o {0.35 -0.621} {2.365 0.675}
+[19:19:34.04] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:34.04] /i de::pan -direction N -multiplier 0.5
+[19:19:34.05] /o {0.35 0.027} {2.365 1.323}
+[19:19:34.42] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:34.42] /i de::pan -direction N -multiplier 0.5
+[19:19:34.47] /o {0.35 0.675} {2.365 1.971}
+[19:19:38.59] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:38.59] /i de::pan -direction S -multiplier 0.5
+[19:19:38.60] /o {0.35 0.027} {2.365 1.323}
+[19:19:38.86] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:38.86] /i de::pan -direction S -multiplier 0.5
+[19:19:38.86] /o {0.35 -0.621} {2.365 0.675}
+[19:19:39.06] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:39.06] /i de::pan -direction S -multiplier 0.5
+[19:19:39.06] /o {0.35 -1.269} {2.365 0.027}
+[19:19:39.33] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:19:39.33] /i de::pan -direction S -multiplier 0.5
+[19:19:39.34] /o {0.35 -1.917} {2.365 -0.621}
+[19:19:40.28] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:40.28] /i de::pan -direction N -multiplier 0.5
+[19:19:40.29] /o {0.35 -1.269} {2.365 0.027}
+[19:19:40.54] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:40.54] /i de::pan -direction N -multiplier 0.5
+[19:19:40.55] /o {0.35 -0.621} {2.365 0.675}
+[19:19:40.74] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:40.74] /i de::pan -direction N -multiplier 0.5
+[19:19:40.75] /o {0.35 0.027} {2.365 1.323}
+[19:19:40.98] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:19:40.98] /i de::pan -direction N -multiplier 0.5
+[19:19:40.99] /o {0.35 0.675} {2.365 1.971}
+[19:19:48.08] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:19:48.08] /i ile::stretch
+[19:19:51.59] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:19:51.59] /i de::addPoint {1.402 1.479} -window 1
+[19:19:54.10] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:19:54.10] /i de::addPoint {1.402 1.489} -window 1
+[19:19:56.09] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:19:56.09] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.402 1.489} -index 0 -intent none] -replace true
+[19:19:56.10] /o oa:0x26dfb8d0
+[19:20:02.64] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:20:02.64] /i ile::stretch
+[19:20:05.56] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:20:05.56] /i de::addPoint {1.409 1.491} -window 1
+[19:20:07.60] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:20:07.60] /i de::abortCommand -window 1
+[19:20:11.43] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:20:11.43] /i ile::stretch
+[19:20:16.25] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:20:16.25] /i de::addPoint {1.385 1.489} -window 1
+[19:20:16.75] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:20:16.75] /i de::abortCommand -window 1
+[19:20:18.16] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:20:18.16] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:20:18.16] /o oa:0x2694ab60
+[19:20:18.16] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.383 1.467} -index 1 -intent none] -replace true
+[19:20:18.17] /o oa:0x271ed2e0
+[19:20:19.79] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:20:19.79] /i ile::stretch
+[19:20:23.22] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:20:23.22] /i de::addPoint {1.385 1.491} -window 1
+[19:20:25.37] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:20:25.37] /i de::addPoint {1.385 1.493} -window 1
+[19:20:26.42] /i gi::executeAction deCanvasDragCancel -in [gi::getWindows 1]
+[19:20:27.80] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:20:27.80] /i de::zoom -window 1 -factor 0.5 -center {1.729 1.054}
+[19:20:27.80] /o {-1.029 0.295} {3.002 2.887}
+[19:20:27.82] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:20:27.82] /i de::zoom -window 1 -factor 0.5 -center {1.73 1.055}
+[19:20:27.83] /o {-3.787 -0.465} {4.274 4.719}
+[19:20:27.85] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:20:27.85] /i de::zoom -window 1 -factor 0.5 -center {1.729 1.054}
+[19:20:27.86] /o {-9.304 -1.984} {6.818 8.384}
+[19:20:27.86] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:20:27.88] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:20:27.88] /i de::zoom -window 1 -factor 0.5 -center {1.729 1.055}
+[19:20:27.88] /o {-20.336 -5.022} {11.907 15.714}
+[19:20:27.88] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:20:27.88] /i de::zoom -window 1 -factor 0.5 -center {1.729 1.054}
+[19:20:27.89] /o {-42.401 -11.099} {22.086 30.373}
+[19:20:28.29] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:20:28.29] /i de::zoom -window 1 -factor 2.0 -center {1.729 1.054}
+[19:20:28.30] /o {-20.336 -5.022} {11.907 15.714}
+[19:20:28.30] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:20:28.30] /i de::zoom -window 1 -factor 2.0 -center {1.729 1.054}
+[19:20:28.31] /o {-9.304 -1.984} {6.818 8.384}
+[19:20:28.33] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:20:28.33] /i de::zoom -window 1 -factor 2.0 -center {1.729 1.054}
+[19:20:28.34] /o {-3.787 -0.465} {4.274 4.719}
+[19:20:28.37] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:20:28.37] /i de::zoom -window 1 -factor 2.0 -center {1.729 1.054}
+[19:20:28.38] /o {-1.029 0.294} {3.001 2.886}
+[19:20:29.42] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:20:29.42] /i de::pan -direction S -multiplier 0.5
+[19:20:29.43] /o {-1.029 -1.002} {3.001 1.59}
+[19:20:29.94] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:20:29.94] /i de::pan -direction S -multiplier 0.5
+[19:20:29.95] /o {-1.029 -2.298} {3.001 0.294}
+[19:20:31.82] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:20:31.82] /i de::pan -direction N -multiplier 0.5
+[19:20:31.83] /o {-1.029 -1.002} {3.001 1.59}
+[19:20:34.40] /w Warning: Nothing is bound to the 'BackSpace' in the current active set. (WINDOW-015)
+[19:20:35.84] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:20:35.84] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:20:35.84] /o oa:0x267710d0
+[19:20:35.84] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.363 -0.261} -index 0 -intent none] -replace true
+[19:20:35.85] /o oa:0x26b6ba30
+[19:20:37.18] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:20:37.18] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:20:37.18] /o oa:0x26ea1a80
+[19:20:37.18] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.363 -0.261} -index 0 -intent none] -replace true
+[19:20:37.19] /o oa:0x26fc4850
+[19:20:38.20] /w Warning: Nothing is bound to the 'BackSpace' in the current active set. (WINDOW-015)
+[19:20:39.56] /# gi::executeAction deSelectByWindow -in [gi::getWindows 1]
+[19:20:39.56] /i de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {1.365 -0.26} 
+[19:20:40.19] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[19:20:40.19] /i de::endDrag {1.572 -0.228} -window 1
+[19:20:41.02] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:20:41.02] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.349 -0.199} -index 0 -intent none] -replace true
+[19:20:41.02] /o oa:0x268f6920
+[19:20:44.08] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[19:20:44.08] /i ile::delete
+[19:20:47.37] /i gi::setCurrentIndex {lpps} -index {10,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:20:47.37] /i gi::setItemSelection {lpps} -index {10,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:20:47.38] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:20:47.38] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:20:47.38] /# gi::setItemSelection {lpps} -index {10,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:20:47.39] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:20:53.58] /# gi::executeAction deSelectByWindow -in [gi::getWindows 1]
+[19:20:53.58] /i de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {1.235 1.475} 
+[19:20:59.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:20:59.56] /i de::zoom -window 1 -factor 0.5 -center {1.411 -0.964}
+[19:20:59.57] /o {-3.469 -1.039} {4.592 4.145}
+[19:20:59.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:20:59.59] /i de::zoom -window 1 -factor 0.5 -center {1.411 -0.963}
+[19:20:59.60] /o {-8.35 -1.115} {7.772 9.253}
+[19:20:59.62] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:21:00.14] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:00.14] /i de::zoom -window 1 -factor 2.0 -center {1.411 -0.963}
+[19:21:00.14] /o {-3.469 -1.039} {4.592 4.145}
+[19:21:00.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:00.38] /i de::zoom -window 1 -factor 2.0 -center {1.411 -0.963}
+[19:21:00.38] /o {-1.029 -1.001} {3.001 1.591}
+[19:21:01.50] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[19:21:01.50] /i de::pan -direction W -multiplier 0.5
+[19:21:01.50] /o {-3.042 -1.001} {0.988 1.591}
+[19:21:02.80] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[19:21:02.80] /i de::pan -direction E -multiplier 0.5
+[19:21:02.81] /o {-1.029 -1.001} {3.001 1.591}
+[19:21:03.76] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:21:03.76] /i de::pan -direction S -multiplier 0.5
+[19:21:03.77] /o {-1.029 -2.297} {3.001 0.295}
+[19:21:10.49] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[19:21:10.49] /i de::endDrag {1.439 -1.001} -window 1
+[19:21:13.41] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:13.41] /i de::zoom -window 1 -factor 2.0 -center {1.477 -0.441}
+[19:21:13.42] /o {0.224 -1.369} {2.239 -0.073}
+[19:21:13.42] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:13.42] /i de::zoom -window 1 -factor 2.0 -center {1.477 -0.441}
+[19:21:13.43] /o {0.85 -0.905} {1.858 -0.257}
+[19:21:13.46] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:13.46] /i de::zoom -window 1 -factor 2.0 -center {1.477 -0.441}
+[19:21:13.47] /o {1.164 -0.673} {1.668 -0.349}
+[19:21:14.01] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:14.01] /i de::zoom -window 1 -factor 0.5 -center {1.477 -0.441}
+[19:21:14.02] /o {0.85 -0.905} {1.858 -0.257}
+[19:21:14.05] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:14.05] /i de::zoom -window 1 -factor 0.5 -center {1.477 -0.441}
+[19:21:14.06] /o {0.224 -1.369} {2.239 -0.073}
+[19:21:14.19] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:14.19] /i de::zoom -window 1 -factor 0.5 -center {1.477 -0.441}
+[19:21:14.20] /o {-1.029 -2.297} {3.001 0.295}
+[19:21:14.46] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:14.46] /i de::zoom -window 1 -factor 0.5 -center {1.477 -0.441}
+[19:21:14.47] /o {-3.535 -4.153} {4.526 1.031}
+[19:21:15.41] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:15.41] /i de::zoom -window 1 -factor 2.0 -center {1.478 -0.441}
+[19:21:15.42] /o {-1.029 -2.297} {3.002 0.295}
+[19:21:16.87] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:21:16.87] /i de::deselectAll [db::getNext [de::getContexts -window 1]]
+[19:21:23.24] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[19:21:23.24] /i ile::createRectangle
+[19:21:25.07] /# gi::executeAction lePath -in [gi::getWindows 1]
+[19:21:25.08] /i ile::createPath
+[19:21:27.29] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:21:27.29] /i de::pan -direction N -multiplier 0.5
+[19:21:27.30] /o {-1.029 -1.001} {3.002 1.591}
+[19:21:28.11] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:21:28.11] /i de::pan -direction N -multiplier 0.5
+[19:21:28.12] /o {-1.029 0.295} {3.002 2.887}
+[19:21:31.90] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:31.90] /i de::zoom -window 1 -factor 0.5 -center {1.264 1.482}
+[19:21:31.91] /o {-3.321 -0.892} {4.74 4.292}
+[19:21:31.95] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:31.95] /i de::zoom -window 1 -factor 0.5 -center {1.265 1.482}
+[19:21:31.96] /o {-7.908 -3.266} {8.214 7.102}
+[19:21:31.96] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:31.96] /i de::zoom -window 1 -factor 0.5 -center {1.264 1.481}
+[19:21:31.97] /o {-17.079 -8.013} {15.164 12.723}
+[19:21:32.01] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:32.01] /i de::zoom -window 1 -factor 0.5 -center {1.264 1.481}
+[19:21:32.02] /o {-35.422 -17.508} {29.065 23.964}
+[19:21:32.09] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:21:32.09] /i de::zoom -window 1 -factor 0.5 -center {1.265 1.481}
+[19:21:32.10] /o {-72.109 -36.497} {56.864 46.447}
+[19:21:32.82] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:32.82] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:32.83] /o {-35.423 -17.508} {29.064 23.964}
+[19:21:32.93] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:32.93] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:32.93] /o {-17.079 -8.013} {15.164 12.723}
+[19:21:33.35] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:33.35] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:33.36] /o {-7.908 -3.266} {8.214 7.102}
+[19:21:33.36] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:33.36] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:33.37] /o {-3.322 -0.893} {4.739 4.291}
+[19:21:33.63] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:33.63] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:33.63] /o {-1.029 0.294} {3.002 2.886}
+[19:21:34.47] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:34.47] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:34.47] /o {0.118 0.888} {2.133 2.184}
+[19:21:34.99] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:34.99] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:35.00] /o {0.691 1.184} {1.698 1.832}
+[19:21:35.56] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:21:35.56] /i de::zoom -window 1 -factor 2.0 -center {1.264 1.481}
+[19:21:35.57] /o {0.977 1.333} {1.481 1.657}
+[19:21:43.73] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[19:21:43.73] /i de::startDrag {1.23 1.496} -window 1
+[19:21:48.15] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[19:21:48.15] /i de::endDrag {1.41 1.478} -window 1
+[19:21:49.27] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:21:49.27] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:21:51.94] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:21:51.94] /i de::addPoint {1.214 1.474} -window 1
+[19:21:54.65] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:21:54.65] /i de::addPoint {1.411 1.385} -window 1
+[19:21:54.98] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:21:54.98] /i de::addPoint {1.411 1.384} -window 1
+[19:21:55.40] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:21:55.40] /i de::addPoint {1.411 1.384} -window 1
+[19:21:57.77] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:21:57.77] /i de::addPoint {1.408 1.394} -window 1
+[19:21:58.60] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:21:58.60] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:21:59.11] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:21:59.11] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:21:59.82] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[19:21:59.82] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[19:22:01.45] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:22:01.45] /i de::addPoint {1.361 1.561} -window 1
+[19:22:02.30] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[19:22:02.30] /i de::abortCommand -window 1
+[19:22:06.22] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:06.22] /i de::pan -direction S -multiplier 0.5
+[19:22:06.23] /o {0.977 1.171} {1.481 1.495}
+[19:22:06.62] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:06.62] /i de::pan -direction S -multiplier 0.5
+[19:22:06.62] /o {0.977 1.009} {1.481 1.333}
+[19:22:06.76] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:06.76] /i de::pan -direction S -multiplier 0.5
+[19:22:06.76] /o {0.977 0.847} {1.481 1.171}
+[19:22:07.40] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:07.40] /i de::pan -direction S -multiplier 0.5
+[19:22:07.41] /o {0.977 0.685} {1.481 1.009}
+[19:22:08.05] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:22:08.05] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.357 0.813} -index 0 -intent none] -replace true
+[19:22:08.05] /o oa:0x270037e0
+[19:22:08.52] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:22:08.52] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:22:08.52] /o oa:0x2735e8f0
+[19:22:08.52] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.357 0.813} -index 1 -intent none] -replace true
+[19:22:08.53] /o oa:0x268f7170
+[19:22:08.85] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:22:08.85] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:22:08.85] /o oa:0x268045a0
+[19:22:08.85] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.357 0.813} -index 2 -intent none] -replace true
+[19:22:08.86] /o oa:0x2705ca50
+[19:22:09.37] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:22:09.37] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[19:22:09.37] /o oa:0x26ca2530
+[19:22:09.37] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.357 0.813} -index 0 -intent none] -replace true
+[19:22:09.38] /o oa:0x27232840
+[19:22:11.56] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[19:22:11.56] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {1.278 0.874} -index 0 -intent none] -replace true
+[19:22:11.57] /o oa:0x2720cdd0
+[19:22:14.41] /# gi::executeAction leDelete -in [gi::getWindows 1]
+[19:22:14.41] /i ile::delete
+[19:22:15.49] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:15.49] /i de::pan -direction S -multiplier 0.5
+[19:22:15.49] /o {0.977 0.523} {1.481 0.847}
+[19:22:15.67] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:15.67] /i de::pan -direction S -multiplier 0.5
+[19:22:15.68] /o {0.977 0.361} {1.481 0.685}
+[19:22:17.14] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:22:17.14] /i de::zoom -window 1 -factor 0.5 -center {1.278 0.547}
+[19:22:17.15] /o {0.677 0.174} {1.684 0.822}
+[19:22:17.20] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:22:17.20] /i de::zoom -window 1 -factor 0.5 -center {1.277 0.547}
+[19:22:17.20] /o {0.077 -0.198} {2.092 1.098}
+[19:22:17.20] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:22:17.20] /i de::zoom -window 1 -factor 0.5 -center {1.278 0.547}
+[19:22:17.21] /o {-1.125 -0.944} {2.906 1.648}
+[19:22:21.31] /i gi::executeAction leOLPSelect -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:22:21.32] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:22:21.32] /# gi::setItemSelection {lpps} -index {10,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:22:21.33] /i gi::executeAction leOLPSetActiveLPP -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 1]]
+[19:22:22.53] /# gi::executeAction leRectangle -in [gi::getWindows 1]
+[19:22:22.53] /i ile::createRectangle
+[19:22:25.14] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:22:25.14] /i de::zoom -window 1 -factor 0.5 -center {1.234 1.482}
+[19:22:25.14] /o {-3.484 -3.37} {4.577 1.814}
+[19:22:25.82] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:22:25.82] /i de::zoom -window 1 -factor 2.0 -center {1.235 1.482}
+[19:22:25.83] /o {-1.124 -0.944} {2.906 1.648}
+[19:22:25.83] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:22:25.83] /i de::zoom -window 1 -factor 2.0 -center {1.235 1.482}
+[19:22:25.84] /o {0.055 0.269} {2.071 1.565}
+[19:22:26.30] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:22:26.30] /i de::zoom -window 1 -factor 2.0 -center {1.235 1.482}
+[19:22:26.31] /o {0.645 0.876} {1.653 1.524}
+[19:22:26.50] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:22:26.50] /i de::zoom -window 1 -factor 2.0 -center {1.235 1.482}
+[19:22:26.50] /o {0.94 1.179} {1.444 1.503}
+[19:22:30.92] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[19:22:30.92] /i de::startDrag {1.22 1.497} -window 1
+[19:22:37.26] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:37.26] /i de::pan -direction S -multiplier 0.5
+[19:22:37.27] /o {0.94 1.017} {1.444 1.341}
+[19:22:37.78] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:37.78] /i de::pan -direction S -multiplier 0.5
+[19:22:37.79] /o {0.94 0.855} {1.444 1.179}
+[19:22:38.33] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:38.33] /i de::pan -direction S -multiplier 0.5
+[19:22:38.33] /o {0.94 0.693} {1.444 1.017}
+[19:22:38.67] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:38.67] /i de::pan -direction S -multiplier 0.5
+[19:22:38.68] /o {0.94 0.531} {1.444 0.855}
+[19:22:38.93] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:38.93] /i de::pan -direction S -multiplier 0.5
+[19:22:38.94] /o {0.94 0.369} {1.444 0.693}
+[19:22:39.20] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:39.20] /i de::pan -direction S -multiplier 0.5
+[19:22:39.20] /o {0.94 0.207} {1.444 0.531}
+[19:22:39.48] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:39.48] /i de::pan -direction S -multiplier 0.5
+[19:22:39.48] /o {0.94 0.045} {1.444 0.369}
+[19:22:39.80] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:39.80] /i de::pan -direction S -multiplier 0.5
+[19:22:39.81] /o {0.94 -0.117} {1.444 0.207}
+[19:22:40.13] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:40.13] /i de::pan -direction S -multiplier 0.5
+[19:22:40.14] /o {0.94 -0.279} {1.444 0.045}
+[19:22:40.53] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:40.53] /i de::pan -direction S -multiplier 0.5
+[19:22:40.54] /o {0.94 -0.441} {1.444 -0.117}
+[19:22:40.85] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:40.85] /i de::pan -direction S -multiplier 0.5
+[19:22:40.86] /o {0.94 -0.603} {1.444 -0.279}
+[19:22:41.18] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:41.18] /i de::pan -direction S -multiplier 0.5
+[19:22:41.19] /o {0.94 -0.765} {1.444 -0.441}
+[19:22:41.53] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:41.53] /i de::pan -direction S -multiplier 0.5
+[19:22:41.53] /o {0.94 -0.927} {1.444 -0.603}
+[19:22:41.84] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:41.84] /i de::pan -direction S -multiplier 0.5
+[19:22:41.84] /o {0.94 -1.089} {1.444 -0.765}
+[19:22:43.81] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:22:43.81] /i de::pan -direction S -multiplier 0.5
+[19:22:43.82] /o {0.94 -1.251} {1.444 -0.927}
+[19:22:49.48] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[19:22:49.48] /i de::endDrag {1.427 -0.994} -window 1
+[19:22:54.03] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:54.03] /i de::pan -direction N -multiplier 0.5
+[19:22:54.04] /o {0.94 -1.089} {1.444 -0.765}
+[19:22:54.46] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:54.46] /i de::pan -direction N -multiplier 0.5
+[19:22:54.47] /o {0.94 -0.927} {1.444 -0.603}
+[19:22:54.64] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:54.64] /i de::pan -direction N -multiplier 0.5
+[19:22:54.65] /o {0.94 -0.765} {1.444 -0.441}
+[19:22:55.01] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:55.01] /i de::pan -direction N -multiplier 0.5
+[19:22:55.02] /o {0.94 -0.603} {1.444 -0.279}
+[19:22:55.21] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:55.21] /i de::pan -direction N -multiplier 0.5
+[19:22:55.22] /o {0.94 -0.441} {1.444 -0.117}
+[19:22:55.41] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:55.41] /i de::pan -direction N -multiplier 0.5
+[19:22:55.42] /o {0.94 -0.279} {1.444 0.045}
+[19:22:55.59] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:55.59] /i de::pan -direction N -multiplier 0.5
+[19:22:55.59] /o {0.94 -0.117} {1.444 0.207}
+[19:22:56.03] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:56.03] /i de::pan -direction N -multiplier 0.5
+[19:22:56.05] /o {0.94 0.045} {1.444 0.369}
+[19:22:56.32] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:56.32] /i de::pan -direction N -multiplier 0.5
+[19:22:56.33] /o {0.94 0.207} {1.444 0.531}
+[19:22:56.73] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:56.73] /i de::pan -direction N -multiplier 0.5
+[19:22:56.74] /o {0.94 0.369} {1.444 0.693}
+[19:22:56.94] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:56.94] /i de::pan -direction N -multiplier 0.5
+[19:22:56.95] /o {0.94 0.531} {1.444 0.855}
+[19:22:57.15] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:57.15] /i de::pan -direction N -multiplier 0.5
+[19:22:57.15] /o {0.94 0.693} {1.444 1.017}
+[19:22:57.35] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:57.35] /i de::pan -direction N -multiplier 0.5
+[19:22:57.35] /o {0.94 0.855} {1.444 1.179}
+[19:22:58.15] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:58.15] /i de::pan -direction N -multiplier 0.5
+[19:22:58.16] /o {0.94 1.017} {1.444 1.341}
+[19:22:58.60] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:22:58.60] /i de::pan -direction N -multiplier 0.5
+[19:22:58.61] /o {0.94 1.179} {1.444 1.503}
+[19:23:03.86] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[19:23:03.89] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[19:23:10.30] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:23:12.51] /i db::setAttr iconified -of [gi::getFrames 6] -value false
+[19:23:12.54] /i gi::setActiveWindow 6
+[19:23:12.55] /i gi::setActiveWindow 6 -raise true
+[19:23:13.57] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[19:23:13.66] /i gi::setActiveWindow 1
+[19:23:13.66] /i gi::setActiveWindow 1 -raise true
+[19:23:17.24] /i db::setAttr iconified -of [gi::getFrames 3] -value false
+[19:23:17.26] /i gi::setActiveWindow 3
+[19:23:17.26] /i gi::setActiveWindow 3 -raise true
+[19:23:18.19] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[19:23:18.26] /i gi::setActiveWindow 1
+[19:23:18.26] /i gi::setActiveWindow 1 -raise true
+[19:23:25.86] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:23:25.86] /i xt::showDRCSetup -job drc -window 1
+[19:23:27.31] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:23:27.65] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:23:28.75] /# gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:23:29.25] /# xt::physicalVerification::executePve drc 1
+[19:23:29.31] /e Error: Error: The specified object does not have attribute 'defaultScopeName'. (TCL_OBJECT-003) (OPAL-006)
+[19:23:29.46] /r giWindowId 7
+[19:23:29.46] /r giWindowGeometry 800x600
+[19:23:31.10] /e Error: Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:23:31.10] /e Error: The object is invalid. It may have been destroyed or its database may be purged.  (TCL_OBJECT-007)
+[19:23:31.20] /i db::setAttr geometry -of [gi::getFrames 7] -value 800x600+27+43
+[19:23:37.13] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_6
+              /c --- ERROR SUMMARY -----------
+              /c  R.M1.S.1: Minimum spacing=0.14um
+              /c    external1 .......................................... 3 violations found.
+              /c =============================
+              /c 
+[19:23:39.70] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:23:53.67] /i gi::setActiveWindow 7
+[19:23:53.68] /i gi::setActiveWindow 7 -raise true
+[19:23:55.62] /i db::setAttr iconified -of [gi::getFrames 7] -value true
+[19:23:55.63] /i gi::setActiveWindow 1
+[19:23:55.63] /i gi::setActiveWindow 1 -raise true
+[19:24:05.63] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+13+22
+[19:24:07.67] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[19:24:07.67] /i de::pan -direction E -multiplier 0.5
+[19:24:07.68] /o {1.16 -0.057} {1.31 0.039}
+[19:24:08.14] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[19:24:08.14] /i de::pan -direction E -multiplier 0.5
+[19:24:08.15] /o {1.235 -0.057} {1.385 0.039}
+[19:24:08.48] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[19:24:08.48] /i de::pan -direction E -multiplier 0.5
+[19:24:08.49] /o {1.31 -0.057} {1.46 0.039}
+[19:24:08.66] /# gi::executeAction dePanEast -in [gi::getWindows 1]
+[19:24:08.66] /i de::pan -direction E -multiplier 0.5
+[19:24:08.67] /o {1.385 -0.057} {1.535 0.039}
+[19:24:09.10] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[19:24:09.10] /i de::pan -direction W -multiplier 0.5
+[19:24:09.11] /o {1.31 -0.057} {1.46 0.039}
+[19:24:09.31] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[19:24:09.31] /i de::pan -direction W -multiplier 0.5
+[19:24:09.32] /o {1.235 -0.057} {1.385 0.039}
+[19:24:09.50] /# gi::executeAction dePanWest -in [gi::getWindows 1]
+[19:24:09.50] /i de::pan -direction W -multiplier 0.5
+[19:24:09.51] /o {1.16 -0.057} {1.31 0.039}
+[19:24:10.68] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:24:10.68] /i de::zoom -window 1 -factor 0.5 -center {1.283 -0.002}
+[19:24:10.69] /o {1.037 -0.112} {1.337 0.08}
+[19:24:10.81] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:24:10.81] /i de::zoom -window 1 -factor 0.5 -center {1.283 -0.002}
+[19:24:10.82] /o {0.791 -0.223} {1.391 0.163}
+[19:24:10.89] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:24:10.89] /i de::zoom -window 1 -factor 0.5 -center {1.283 -0.002}
+[19:24:10.90] /o {0.3 -0.444} {1.5 0.328}
+[19:24:10.94] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:24:10.94] /i de::zoom -window 1 -factor 0.5 -center {1.283 -0.003}
+[19:24:10.95] /o {-0.684 -0.885} {1.716 0.659}
+[19:24:11.85] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:24:11.85] /i de::zoom -window 1 -factor 2.0 -center {1.284 -0.003}
+[19:24:11.86] /o {0.3 -0.444} {1.5 0.328}
+[19:24:11.91] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:24:11.91] /i de::zoom -window 1 -factor 2.0 -center {1.284 -0.003}
+[19:24:11.91] /o {0.792 -0.223} {1.392 0.162}
+[19:24:13.18] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:24:13.18] /i de::zoom -window 1 -factor 2.0 -center {1.284 -0.003}
+[19:24:13.19] /o {1.038 -0.113} {1.338 0.08}
+[19:24:17.25] /# gi::executeAction leStretch -in [gi::getWindows 1]
+[19:24:17.25] /i ile::stretch
+[19:24:20.98] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[19:24:20.98] /i de::startDrag {1.221 -0.035} -window 1
+[19:24:21.56] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[19:24:21.56] /i de::endDrag {1.231 -0.032} -window 1
+[19:24:22.03] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:24:22.03] /i de::addPoint {1.231 -0.032} -window 1
+[19:24:27.82] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:24:27.82] /i de::addPoint {1.245 -0.031} -window 1
+[19:24:33.29] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[19:24:33.32] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[19:24:39.92] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:39.92] /i de::pan -direction N -multiplier 0.5
+[19:24:39.93] /o {1.038 -0.017} {1.338 0.176}
+[19:24:40.39] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:40.39] /i de::pan -direction N -multiplier 0.5
+[19:24:40.40] /o {1.038 0.079} {1.338 0.272}
+[19:24:40.55] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:40.55] /i de::pan -direction N -multiplier 0.5
+[19:24:40.56] /o {1.038 0.175} {1.338 0.368}
+[19:24:40.70] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:40.70] /i de::pan -direction N -multiplier 0.5
+[19:24:40.71] /o {1.038 0.271} {1.338 0.464}
+[19:24:41.13] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:41.13] /i de::pan -direction N -multiplier 0.5
+[19:24:41.13] /o {1.038 0.367} {1.338 0.56}
+[19:24:41.31] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:41.31] /i de::pan -direction N -multiplier 0.5
+[19:24:41.32] /o {1.038 0.463} {1.338 0.656}
+[19:24:41.49] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:41.49] /i de::pan -direction N -multiplier 0.5
+[19:24:41.49] /o {1.038 0.56} {1.338 0.753}
+[19:24:41.65] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:41.65] /i de::pan -direction N -multiplier 0.5
+[19:24:41.66] /o {1.038 0.656} {1.338 0.849}
+[19:24:41.97] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:41.97] /i de::pan -direction N -multiplier 0.5
+[19:24:41.97] /o {1.038 0.752} {1.338 0.945}
+[19:24:42.13] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:42.13] /i de::pan -direction N -multiplier 0.5
+[19:24:42.13] /o {1.038 0.848} {1.338 1.041}
+[19:24:42.28] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:42.28] /i de::pan -direction N -multiplier 0.5
+[19:24:42.29] /o {1.038 0.944} {1.338 1.137}
+[19:24:42.45] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:42.45] /i de::pan -direction N -multiplier 0.5
+[19:24:42.46] /o {1.038 1.04} {1.338 1.233}
+[19:24:42.82] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:42.82] /i de::pan -direction N -multiplier 0.5
+[19:24:42.82] /o {1.038 1.136} {1.338 1.329}
+[19:24:43.34] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:24:43.34] /i de::pan -direction S -multiplier 0.5
+[19:24:43.35] /o {1.038 1.04} {1.338 1.233}
+[19:24:43.53] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:43.53] /i de::pan -direction N -multiplier 0.5
+[19:24:43.53] /o {1.038 1.136} {1.338 1.329}
+[19:24:43.71] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:43.71] /i de::pan -direction N -multiplier 0.5
+[19:24:43.72] /o {1.038 1.232} {1.338 1.425}
+[19:24:44.05] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:44.05] /i de::pan -direction N -multiplier 0.5
+[19:24:44.06] /o {1.038 1.328} {1.338 1.521}
+[19:24:44.24] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:24:44.24] /i de::pan -direction N -multiplier 0.5
+[19:24:44.25] /o {1.038 1.425} {1.338 1.618}
+[19:24:47.85] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:24:47.85] /i xt::showDRCSetup -job drc -window 1
+[19:24:48.95] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:24:49.32] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:24:52.83] /o oa:0x26f17470
+[19:24:57.49] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:24:58.02] /# xt::physicalVerification::executePve drc 1
+[19:24:58.19] /r giWindowId 8
+[19:24:58.20] /r giWindowGeometry 800x600
+[19:24:58.39] /i gi::setActiveWindow 1
+[19:24:58.40] /i gi::setActiveWindow 1 -raise true
+[19:24:58.44] /i gi::setActiveWindow 8
+[19:24:58.44] /i gi::setActiveWindow 8 -raise true
+[19:24:58.72] /i db::setAttr geometry -of [gi::getFrames 8] -value 800x600+33+42
+[19:25:05.39] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_7
+              /c --- ERROR SUMMARY -----------
+              /c  R.M1.S.1: Minimum spacing=0.14um
+              /c    external1 .......................................... 3 violations found.
+              /c =============================
+              /c 
+[19:25:05.86] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:25:16.13] /i gi::setActiveWindow 8
+[19:25:16.13] /i gi::setActiveWindow 8 -raise true
+[19:25:18.21] /i db::setAttr iconified -of [gi::getFrames 8] -value true
+[19:25:18.21] /i gi::setActiveWindow 1
+[19:25:18.21] /i gi::setActiveWindow 1 -raise true
+[19:25:27.40] /# gi::executeAction deStartDrag -in [gi::getWindows 1]
+[19:25:27.40] /i de::startDrag {1.234 -0.046} -window 1
+[19:25:28.16] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[19:25:28.16] /i de::endDrag {1.24 -0.045} -window 1
+[19:25:28.74] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:25:28.74] /i de::addPoint {1.24 -0.045} -window 1
+[19:25:32.11] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:25:32.11] /i de::addPoint {1.247 -0.045} -window 1
+[19:25:39.73] /# gi::executeAction leRuler -in [gi::getWindows 1]
+[19:25:39.73] /i ile::createRuler
+[19:25:41.78] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:25:41.79] /i de::addPoint {1.1 -0.045} -window 1
+[19:25:49.85] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[19:25:49.85] /i de::addPoint {1.241 -0.044} -window 1
+[19:25:54.90] /i gi::executeAction deSaveDesign -in [gi::getWindows 1]
+[19:25:54.93] /m Information: Saving design 'mylibrary inverter layout'. (DESIGN_WINDOW-004)
+[19:25:59.22] /# gi::executeAction xtDRCSetup -in [gi::getWindows 1]
+[19:25:59.22] /i xt::showDRCSetup -job drc -window 1
+[19:26:00.26] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:26:00.60] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]] -value 445x457+470+45
+[19:26:04.37] /o oa:0x2701fb70
+[19:26:05.64] /i db::setAttr iconified -of [gi::getFrames 8] -value false
+[19:26:05.65] /i gi::setActiveWindow 8
+[19:26:05.65] /i gi::setActiveWindow 8 -raise true
+[19:26:07.04] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[19:26:07.61] /i gi::setActiveWindow 1
+[19:26:07.63] /i gi::setActiveWindow 1 -raise true
+[19:26:09.83] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 1]]
+[19:26:10.32] /# xt::physicalVerification::executePve drc 1
+[19:26:10.45] /r giWindowId 9
+[19:26:10.46] /r giWindowGeometry 800x600
+[19:26:10.59] /i gi::setActiveWindow 1
+[19:26:10.59] /i gi::setActiveWindow 1 -raise true
+[19:26:10.74] /i gi::setActiveWindow 9
+[19:26:10.74] /i gi::setActiveWindow 9 -raise true
+[19:26:11.00] /i db::setAttr geometry -of [gi::getFrames 9] -value 800x600+33+42
+[19:26:17.69] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_8
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[19:26:35.29] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:26:37.22] /i gi::setActiveWindow 0
+[19:26:37.23] /i gi::setActiveWindow 0 -raise true
+[19:26:45.99] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[19:26:46.11] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[19:26:46.40] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[19:26:48.34] /r giDialog gi::pressButton {cancel} -in [gi::getDialogs {deExitDialog}]
+[19:26:50.37] /i gi::setActiveWindow 9
+[19:26:50.38] /i gi::setActiveWindow 9 -raise true
+[19:26:50.39] /i db::setAttr iconified -of [gi::getFrames 0] -value true
+[19:26:52.41] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[19:26:52.46] /i gi::setActiveWindow 1
+[19:26:52.46] /i gi::setActiveWindow 1 -raise true
+[19:26:55.76] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:55.76] /i de::zoom -window 1 -factor 0.5 -center {1.194 -0.032}
+[19:26:55.77] /o {0.972 -0.13} {1.31 0.088}
+[19:26:56.20] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:56.20] /i de::zoom -window 1 -factor 0.5 -center {1.194 -0.033}
+[19:26:56.20] /o {0.75 -0.226} {1.426 0.208}
+[19:26:56.26] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:56.26] /i de::zoom -window 1 -factor 0.5 -center {1.194 -0.032}
+[19:26:56.27] /o {0.306 -0.421} {1.658 0.449}
+[19:26:56.34] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:56.34] /i de::zoom -window 1 -factor 0.5 -center {1.193 -0.032}
+[19:26:56.34] /o {-0.581 -0.809} {2.123 0.929}
+[19:26:56.98] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:56.98] /i de::zoom -window 1 -factor 0.5 -center {1.193 -0.032}
+[19:26:56.99] /o {-2.355 -1.587} {3.053 1.891}
+[19:26:57.02] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:57.02] /i de::zoom -window 1 -factor 0.5 -center {1.193 -0.033}
+[19:26:57.03] /o {-5.903 -3.141} {4.913 3.815}
+[19:26:57.03] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:57.03] /i de::zoom -window 1 -factor 0.5 -center {1.193 -0.032}
+[19:26:57.03] /o {-12.999 -6.25} {8.633 7.662}
+[19:26:57.07] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:26:57.07] /i de::zoom -window 1 -factor 0.5 -center {1.193 -0.033}
+[19:26:57.08] /o {-27.191 -12.467} {16.073 15.357}
+[19:26:57.62] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:26:57.62] /i de::zoom -window 1 -factor 2.0 -center {1.193 -0.033}
+[19:26:57.62] /o {-12.999 -6.25} {8.633 7.662}
+[19:26:57.70] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:26:57.70] /i de::zoom -window 1 -factor 2.0 -center {1.193 -0.033}
+[19:26:57.71] /o {-5.903 -3.141} {4.913 3.814}
+[19:26:57.83] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:26:57.83] /i de::zoom -window 1 -factor 2.0 -center {1.193 -0.033}
+[19:26:57.84] /o {-2.355 -1.587} {3.053 1.891}
+[19:27:07.10] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:27:07.10] /i de::zoom -window 1 -factor 2.0 -center {1.193 -0.033}
+[19:27:07.11] /o {-0.581 -0.81} {2.123 0.929}
+[19:27:08.40] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:27:08.40] /i de::pan -direction N -multiplier 0.5
+[19:27:08.41] /o {-0.581 0.059} {2.123 1.798}
+[19:27:10.19] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:27:10.19] /i de::pan -direction S -multiplier 0.5
+[19:27:10.20] /o {-0.581 -0.81} {2.123 0.929}
+[19:27:10.65] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[19:27:10.65] /i de::pan -direction S -multiplier 0.5
+[19:27:10.66] /o {-0.581 -1.68} {2.123 0.059}
+[19:30:25.63] /# gi::executeAction xtLVSSetup -in [gi::getWindows 1]
+[19:30:25.63] /i xt::showLVSSetup -job lvs -window 1
+[19:30:26.46] /o oa:0x26ac8460
+[19:30:26.99] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:30:27.34] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]] -value 704x485+400+44
+[19:30:41.05] /i gi::setField {/tabGroup/mainTab/jobParametersGroup/viewOutput} -value {true} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:31:22.31] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/netlistingOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:31:23.73] /i gi::setField {/tabGroup/netlistingOptionsTab/schematicOutputNetlist/entryField} -value {/home/cemaj/tarora/eecs168/pvjob_mylibrary.inverter.icv.lvs/inverter.cdesigner.sp} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:31:41.77] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:31:57.09] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:31:57.48] /# xt::physicalVerification::executePve lvs 1
+[19:31:57.53] /m Information: "Starting netlisting for design "mylibrary/inverter/schematic"..." (NETLISTING-010)
+[19:31:57.63] /o No Design Integrity rule violations found in "mylibrary/inverter/schematic"
+[19:31:57.82] /m Information: "Netlisting design "mylibrary/inverter/schematic" finished successfully." (NETLISTING-012)
+[19:31:58.37] /r giWindowId 10
+[19:31:58.37] /r giWindowGeometry 800x600
+[19:31:58.80] /i db::setAttr geometry -of [gi::getFrames 10] -value 800x600+33+42
+[19:32:09.73] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_1
+              /c --- EXTRACT ERROR SUMMARY ---
+              /c LAYOUT ERRORS RESULTS: CLEAN
+              /c --- COMPARE ERROR SUMMARY ---
+              /c 
+              /c =============================
+              /c 
+[19:32:18.45] /i db::setAttr iconified -of [gi::getFrames 10] -value true
+[19:32:18.46] /i gi::setActiveWindow 1
+[19:32:18.46] /i gi::setActiveWindow 1 -raise true
+[19:32:19.90] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[19:32:23.33] /i db::setAttr iconified -of [gi::getFrames 0] -value false
+[19:32:23.33] /i gi::setActiveWindow 0
+[19:32:23.34] /i gi::setActiveWindow 0 -raise true
+[19:32:36.97] /i db::setAttr iconified -of [gi::getFrames 10] -value false
+[19:32:36.97] /i gi::setActiveWindow 10
+[19:32:36.97] /i gi::setActiveWindow 10 -raise true
+[19:32:39.41] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[19:32:39.44] /i gi::setActiveWindow 0
+[19:32:39.45] /i gi::setActiveWindow 0 -raise true
+[19:32:44.88] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:32:48.48] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:32:50.29] /i db::setAttr iconified -of [gi::getFrames 7] -value false
+[19:32:50.30] /i gi::setActiveWindow 7
+[19:32:50.30] /i gi::setActiveWindow 7 -raise true
+[19:32:52.90] /i db::setAttr iconified -of [gi::getFrames 2] -value false
+[19:32:52.90] /i gi::setActiveWindow 2
+[19:32:52.90] /i gi::setActiveWindow 2 -raise true
+[19:32:55.43] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[19:32:55.43] /i gi::setActiveWindow 1
+[19:32:55.44] /i gi::setActiveWindow 1 -raise true
+[19:32:58.92] /# gi::executeAction xtLVSDebug -in [gi::getWindows 1]
+[19:32:58.92] /i xt::physicalVerification::startDebugger lvs 1
+[19:32:59.34] /o oa:0x26d4cc30
+[19:33:05.65] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[19:33:05.66] /i gi::setActiveWindow 2
+[19:33:05.67] /i gi::setActiveWindow 2 -raise true
+[19:33:07.09] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[19:33:07.13] /i gi::setActiveWindow 7
+[19:33:07.14] /i gi::setActiveWindow 7 -raise true
+[19:33:07.62] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[19:33:07.71] /i gi::setActiveWindow 0
+[19:33:07.72] /i gi::setActiveWindow 0 -raise true
+[19:33:14.42] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[19:33:14.42] /i gi::setActiveWindow 1
+[19:33:14.43] /i gi::setActiveWindow 1 -raise true
+[19:33:20.25] /# gi::executeAction xtLVSDebug -in [gi::getWindows 1]
+[19:33:20.25] /i xt::physicalVerification::startDebugger lvs 1
+[19:33:20.39] /o oa:0x2691fb00
+[19:33:30.97] /i gi::executeAction leFocusCanvasToolbar -in [gi::getWindows 1]
+[19:33:35.98] /# gi::executeAction xtLVSSetup -in [gi::getWindows 1]
+[19:33:35.98] /i xt::showLVSSetup -job lvs -window 1
+[19:33:37.12] /o oa:0x26f98340
+[19:33:37.46] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:33:37.72] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]] -value 704x485+400+44
+[19:33:39.31] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 1]]
+[19:33:39.69] /# xt::physicalVerification::executePve lvs 1
+[19:33:39.73] /m Information: "Starting netlisting for design "mylibrary/inverter/schematic"..." (NETLISTING-010)
+[19:33:39.77] /o No Design Integrity rule violations found in "mylibrary/inverter/schematic"
+[19:33:39.82] /m Information: "Netlisting design "mylibrary/inverter/schematic" finished successfully." (NETLISTING-012)
+[19:33:40.04] /r giWindowId 11
+[19:33:40.04] /r giWindowGeometry 800x600
+[19:33:40.42] /i db::setAttr geometry -of [gi::getFrames 11] -value 800x600+33+42
+[19:33:42.75] /i gi::setActiveTab {tabs} -tabName {inverter.LVS_ERRORS} -in [gi::getWindows 11]
+[19:33:46.48] /i gi::setActiveTab {tabs} -tabName {stdout.lvs.log} -in [gi::getWindows 11]
+[19:33:51.01] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_2
+              /c --- EXTRACT ERROR SUMMARY ---
+              /c LAYOUT ERRORS RESULTS: CLEAN
+              /c --- COMPARE ERROR SUMMARY ---
+              /c 
+              /c =============================
+              /c 
+[19:33:54.83] /i gi::setActiveTab {tabs} -tabName {inverter.LVS_ERRORS} -in [gi::getWindows 11]
+[19:33:58.83] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[19:33:58.91] /i gi::setActiveWindow 1
+[19:33:58.92] /i gi::setActiveWindow 1 -raise true
+[19:35:45.43] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[19:35:45.44] /i gi::setActiveWindow 0
+[19:35:45.45] /i gi::setActiveWindow 0 -raise true
+[19:35:48.64] /i db::setAttr iconified -of [gi::getFrames 0] -value true
+[19:38:46.77] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[19:38:46.80] /i gi::setActiveWindow 1
+[19:38:46.81] /i gi::setActiveWindow 1 -raise true
+[19:38:47.35] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.35] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.899}
+[19:38:47.35] /o {-2.457 -2.46} {2.951 1.018}
+[19:38:47.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.70] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.71] /o {-6.209 -4.02} {4.607 2.936}
+[19:38:47.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.71] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.899}
+[19:38:47.71] /o {-13.713 -7.142} {7.919 6.77}
+[19:38:47.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.71] /i de::zoom -window 1 -factor 0.5 -center {1.294 -0.899}
+[19:38:47.72] /o {-28.72 -13.384} {14.544 14.439}
+[19:38:47.72] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.72] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.73] /o {-58.735 -25.869} {27.793 29.778}
+[19:38:47.73] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.73] /i de::zoom -window 1 -factor 0.5 -center {1.294 -0.899}
+[19:38:47.73] /o {-118.764 -50.839} {54.292 60.455}
+[19:38:47.73] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.73] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.899}
+[19:38:47.74] /o {-238.823 -100.779} {107.289 121.809}
+[19:38:47.74] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.74] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.75] /o {-478.941 -200.658} {213.283 244.518}
+[19:38:47.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.75] /i de::zoom -window 1 -factor 0.5 -center {1.294 -0.899}
+[19:38:47.76] /o {-959.176 -400.417} {425.272 489.935}
+[19:38:47.76] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.76] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.77] /o {-1919.647 -799.933} {849.249 980.77}
+[19:38:47.77] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.77] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.78] /w Warning: Could not zoom to factor '0.000153' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:38:47.78] /o {-1921.79 -800.825} {850.195 981.865}
+[19:38:47.78] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.78] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.78] /w Warning: Could not zoom to factor '0.000153' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:38:47.79] /o {-1921.79 -800.825} {850.195 981.865}
+[19:38:47.79] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.79] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.79] /w Warning: Could not zoom to factor '0.000153' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:38:47.80] /o {-1921.79 -800.825} {850.195 981.865}
+[19:38:47.80] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[19:38:47.80] /i de::zoom -window 1 -factor 0.5 -center {1.295 -0.9}
+[19:38:47.80] /w Warning: Could not zoom to factor '0.000153' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:38:47.81] /o {-1921.79 -800.825} {850.195 981.865}
+[19:38:48.60] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:48.60] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:48.60] /o {-960.248 -400.862} {425.745 490.483}
+[19:38:48.83] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:48.83] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:48.84] /o {-479.476 -200.881} {213.52 244.791}
+[19:38:48.91] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:48.91] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:48.92] /o {-239.091 -100.891} {107.407 121.946}
+[19:38:49.32] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:49.32] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:49.33] /o {-118.898 -50.895} {54.351 60.523}
+[19:38:49.37] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:49.37] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:49.38] /o {-58.801 -25.898} {27.823 29.811}
+[19:38:49.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:49.38] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:49.39] /o {-28.753 -13.399} {14.559 14.456}
+[19:38:49.47] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:49.47] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:49.48] /o {-13.729 -7.149} {7.927 6.778}
+[19:38:49.58] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:49.58] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:49.59] /o {-6.217 -4.025} {4.611 2.939}
+[19:38:50.05] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[19:38:50.05] /i de::zoom -window 1 -factor 2.0 -center {1.295 -0.9}
+[19:38:50.06] /o {-2.461 -2.462} {2.953 1.019}
+[19:38:51.24] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[19:38:51.24] /i de::pan -direction N -multiplier 0.5
+[19:38:51.25] /o {-2.461 -0.721} {2.953 2.76}
+[21:52:01.61] /o Process killed
+              /c Information: The process was terminated by "Hangup" signal.
+              /c signal number = 1
+              /c Numeric Stack Dump 
+              /c '76737780 140194304131711 140194304438390 76886276 76886720 76881922 76882126 76882172 76882464 74746041 118681746 118681952 76903448 76917241 76917808 76896533 76897607 76897670 76898240 118760561 118760720 118722762 118722724 118722724 118722724 74106264 140194304146280 140194304146358 140194492948039 140194446458669 140194446448860 140194446390170 140194493180251 140194472091064 140194472092335 140194472092763 140194488330062 140194493180685 140194488154721 140194488155307 140194488172458 73943954 67895282 140194304050132 73908908'
+              /c PID Maps 
+              /c 00400000-0d54c000 r-xp 00000000 08:02 412671200                          /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0d74b000-0e115000 rw-p 0d14b000 08:02 412671200                          /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0e115000-1fc37000 rw-p 00000000 00:00 0 
+              /c 21aa7000-27c93000 rw-p 00000000 00:00 0                                  [heap]
+              /c 7f8158000000-7f8158065000 rw-p 00000000 00:00 0 
+              /c 7f8158065000-7f815c000000 ---p 00000000 00:00 0 
+              /c 7f815c000000-7f815c077000 rw-p 00000000 00:00 0 
+              /c 7f815c077000-7f8160000000 ---p 00000000 00:00 0 
+              /c 7f8160000000-7f8160064000 rw-p 00000000 00:00 0 
+              /c 7f8160064000-7f8164000000 ---p 00000000 00:00 0 
+              /c 7f8164000000-7f8164064000 rw-p 00000000 00:00 0 
+              /c 7f8164064000-7f8168000000 ---p 00000000 00:00 0 
+              /c 7f8168000000-7f8168064000 rw-p 00000000 00:00 0 
+              /c 7f8168064000-7f816c000000 ---p 00000000 00:00 0 
+              /c 7f816cffa000-7f816cffb000 ---p 00000000 00:00 0 
+              /c 7f816cffb000-7f816d7fb000 rw-p 00000000 00:00 0 
+              /c 7f816d7fb000-7f816d7fc000 ---p 00000000 00:00 0 
+              /c 7f816d7fc000-7f816dffc000 rw-p 00000000 00:00 0 
+              /c 7f816dffc000-7f816dffd000 ---p 00000000 00:00 0 
+              /c 7f816dffd000-7f816e7fd000 rw-p 00000000 00:00 0 
+              /c 7f816e7fd000-7f816e7fe000 ---p 00000000 00:00 0 
+              /c 7f816e7fe000-7f816effe000 rw-p 00000000 00:00 0 
+              /c 7f816effe000-7f816efff000 ---p 00000000 00:00 0 
+              /c 7f816efff000-7f816f7ff000 rw-p 00000000 00:00 0 
+              /c 7f816f7ff000-7f816f800000 ---p 00000000 00:00 0 
+              /c 7f816f800000-7f8170000000 rw-p 00000000 00:00 0 
+              /c 7f8170000000-7f8170074000 rw-p 00000000 00:00 0 
+              /c 7f8170074000-7f8174000000 ---p 00000000 00:00 0 
+              /c 7f81742cc000-7f81742ce000 r-xp 00000000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f81742ce000-7f81744cd000 ---p 00002000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f81744cd000-7f81744ce000 r--p 00001000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f81744ce000-7f81744cf000 rw-p 00002000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f81744cf000-7f8174649000 r-xp 00000000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7f8174649000-7f8174848000 ---p 0017a000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7f8174848000-7f8174884000 rw-p 00179000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7f8174884000-7f8174892000 rw-p 00000000 00:00 0 
+              /c 7f8174892000-7f81749ee000 r-xp 00000000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7f81749ee000-7f8174bed000 ---p 0015c000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7f8174bed000-7f8174bf9000 rw-p 0015b000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7f8174bf9000-7f8174bfe000 r-xp 00000000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7f8174bfe000-7f8174dfd000 ---p 00005000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7f8174dfd000-7f8174dfe000 rw-p 00004000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7f8174dfe000-7f8174dff000 ---p 00000000 00:00 0 
+              /c 7f8174dff000-7f8176000000 rw-p 00000000 00:00 0 
+              /c 7f8176000000-7f817600f000 r-xp 00000000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f817600f000-7f817620e000 ---p 0000f000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f817620e000-7f817620f000 r--p 0000e000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f817620f000-7f8176210000 rw-p 0000f000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f8176210000-7f8176227000 r-xp 00000000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f8176227000-7f8176426000 ---p 00017000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f8176426000-7f8176427000 r--p 00016000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f8176427000-7f8176428000 rw-p 00017000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f8176428000-7f817642c000 r-xp 00000000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f817642c000-7f817662b000 ---p 00004000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f817662b000-7f817662c000 r--p 00003000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f817662c000-7f817662d000 rw-p 00004000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f817662d000-7f8176679000 r-xp 00000000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f8176679000-7f8176879000 ---p 0004c000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f8176879000-7f817687b000 r--p 0004c000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f817687b000-7f817687c000 rw-p 0004e000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f817687c000-7f8176880000 r-xp 00000000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f8176880000-7f8176a7f000 ---p 00004000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f8176a7f000-7f8176a80000 r--p 00003000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f8176a80000-7f8176a81000 rw-p 00004000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f8176a81000-7f8176afe000 r-xp 00000000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f8176afe000-7f8176cfd000 ---p 0007d000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f8176cfd000-7f8176cfe000 r--p 0007c000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f8176cfe000-7f8176d01000 rw-p 0007d000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f8176d01000-7f8176d02000 rw-p 00000000 00:00 0 
+              /c 7f8176d02000-7f8176d16000 r-xp 00000000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f8176d16000-7f8176f15000 ---p 00014000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f8176f15000-7f8176f16000 r--p 00013000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f8176f16000-7f8176f17000 rw-p 00014000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f8176f17000-7f8176f3c000 r-xp 00000000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f8176f3c000-7f817713b000 ---p 00025000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f817713b000-7f817713c000 r--p 00024000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f817713c000-7f817713d000 rw-p 00025000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f817713d000-7f8177141000 r-xp 00000000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f8177141000-7f8177340000 ---p 00004000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f8177340000-7f8177341000 r--p 00003000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f8177341000-7f8177342000 rw-p 00004000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f8177342000-7f8177371000 r-xp 00000000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f8177371000-7f8177571000 ---p 0002f000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f8177571000-7f8177572000 r--p 0002f000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f8177572000-7f8177573000 rw-p 00030000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f8177573000-7f8177597000 r-xp 00000000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f8177597000-7f8177796000 ---p 00024000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f8177796000-7f8177797000 r--p 00023000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f8177797000-7f8177798000 rw-p 00024000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f8177798000-7f817779a000 rw-p 00000000 00:00 0 
+              /c 7f817779a000-7f817779c000 r-xp 00000000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f817779c000-7f817799b000 ---p 00002000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f817799b000-7f817799c000 r--p 00001000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f817799c000-7f817799d000 rw-p 00002000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f817799d000-7f81779eb000 r-xp 00000000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f81779eb000-7f8177bea000 ---p 0004e000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f8177bea000-7f8177beb000 r--p 0004d000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f8177beb000-7f8177bec000 rw-p 0004e000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f8177bec000-7f8177bed000 rw-p 00000000 00:00 0 
+              /c 7f8177bed000-7f8177bf0000 r-xp 00000000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f8177bf0000-7f8177def000 ---p 00003000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f8177def000-7f8177df0000 r--p 00002000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f8177df0000-7f8177df1000 rw-p 00003000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f8177df1000-7f8177dfe000 r-xp 00000000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f8177dfe000-7f8177ffe000 ---p 0000d000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f8177ffe000-7f8177fff000 r--p 0000d000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f8177fff000-7f8178000000 rw-p 0000e000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f8178000000-7f8178021000 rw-p 00000000 00:00 0 
+              /c 7f8178021000-7f817c000000 ---p 00000000 00:00 0 
+              /c 7f817c0c9000-7f817c109000 rw-p 00000000 00:00 0 
+              /c 7f817c109000-7f817c121000 r--p 00000000 08:02 172801555                  /usr/share/fonts/default/Type1/n022003l.pfb
+              /c 7f817c121000-7f817c133000 r--p 00000000 08:02 412686441                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/COUR.ttf
+              /c 7f817c133000-7f817c180000 r--p 00000000 08:02 342042148                  /usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf
+              /c 7f817c180000-7f817c1d2000 r--p 00000000 08:02 342042151                  /usr/share/fonts/dejavu/DejaVuSansMono.ttf
+              /c 7f817c1d2000-7f817c1da000 r-xp 00000000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f817c1da000-7f817c3d9000 ---p 00008000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f817c3d9000-7f817c3da000 r--p 00007000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f817c3da000-7f817c3db000 rw-p 00008000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f817c3db000-7f817c409000 rw-p 00000000 00:00 0 
+              /c 7f817c409000-7f817c419000 r-xp 00000000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f817c419000-7f817c618000 ---p 00010000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f817c618000-7f817c619000 r--p 0000f000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f817c619000-7f817c61a000 rw-p 00010000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f817c61a000-7f817c626000 r-xp 00000000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f817c626000-7f817c825000 ---p 0000c000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f817c825000-7f817c826000 r--p 0000b000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f817c826000-7f817c827000 rw-p 0000c000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f817c827000-7f817ca5b000 r-xp 00000000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f817ca5b000-7f817cc5b000 ---p 00234000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f817cc5b000-7f817cc77000 r--p 00234000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f817cc77000-7f817cc84000 rw-p 00250000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f817cc84000-7f817cc88000 rw-p 00000000 00:00 0 
+              /c 7f817cc88000-7f817ccef000 r-xp 00000000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f817ccef000-7f817ceef000 ---p 00067000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f817ceef000-7f817cef3000 r--p 00067000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f817cef3000-7f817cefa000 rw-p 0006b000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f817cefa000-7f817cefd000 r-xp 00000000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f817cefd000-7f817d0fc000 ---p 00003000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f817d0fc000-7f817d0fd000 r--p 00002000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f817d0fd000-7f817d0fe000 rw-p 00003000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f817d0fe000-7f817d117000 r-xp 00000000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f817d117000-7f817d316000 ---p 00019000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f817d316000-7f817d318000 r--p 00018000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f817d318000-7f817d319000 rw-p 0001a000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f817d319000-7f817d3f2000 r-xp 00000000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f817d3f2000-7f817d5f1000 ---p 000d9000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f817d5f1000-7f817d5ff000 r--p 000d8000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f817d5ff000-7f817d602000 rw-p 000e6000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f817d602000-7f817d64c000 r-xp 00000000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f817d64c000-7f817d84c000 ---p 0004a000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f817d84c000-7f817d84d000 r--p 0004a000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f817d84d000-7f817d84f000 rw-p 0004b000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f817d84f000-7f817d8b2000 r-xp 00000000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f817d8b2000-7f817dab2000 ---p 00063000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f817dab2000-7f817dab6000 r--p 00063000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f817dab6000-7f817dab7000 rw-p 00067000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f817dab7000-7f817dab8000 rw-p 00000000 00:00 0 
+              /c 7f817dab8000-7f817dace000 r-xp 00000000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f817dace000-7f817dccd000 ---p 00016000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f817dccd000-7f817dcce000 r--p 00015000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f817dcce000-7f817dccf000 rw-p 00016000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f817dccf000-7f817dcd1000 rw-p 00000000 00:00 0 
+              /c 7f817dcd1000-7f817dcd6000 r-xp 00000000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f817dcd6000-7f817ded6000 ---p 00005000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f817ded6000-7f817ded7000 r--p 00005000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f817ded7000-7f817ded8000 rw-p 00006000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f817ded8000-7f817def1000 r-xp 00000000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7f817def1000-7f817e0f0000 ---p 00019000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7f817e0f0000-7f817e0f2000 rw-p 00018000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7f817e0f2000-7f817e104000 r-xp 00000000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7f817e104000-7f817e304000 ---p 00012000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7f817e304000-7f817e306000 rw-p 00012000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7f817e306000-7f817e3e3000 r-xp 00000000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7f817e3e3000-7f817e5e2000 ---p 000dd000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7f817e5e2000-7f817e5e9000 rw-p 000dc000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7f817e5e9000-7f817e646000 r-xp 00000000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7f817e646000-7f817e845000 ---p 0005d000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7f817e845000-7f817e84a000 rw-p 0005c000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7f817e84a000-7f817e854000 r-xp 00000000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7f817e854000-7f817ea54000 ---p 0000a000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7f817ea54000-7f817ea55000 rw-p 0000a000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7f817ea55000-7f817ea8c000 r-xp 00000000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7f817ea8c000-7f817ec8b000 ---p 00037000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7f817ec8b000-7f817ec8d000 rw-p 00036000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7f817ec8d000-7f817ec8e000 rw-p 00000000 00:00 0 
+              /c 7f817ec8e000-7f817ed3e000 r--p 00000000 08:02 347820209                  /usr/share/fonts/dejavu/DejaVuSans.ttf
+              /c 7f817ed3e000-7f817ed97000 r-xp 00000000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7f817ed97000-7f817ee96000 ---p 00059000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7f817ee96000-7f817ee99000 rw-p 00058000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7f817ee99000-7f817ee9e000 r-xp 00000000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7f817ee9e000-7f817ef9e000 ---p 00005000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7f817ef9e000-7f817ef9f000 rw-p 00005000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7f817ef9f000-7f817effb000 r-xp 00000000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7f817effb000-7f817f0fa000 ---p 0005c000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7f817f0fa000-7f817f0fe000 rw-p 0005b000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7f817f0fe000-7f817f13a000 r-xp 00000000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7f817f13a000-7f817f23a000 ---p 0003c000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7f817f23a000-7f817f23b000 rw-p 0003c000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7f817f23b000-7f817f242000 r-xp 00000000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7f817f242000-7f817f341000 ---p 00007000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7f817f341000-7f817f342000 rw-p 00006000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7f817f342000-7f817f349000 r-xp 00000000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7f817f349000-7f817f448000 ---p 00007000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7f817f448000-7f817f449000 rw-p 00006000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7f817f449000-7f817f44b000 r-xp 00000000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f817f44b000-7f817f64b000 ---p 00002000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f817f64b000-7f817f64c000 r--p 00002000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f817f64c000-7f817f64d000 rw-p 00003000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f817f64d000-7f8185b77000 r--p 00000000 08:02 16790311                   /usr/lib/locale/locale-archive
+              /c 7f8185b77000-7f818637c000 r--s 00000000 08:02 1225344                    /var/lib/sss/mc/passwd
+              /c 7f818637c000-7f8186384000 r-xp 00000000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f8186384000-7f8186583000 ---p 00008000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f8186583000-7f8186584000 r--p 00007000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f8186584000-7f8186585000 rw-p 00008000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f8186585000-7f8186591000 r-xp 00000000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f8186591000-7f8186790000 ---p 0000c000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f8186790000-7f8186791000 r--p 0000b000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f8186791000-7f8186792000 rw-p 0000c000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f8186792000-7f8186798000 rw-p 00000000 00:00 0 
+              /c 7f8186798000-7f818679a000 r-xp 00000000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f818679a000-7f818699a000 ---p 00002000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f818699a000-7f818699b000 r--p 00002000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f818699b000-7f818699c000 rw-p 00003000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f818699c000-7f81869fd000 r-xp 00000000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f81869fd000-7f8186bfc000 ---p 00061000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f8186bfc000-7f8186bfd000 r--p 00060000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f8186bfd000-7f8186c02000 rw-p 00061000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f8186c02000-7f8186c03000 rw-p 00000000 00:00 0 
+              /c 7f8186c03000-7f8186c09000 r-xp 00000000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7f8186c09000-7f8186e08000 ---p 00006000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7f8186e08000-7f8186e09000 rw-p 00005000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7f8186e09000-7f8186e2e000 r-xp 00000000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f8186e2e000-7f818702e000 ---p 00025000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f818702e000-7f8187032000 r--p 00025000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f8187032000-7f8187033000 rw-p 00029000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f8187033000-7f818705a000 r-xp 00000000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f818705a000-7f8187259000 ---p 00027000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f8187259000-7f818725a000 r--p 00026000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f818725a000-7f818725b000 rw-p 00027000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f818725b000-7f8187282000 r-xp 00000000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f8187282000-7f8187482000 ---p 00027000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f8187482000-7f8187484000 r--p 00027000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f8187484000-7f8187485000 rw-p 00029000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f8187485000-7f818748a000 r-xp 00000000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f818748a000-7f8187689000 ---p 00005000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f8187689000-7f818768a000 r--p 00004000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f818768a000-7f818768b000 rw-p 00005000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f818768b000-7f818768f000 r-xp 00000000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f818768f000-7f818788e000 ---p 00004000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f818788e000-7f818788f000 r--p 00003000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f818788f000-7f8187890000 rw-p 00004000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f8187890000-7f81878f0000 r-xp 00000000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f81878f0000-7f8187af0000 ---p 00060000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f8187af0000-7f8187af1000 r--p 00060000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f8187af1000-7f8187af2000 rw-p 00061000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f8187af2000-7f8187cb4000 r-xp 00000000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f8187cb4000-7f8187eb4000 ---p 001c2000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f8187eb4000-7f8187eb8000 r--p 001c2000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f8187eb8000-7f8187eba000 rw-p 001c6000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f8187eba000-7f8187ebf000 rw-p 00000000 00:00 0 
+              /c 7f8187ebf000-7f8187ed4000 r-xp 00000000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7f8187ed4000-7f81880d3000 ---p 00015000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7f81880d3000-7f81880d4000 rw-p 00014000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7f81880d4000-7f81880e2000 r-xp 00000000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7f81880e2000-7f81882e1000 ---p 0000e000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7f81882e1000-7f81882e2000 rw-p 0000d000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7f81882e2000-7f81882e9000 r-xp 00000000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f81882e9000-7f81884e8000 ---p 00007000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f81884e8000-7f81884e9000 r--p 00006000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f81884e9000-7f81884ea000 rw-p 00007000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f81884ea000-7f8188502000 r-xp 00000000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f8188502000-7f8188702000 ---p 00018000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f8188702000-7f8188703000 r--p 00018000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f8188703000-7f8188704000 rw-p 00019000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f8188704000-7f8188705000 rw-p 00000000 00:00 0 
+              /c 7f8188705000-7f818870b000 r-xp 00000000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7f818870b000-7f818890a000 ---p 00006000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7f818890a000-7f818890b000 rw-p 00005000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7f818890b000-7f818890c000 rw-p 00000000 00:00 0 
+              /c 7f818890c000-7f8188958000 r-xp 00000000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7f8188958000-7f8188b57000 ---p 0004c000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7f8188b57000-7f8188b5a000 rw-p 0004b000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7f8188b5a000-7f8188b5c000 rw-p 00000000 00:00 0 
+              /c 7f8188b5c000-7f8188bf9000 r-xp 00000000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7f8188bf9000-7f8188df9000 ---p 0009d000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7f8188df9000-7f8188e01000 rw-p 0009d000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7f8188e01000-7f8188e02000 rw-p 00000000 00:00 0 
+              /c 7f8188e02000-7f8188e3a000 r-xp 00000000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7f8188e3a000-7f818903a000 ---p 00038000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7f818903a000-7f818903d000 rw-p 00038000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7f818903d000-7f8189040000 r-xp 00000000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7f8189040000-7f818923f000 ---p 00003000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7f818923f000-7f8189240000 rw-p 00002000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7f8189240000-7f8189824000 r-xp 00000000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7f8189824000-7f8189a24000 ---p 005e4000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7f8189a24000-7f8189a25000 rw-p 005e4000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7f8189a25000-7f8189b05000 r-xp 00000000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7f8189b05000-7f8189d04000 ---p 000e0000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7f8189d04000-7f8189d11000 rw-p 000df000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7f8189d11000-7f8189d12000 rw-p 00000000 00:00 0 
+              /c 7f8189d12000-7f8189d3f000 r-xp 00000000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7f8189d3f000-7f8189f3e000 ---p 0002d000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7f8189f3e000-7f8189f40000 rw-p 0002c000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7f8189f40000-7f818a146000 r-xp 00000000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7f818a146000-7f818a346000 ---p 00206000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7f818a346000-7f818a361000 rw-p 00206000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7f818a361000-7f818a363000 rw-p 00000000 00:00 0 
+              /c 7f818a363000-7f818a69a000 r-xp 00000000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7f818a69a000-7f818a89a000 ---p 00337000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7f818a89a000-7f818a8be000 rw-p 00337000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7f818a8be000-7f818a8e2000 rw-p 00000000 00:00 0 
+              /c 7f818a8e2000-7f818b0d9000 r-xp 00000000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7f818b0d9000-7f818b2d9000 ---p 007f7000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7f818b2d9000-7f818b331000 rw-p 007f7000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7f818b331000-7f818b338000 rw-p 00000000 00:00 0 
+              /c 7f818b338000-7f818b342000 r-xp 00000000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7f818b342000-7f818b541000 ---p 0000a000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7f818b541000-7f818b542000 rw-p 00009000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7f818b542000-7f818b555000 r-xp 00000000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7f818b555000-7f818b755000 ---p 00013000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7f818b755000-7f818b757000 rw-p 00013000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7f818b757000-7f818b975000 r-xp 00000000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7f818b975000-7f818bb75000 ---p 0021e000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7f818bb75000-7f818bb94000 rw-p 0021e000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7f818bb94000-7f818bba3000 r-xp 00000000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7f818bba3000-7f818bda2000 ---p 0000f000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7f818bda2000-7f818bda4000 rw-p 0000e000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7f818bda4000-7f818bdb6000 r-xp 00000000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7f818bdb6000-7f818bfb6000 ---p 00012000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7f818bfb6000-7f818bfb7000 rw-p 00012000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7f818bfb7000-7f818d287000 r-xp 00000000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7f818d287000-7f818d487000 ---p 012d0000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7f818d487000-7f818d4ac000 rw-p 012d0000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7f818d4ac000-7f818d4d2000 r-xp 00000000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f818d4d2000-7f818d6d1000 ---p 00026000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f818d6d1000-7f818d6d2000 r--p 00025000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f818d6d2000-7f818d6d3000 rw-p 00026000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f818d6d3000-7f818d854000 r-xp 00000000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7f818d854000-7f818da54000 ---p 00181000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7f818da54000-7f818da60000 rw-p 00181000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7f818da60000-7f818da86000 r-xp 00000000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7f818da86000-7f818dc85000 ---p 00026000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7f818dc85000-7f818dc88000 rw-p 00025000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7f818dc88000-7f818dd5a000 r-xp 00000000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7f818dd5a000-7f818df5a000 ---p 000d2000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7f818df5a000-7f818df62000 rw-p 000d2000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7f818df62000-7f818e3c7000 r-xp 00000000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7f818e3c7000-7f818e5c6000 ---p 00465000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7f818e5c6000-7f818e5e6000 rw-p 00464000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7f818e5e6000-7f818e5e7000 rw-p 00000000 00:00 0 
+              /c 7f818e5e7000-7f818e6d1000 r-xp 00000000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f818e6d1000-7f818e8d0000 ---p 000ea000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f818e8d0000-7f818e8d8000 r--p 000e9000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f818e8d8000-7f818e8da000 rw-p 000f1000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f818e8da000-7f818e8ef000 rw-p 00000000 00:00 0 
+              /c 7f818e8ef000-7f818e943000 r-xp 00000000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7f818e943000-7f818eb43000 ---p 00054000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7f818eb43000-7f818eb46000 rw-p 00054000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7f818eb46000-7f818eb5d000 r-xp 00000000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7f818eb5d000-7f818ed5d000 ---p 00017000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7f818ed5d000-7f818ed5e000 rw-p 00017000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7f818ed5e000-7f818edd3000 r-xp 00000000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7f818edd3000-7f818efd3000 ---p 00075000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7f818efd3000-7f818efd7000 rw-p 00075000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7f818efd7000-7f818efd8000 rw-p 00000000 00:00 0 
+              /c 7f818efd8000-7f818f0d0000 r-xp 00000000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7f818f0d0000-7f818f2d0000 ---p 000f8000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7f818f2d0000-7f818f2d6000 rw-p 000f8000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7f818f2d6000-7f818f342000 r-xp 00000000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7f818f342000-7f818f541000 ---p 0006c000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7f818f541000-7f818f545000 rw-p 0006b000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7f818f545000-7f818f55a000 r-xp 00000000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7f818f55a000-7f818f75a000 ---p 00015000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7f818f75a000-7f818f75b000 rw-p 00015000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7f818f75b000-7f818f75c000 rw-p 00000000 00:00 0 
+              /c 7f818f75c000-7f818f772000 r-xp 00000000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7f818f772000-7f818f972000 ---p 00016000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7f818f972000-7f818f973000 rw-p 00016000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7f818f973000-7f818f976000 r-xp 00000000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7f818f976000-7f818fb75000 ---p 00003000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7f818fb75000-7f818fb76000 rw-p 00002000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7f818fb76000-7f818fb86000 r-xp 00000000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7f818fb86000-7f818fd85000 ---p 00010000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7f818fd85000-7f818fd87000 rw-p 0000f000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7f818fd87000-7f818fe88000 r-xp 00000000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f818fe88000-7f8190087000 ---p 00101000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f8190087000-7f8190088000 r--p 00100000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f8190088000-7f8190089000 rw-p 00101000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f8190089000-7f819009e000 r-xp 00000000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f819009e000-7f819029d000 ---p 00015000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f819029d000-7f819029e000 r--p 00014000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f819029e000-7f819029f000 rw-p 00015000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f819029f000-7f81903d7000 r-xp 00000000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f81903d7000-7f81905d7000 ---p 00138000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f81905d7000-7f81905d8000 r--p 00138000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f81905d8000-7f81905dd000 rw-p 00139000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f81905dd000-7f81905ee000 r-xp 00000000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f81905ee000-7f81907ed000 ---p 00011000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f81907ed000-7f81907ee000 r--p 00010000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f81907ee000-7f81907ef000 rw-p 00011000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f81907ef000-7f819082f000 r-xp 00000000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f819082f000-7f8190a2e000 ---p 00040000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f8190a2e000-7f8190a30000 r--p 0003f000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f8190a30000-7f8190a31000 rw-p 00041000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f8190a31000-7f8190aad000 r-xp 00000000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7f8190aad000-7f8190cac000 ---p 0007c000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7f8190cac000-7f8190cb2000 rw-p 0007b000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7f8190cb2000-7f8190cb4000 r-xp 00000000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f8190cb4000-7f8190eb3000 ---p 00002000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f8190eb3000-7f8190eb4000 r--p 00001000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f8190eb4000-7f8190eb5000 rw-p 00002000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f8190eb5000-7f8190ebe000 r-xp 00000000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f8190ebe000-7f81910be000 ---p 00009000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f81910be000-7f81910bf000 r--p 00009000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f81910bf000-7f81910c0000 rw-p 0000a000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f81910c0000-7f81910ca000 r-xp 00000000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f81910ca000-7f81912c9000 ---p 0000a000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f81912c9000-7f81912ca000 r--p 00009000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f81912ca000-7f81912cb000 rw-p 0000a000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f81912cb000-7f81912d4000 r-xp 00000000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f81912d4000-7f81914d4000 ---p 00009000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f81914d4000-7f81914d5000 r--p 00009000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f81914d5000-7f81914d6000 rw-p 0000a000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f81914d6000-7f81914e5000 r-xp 00000000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f81914e5000-7f81916e4000 ---p 0000f000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f81916e4000-7f81916e5000 r--p 0000e000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f81916e5000-7f81916e6000 rw-p 0000f000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f81916e6000-7f81916fd000 r-xp 00000000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f81916fd000-7f81918fc000 ---p 00017000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f81918fc000-7f81918fd000 r--p 00016000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f81918fd000-7f81918fe000 rw-p 00017000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f81918fe000-7f8191902000 rw-p 00000000 00:00 0 
+              /c 7f8191902000-7f8191909000 r-xp 00000000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f8191909000-7f8191b08000 ---p 00007000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f8191b08000-7f8191b09000 r--p 00006000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f8191b09000-7f8191b0a000 rw-p 00007000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f8191b0a000-7f8191c1e000 r-xp 00000000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f8191c1e000-7f8191e1d000 ---p 00114000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f8191e1d000-7f8191e1e000 r--p 00113000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f8191e1e000-7f8191e1f000 rw-p 00114000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f8191e1f000-7f8191e20000 rw-p 00000000 00:00 0 
+              /c 7f8191e20000-7f8191e21000 r-xp 00000000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f8191e21000-7f8192020000 ---p 00001000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f8192020000-7f8192021000 r--p 00000000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f8192021000-7f8192022000 rw-p 00001000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f8192022000-7f8192048000 r-xp 00000000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f8192048000-7f8192247000 ---p 00026000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f8192247000-7f8192248000 r--p 00025000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f8192248000-7f8192249000 rw-p 00026000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f8192249000-7f8192260000 r-xp 00000000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f8192260000-7f819245f000 ---p 00017000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f819245f000-7f8192460000 r--p 00016000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f8192460000-7f8192461000 rw-p 00017000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f8192461000-7f8192465000 rw-p 00000000 00:00 0 
+              /c 7f8192465000-7f81924a3000 r-xp 00000000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7f81924a3000-7f81925a2000 ---p 0003e000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7f81925a2000-7f81925a4000 rw-p 0003d000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7f81925a4000-7f81925fa000 r-xp 00000000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7f81925fa000-7f81926fa000 ---p 00056000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7f81926fa000-7f81926fd000 rw-p 00056000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7f81926fd000-7f819282c000 r-xp 00000000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7f819282c000-7f819292c000 ---p 0012f000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7f819292c000-7f8192934000 rw-p 0012f000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7f8192934000-7f8192bd5000 r-xp 00000000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7f8192bd5000-7f8192cd5000 ---p 002a1000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7f8192cd5000-7f8192ce4000 rw-p 002a1000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7f8192ce4000-7f8193756000 r-xp 00000000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7f8193756000-7f8193856000 ---p 00a72000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7f8193856000-7f81938a7000 rw-p 00a72000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7f81938a7000-7f81938aa000 rw-p 00000000 00:00 0 
+              /c 7f81938aa000-7f81938ac000 r-xp 00000000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f81938ac000-7f8193aac000 ---p 00002000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f8193aac000-7f8193aad000 r--p 00002000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f8193aad000-7f8193aae000 rw-p 00003000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f8193aae000-7f8193ad0000 r-xp 00000000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7f8193ae1000-7f8193af2000 r--p 00000000 08:02 412688650                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisri.ttf
+              /c 7f8193af2000-7f8193b0e000 r--p 00000000 08:02 412692245                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/INFOT_Synopsys.ttf
+              /c 7f8193b0e000-7f8193b20000 r--p 00000000 08:02 412693764                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisb.ttf
+              /c 7f8193b20000-7f8193b21000 ---p 00000000 00:00 0 
+              /c 7f8193b21000-7f8193b3a000 rw-p 00000000 00:00 0 
+              /c 7f8193b3a000-7f8193b46000 r--s 00000000 08:02 938255                     /usr/lib/fontconfig/cache/e3019ca6-b077-457e-a411-5236bffc3af2-le64.cache-7
+              /c 7f8193b46000-7f8193b65000 rw-p 00000000 00:00 0 
+              /c 7f8193b65000-7f8193ba7000 r-xp 00000000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7f8193ba7000-7f8193ca6000 ---p 00042000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7f8193ca6000-7f8193ca9000 rw-p 00041000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7f8193ca9000-7f8193caa000 rw-p 00000000 00:00 0 
+              /c 7f8193cb0000-7f8193cb3000 rw-p 00000000 00:00 0 
+              /c 7f8193cb3000-7f8193cb5000 r--s 00000000 08:02 1111568                    /usr/lib/fontconfig/cache/57cac5c9-dbee-4497-a172-fc40e1ac2ce0-le64.cache-7
+              /c 7f8193cb5000-7f8193cb8000 r--s 00000000 08:02 1111572                    /usr/lib/fontconfig/cache/b07da3e5-a062-45bc-98d3-0973af7354c3-le64.cache-7
+              /c 7f8193cb8000-7f8193cc0000 r--s 00000000 08:02 1111570                    /usr/lib/fontconfig/cache/bcdb72a8-ef49-4f06-af7e-278f1c4329f0-le64.cache-7
+              /c 7f8193cc0000-7f8193cc1000 r--s 00000000 08:02 1111576                    /usr/lib/fontconfig/cache/67c4ea48-27e1-46ad-a590-63427a93bb5f-le64.cache-7
+              /c 7f8193cc1000-7f8193cc6000 r--s 00000000 08:02 1111574                    /usr/lib/fontconfig/cache/e0432c4e-2531-4780-a952-1c44f6029c72-le64.cache-7
+              /c 7f8193cc6000-7f8193ccd000 r--s 00000000 08:02 134235954                  /usr/lib64/gconv/gconv-modules.cache
+              /c 7f8193ccd000-7f8193ccf000 rw-p 00000000 00:00 0 
+              /c 7f8193ccf000-7f8193cd0000 r--p 00021000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7f8193cd0000-7f8193cd1000 rw-p 00022000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7f8193cd1000-7f8193cd2000 rw-p 00000000 00:00 0 
+              /c 7ffd8640b000-7ffd86436000 rw-p 00000000 00:00 0                          [stack]
+              /c 7ffd86469000-7ffd8646b000 r-xp 00000000 00:00 0                          [vdso]
+              /c ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+              /c 

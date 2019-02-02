@@ -1,0 +1,2 @@
+#!/bin/sh
+unset TCL_LIBRARY;  cd /home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.drc; icv -f openaccess -i mylibrary -c nand -oa_view layout -oa_lib_defs /home/cemaj/tarora/eecs168/lib.defs -oa_layer_map /usr/local/synopsys/pdk/SAED_PDK90nm/techfiles/saed_pdk90_layer.map -rc /home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.drc/nand.drc.cdesigner.rc -vue /home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.drc/rules.drc.9m_saed90_icv.drc.rs > /home/cemaj/tarora/eecs168/pvjob_mylibrary.nand.icv.drc/stdout.drc.log 2>&1

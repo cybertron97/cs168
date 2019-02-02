@@ -1,0 +1,5 @@
+[16:07:40.91] /m Information: "Starting netlisting for design "mylibrary/nand/schematic"..."
+               (NETLISTING-010)
+[16:07:40.97] /o No Design Integrity rule violations found in "mylibrary/nand/schematic"
+[16:07:41.15] /m Information: "Netlisting design "mylibrary/nand/schematic" finished
+               successfully." (NETLISTING-012)

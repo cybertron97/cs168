@@ -1,0 +1,1047 @@
+[12:57:36.69] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Fri Feb  1 12:57:34 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[12:57:38.31] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[12:57:38.31] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[12:57:48.61] /# gi::executeAction dmShowNewCellView -in [gi::getWindows 0]
+[12:57:48.61] /i dm::showNewCellView -parent 0
+[12:57:48.65] /o oa:0x2538f310
+[12:57:48.85] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+[12:57:48.99] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView}] -value 588x336+20+417
+[12:57:50.93] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[12:57:50.99] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[12:57:58.60] /i gi::setField {cellName} -value {nand} -in [gi::getDialogs {dmNewCellView}]
+[12:58:02.76] /i gi::setField {cellViewName} -value {schematic} -in [gi::getDialogs {dmNewCellView}]
+[12:58:04.28] /i gi::setCurrentIndex {cells} -index {inverter} -in [gi::getDialogs {dmNewCellView}]
+[12:58:04.37] /i gi::setItemSelection {cells} -index {inverter} -in [gi::getDialogs {dmNewCellView}]
+[12:58:06.95] /i gi::setCurrentIndex {cellCategories} -index {All} -in [gi::getDialogs {dmNewCellView}]
+[12:58:16.84] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView}]
+[12:58:16.85] /# db::getAttr viewType -of [dm::findCellView schematic -cell [dm::findCell inverter -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]]
+[12:58:17.03] /r giDialog gi::setActiveDialog [gi::getDialogs {dmOverwrite}]
+[12:58:17.38] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmOverwrite}] -value 281x89+40+437
+[12:58:18.88] /r giDialog gi::pressButton {cancel} -in [gi::getDialogs {dmOverwrite}]
+[12:58:19.14] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+[12:58:21.67] /i gi::setItemSelection {cells} -index {} -in [gi::getDialogs {dmNewCellView}]
+[12:58:27.96] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView}]
+[12:58:27.97] /# db::getAttr viewType -of [dm::findCellView schematic -cell [dm::findCell nand -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]]
+[12:58:27.97] /# dm::createCellView schematic -cell [dm::findCell nand -lib [ oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]] -viewType schematic
+[12:58:28.02] /# de::open [dm::findCellView schematic -cell [dm::findCell nand -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]] -application seSchematic
+[12:58:28.07] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[12:58:28.08] /o 	############################################
+[12:58:28.08] /o 	--------------------------------------------
+[12:58:28.08] /o 	PDK Name................... : SAED_PDK_90
+[12:58:28.08] /o 	PDK Release Date........... : 29-Sep-2015
+[12:58:28.08] /o 	PDK Custom Designer Version : J-2014.12-2
+[12:58:28.08] /o 	--------------------------------------------
+[12:58:28.08] /o 	############################################
+[12:58:28.08] /o 
+[12:58:28.08] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[12:58:28.08] /o SAED PDK 90: Loaded callbacks
+[12:58:28.09] /o SAED PDK 90: Loaded display resources
+[12:58:28.13] /r giWindowId 1
+[12:58:28.13] /r giWindowGeometry 1088x700
+[12:58:32.70] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+670+30
+[12:58:34.01] /i gi::setActiveWindow 0
+[12:58:34.03] /i gi::setActiveWindow 0 -raise true
+[12:58:36.25] /# gi::executeAction deOpenDesign -in [gi::getWindows 0]
+[12:58:36.25] /i de::showOpenDesign
+[12:58:36.31] /o oa:0x25159d40
+[12:58:36.44] /i gi::setActiveDialog [gi::getDialogs {deOpenDesign}]
+[12:58:36.69] /i db::setAttr geometry -of [gi::getDialogs {deOpenDesign}] -value 645x361+20+417
+[12:58:50.00] /i gi::setCurrentIndex {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[12:58:50.01] /i gi::setItemSelection {designLibs} -index {mylibrary} -in [gi::getDialogs {deOpenDesign}]
+[12:58:51.83] /i gi::setCurrentIndex {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[12:58:51.90] /i gi::setItemSelection {designCells} -index {inverter} -in [gi::getDialogs {deOpenDesign}]
+[12:58:54.62] /i gi::setCurrentIndex {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[12:58:54.63] /i gi::setItemSelection {designViews} -index {schematic} -in [gi::getDialogs {deOpenDesign}]
+[12:58:54.78] /i gi::pressButton {ok} -in [gi::getDialogs {deOpenDesign}]
+[12:58:54.79] /# de::open [dm::findCellView {schematic} -cellName {inverter} -libName {mylibrary}] -readOnly 0
+[12:58:54.90] /r giWindowId 2
+[12:58:54.91] /r giWindowGeometry 1088x700
+[12:59:03.65] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+-266+22
+[12:59:04.18] /i gi::setActiveWindow 1
+[12:59:04.19] /i gi::setActiveWindow 1 -raise true
+[12:59:05.47] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+612+23
+[12:59:05.97] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+621+22
+[12:59:57.99] /i gi::setActiveWindow 2
+[12:59:57.99] /i gi::setActiveWindow 2 -raise true
+[12:59:59.15] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[12:59:59.15] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.08125 2.325} -index 0 -intent none] -replace true
+[12:59:59.15] /o oa:0x25c2caf0
+[13:00:01.97] /# gi::executeAction seCopy -in [gi::getWindows 2]
+[13:00:01.97] /i ise::copy
+[13:00:05.16] /i gi::setActiveWindow 1
+[13:00:05.18] /i gi::setActiveWindow 1 -raise true
+[13:00:06.01] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+575+22
+[13:00:08.17] /i gi::setActiveWindow 2
+[13:00:08.18] /i gi::setActiveWindow 2 -raise true
+[13:00:10.71] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+0+22
+[13:00:15.53] /# gi::executeAction seCopy -in [gi::getWindows 2]
+[13:00:15.53] /i ise::copy
+[13:00:17.87] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+-522+49
+[13:00:19.22] /i gi::setActiveWindow 1
+[13:00:19.22] /i gi::setActiveWindow 1 -raise true
+[13:00:20.17] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+366+22
+[13:00:20.83] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+366+22
+[13:00:21.38] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[13:00:26.87] /# gi::executeAction sePaste -in [gi::getWindows 1]
+[13:00:26.87] /i ise::paste
+[13:00:26.91] /e Error: Clipboard is empty. (CLIPBOARD-001)
+[13:00:28.84] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[13:00:29.58] /# gi::executeAction deSelectByWindow -in [gi::getWindows 1]
+[13:00:29.58] /i de::deselectAll [db::getNext [de::getContexts -window 1]]; ide::selectByRegion -region rectangle -select true -point {0.5 2.625} 
+[13:00:29.98] /# gi::executeAction deEndDrag -in [gi::getWindows 1]
+[13:00:29.98] /i de::endDrag {0.9875 2.43125} -window 1
+[13:00:32.00] /i gi::setActiveWindow 2
+[13:00:32.00] /i gi::setActiveWindow 2 -raise true
+[13:00:34.19] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+-216+44
+[13:00:35.11] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+-7+51
+[13:00:39.17] /# gi::executeAction seCopyClipboard -in [gi::getWindows 2]
+[13:00:39.17] /i de::copy [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]]
+[13:00:39.20] /o oa:0x26c40110
+[13:00:41.25] /i gi::setActiveWindow 1
+[13:00:41.27] /i gi::setActiveWindow 1 -raise true
+[13:00:44.59] /# gi::executeAction sePaste -in [gi::getWindows 1]
+[13:00:44.59] /i ise::paste
+[13:00:47.88] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:00:47.88] /i de::addPoint {0.70625 2.1875} -window 1
+[13:00:50.67] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:00:50.67] /i de::abortCommand -window 1
+[13:01:00.58] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[13:01:00.58] /i de::cycleActiveFigure [gi::getWindows 1] -direction next
+[13:01:00.58] /o oa:0x26cb2f10
+[13:01:00.58] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {0.69375 2.25} -index 0 -intent none] -replace true
+[13:01:00.59] /o oa:0x26c5def0
+[13:01:01.08] /# gi::executeAction seCopy -in [gi::getWindows 1]
+[13:01:01.08] /i ise::copy
+[13:01:03.57] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:01:03.57] /i de::addPoint {1.5375 2.2875} -window 1
+[13:01:04.51] /# gi::executeAction dbPrint -in [gi::getWindows 1]
+[13:01:04.51] /i db::showPrint -parent 1
+[13:01:04.72] /o oa:0x26d532b0
+[13:01:04.87] /i gi::setActiveDialog [gi::getDialogs {dbPrint} -parent [gi::getWindows 1]]
+[13:01:05.19] /i db::setAttr geometry -of [gi::getDialogs {dbPrint} -parent [gi::getWindows 1]] -value 636x658+592+44
+[13:01:06.54] /i gi::closeWindows [gi::getDialogs {dbPrint} -parent [gi::getWindows 1]]
+[13:01:08.58] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[13:01:09.01] /# gi::executeAction sePaste -in [gi::getWindows 1]
+[13:01:09.01] /i ise::paste
+[13:01:09.26] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[13:01:14.33] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:01:14.33] /i de::addPoint {3.51875 2.19375} -window 1
+[13:01:15.35] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:01:15.35] /i de::abortCommand -window 1
+[13:01:18.17] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:01:18.17] /i de::abortCommand -window 1
+[13:01:20.63] /i gi::setActiveWindow 2
+[13:01:20.63] /i gi::setActiveWindow 2 -raise true
+[13:01:24.48] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[13:01:24.48] /i de::addPoint {2.05 1.15} -window 2
+[13:01:25.21] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[13:01:25.21] /i de::addPoint {2.05 1.15} -window 2
+[13:01:27.32] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[13:01:27.32] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.08125 1.225} -index 0 -intent none] -replace true
+[13:01:27.33] /o oa:0x26cbcf70
+[13:01:31.27] /# gi::executeAction seCopyClipboard -in [gi::getWindows 2]
+[13:01:31.27] /i de::copy [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]]
+[13:01:31.30] /o oa:0x26b75d50
+[13:01:33.47] /i gi::setActiveWindow 1
+[13:01:33.47] /i gi::setActiveWindow 1 -raise true
+[13:01:35.54] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[13:01:35.54] /i de::deselectAll [db::getNext [de::getContexts -window 1]]
+[13:01:38.65] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[13:01:39.08] /# gi::executeAction sePaste -in [gi::getWindows 1]
+[13:01:39.08] /i ise::paste
+[13:01:39.95] /i gi::executeAction deObjectActivation -in [gi::getWindows 1]
+[13:01:44.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:01:44.49] /i de::zoom -window 1 -factor 0.5 -center {2.09375 1.16875}
+[13:01:44.50] /o {-4.05 -2.25625} {9.0125 4.96875}
+[13:01:44.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:01:44.57] /i de::zoom -window 1 -factor 0.5 -center {2.0875 1.16875}
+[13:01:44.58] /o {-10.1875 -5.68125} {15.9375 8.76875}
+[13:01:44.58] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:01:44.58] /i de::zoom -window 1 -factor 0.5 -center {2.0875 1.16875}
+[13:01:44.59] /o {-22.4625 -12.53125} {29.7875 16.36875}
+[13:01:44.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:01:44.59] /i de::zoom -window 1 -factor 0.5 -center {2.0875 1.16875}
+[13:01:44.60] /o {-47.0125 -26.23125} {57.4875 31.56875}
+[13:01:44.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:01:44.64] /i de::zoom -window 1 -factor 0.5 -center {2.0875 1.16875}
+[13:01:44.65] /o {-96.1125 -53.63125} {112.8875 61.96875}
+[13:01:44.65] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:01:44.65] /i de::zoom -window 1 -factor 0.5 -center {2.0875 1.16875}
+[13:01:44.66] /o {-194.3125 -108.43125} {223.6875 122.76875}
+[13:01:45.54] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:01:45.54] /i de::zoom -window 1 -factor 2.0 -center {2.0875 1.16875}
+[13:01:45.55] /o {-96.1125 -53.63125} {112.8875 61.96875}
+[13:01:45.69] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:01:45.69] /i de::zoom -window 1 -factor 2.0 -center {2.0875 1.16875}
+[13:01:45.70] /o {-47.0125 -26.23125} {57.4875 31.56875}
+[13:01:45.70] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:01:45.70] /i de::zoom -window 1 -factor 2.0 -center {2.0875 1.16875}
+[13:01:45.71] /o {-22.4625 -12.53125} {29.7875 16.36875}
+[13:01:45.78] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:01:45.78] /i de::zoom -window 1 -factor 2.0 -center {2.0875 1.16875}
+[13:01:45.79] /o {-10.1875 -5.68125} {15.9375 8.76875}
+[13:01:46.01] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:01:46.01] /i de::zoom -window 1 -factor 2.0 -center {2.0875 1.16875}
+[13:01:46.01] /o {-4.05 -2.25625} {9.0125 4.96875}
+[13:01:46.80] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:01:46.80] /i de::zoom -window 1 -factor 2.0 -center {2.0875 1.16875}
+[13:01:46.81] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:01:46.89] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:01:46.89] /i de::zoom -window 1 -factor 2.0 -center {2.0875 1.16875}
+[13:01:46.90] /o {0.55625 0.3125} {3.81875 2.11875}
+[13:01:47.98] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:01:47.98] /i de::zoom -window 1 -factor 0.5 -center {2.0875 1.16875}
+[13:01:47.99] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:01:53.32] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:01:53.32] /i de::pan -direction S -multiplier 0.5
+[13:01:53.33] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:01:53.96] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:01:53.96] /i de::pan -direction N -multiplier 0.5
+[13:01:53.97] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:02:02.42] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:02:02.42] /i de::addPoint {2.28125 0.825} -window 1
+[13:02:03.23] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:02:03.23] /i de::pan -direction S -multiplier 0.5
+[13:02:03.25] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:02:04.85] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:02:04.85] /i de::addPoint {2.2875 -0.98125} -window 1
+[13:02:07.26] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:02:07.26] /i de::abortCommand -window 1
+[13:02:12.29] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:02:12.29] /i de::zoom -window 1 -factor 2.0 -center {3.6875 0.15625}
+[13:02:12.30] /o {1.35625 -1.09375} {4.61875 0.7125}
+[13:02:12.32] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:02:12.32] /i de::zoom -window 1 -factor 2.0 -center {3.6875 0.15625}
+[13:02:12.32] /o {2.51875 -0.46875} {4.15625 0.43125}
+[13:02:12.35] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:02:12.35] /i de::zoom -window 1 -factor 2.0 -center {3.6875 0.15625}
+[13:02:12.35] /o {3.10625 -0.15625} {3.91875 0.29375}
+[13:02:12.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:02:12.38] /i de::zoom -window 1 -factor 2.0 -center {3.6875 0.15625}
+[13:02:12.38] /o {3.39375 0.0} {3.80625 0.225}
+[13:02:12.39] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:02:12.39] /i de::zoom -window 1 -factor 2.0 -center {3.6875 0.15625}
+[13:02:12.40] /o {3.54375 0.075} {3.74375 0.19375}
+[13:02:12.90] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:02:12.90] /i de::zoom -window 1 -factor 0.5 -center {3.6875 0.15625}
+[13:02:12.91] /o {3.39375 0.0} {3.80625 0.225}
+[13:02:12.92] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:02:12.92] /i de::zoom -window 1 -factor 0.5 -center {3.6875 0.15625}
+[13:02:12.93] /o {3.10625 -0.15625} {3.91875 0.29375}
+[13:02:12.94] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:02:12.94] /i de::zoom -window 1 -factor 0.5 -center {3.6875 0.15625}
+[13:02:12.95] /o {2.51875 -0.46875} {4.15625 0.43125}
+[13:02:13.16] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:02:13.16] /i de::zoom -window 1 -factor 0.5 -center {3.6875 0.15625}
+[13:02:13.17] /o {1.35625 -1.09375} {4.61875 0.7125}
+[13:02:13.20] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:02:13.20] /i de::zoom -window 1 -factor 0.5 -center {3.6875 0.15625}
+[13:02:13.21] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:02:13.37] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:02:13.37] /i de::zoom -window 1 -factor 0.5 -center {3.6875 0.15625}
+[13:02:13.38] /o {-5.65 -4.85625} {7.4125 2.36875}
+[13:02:13.48] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:02:13.48] /i de::zoom -window 1 -factor 0.5 -center {3.6875 0.15625}
+[13:02:13.49] /o {-14.9875 -9.86875} {11.1375 4.58125}
+[13:02:14.44] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:02:14.44] /i de::zoom -window 1 -factor 2.0 -center {3.6875 0.15625}
+[13:02:14.45] /o {-5.65 -4.85625} {7.4125 2.36875}
+[13:02:14.59] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:02:14.59] /i de::zoom -window 1 -factor 2.0 -center {3.6875 0.15625}
+[13:02:14.63] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:02:17.03] /i gi::setActiveWindow 2
+[13:02:17.12] /i gi::setActiveWindow 2 -raise true
+[13:02:19.32] /i gi::setActiveWindow 1
+[13:02:19.33] /i gi::setActiveWindow 1 -raise true
+[13:02:19.35] /i db::setAttr iconified -of [gi::getFrames 2] -value true
+[13:02:22.73] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+-96+22
+[13:02:23.77] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+-103+22
+[13:02:24.19] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+-102+22
+[13:03:08.64] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:03:08.64] /i de::pan -direction N -multiplier 0.5
+[13:03:08.67] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:03:56.11] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:03:56.11] /i de::pan -direction S -multiplier 0.5
+[13:03:56.13] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:03:57.63] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:03:57.63] /i de::pan -direction N -multiplier 0.5
+[13:03:57.64] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:03:58.81] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:03:58.81] /i de::pan -direction S -multiplier 0.5
+[13:03:58.82] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:03:59.77] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[13:03:59.77] /i de::deselectAll [db::getNext [de::getContexts -window 1]]
+[13:04:00.87] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:04:00.87] /i de::pan -direction N -multiplier 0.5
+[13:04:00.88] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:04:02.86] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:04:02.86] /i de::pan -direction S -multiplier 0.5
+[13:04:02.88] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:04:03.54] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:04:03.54] /i de::pan -direction N -multiplier 0.5
+[13:04:03.56] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:04:09.46] /i db::setAttr geometry -of [gi::getFrames 1] -value 1088x700+42+22
+[13:04:12.80] /# gi::executeAction seSchCreateWire -in [gi::getWindows 1]
+[13:04:12.81] /i ise::createWire
+[13:04:16.43] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:04:16.43] /i de::addPoint {0.5125 2.2375} -window 1
+[13:04:17.33] /i de::setCursor -point {0.4375 2.25 }
+[13:04:20.74] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:04:20.74] /i de::pan -direction S -multiplier 0.5
+[13:04:20.75] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:04:23.13] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:04:23.13] /i de::addPoint {2.13125 -0.94375} -window 1
+[13:04:33.53] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:04:33.53] /i de::addPoint {2.38125 0.675} -window 1
+[13:04:35.84] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:04:35.84] /i de::addPoint {2.38125 -0.73125} -window 1
+[13:04:48.71] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:04:48.71] /i de::pan -direction N -multiplier 0.5
+[13:04:48.72] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:04:52.11] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:04:52.11] /i de::addPoint {0.76875 2.4375} -window 1
+[13:04:53.15] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:04:53.15] /i de::pan -direction N -multiplier 0.5
+[13:04:53.17] /o {-0.98125 1.2625} {5.55 4.875}
+[13:04:57.41] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:04:57.41] /i de::addPoint {0.75 4} -window 1
+[13:05:02.18] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:05:02.18] /i de::addPoint {3.58125 2.45625} -window 1
+[13:05:05.89] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:05:05.89] /i de::pan -direction S -multiplier 0.5
+[13:05:05.90] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:05:44.21] /# gi::executeAction seSchCreateWire -in [gi::getWindows 1]
+[13:05:44.21] /i ise::createWire
+[13:05:45.99] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:05:45.99] /i de::addPoint {0.7375 2.04375} -window 1
+[13:05:46.37] /i de::setCursor -point {0.75 2 }
+[13:05:51.46] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:05:51.46] /i de::addPoint {0.76875 1.49375} -window 1
+[13:05:51.99] /i de::setCursor -point {0.8125 1.5 }
+[13:05:55.61] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:05:55.61] /i de::addPoint {3.5625 2.05} -window 1
+[13:06:07.86] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:06:07.86] /i de::addPoint {2.375 1.075} -window 1
+[13:06:08.30] /i de::setCursor -point {2.375 1.125 }
+[13:06:10.36] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:06:10.36] /i de::addPoint {2.3625 1.49375} -window 1
+[13:06:26.95] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:06:26.95] /i de::addPoint {2.14375 0.8875} -window 1
+[13:06:27.52] /i de::setCursor -point {2.0625 0.875 }
+[13:06:37.68] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:06:37.68] /i de::addPoint {1.73125 0.8625} -window 1
+[13:06:38.33] /i de::setCursor -point {1.75 0.9375 }
+[13:06:41.26] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:06:41.26] /i de::addPoint {3.30625 2.24375} -window 1
+[13:07:09.40] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:07:09.40] /i de::addPoint {2.39375 0.79375} -window 1
+[13:07:10.06] /i de::setCursor -point {2.4375 0.8125 }
+[13:07:13.32] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:07:13.32] /i de::addPoint {3.525 0.80625} -window 1
+[13:07:14.21] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:07:14.21] /i de::pan -direction S -multiplier 0.5
+[13:07:14.22] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:07:20.76] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:07:20.76] /i de::abortCommand -window 1
+[13:07:22.21] /# gi::executeAction deUndo -in [gi::getWindows 1]
+[13:07:22.21] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 1]]]
+[13:07:34.28] /# gi::executeAction deSelectActive -in [gi::getWindows 1]
+[13:07:34.40] /i de::select [de::getActiveFigure [gi::getWindows 1] -point {2.38125 -1.1375} -index 0 -intent none] -replace true
+[13:07:34.41] /o oa:0x26ca9100
+[13:07:37.61] /# gi::executeAction seSchCreateWire -in [gi::getWindows 1]
+[13:07:37.61] /i ise::createWire
+[13:07:39.55] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:07:39.55] /i de::addPoint {2.38125 -1.125} -window 1
+[13:07:40.38] /i de::setCursor -point {2.375 -1.1875 }
+[13:07:43.03] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:07:43.03] /i de::addPoint {2.4 -1.7375} -window 1
+[13:07:46.39] /i de::setCursor -point {2.25 -1.625 }
+[13:07:46.40] /i de::setCursor -point {2.25 -1.5625 }
+[13:07:46.41] /i de::setCursor -point {2.25 -1.625 }
+[13:07:46.52] /i de::setCursor -point {2.25 -1.6875 }
+[13:07:46.57] /i de::setCursor -point {2.3125 -1.6875 }
+[13:07:46.62] /i de::setCursor -point {2.25 -1.6875 }
+[13:07:47.60] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:07:47.60] /i de::abortCommand -window 1
+[13:07:51.16] /# gi::executeAction seSchCreateWire -in [gi::getWindows 1]
+[13:07:51.16] /i ise::createWire
+[13:07:54.21] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:07:54.21] /i de::addPoint {2.375 0.83125} -window 1
+[13:07:54.62] /i de::setCursor -point {2.4375 0.8125 }
+[13:08:03.15] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:08:03.15] /i de::addPoint {3.39375 0.8} -window 1
+[13:08:03.56] /i de::setCursor -point {3.375 0.75 }
+[13:08:15.42] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:08:15.42] /i de::addPoint {2.3875 -1.575} -window 1
+[13:08:46.86] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:08:46.86] /i de::pan -direction N -multiplier 0.5
+[13:08:46.89] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:08:47.66] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:08:47.66] /i de::pan -direction N -multiplier 0.5
+[13:08:47.68] /o {-0.98125 1.2625} {5.55 4.875}
+[13:08:48.23] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:08:48.23] /i de::pan -direction S -multiplier 0.5
+[13:08:48.24] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:08:48.94] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:08:48.94] /i de::pan -direction N -multiplier 0.5
+[13:08:48.95] /o {-0.98125 1.2625} {5.55 4.875}
+[13:08:52.93] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:08:52.93] /i de::pan -direction S -multiplier 0.5
+[13:08:52.94] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:09:29.67] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:09:29.67] /i de::addPoint {0.75625 2.28125} -window 1
+[13:09:30.09] /i de::setCursor -point {0.8125 2.3125 }
+[13:09:32.06] /i de::setCursor -point {0.875 2.4375 }
+[13:09:32.15] /i de::setCursor -point {0.8125 2.4375 }
+[13:09:32.16] /i de::setCursor -point {0.875 2.4375 }
+[13:09:32.17] /i de::setCursor -point {0.8125 2.4375 }
+[13:09:34.08] /i de::setCursor -point {0.875 2.4375 }
+[13:09:34.10] /i de::setCursor -point {0.9375 2.375 }
+[13:09:35.84] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:09:35.84] /i de::addPoint {1.08125 2.3125} -window 1
+[13:09:36.71] /i de::setCursor -point {1.0625 2.375 }
+[13:09:37.31] /i de::setCursor -point {0.9375 2.4375 }
+[13:09:37.41] /i de::setCursor -point {0.875 2.4375 }
+[13:09:39.24] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:09:39.24] /i de::addPoint {0.75 2.44375} -window 1
+[13:09:48.31] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:09:48.31] /i de::addPoint {3.575 2.2875} -window 1
+[13:09:53.28] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:09:53.28] /i de::addPoint {4.13125 2.31875} -window 1
+[13:09:53.93] /i de::setCursor -point {4.125 2.375 }
+[13:09:56.08] /i de::setCursor -point {4 2.4375 }
+[13:09:56.19] /i de::setCursor -point {3.6875 2.4375 }
+[13:09:57.64] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:09:57.64] /i de::addPoint {3.575 2.4375} -window 1
+[13:10:15.57] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:10:15.57] /i de::pan -direction S -multiplier 0.5
+[13:10:15.58] /o {-0.98125 -2.35} {5.55 1.2625}
+[13:10:18.61] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:10:18.61] /i de::addPoint {2.36875 -1} -window 1
+[13:10:23.27] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:10:23.27] /i de::addPoint {2.93125 -0.99375} -window 1
+[13:10:23.70] /i de::setCursor -point {2.9375 -1.0625 }
+[13:10:23.77] /i de::setCursor -point {2.875 -1.0625 }
+[13:10:23.82] /i de::setCursor -point {2.875 -1.125 }
+[13:10:26.58] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:10:26.58] /i de::addPoint {2.36875 -1.13125} -window 1
+[13:11:43.48] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:11:43.48] /i de::pan -direction N -multiplier 0.5
+[13:11:43.49] /o {-0.98125 -0.54375} {5.55 3.06875}
+[13:11:49.32] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:11:49.32] /i de::addPoint {0.41875 0.375} -window 1
+[13:11:49.86] /i de::setCursor -point {0.375 0.375 }
+[13:11:51.77] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:11:51.77] /i de::addPoint {0.075 0.38125} -window 1
+[13:11:52.78] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:11:52.78] /i de::abortCommand -window 1
+[13:11:56.99] /# gi::executeAction seSchCreateWire -in [gi::getWindows 1]
+[13:11:56.99] /i ise::createWire
+[13:12:01.80] /# gi::executeAction dePanNorth -in [gi::getWindows 1]
+[13:12:01.80] /i de::pan -direction N -multiplier 0.5
+[13:12:01.82] /o {-0.98125 1.2625} {5.55 4.875}
+[13:12:04.99] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:12:04.99] /i de::addPoint {2.24375 3.9875} -window 1
+[13:12:05.52] /i de::setCursor -point {2.25 4.0625 }
+[13:12:07.02] /# gi::executeAction deAddPoint -in [gi::getWindows 1]
+[13:12:07.03] /i de::addPoint {2.25 4.49375} -window 1
+[13:12:08.85] /# gi::executeAction deAbortCommand -in [gi::getWindows 1]
+[13:12:08.85] /i de::abortCommand -window 1
+[13:12:10.03] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.03] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.04] /o {-4.5125 -0.76875} {8.55 6.45625}
+[13:12:10.06] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.06] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.07] /o {-11.575 -4.83125} {14.55 9.61875}
+[13:12:10.07] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.07] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.08] /o {-25.7 -12.95625} {26.55 15.94375}
+[13:12:10.08] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.08] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.09] /o {-53.95 -29.20625} {50.55 28.59375}
+[13:12:10.09] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.09] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.10] /o {-110.45 -61.70625} {98.55 53.89375}
+[13:12:10.10] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.10] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.11] /o {-223.45 -126.70625} {194.55 104.49375}
+[13:12:10.11] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.11] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.12] /o {-449.45 -256.70625} {386.55 205.69375}
+[13:12:10.12] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.12] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.13] /o {-901.45 -516.70625} {770.55 408.09375}
+[13:12:10.13] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.13] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.14] /o {-1805.45 -1036.70625} {1538.55 812.89375}
+[13:12:10.14] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.14] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.15] /w Warning: Could not zoom to factor '0.000977' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[13:12:10.15] /o {-2292.7625 -1317.01875} {1952.55 1031.10625}
+[13:12:10.16] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.16] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.17] /w Warning: Could not zoom to factor '0.000769' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[13:12:10.17] /o {-2292.7625 -1317.01875} {1952.55 1031.10625}
+[13:12:10.17] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.17] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.18] /w Warning: Could not zoom to factor '0.000769' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[13:12:10.19] /o {-2292.7625 -1317.01875} {1952.55 1031.10625}
+[13:12:10.32] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.32] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.33] /w Warning: Could not zoom to factor '0.000769' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[13:12:10.34] /o {-2292.7625 -1317.01875} {1952.55 1031.10625}
+[13:12:10.38] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 1]
+[13:12:10.38] /i de::zoom -window 1 -factor 0.5 -center {2.55 3.29375}
+[13:12:10.39] /w Warning: Could not zoom to factor '0.000769' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[13:12:10.39] /o {-2292.7625 -1317.01875} {1952.55 1031.10625}
+[13:12:10.87] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:10.87] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:10.88] /o {-1145.10625 -656.8625} {977.55 517.2}
+[13:12:10.94] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:10.94] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:10.95] /o {-571.275 -326.7875} {490.05 260.24375}
+[13:12:11.34] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:11.34] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:11.34] /o {-284.3625 -161.74375} {246.3 131.76875}
+[13:12:11.39] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:11.39] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:11.40] /o {-140.90625 -79.225} {124.425 67.53125}
+[13:12:11.40] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:11.40] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:11.41] /o {-69.18125 -37.96875} {63.4875 35.4125}
+[13:12:11.51] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:11.51] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:11.52] /o {-33.3125 -17.3375} {33.01875 19.35625}
+[13:12:11.69] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:11.69] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:11.70] /o {-15.38125 -7.01875} {17.7875 11.325}
+[13:12:12.30] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:12.30] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:12.31] /o {-6.41875 -1.8625} {10.16875 7.30625}
+[13:12:12.48] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:12.48] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:12.49] /o {-1.93125 0.7125} {6.35625 5.3}
+[13:12:12.79] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 1]
+[13:12:12.79] /i de::zoom -window 1 -factor 2.0 -center {2.55 3.29375}
+[13:12:12.80] /o {0.30625 2.00625} {4.45625 4.3}
+[13:12:13.94] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:12:13.94] /i de::pan -direction S -multiplier 0.5
+[13:12:13.96] /o {0.30625 0.8625} {4.45625 3.15625}
+[13:12:14.41] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:12:14.41] /i de::pan -direction S -multiplier 0.5
+[13:12:14.42] /o {0.30625 -0.28125} {4.45625 2.0125}
+[13:12:14.61] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:12:14.61] /i de::pan -direction S -multiplier 0.5
+[13:12:14.63] /o {0.30625 -1.425} {4.45625 0.86875}
+[13:12:15.19] /# gi::executeAction dePanSouth -in [gi::getWindows 1]
+[13:12:15.19] /i de::pan -direction S -multiplier 0.5
+[13:12:15.20] /o {0.30625 -2.56875} {4.45625 -0.275}
+[13:29:57.60] /o Process killed
+              /c Information: The process was terminated by "Hangup" signal.
+              /c signal number = 1
+              /c Numeric Stack Dump 
+              /c '76737780 140076252742271 140076253048847 76875237 76881865 76882126 76882172 76882464 74746041 118681746 118681952 76903448 76917241 76917808 76896533 76897607 76897670 76898240 118760561 118760720 118722762 118722724 118722724 118722724 74106264 140076252756840 140076252756918 140076441558599 140076395069229 140076395059420 140076395000730 140076441790811 140076420701624 140076420702895 140076420703323 140076436940622 140076441791245 140076436765281 140076436765867 140076436783018 73943954 67895282 140076252660692 73908908'
+              /c PID Maps 
+              /c 00400000-0d54c000 r-xp 00000000 08:02 412671200                          /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0d74b000-0e115000 rw-p 0d14b000 08:02 412671200                          /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0e115000-1fc37000 rw-p 00000000 00:00 0 
+              /c 21aa7000-26dda000 rw-p 00000000 00:00 0                                  [heap]
+              /c 7f65dc000000-7f65dc064000 rw-p 00000000 00:00 0 
+              /c 7f65dc064000-7f65e0000000 ---p 00000000 00:00 0 
+              /c 7f65e4000000-7f65e4064000 rw-p 00000000 00:00 0 
+              /c 7f65e4064000-7f65e8000000 ---p 00000000 00:00 0 
+              /c 7f65e8000000-7f65e8064000 rw-p 00000000 00:00 0 
+              /c 7f65e8064000-7f65ec000000 ---p 00000000 00:00 0 
+              /c 7f65ec000000-7f65ec064000 rw-p 00000000 00:00 0 
+              /c 7f65ec064000-7f65f0000000 ---p 00000000 00:00 0 
+              /c 7f65f1438000-7f65f1439000 ---p 00000000 00:00 0 
+              /c 7f65f1439000-7f65f1c39000 rw-p 00000000 00:00 0 
+              /c 7f65f1c39000-7f65f1c3a000 ---p 00000000 00:00 0 
+              /c 7f65f1c3a000-7f65f243a000 rw-p 00000000 00:00 0 
+              /c 7f65f243a000-7f65f243b000 ---p 00000000 00:00 0 
+              /c 7f65f243b000-7f65f2c3b000 rw-p 00000000 00:00 0 
+              /c 7f65f2c3b000-7f65f2c3c000 ---p 00000000 00:00 0 
+              /c 7f65f2c3c000-7f65f343c000 rw-p 00000000 00:00 0 
+              /c 7f65f343c000-7f65f343d000 ---p 00000000 00:00 0 
+              /c 7f65f343d000-7f65f3c3d000 rw-p 00000000 00:00 0 
+              /c 7f65f3c3d000-7f65f3db7000 r-xp 00000000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7f65f3db7000-7f65f3fb6000 ---p 0017a000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7f65f3fb6000-7f65f3ff2000 rw-p 00179000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7f65f3ff2000-7f65f4000000 rw-p 00000000 00:00 0 
+              /c 7f65f4000000-7f65f4074000 rw-p 00000000 00:00 0 
+              /c 7f65f4074000-7f65f8000000 ---p 00000000 00:00 0 
+              /c 7f65f803a000-7f65f803c000 r-xp 00000000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f65f803c000-7f65f823b000 ---p 00002000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f65f823b000-7f65f823c000 r--p 00001000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f65f823c000-7f65f823d000 rw-p 00002000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7f65f823d000-7f65f8399000 r-xp 00000000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7f65f8399000-7f65f8598000 ---p 0015c000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7f65f8598000-7f65f85a4000 rw-p 0015b000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7f65f85a4000-7f65f85a9000 r-xp 00000000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7f65f85a9000-7f65f87a8000 ---p 00005000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7f65f87a8000-7f65f87a9000 rw-p 00004000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7f65f87a9000-7f65f87aa000 ---p 00000000 00:00 0 
+              /c 7f65f87aa000-7f65f99ab000 rw-p 00000000 00:00 0 
+              /c 7f65f99ab000-7f65f99ba000 r-xp 00000000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f65f99ba000-7f65f9bb9000 ---p 0000f000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f65f9bb9000-7f65f9bba000 r--p 0000e000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f65f9bba000-7f65f9bbb000 rw-p 0000f000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7f65f9bbb000-7f65f9bd2000 r-xp 00000000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f65f9bd2000-7f65f9dd1000 ---p 00017000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f65f9dd1000-7f65f9dd2000 r--p 00016000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f65f9dd2000-7f65f9dd3000 rw-p 00017000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7f65f9dd3000-7f65f9dd7000 r-xp 00000000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f65f9dd7000-7f65f9fd6000 ---p 00004000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f65f9fd6000-7f65f9fd7000 r--p 00003000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f65f9fd7000-7f65f9fd8000 rw-p 00004000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7f65f9fd8000-7f65fa024000 r-xp 00000000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f65fa024000-7f65fa224000 ---p 0004c000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f65fa224000-7f65fa226000 r--p 0004c000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f65fa226000-7f65fa227000 rw-p 0004e000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7f65fa227000-7f65fa22b000 r-xp 00000000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f65fa22b000-7f65fa42a000 ---p 00004000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f65fa42a000-7f65fa42b000 r--p 00003000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f65fa42b000-7f65fa42c000 rw-p 00004000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7f65fa42c000-7f65fa4a9000 r-xp 00000000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f65fa4a9000-7f65fa6a8000 ---p 0007d000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f65fa6a8000-7f65fa6a9000 r--p 0007c000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f65fa6a9000-7f65fa6ac000 rw-p 0007d000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7f65fa6ac000-7f65fa6ad000 rw-p 00000000 00:00 0 
+              /c 7f65fa6ad000-7f65fa6c1000 r-xp 00000000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f65fa6c1000-7f65fa8c0000 ---p 00014000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f65fa8c0000-7f65fa8c1000 r--p 00013000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f65fa8c1000-7f65fa8c2000 rw-p 00014000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7f65fa8c2000-7f65fa8e7000 r-xp 00000000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f65fa8e7000-7f65faae6000 ---p 00025000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f65faae6000-7f65faae7000 r--p 00024000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f65faae7000-7f65faae8000 rw-p 00025000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7f65faae8000-7f65faaec000 r-xp 00000000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f65faaec000-7f65faceb000 ---p 00004000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f65faceb000-7f65facec000 r--p 00003000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f65facec000-7f65faced000 rw-p 00004000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7f65faced000-7f65fad1c000 r-xp 00000000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f65fad1c000-7f65faf1c000 ---p 0002f000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f65faf1c000-7f65faf1d000 r--p 0002f000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f65faf1d000-7f65faf1e000 rw-p 00030000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7f65faf1e000-7f65faf42000 r-xp 00000000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f65faf42000-7f65fb141000 ---p 00024000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f65fb141000-7f65fb142000 r--p 00023000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f65fb142000-7f65fb143000 rw-p 00024000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7f65fb143000-7f65fb145000 rw-p 00000000 00:00 0 
+              /c 7f65fb145000-7f65fb147000 r-xp 00000000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f65fb147000-7f65fb346000 ---p 00002000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f65fb346000-7f65fb347000 r--p 00001000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f65fb347000-7f65fb348000 rw-p 00002000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7f65fb348000-7f65fb396000 r-xp 00000000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f65fb396000-7f65fb595000 ---p 0004e000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f65fb595000-7f65fb596000 r--p 0004d000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f65fb596000-7f65fb597000 rw-p 0004e000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7f65fb597000-7f65fb598000 rw-p 00000000 00:00 0 
+              /c 7f65fb598000-7f65fb59b000 r-xp 00000000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f65fb59b000-7f65fb79a000 ---p 00003000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f65fb79a000-7f65fb79b000 r--p 00002000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f65fb79b000-7f65fb79c000 rw-p 00003000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7f65fb79c000-7f65fb7a9000 r-xp 00000000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f65fb7a9000-7f65fb9a9000 ---p 0000d000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f65fb9a9000-7f65fb9aa000 r--p 0000d000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f65fb9aa000-7f65fb9ab000 rw-p 0000e000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7f65fb9ab000-7f65fb9b3000 r-xp 00000000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f65fb9b3000-7f65fbbb2000 ---p 00008000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f65fbbb2000-7f65fbbb3000 r--p 00007000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f65fbbb3000-7f65fbbb4000 rw-p 00008000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7f65fbbb4000-7f65fbbe2000 rw-p 00000000 00:00 0 
+              /c 7f65fbbe2000-7f65fbbf2000 r-xp 00000000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f65fbbf2000-7f65fbdf1000 ---p 00010000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f65fbdf1000-7f65fbdf2000 r--p 0000f000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f65fbdf2000-7f65fbdf3000 rw-p 00010000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7f65fbdf3000-7f65fbdff000 r-xp 00000000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f65fbdff000-7f65fbffe000 ---p 0000c000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f65fbffe000-7f65fbfff000 r--p 0000b000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f65fbfff000-7f65fc000000 rw-p 0000c000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7f65fc000000-7f65fc021000 rw-p 00000000 00:00 0 
+              /c 7f65fc021000-7f6600000000 ---p 00000000 00:00 0 
+              /c 7f66000b4000-7f66000f4000 rw-p 00000000 00:00 0 
+              /c 7f66000f4000-7f6600141000 r--p 00000000 08:02 342042148                  /usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf
+              /c 7f6600141000-7f6600193000 r--p 00000000 08:02 342042151                  /usr/share/fonts/dejavu/DejaVuSansMono.ttf
+              /c 7f6600193000-7f66003c7000 r-xp 00000000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f66003c7000-7f66005c7000 ---p 00234000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f66005c7000-7f66005e3000 r--p 00234000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f66005e3000-7f66005f0000 rw-p 00250000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7f66005f0000-7f66005f4000 rw-p 00000000 00:00 0 
+              /c 7f66005f4000-7f660065b000 r-xp 00000000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f660065b000-7f660085b000 ---p 00067000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f660085b000-7f660085f000 r--p 00067000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f660085f000-7f6600866000 rw-p 0006b000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7f6600866000-7f6600869000 r-xp 00000000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f6600869000-7f6600a68000 ---p 00003000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f6600a68000-7f6600a69000 r--p 00002000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f6600a69000-7f6600a6a000 rw-p 00003000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7f6600a6a000-7f6600a83000 r-xp 00000000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f6600a83000-7f6600c82000 ---p 00019000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f6600c82000-7f6600c84000 r--p 00018000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f6600c84000-7f6600c85000 rw-p 0001a000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7f6600c85000-7f6600d5e000 r-xp 00000000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f6600d5e000-7f6600f5d000 ---p 000d9000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f6600f5d000-7f6600f6b000 r--p 000d8000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f6600f6b000-7f6600f6e000 rw-p 000e6000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7f6600f6e000-7f6600fb8000 r-xp 00000000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f6600fb8000-7f66011b8000 ---p 0004a000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f66011b8000-7f66011b9000 r--p 0004a000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f66011b9000-7f66011bb000 rw-p 0004b000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7f66011bb000-7f660121e000 r-xp 00000000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f660121e000-7f660141e000 ---p 00063000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f660141e000-7f6601422000 r--p 00063000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f6601422000-7f6601423000 rw-p 00067000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7f6601423000-7f6601424000 rw-p 00000000 00:00 0 
+              /c 7f6601424000-7f660143a000 r-xp 00000000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f660143a000-7f6601639000 ---p 00016000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f6601639000-7f660163a000 r--p 00015000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f660163a000-7f660163b000 rw-p 00016000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7f660163b000-7f660163d000 rw-p 00000000 00:00 0 
+              /c 7f660163d000-7f6601642000 r-xp 00000000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f6601642000-7f6601842000 ---p 00005000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f6601842000-7f6601843000 r--p 00005000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f6601843000-7f6601844000 rw-p 00006000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7f6601844000-7f660185d000 r-xp 00000000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7f660185d000-7f6601a5c000 ---p 00019000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7f6601a5c000-7f6601a5e000 rw-p 00018000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7f6601a5e000-7f6601a70000 r-xp 00000000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7f6601a70000-7f6601c70000 ---p 00012000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7f6601c70000-7f6601c72000 rw-p 00012000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7f6601c72000-7f6601d4f000 r-xp 00000000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7f6601d4f000-7f6601f4e000 ---p 000dd000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7f6601f4e000-7f6601f55000 rw-p 000dc000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7f6601f55000-7f6601fb2000 r-xp 00000000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7f6601fb2000-7f66021b1000 ---p 0005d000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7f66021b1000-7f66021b6000 rw-p 0005c000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7f66021b6000-7f66021c0000 r-xp 00000000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7f66021c0000-7f66023c0000 ---p 0000a000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7f66023c0000-7f66023c1000 rw-p 0000a000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7f66023c1000-7f66023f8000 r-xp 00000000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7f66023f8000-7f66025f7000 ---p 00037000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7f66025f7000-7f66025f9000 rw-p 00036000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7f66025f9000-7f66025fa000 rw-p 00000000 00:00 0 
+              /c 7f66025fa000-7f66026aa000 r--p 00000000 08:02 347820209                  /usr/share/fonts/dejavu/DejaVuSans.ttf
+              /c 7f66026aa000-7f6602703000 r-xp 00000000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7f6602703000-7f6602802000 ---p 00059000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7f6602802000-7f6602805000 rw-p 00058000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7f6602805000-7f660280a000 r-xp 00000000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7f660280a000-7f660290a000 ---p 00005000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7f660290a000-7f660290b000 rw-p 00005000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7f660290b000-7f6602967000 r-xp 00000000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7f6602967000-7f6602a66000 ---p 0005c000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7f6602a66000-7f6602a6a000 rw-p 0005b000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7f6602a6a000-7f6602aa6000 r-xp 00000000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7f6602aa6000-7f6602ba6000 ---p 0003c000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7f6602ba6000-7f6602ba7000 rw-p 0003c000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7f6602ba7000-7f6602bae000 r-xp 00000000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7f6602bae000-7f6602cad000 ---p 00007000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7f6602cad000-7f6602cae000 rw-p 00006000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7f6602cae000-7f6602cb5000 r-xp 00000000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7f6602cb5000-7f6602db4000 ---p 00007000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7f6602db4000-7f6602db5000 rw-p 00006000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7f6602db5000-7f6602db7000 r-xp 00000000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f6602db7000-7f6602fb7000 ---p 00002000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f6602fb7000-7f6602fb8000 r--p 00002000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f6602fb8000-7f6602fb9000 rw-p 00003000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7f6602fb9000-7f66094e3000 r--p 00000000 08:02 16790311                   /usr/lib/locale/locale-archive
+              /c 7f66094e3000-7f6609ce8000 r--s 00000000 08:02 1225344                    /var/lib/sss/mc/passwd
+              /c 7f6609ce8000-7f6609cf0000 r-xp 00000000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f6609cf0000-7f6609eef000 ---p 00008000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f6609eef000-7f6609ef0000 r--p 00007000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f6609ef0000-7f6609ef1000 rw-p 00008000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7f6609ef1000-7f6609efd000 r-xp 00000000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f6609efd000-7f660a0fc000 ---p 0000c000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f660a0fc000-7f660a0fd000 r--p 0000b000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f660a0fd000-7f660a0fe000 rw-p 0000c000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7f660a0fe000-7f660a104000 rw-p 00000000 00:00 0 
+              /c 7f660a104000-7f660a106000 r-xp 00000000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f660a106000-7f660a306000 ---p 00002000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f660a306000-7f660a307000 r--p 00002000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f660a307000-7f660a308000 rw-p 00003000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7f660a308000-7f660a369000 r-xp 00000000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f660a369000-7f660a568000 ---p 00061000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f660a568000-7f660a569000 r--p 00060000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f660a569000-7f660a56e000 rw-p 00061000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7f660a56e000-7f660a56f000 rw-p 00000000 00:00 0 
+              /c 7f660a56f000-7f660a575000 r-xp 00000000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7f660a575000-7f660a774000 ---p 00006000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7f660a774000-7f660a775000 rw-p 00005000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7f660a775000-7f660a79a000 r-xp 00000000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f660a79a000-7f660a99a000 ---p 00025000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f660a99a000-7f660a99e000 r--p 00025000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f660a99e000-7f660a99f000 rw-p 00029000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7f660a99f000-7f660a9c6000 r-xp 00000000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f660a9c6000-7f660abc5000 ---p 00027000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f660abc5000-7f660abc6000 r--p 00026000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f660abc6000-7f660abc7000 rw-p 00027000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7f660abc7000-7f660abee000 r-xp 00000000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f660abee000-7f660adee000 ---p 00027000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f660adee000-7f660adf0000 r--p 00027000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f660adf0000-7f660adf1000 rw-p 00029000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7f660adf1000-7f660adf6000 r-xp 00000000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f660adf6000-7f660aff5000 ---p 00005000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f660aff5000-7f660aff6000 r--p 00004000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f660aff6000-7f660aff7000 rw-p 00005000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7f660aff7000-7f660affb000 r-xp 00000000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f660affb000-7f660b1fa000 ---p 00004000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f660b1fa000-7f660b1fb000 r--p 00003000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f660b1fb000-7f660b1fc000 rw-p 00004000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7f660b1fc000-7f660b25c000 r-xp 00000000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f660b25c000-7f660b45c000 ---p 00060000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f660b45c000-7f660b45d000 r--p 00060000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f660b45d000-7f660b45e000 rw-p 00061000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7f660b45e000-7f660b620000 r-xp 00000000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f660b620000-7f660b820000 ---p 001c2000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f660b820000-7f660b824000 r--p 001c2000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f660b824000-7f660b826000 rw-p 001c6000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7f660b826000-7f660b82b000 rw-p 00000000 00:00 0 
+              /c 7f660b82b000-7f660b840000 r-xp 00000000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7f660b840000-7f660ba3f000 ---p 00015000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7f660ba3f000-7f660ba40000 rw-p 00014000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7f660ba40000-7f660ba4e000 r-xp 00000000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7f660ba4e000-7f660bc4d000 ---p 0000e000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7f660bc4d000-7f660bc4e000 rw-p 0000d000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7f660bc4e000-7f660bc55000 r-xp 00000000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f660bc55000-7f660be54000 ---p 00007000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f660be54000-7f660be55000 r--p 00006000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f660be55000-7f660be56000 rw-p 00007000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7f660be56000-7f660be6e000 r-xp 00000000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f660be6e000-7f660c06e000 ---p 00018000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f660c06e000-7f660c06f000 r--p 00018000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f660c06f000-7f660c070000 rw-p 00019000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7f660c070000-7f660c071000 rw-p 00000000 00:00 0 
+              /c 7f660c071000-7f660c077000 r-xp 00000000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7f660c077000-7f660c276000 ---p 00006000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7f660c276000-7f660c277000 rw-p 00005000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7f660c277000-7f660c278000 rw-p 00000000 00:00 0 
+              /c 7f660c278000-7f660c2c4000 r-xp 00000000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7f660c2c4000-7f660c4c3000 ---p 0004c000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7f660c4c3000-7f660c4c6000 rw-p 0004b000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7f660c4c6000-7f660c4c8000 rw-p 00000000 00:00 0 
+              /c 7f660c4c8000-7f660c565000 r-xp 00000000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7f660c565000-7f660c765000 ---p 0009d000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7f660c765000-7f660c76d000 rw-p 0009d000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7f660c76d000-7f660c76e000 rw-p 00000000 00:00 0 
+              /c 7f660c76e000-7f660c7a6000 r-xp 00000000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7f660c7a6000-7f660c9a6000 ---p 00038000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7f660c9a6000-7f660c9a9000 rw-p 00038000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7f660c9a9000-7f660c9ac000 r-xp 00000000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7f660c9ac000-7f660cbab000 ---p 00003000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7f660cbab000-7f660cbac000 rw-p 00002000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7f660cbac000-7f660d190000 r-xp 00000000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7f660d190000-7f660d390000 ---p 005e4000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7f660d390000-7f660d391000 rw-p 005e4000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7f660d391000-7f660d471000 r-xp 00000000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7f660d471000-7f660d670000 ---p 000e0000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7f660d670000-7f660d67d000 rw-p 000df000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7f660d67d000-7f660d67e000 rw-p 00000000 00:00 0 
+              /c 7f660d67e000-7f660d6ab000 r-xp 00000000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7f660d6ab000-7f660d8aa000 ---p 0002d000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7f660d8aa000-7f660d8ac000 rw-p 0002c000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7f660d8ac000-7f660dab2000 r-xp 00000000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7f660dab2000-7f660dcb2000 ---p 00206000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7f660dcb2000-7f660dccd000 rw-p 00206000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7f660dccd000-7f660dccf000 rw-p 00000000 00:00 0 
+              /c 7f660dccf000-7f660e006000 r-xp 00000000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7f660e006000-7f660e206000 ---p 00337000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7f660e206000-7f660e22a000 rw-p 00337000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7f660e22a000-7f660e24e000 rw-p 00000000 00:00 0 
+              /c 7f660e24e000-7f660ea45000 r-xp 00000000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7f660ea45000-7f660ec45000 ---p 007f7000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7f660ec45000-7f660ec9d000 rw-p 007f7000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7f660ec9d000-7f660eca4000 rw-p 00000000 00:00 0 
+              /c 7f660eca4000-7f660ecae000 r-xp 00000000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7f660ecae000-7f660eead000 ---p 0000a000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7f660eead000-7f660eeae000 rw-p 00009000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7f660eeae000-7f660eec1000 r-xp 00000000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7f660eec1000-7f660f0c1000 ---p 00013000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7f660f0c1000-7f660f0c3000 rw-p 00013000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7f660f0c3000-7f660f2e1000 r-xp 00000000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7f660f2e1000-7f660f4e1000 ---p 0021e000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7f660f4e1000-7f660f500000 rw-p 0021e000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7f660f500000-7f660f50f000 r-xp 00000000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7f660f50f000-7f660f70e000 ---p 0000f000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7f660f70e000-7f660f710000 rw-p 0000e000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7f660f710000-7f660f722000 r-xp 00000000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7f660f722000-7f660f922000 ---p 00012000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7f660f922000-7f660f923000 rw-p 00012000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7f660f923000-7f6610bf3000 r-xp 00000000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7f6610bf3000-7f6610df3000 ---p 012d0000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7f6610df3000-7f6610e18000 rw-p 012d0000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7f6610e18000-7f6610e3e000 r-xp 00000000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f6610e3e000-7f661103d000 ---p 00026000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f661103d000-7f661103e000 r--p 00025000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f661103e000-7f661103f000 rw-p 00026000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7f661103f000-7f66111c0000 r-xp 00000000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7f66111c0000-7f66113c0000 ---p 00181000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7f66113c0000-7f66113cc000 rw-p 00181000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7f66113cc000-7f66113f2000 r-xp 00000000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7f66113f2000-7f66115f1000 ---p 00026000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7f66115f1000-7f66115f4000 rw-p 00025000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7f66115f4000-7f66116c6000 r-xp 00000000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7f66116c6000-7f66118c6000 ---p 000d2000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7f66118c6000-7f66118ce000 rw-p 000d2000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7f66118ce000-7f6611d33000 r-xp 00000000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7f6611d33000-7f6611f32000 ---p 00465000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7f6611f32000-7f6611f52000 rw-p 00464000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7f6611f52000-7f6611f53000 rw-p 00000000 00:00 0 
+              /c 7f6611f53000-7f661203d000 r-xp 00000000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f661203d000-7f661223c000 ---p 000ea000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f661223c000-7f6612244000 r--p 000e9000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f6612244000-7f6612246000 rw-p 000f1000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7f6612246000-7f661225b000 rw-p 00000000 00:00 0 
+              /c 7f661225b000-7f66122af000 r-xp 00000000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7f66122af000-7f66124af000 ---p 00054000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7f66124af000-7f66124b2000 rw-p 00054000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7f66124b2000-7f66124c9000 r-xp 00000000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7f66124c9000-7f66126c9000 ---p 00017000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7f66126c9000-7f66126ca000 rw-p 00017000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7f66126ca000-7f661273f000 r-xp 00000000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7f661273f000-7f661293f000 ---p 00075000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7f661293f000-7f6612943000 rw-p 00075000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7f6612943000-7f6612944000 rw-p 00000000 00:00 0 
+              /c 7f6612944000-7f6612a3c000 r-xp 00000000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7f6612a3c000-7f6612c3c000 ---p 000f8000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7f6612c3c000-7f6612c42000 rw-p 000f8000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7f6612c42000-7f6612cae000 r-xp 00000000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7f6612cae000-7f6612ead000 ---p 0006c000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7f6612ead000-7f6612eb1000 rw-p 0006b000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7f6612eb1000-7f6612ec6000 r-xp 00000000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7f6612ec6000-7f66130c6000 ---p 00015000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7f66130c6000-7f66130c7000 rw-p 00015000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7f66130c7000-7f66130c8000 rw-p 00000000 00:00 0 
+              /c 7f66130c8000-7f66130de000 r-xp 00000000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7f66130de000-7f66132de000 ---p 00016000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7f66132de000-7f66132df000 rw-p 00016000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7f66132df000-7f66132e2000 r-xp 00000000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7f66132e2000-7f66134e1000 ---p 00003000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7f66134e1000-7f66134e2000 rw-p 00002000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7f66134e2000-7f66134f2000 r-xp 00000000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7f66134f2000-7f66136f1000 ---p 00010000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7f66136f1000-7f66136f3000 rw-p 0000f000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7f66136f3000-7f66137f4000 r-xp 00000000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f66137f4000-7f66139f3000 ---p 00101000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f66139f3000-7f66139f4000 r--p 00100000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f66139f4000-7f66139f5000 rw-p 00101000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7f66139f5000-7f6613a0a000 r-xp 00000000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f6613a0a000-7f6613c09000 ---p 00015000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f6613c09000-7f6613c0a000 r--p 00014000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f6613c0a000-7f6613c0b000 rw-p 00015000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7f6613c0b000-7f6613d43000 r-xp 00000000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f6613d43000-7f6613f43000 ---p 00138000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f6613f43000-7f6613f44000 r--p 00138000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f6613f44000-7f6613f49000 rw-p 00139000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7f6613f49000-7f6613f5a000 r-xp 00000000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f6613f5a000-7f6614159000 ---p 00011000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f6614159000-7f661415a000 r--p 00010000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f661415a000-7f661415b000 rw-p 00011000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7f661415b000-7f661419b000 r-xp 00000000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f661419b000-7f661439a000 ---p 00040000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f661439a000-7f661439c000 r--p 0003f000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f661439c000-7f661439d000 rw-p 00041000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7f661439d000-7f6614419000 r-xp 00000000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7f6614419000-7f6614618000 ---p 0007c000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7f6614618000-7f661461e000 rw-p 0007b000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7f661461e000-7f6614620000 r-xp 00000000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f6614620000-7f661481f000 ---p 00002000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f661481f000-7f6614820000 r--p 00001000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f6614820000-7f6614821000 rw-p 00002000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7f6614821000-7f661482a000 r-xp 00000000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f661482a000-7f6614a2a000 ---p 00009000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f6614a2a000-7f6614a2b000 r--p 00009000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f6614a2b000-7f6614a2c000 rw-p 0000a000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7f6614a2c000-7f6614a36000 r-xp 00000000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f6614a36000-7f6614c35000 ---p 0000a000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f6614c35000-7f6614c36000 r--p 00009000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f6614c36000-7f6614c37000 rw-p 0000a000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7f6614c37000-7f6614c40000 r-xp 00000000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f6614c40000-7f6614e40000 ---p 00009000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f6614e40000-7f6614e41000 r--p 00009000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f6614e41000-7f6614e42000 rw-p 0000a000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7f6614e42000-7f6614e51000 r-xp 00000000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f6614e51000-7f6615050000 ---p 0000f000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f6615050000-7f6615051000 r--p 0000e000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f6615051000-7f6615052000 rw-p 0000f000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7f6615052000-7f6615069000 r-xp 00000000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f6615069000-7f6615268000 ---p 00017000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f6615268000-7f6615269000 r--p 00016000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f6615269000-7f661526a000 rw-p 00017000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7f661526a000-7f661526e000 rw-p 00000000 00:00 0 
+              /c 7f661526e000-7f6615275000 r-xp 00000000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f6615275000-7f6615474000 ---p 00007000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f6615474000-7f6615475000 r--p 00006000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f6615475000-7f6615476000 rw-p 00007000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7f6615476000-7f661558a000 r-xp 00000000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f661558a000-7f6615789000 ---p 00114000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f6615789000-7f661578a000 r--p 00113000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f661578a000-7f661578b000 rw-p 00114000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7f661578b000-7f661578c000 rw-p 00000000 00:00 0 
+              /c 7f661578c000-7f661578d000 r-xp 00000000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f661578d000-7f661598c000 ---p 00001000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f661598c000-7f661598d000 r--p 00000000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f661598d000-7f661598e000 rw-p 00001000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7f661598e000-7f66159b4000 r-xp 00000000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f66159b4000-7f6615bb3000 ---p 00026000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f6615bb3000-7f6615bb4000 r--p 00025000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f6615bb4000-7f6615bb5000 rw-p 00026000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7f6615bb5000-7f6615bcc000 r-xp 00000000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f6615bcc000-7f6615dcb000 ---p 00017000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f6615dcb000-7f6615dcc000 r--p 00016000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f6615dcc000-7f6615dcd000 rw-p 00017000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7f6615dcd000-7f6615dd1000 rw-p 00000000 00:00 0 
+              /c 7f6615dd1000-7f6615e0f000 r-xp 00000000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7f6615e0f000-7f6615f0e000 ---p 0003e000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7f6615f0e000-7f6615f10000 rw-p 0003d000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7f6615f10000-7f6615f66000 r-xp 00000000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7f6615f66000-7f6616066000 ---p 00056000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7f6616066000-7f6616069000 rw-p 00056000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7f6616069000-7f6616198000 r-xp 00000000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7f6616198000-7f6616298000 ---p 0012f000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7f6616298000-7f66162a0000 rw-p 0012f000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7f66162a0000-7f6616541000 r-xp 00000000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7f6616541000-7f6616641000 ---p 002a1000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7f6616641000-7f6616650000 rw-p 002a1000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7f6616650000-7f66170c2000 r-xp 00000000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7f66170c2000-7f66171c2000 ---p 00a72000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7f66171c2000-7f6617213000 rw-p 00a72000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7f6617213000-7f6617216000 rw-p 00000000 00:00 0 
+              /c 7f6617216000-7f6617218000 r-xp 00000000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f6617218000-7f6617418000 ---p 00002000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f6617418000-7f6617419000 r--p 00002000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f6617419000-7f661741a000 rw-p 00003000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7f661741a000-7f661743c000 r-xp 00000000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7f661744d000-7f6617469000 r--p 00000000 08:02 412692245                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/INFOT_Synopsys.ttf
+              /c 7f6617469000-7f661747a000 r--p 00000000 08:02 412688650                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisri.ttf
+              /c 7f661747a000-7f661748c000 r--p 00000000 08:02 412693764                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisb.ttf
+              /c 7f661748c000-7f661748d000 ---p 00000000 00:00 0 
+              /c 7f661748d000-7f66174a6000 rw-p 00000000 00:00 0 
+              /c 7f66174a6000-7f66174b2000 r--s 00000000 08:02 938255                     /usr/lib/fontconfig/cache/e3019ca6-b077-457e-a411-5236bffc3af2-le64.cache-7
+              /c 7f66174b2000-7f66174d1000 rw-p 00000000 00:00 0 
+              /c 7f66174d1000-7f6617513000 r-xp 00000000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7f6617513000-7f6617612000 ---p 00042000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7f6617612000-7f6617615000 rw-p 00041000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7f6617615000-7f6617616000 rw-p 00000000 00:00 0 
+              /c 7f661761c000-7f661761f000 rw-p 00000000 00:00 0 
+              /c 7f661761f000-7f6617621000 r--s 00000000 08:02 1111568                    /usr/lib/fontconfig/cache/57cac5c9-dbee-4497-a172-fc40e1ac2ce0-le64.cache-7
+              /c 7f6617621000-7f6617624000 r--s 00000000 08:02 1111572                    /usr/lib/fontconfig/cache/b07da3e5-a062-45bc-98d3-0973af7354c3-le64.cache-7
+              /c 7f6617624000-7f661762c000 r--s 00000000 08:02 1111570                    /usr/lib/fontconfig/cache/bcdb72a8-ef49-4f06-af7e-278f1c4329f0-le64.cache-7
+              /c 7f661762c000-7f661762d000 r--s 00000000 08:02 1111576                    /usr/lib/fontconfig/cache/67c4ea48-27e1-46ad-a590-63427a93bb5f-le64.cache-7
+              /c 7f661762d000-7f6617632000 r--s 00000000 08:02 1111574                    /usr/lib/fontconfig/cache/e0432c4e-2531-4780-a952-1c44f6029c72-le64.cache-7
+              /c 7f6617632000-7f6617639000 r--s 00000000 08:02 134235954                  /usr/lib64/gconv/gconv-modules.cache
+              /c 7f6617639000-7f661763b000 rw-p 00000000 00:00 0 
+              /c 7f661763b000-7f661763c000 r--p 00021000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7f661763c000-7f661763d000 rw-p 00022000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7f661763d000-7f661763e000 rw-p 00000000 00:00 0 
+              /c 7ffedf0f0000-7ffedf112000 rw-p 00000000 00:00 0                          [stack]
+              /c 7ffedf1d6000-7ffedf1d8000 r-xp 00000000 00:00 0                          [vdso]
+              /c ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+              /c 

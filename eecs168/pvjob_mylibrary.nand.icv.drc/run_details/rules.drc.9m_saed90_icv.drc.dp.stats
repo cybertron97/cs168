@@ -1,0 +1,29 @@
+
+                               OVERALL   STATUS
+                              ------------------
+
+                                                          User     System   Average
+Task                      Running     Idle    Utilized    Time      Time     Load
+------------------------  --------  --------  --------  --------  --------  -------
+bender(0)                 00:00:02  00:00:00    87.3%      0.00      0.00    2.54
+bender(1)                 00:00:01  00:00:00    63.5%      0.00      0.00 
+------------------------  --------  --------  --------  --------  --------  -------
+Overall utilization                             76.7%
+Total preprocessing time  00:00:01
+
+
+
+                          POST-PREPROCESSING STATUS
+                        -----------------------------
+
+                                                          FILE I/O(seconds)     Disk Swap(mem to disk)
+Task                      Running     Idle    Utilized    Copying   Waiting     Tot Swapouts
+------------------------  --------  --------  --------    --------  --------    --------
+bender(0)                 00:00:01  00:00:00    87.4%       0.000     0.000       0
+bender(1)                 00:00:00  00:00:00    96.4%       0.000     0.000       0
+------------------------  --------  --------  --------    --------  --------    --------
+Overall utilization                             89.0%
+Total time for file copying                                 0.000
+Average time for file waiting                                         0.000
+
+

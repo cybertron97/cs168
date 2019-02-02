@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Created by Custom Designer (TM), build , on Fri Feb  1 16:07:41 2019-->
+<file-format version="1.0" name="netlisting-timestamps">
+<module contextID="switched: mylibrary nand schematic vl: auCdl schematic symbol sl: auCdl" isSubcircuit="1" viewStopList="auCdl" timestamp="757" viewSearchList="auCdl schematic symbol">
+<parameterizedConnections>
+<connectDefs timestamp="0"/>
+<oaAssignments timestamp="0"/>
+<dbAssignValue timestamp="0"/>
+<dbAssignAssignment timestamp="0"/>
+</parameterizedConnections>
+<parameters timestamp="2"/>
+<LineageParams/>
+<ParentParams/>
+<Terms timestamp="647"/>
+<PortOrder>ABOUTVDDVSS</PortOrder>
+</module>
+</file-format>

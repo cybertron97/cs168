@@ -1,0 +1,20 @@
+{netlist nand.sch_out
+{version 2 1 0}
+{net_global VSS VDD12 VSS12 VDD22 VDD }
+{cell nand
+{port A B OUT VDD VSS}
+{inst MM2=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin OUT=DRN A=GATE net13=SRC VSS=BULK}}
+{inst MM3=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net13=DRN B=GATE VSS=SRC VSS=BULK}}
+{inst MM1=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin OUT=DRN B=GATE VDD=SRC VDD=BULK}}
+{inst MM0=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin OUT=DRN A=GATE VDD=SRC VDD=BULK}}
+}
+
+}
