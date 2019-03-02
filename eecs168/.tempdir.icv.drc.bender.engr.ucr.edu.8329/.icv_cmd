@@ -1,0 +1,4 @@
+icv /usr/local/synopsys/pdk/SAED_PDK90nm/icv/drc/rules.drc.9m_saed90_icv.rs /home/cemaj/tarora/eecs168/.tempdir.icv.drc.bender.engr.ucr.edu.8329/cdesigner.vue -rc_out 
+schematic=UNSPECIFIED
+ICV_HOME_DIR=/usr/local/synopsys/icvalidator/K-2015.12-3
+ICV_INCLUDES=UNSET

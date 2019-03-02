@@ -1,0 +1,6 @@
+#! /bin/sh
+total=0
+pathsize=`du -s --block-size=1 /home/cemaj/tarora/eecs168/.tempdir.icv.drc.bender.engr.ucr.edu.8329/run_details | awk '{print $1}'`
+total=$(($total+$pathsize))
+echo $total > /home/cemaj/tarora/eecs168/.tempdir.icv.drc.bender.engr.ucr.edu.8329/run_details/duse_master.tmp && \
+mv /home/cemaj/tarora/eecs168/.tempdir.icv.drc.bender.engr.ucr.edu.8329/run_details/duse_master.tmp /home/cemaj/tarora/eecs168/.tempdir.icv.drc.bender.engr.ucr.edu.8329/run_details/duse_master

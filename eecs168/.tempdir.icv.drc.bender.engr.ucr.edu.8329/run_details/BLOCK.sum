@@ -1,0 +1,19 @@
+                                        
+                                IC Validator (R)
+                                        
+           Version K-2015.12-3 for linux64 - Dec 17, 2015 cl#3052145
+                                        
+                    Copyright (c) 1996 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Called as: icv -rc_out /home/cemaj/tarora/eecs168/.tempdir.icv.drc.bender.engr.ucr.edu.8329/cdesigner.vue /usr/local/synopsys/pdk/SAED_PDK90nm/icv/drc/rules.drc.9m_saed90_icv.rs
+
+
+Loaded runset from cache: /home/cemaj/tarora/.icvrscache/79697e6e643e9d62267163a3aa62e50a-bender.engr.ucr.edu-8612.rscache
+Cached Runset Compile Time=0:00:04 User=3.63 Sys=0.06 Mem=242.277
+
+Virtual Machine Init Time=0:00:00 User=0.00 Sys=0.01 Mem=242.277
+
