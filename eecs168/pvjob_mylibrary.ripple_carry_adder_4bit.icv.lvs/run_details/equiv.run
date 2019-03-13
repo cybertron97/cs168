@@ -1,0 +1,5 @@
+
+/* top equiv */
+equiv_options({{"ripple_carry_adder_4bit", "ripple_carry_adder_4bit"}});
+
+/* Generated system equivalence points are listed in this section */

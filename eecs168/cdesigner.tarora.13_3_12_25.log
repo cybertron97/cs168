@@ -1,0 +1,515 @@
+[12:23:05.04] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Wed Mar 13 12:23:02 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[12:23:06.50] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[12:23:06.50] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[12:23:22.12] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[12:23:22.12] /i dm::showLibraryManager
+[12:23:22.12] /r giWindowId 1
+[12:23:22.12] /r giWindowGeometry 660x600+50+50
+[12:23:22.21] /o oa:0x22a7f340
+[12:23:23.73] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[12:23:23.74] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[12:23:26.18] /i gi::setCurrentIndex {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[12:23:26.29] /i gi::setItemSelection {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[12:23:27.98] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[12:23:27.99] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[12:23:28.15] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[12:23:28.21] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[12:23:28.23] /o 	############################################
+[12:23:28.23] /o 	--------------------------------------------
+[12:23:28.23] /o 	PDK Name................... : SAED_PDK_90
+[12:23:28.23] /o 	PDK Release Date........... : 29-Sep-2015
+[12:23:28.23] /o 	PDK Custom Designer Version : J-2014.12-2
+[12:23:28.23] /o 	--------------------------------------------
+[12:23:28.23] /o 	############################################
+[12:23:28.23] /o 
+[12:23:28.23] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[12:23:28.23] /o SAED PDK 90: Loaded callbacks
+[12:23:28.24] /o SAED PDK 90: Loaded display resources
+[12:23:28.32] /r giWindowId 2
+[12:23:28.32] /r giWindowGeometry 1088x700
+[12:23:29.53] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 190x550
+[12:23:36.19] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[12:23:36.80] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[12:23:37.29] /i gi::setActiveWindow 1
+[12:23:37.29] /i gi::setActiveWindow 1 -raise true
+[12:23:41.47] /i gi::setItemSelection {views} -index {} -in [gi::getWindows 1]
+[12:23:42.87] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[12:23:42.89] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[12:23:43.02] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[12:23:43.10] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[12:23:43.20] /r giWindowId 3
+[12:23:43.20] /r giWindowGeometry 1088x700
+[12:23:47.80] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[12:23:48.38] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[12:23:48.49] /i gi::setActiveWindow 1
+[12:23:48.49] /i gi::setActiveWindow 1 -raise true
+[12:23:50.74] /i gi::setCurrentIndex {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[12:23:50.78] /i gi::setItemSelection {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[12:23:50.91] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[12:23:50.94] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[12:23:51.00] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[12:23:51.04] /r giWindowId 4
+[12:23:51.04] /r giWindowGeometry 1088x700
+[12:23:52.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.59] /i de::zoom -window 4 -factor 0.5 -center {2.06875 2.1}
+[12:23:52.60] /o {-1.55625 -2.0125} {8.89375 3.7625}
+[12:23:52.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.64] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.10625}
+[12:23:52.65] /o {-5.18125 -6.13125} {15.70625 5.41875}
+[12:23:52.65] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.65] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.66] /o {-12.44375 -14.36875} {29.34375 8.74375}
+[12:23:52.66] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.66] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.10625}
+[12:23:52.67] /o {-26.95625 -30.84375} {56.60625 15.38125}
+[12:23:52.67] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.67] /i de::zoom -window 4 -factor 0.5 -center {2.06875 2.10625}
+[12:23:52.68] /o {-55.9875 -63.79375} {111.15 28.65625}
+[12:23:52.68] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.68] /i de::zoom -window 4 -factor 0.5 -center {2.06875 2.10625}
+[12:23:52.70] /o {-114.04375 -129.6875} {220.23125 55.2}
+[12:23:52.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.70] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.71] /o {-230.15625 -261.475} {438.38125 108.3}
+[12:23:52.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.71] /i de::zoom -window 4 -factor 0.5 -center {2.06875 2.1}
+[12:23:52.72] /o {-462.3875 -525.05} {874.7 214.5}
+[12:23:52.72] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.72] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.10625}
+[12:23:52.73] /o {-926.85 -1052.2125} {1747.325 426.9}
+[12:23:52.73] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.73] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.73] /w Warning: Could not zoom to factor '0.00122' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:52.74] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:52.74] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.74] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.75] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:52.75] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:52.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.75] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.76] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:52.76] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:52.76] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.76] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.77] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:52.78] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:52.78] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.78] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.78] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:52.79] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:52.81] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.81] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.81] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:52.82] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:52.82] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:52.82] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:52.83] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:52.83] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:53.35] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.35] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.36] /o {-469.825 -533.5} {888.675 217.9}
+[12:23:53.37] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.37] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.59] /o {-233.875 -265.7} {445.375 110.0}
+[12:23:53.59] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.59] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.61] /o {-115.9 -131.8} {223.725 56.05}
+[12:23:53.61] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.61] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.62] /o {-56.9125 -64.85} {112.9 29.075}
+[12:23:53.62] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.62] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.63] /o {-27.41875 -31.375} {57.4875 15.5875}
+[12:23:53.63] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.63] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.74] /o {-12.675 -14.6375} {29.78125 8.84375}
+[12:23:53.74] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.74] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.76] /o {-5.3 -6.26875} {15.925 5.475}
+[12:23:53.76] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.76] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.98] /o {-1.6125 -2.08125} {9.0 3.7875}
+[12:23:53.98] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.98] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:53.99] /o {0.23125 0.00625} {5.5375 2.94375}
+[12:23:53.99] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:53.99] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.00] /o {1.15625 1.05625} {3.80625 2.51875}
+[12:23:54.05] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.05] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.06] /o {1.6125 1.575} {2.94375 2.3125}
+[12:23:54.06] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.06] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.07] /o {1.84375 1.8375} {2.50625 2.20625}
+[12:23:54.07] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.07] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.08] /o {1.9625 1.96875} {2.29375 2.15}
+[12:23:54.08] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.08] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.10] /o {2.01875 2.0375} {2.18125 2.125}
+[12:23:54.10] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.10] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.11] /o {2.04375 2.06875} {2.13125 2.1125}
+[12:23:54.11] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.11] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.12] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.12] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.12] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.12] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.13] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.13] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.14] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.14] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.14] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.15] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.15] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.15] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.16] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.16] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.16] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.17] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.17] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.17] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.18] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.18] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.18] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.19] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.19] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.19] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.20] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.23] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:54.23] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:54.24] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:54.62] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.62] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.63] /o {2.0375 2.05625} {2.15 2.11875}
+[12:23:54.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.64] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.65] /o {1.99375 2.0125} {2.225 2.1375}
+[12:23:54.65] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.65] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.66] /o {1.91875 1.91875} {2.36875 2.16875}
+[12:23:54.66] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.66] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.67] /o {1.7625 1.74375} {2.6625 2.24375}
+[12:23:54.69] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.69] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.70] /o {1.45 1.3875} {3.25625 2.3875}
+[12:23:54.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.70] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.71] /o {0.81875 0.675} {4.4375 2.675}
+[12:23:54.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.71] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.72] /o {-0.4375 -0.75} {6.79375 3.25}
+[12:23:54.72] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.72] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.73] /o {-2.95 -3.6} {11.5125 4.4}
+[12:23:54.74] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.74] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.75] /o {-7.975 -9.30625} {20.95625 6.69375}
+[12:23:54.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.75] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.76] /o {-18.025 -20.7125} {39.83125 11.2875}
+[12:23:54.76] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.76] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.77] /o {-38.11875 -43.51875} {77.5875 20.48125}
+[12:23:54.77] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.77] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.78] /o {-78.3125 -89.1375} {153.10625 38.8625}
+[12:23:54.79] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.79] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.80] /o {-158.7 -180.375} {304.1375 75.625}
+[12:23:54.80] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:54.80] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:54.81] /o {-319.475 -362.85625} {606.2 149.14375}
+[12:23:55.26] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.26] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.28] /o {-641.025 -727.80625} {1210.325 296.19375}
+[12:23:55.29] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.29] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.29] /w Warning: Could not zoom to factor '0.00176' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.30] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.32] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.32] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.33] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.34] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.34] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.34] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.35] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.35] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.35] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.35] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.36] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.37] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.40] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.40] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.41] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.41] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.41] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.41] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.42] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.43] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.64] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.65] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.65] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.66] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.66] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.67] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.68] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.69] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.69] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.69] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.70] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.70] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.71] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.71] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.71] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.72] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.72] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.75] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.75] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.76] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.76] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.76] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.76] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.77] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.77] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.77] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.77] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.78] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.78] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.78] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.79] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.79] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:55.79] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:55.79] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:55.80] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:55.80] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:56.19] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.19] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.20] /o {-469.825 -533.5} {888.675 217.9}
+[12:23:56.21] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.21] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.22] /o {-233.875 -265.7} {445.375 110.0}
+[12:23:56.22] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.22] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.23] /o {-115.9 -131.8} {223.725 56.05}
+[12:23:56.24] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.24] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.25] /o {-56.9125 -64.85} {112.9 29.075}
+[12:23:56.26] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.26] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.27] /o {-27.41875 -31.375} {57.4875 15.5875}
+[12:23:56.27] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.27] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.28] /o {-12.675 -14.6375} {29.78125 8.84375}
+[12:23:56.28] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.28] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.29] /o {-5.3 -6.26875} {15.925 5.475}
+[12:23:56.29] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.29] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.30] /o {-1.6125 -2.08125} {9.0 3.7875}
+[12:23:56.30] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.30] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.31] /o {0.23125 0.00625} {5.5375 2.94375}
+[12:23:56.31] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.31] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.32] /o {1.15625 1.05625} {3.80625 2.51875}
+[12:23:56.32] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.32] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.33] /o {1.6125 1.575} {2.94375 2.3125}
+[12:23:56.33] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.33] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.34] /o {1.84375 1.8375} {2.50625 2.20625}
+[12:23:56.34] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.34] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.35] /o {1.9625 1.96875} {2.29375 2.15}
+[12:23:56.36] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.36] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.37] /o {2.01875 2.0375} {2.18125 2.125}
+[12:23:56.40] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.40] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.61] /o {2.04375 2.06875} {2.13125 2.1125}
+[12:23:56.62] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.62] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.63] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:56.63] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.63] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.64] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:56.65] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.65] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.66] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:56.68] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.68] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.70] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:56.91] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.91] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.92] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:56.93] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.93] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.94] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:56.95] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.95] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.96] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:56.98] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:56.98] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:56.99] /o {2.05625 2.075} {2.1125 2.10625}
+[12:23:57.28] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.28] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.29] /o {2.0375 2.05625} {2.15 2.11875}
+[12:23:57.30] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.30] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.31] /o {1.99375 2.0125} {2.225 2.1375}
+[12:23:57.32] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.32] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.33] /o {1.91875 1.91875} {2.36875 2.16875}
+[12:23:57.33] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.33] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.34] /o {1.7625 1.74375} {2.6625 2.24375}
+[12:23:57.34] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.34] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.34] /o {1.45 1.3875} {3.25625 2.3875}
+[12:23:57.39] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.39] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.40] /o {0.81875 0.675} {4.4375 2.675}
+[12:23:57.40] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.40] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.41] /o {-0.4375 -0.75} {6.79375 3.25}
+[12:23:57.41] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.41] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.42] /o {-2.95 -3.6} {11.5125 4.4}
+[12:23:57.42] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.42] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.43] /o {-7.975 -9.30625} {20.95625 6.69375}
+[12:23:57.43] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.43] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.44] /o {-18.025 -20.7125} {39.83125 11.2875}
+[12:23:57.44] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.44] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.46] /o {-38.11875 -43.51875} {77.5875 20.48125}
+[12:23:57.46] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.46] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.47] /o {-78.3125 -89.1375} {153.10625 38.8625}
+[12:23:57.47] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.47] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.48] /o {-158.7 -180.375} {304.1375 75.625}
+[12:23:57.48] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[12:23:57.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.49] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.49] /o {-319.475 -362.85625} {606.2 149.14375}
+[12:23:57.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.49] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.50] /o {-641.025 -727.80625} {1210.325 296.19375}
+[12:23:57.50] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.50] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.51] /w Warning: Could not zoom to factor '0.00176' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.52] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.52] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.52] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.52] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.53] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.53] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.53] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.54] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.54] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.54] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.55] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.55] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.55] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.55] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.56] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.56] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.56] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.57] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.58] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.58] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.58] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.58] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.59] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.59] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.60] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.60] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.60] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.60] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.61] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.61] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.61] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.61] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.62] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.63] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:57.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 4]
+[12:23:57.64] /i de::zoom -window 4 -factor 0.5 -center {2.075 2.1}
+[12:23:57.65] /w Warning: Could not zoom to factor '0.0012' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[12:23:57.66] /o {-941.725 -1069.1} {1775.275 433.7}
+[12:23:58.11] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:58.11] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:58.12] /o {-469.825 -533.5} {888.675 217.9}
+[12:23:58.16] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:58.16] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:58.37] /o {-233.875 -265.7} {445.375 110.0}
+[12:23:58.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:58.38] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:58.39] /o {-115.9 -131.8} {223.725 56.05}
+[12:23:58.39] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:58.39] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:58.40] /o {-56.9125 -64.85} {112.9 29.075}
+[12:23:58.41] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:58.41] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:58.42] /o {-27.41875 -31.375} {57.4875 15.5875}
+[12:23:58.50] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:58.50] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:58.51] /o {-12.675 -14.6375} {29.78125 8.84375}
+[12:23:58.52] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 4]
+[12:23:58.52] /i de::zoom -window 4 -factor 2.0 -center {2.075 2.1}
+[12:23:58.53] /o {-5.3 -6.26875} {15.925 5.475}
+[12:24:00.35] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[12:24:00.91] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[12:24:01.00] /i gi::setActiveWindow 1
+[12:24:01.01] /i gi::setActiveWindow 1 -raise true
+[12:24:02.87] /i gi::setCurrentIndex {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[12:24:02.91] /i gi::setItemSelection {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[12:24:05.01] /i gi::setCurrentIndex {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[12:24:05.02] /i gi::setItemSelection {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[12:24:06.31] /i gi::setCurrentIndex {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[12:24:06.31] /i gi::setItemSelection {cells} -index {{ringOscillator} - {ringOscillator_testbench}} -in [gi::getWindows 1]
+[12:24:08.20] /i gi::executeAction dmDelete -in [gi::getWindows 1]
+[12:24:08.46] /r giDialog gi::setActiveDialog [gi::getDialogs {dmDelete}]
+[12:24:08.77] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmDelete}] -value 364x104+70+70
+[12:24:09.93] /r giDialog gi::pressButton {delete} -in [gi::getDialogs {dmDelete}]
+[12:24:09.96] /# db::destroy [dm::findCell ringOscillator -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary ]]]
+[12:24:10.15] /# gi::setCurrentIndex {cells} -index {nand_testbench} -in [gi::getWindows 1]
+[12:24:10.16] /# gi::setItemSelection {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[12:24:10.21] /# db::destroy [dm::findCell ringOscillator\_testbench -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary ]]]
+[12:24:10.23] /# gi::setItemSelection {cells} -index {} -in [gi::getWindows 1]
+[12:24:47.15] /i gi::setActiveWindow 0
+[12:24:47.16] /i gi::setActiveWindow 0 -raise true
+[12:24:49.56] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[12:24:49.56] /i dm::showLibraryManager
+[12:24:49.57] /# gi::setActiveWindow 1 -raise true
+[12:24:49.57] /# gi::setActiveWindow 1 -raise true
+[12:24:50.00] /o oa:0x286af4a0
+[12:25:03.46] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[12:25:03.52] /i gi::setActiveWindow 0
+[12:25:03.53] /i gi::setActiveWindow 0 -raise true
+[12:25:05.24] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[12:25:05.33] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[12:25:05.68] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[12:25:06.68] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[12:25:06.74] /o Shutdown time: Wed Mar 13 12:25:06 2019
+[12:25:06.74] /o Elapsed session real time: 2.01 minutes
+[12:25:06.74] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.log

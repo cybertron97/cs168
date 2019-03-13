@@ -1,0 +1,555 @@
+[19:43:41.73] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Tue Mar 12 19:43:39 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[19:43:43.22] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[19:43:43.22] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[19:44:35.26] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[19:44:35.26] /i dm::showLibraryManager
+[19:44:35.27] /r giWindowId 1
+[19:44:35.27] /r giWindowGeometry 660x600+50+50
+[19:44:35.47] /o oa:0x22cb6a80
+[19:44:37.53] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[19:44:37.56] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[19:44:39.41] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[19:44:39.50] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[19:44:40.85] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[19:44:40.86] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[19:44:45.67] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[19:44:45.68] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[19:44:45.85] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:44:45.91] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[19:44:45.91] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[19:44:46.05] /r giDialog gi::setActiveDialog [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 1]]
+[19:44:46.41] /r giDialog db::setAttr geometry -of [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 1]] -value 516x89+122+72
+[19:44:47.67] /r giDialog gi::pressButton {cancel} -in [gi::getDialogs {deOpenFailed} -parent [gi::getWindows 1]]
+[19:45:42.88] /i gi::setCurrentIndex {cells} -index {nand_testbench} -in [gi::getWindows 1]
+[19:45:43.04] /i gi::setItemSelection {cells} -index {nand_testbench} -in [gi::getWindows 1]
+[19:45:44.46] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[19:45:44.61] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[19:45:56.06] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[19:45:56.10] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[19:45:57.74] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:45:57.79] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[19:45:57.81] /o 	############################################
+[19:45:57.81] /o 	--------------------------------------------
+[19:45:57.81] /o 	PDK Name................... : SAED_PDK_90
+[19:45:57.81] /o 	PDK Release Date........... : 29-Sep-2015
+[19:45:57.82] /o 	PDK Custom Designer Version : J-2014.12-2
+[19:45:57.82] /o 	--------------------------------------------
+[19:45:57.82] /o 	############################################
+[19:45:57.82] /o 
+[19:45:57.82] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[19:45:57.82] /o SAED PDK 90: Loaded callbacks
+[19:45:57.83] /o SAED PDK 90: Loaded display resources
+[19:45:57.90] /r giWindowId 2
+[19:45:57.90] /r giWindowGeometry 1088x700
+[19:45:59.44] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 190x550
+[19:46:14.06] /# gi::executeAction xtLVSViewOutputs -in [gi::getWindows 2]
+[19:46:14.06] /i xt::physicalVerification::viewJobOutputs lvs 2
+[19:46:14.08] /w Warning: PVE Showing files for the last 'LVS' job because a 'LVS' job was not found for the current cellview (based on searching run directory names) for any of the 'LVS' tools: {IC Validator}.
+[19:46:14.08] /r giWindowId 3
+[19:46:14.09] /r giWindowGeometry 800x600
+[19:46:14.17] /o oa:0x28d78c40
+[19:46:14.63] /i db::setAttr geometry -of [gi::getFrames 3] -value 800x600+27+43
+[19:46:16.24] /i gi::setActiveTab {tabs} -tabName {adder_1bit.LVS_ERRORS} -in [gi::getWindows 3]
+[19:46:25.84] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[19:46:25.98] /i gi::setActiveWindow 2
+[19:46:25.99] /i gi::setActiveWindow 2 -raise true
+[19:46:29.53] /# gi::executeAction xtLVSSetup -in [gi::getWindows 2]
+[19:46:29.53] /i xt::showLVSSetup -job lvs -window 2
+[19:46:30.87] /o oa:0x28e1b3f0
+[19:46:31.34] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:46:31.69] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 704x485+394+45
+[19:52:05.54] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:52:05.56] /w Warning: Attribute 'foreground' is deprecated for objects of type 'giCell' and scheduled for removal in a future release. See instead 'style.foreground'. For migration assistance, see the Custom Designer Tcl Reference Manual. (TCL_OBJECT-061)
+[19:52:06.10] /# xt::physicalVerification::executePve lvs 2
+[19:52:06.18] /m Information: "Starting netlisting for design "mylibrary/ripple_carry_adder_4bit/schematic"..." (NETLISTING-010)
+[19:52:06.28] /o No Design Integrity rule violations found in "mylibrary/ripple_carry_adder_4bit/schematic"
+[19:52:06.48] /m Information: "Netlisting design "mylibrary/ripple_carry_adder_4bit/schematic" finished successfully." (NETLISTING-012)
+[19:52:06.65] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:52:11.23] /e Error: The job 'icv_lvs_1' started on host 'localhost' with process id 3525 failed to start or complete successfully; the job's return code is 33.
+[19:52:14.56] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+340+32
+[19:52:15.73] /i gi::setActiveWindow 0
+[19:52:15.76] /i gi::setActiveWindow 0 -raise true
+[19:53:21.85] /i gi::setActiveWindow 2
+[19:53:21.86] /i gi::setActiveWindow 2 -raise true
+[19:53:46.94] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+-36+122
+[19:53:51.08] /# gi::executeAction xtLVSSetup -in [gi::getWindows 2]
+[19:53:51.08] /i xt::showLVSSetup -job lvs -window 2
+[19:53:52.25] /o oa:0x28d273c0
+[19:53:52.52] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:53:52.72] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 704x485+394+45
+[19:53:56.76] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:53:57.21] /# xt::physicalVerification::executePve lvs 2
+[19:53:57.25] /m Information: "Starting netlisting for design "mylibrary/ripple_carry_adder_4bit/schematic"..." (NETLISTING-010)
+[19:53:57.29] /o No Design Integrity rule violations found in "mylibrary/ripple_carry_adder_4bit/schematic"
+[19:53:57.43] /m Information: "Netlisting design "mylibrary/ripple_carry_adder_4bit/schematic" finished successfully." (NETLISTING-012)
+[19:54:00.58] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+650+28
+[19:54:09.72] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_2
+              /c --- EXTRACT ERROR SUMMARY ---
+              /c LAYOUT ERRORS RESULTS: CLEAN
+              /c --- COMPARE ERROR SUMMARY ---
+              /c 
+              /c =============================
+              /c 
+[19:54:12.40] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:54:13.46] /r giWindowId 4
+[19:54:13.46] /r giWindowGeometry 1088x700
+[19:54:17.27] /i db::setAttr iconified -of [gi::getFrames 4] -value true
+[19:54:51.46] /i gi::setActiveWindow 2
+[19:54:51.46] /i gi::setActiveWindow 2 -raise true
+[19:54:51.53] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:54:54.01] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+259+65
+[19:54:56.99] /# gi::executeAction xtDRCSetup -in [gi::getWindows 2]
+[19:54:56.99] /i xt::showDRCSetup -job drc -window 2
+[19:54:58.33] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]]
+[19:54:58.93] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]] -value 445x457+722+87
+[19:55:01.42] /# gi::setField {/tabGroup/mainTab/jobParametersGroup/viewOutput} -value {true} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]]
+[19:55:07.64] /o oa:0x291aeee0
+[19:55:14.29] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]]
+[19:55:14.91] /# xt::physicalVerification::executePve drc 2
+[19:55:15.12] /r giWindowId 5
+[19:55:15.14] /r giWindowGeometry 800x600
+[19:55:15.52] /i db::setAttr geometry -of [gi::getFrames 5] -value 800x600+279+85
+[19:55:24.22] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_2
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[19:55:42.35] /i gi::setActiveTab {tabs} -tabName {ripple_carry_adder_4bit.LAYOUT_ERRORS} -in [gi::getWindows 5]
+[19:55:44.08] /i gi::setActiveTab {tabs} -tabName {ripple_carry_adder_4bit.RESULTS} -in [gi::getWindows 5]
+[19:55:48.15] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[19:55:48.27] /i gi::setActiveWindow 2
+[19:55:48.28] /i gi::setActiveWindow 2 -raise true
+[19:58:15.26] /i gi::setActiveWindow 1
+[19:58:15.26] /i gi::setActiveWindow 1 -raise true
+[19:58:17.26] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit_testbench} -in [gi::getWindows 1]
+[19:58:17.41] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit_testbench} -in [gi::getWindows 1]
+[19:58:18.79] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 1]
+[19:58:18.79] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 1]
+[19:58:19.50] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:58:22.89] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 1]
+[19:58:22.90] /e Error: System exception while executing gi::executeAction: Failed to execute open procedure of 'Design Editor (configured)' application: Failed to eecs168/mylibrary/ripple_carry_adder_4bit_testbench/schematic the file open, because filename does not exist. (COMMAND-001)
+[19:58:24.34] /i gi::setActiveWindow 0
+[19:58:24.35] /i gi::setActiveWindow 0 -raise true
+[19:58:33.31] /i gi::setActiveWindow 1
+[19:58:33.32] /i gi::setActiveWindow 1 -raise true
+[19:58:36.52] /i gi::executeAction dmShowLockInformation -in [gi::getWindows 1]
+[19:58:36.69] /i gi::setActiveDialog [gi::getDialogs {dmLockInformation} -parent [gi::getWindows 1]]
+[19:58:36.96] /i db::setAttr geometry -of [gi::getDialogs {dmLockInformation} -parent [gi::getWindows 1]] -value 492x350+134+72
+[19:58:43.26] /i gi::pressButton {checkLock} -in [gi::getDialogs {dmLockInformation} -parent [gi::getWindows 1]]
+[19:58:44.35] /i gi::pressButton {cancel} -in [gi::getDialogs {dmLockInformation} -parent [gi::getWindows 1]]
+[19:58:51.96] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 1]
+[19:58:51.97] /e Error: System exception while executing gi::executeAction: Failed to execute open procedure of 'Design Editor (configured)' application: Failed to eecs168/mylibrary/ripple_carry_adder_4bit_testbench/schematic the file open, because filename does not exist. (COMMAND-001)
+[19:58:55.52] /i gi::executeAction dmOpenConfigWrite -in [gi::getWindows 1]
+[19:58:55.54] /r giWindowId 6
+[19:58:55.55] /r giWindowGeometry 750x750
+[19:58:56.01] /i db::setAttr geometry -of [gi::getFrames 6] -value 750x708+70+70
+[19:58:57.63] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 6]
+[19:58:57.71] /i gi::setField {heTopLCVSelectorLib} -value {eecs168/mylibrary} -in [gi::getWindows 6]
+[19:58:59.50] /i gi::setField {heTopLCVSelectorLib} -value {mylibrary} -in [gi::getWindows 6]
+[19:59:02.41] /i gi::expand {heTreeWidget} -index {0,0} -in [gi::getWindows 6]
+[19:59:02.44] /i gi::setSectionSizes {heTreeWidget} -values {330 180 180 180} -in [gi::getWindows 6]
+[19:59:05.23] /i gi::setCurrentIndex {heTreeWidget} -index {0.0,0} -in [gi::getWindows 6]
+[19:59:05.24] /i gi::setItemSelection {heTreeWidget} -index {0.0,all} -in [gi::getWindows 6]
+[19:59:24.04] /i gi::executeAction heFileSave -in [gi::getWindows 6]
+[19:59:25.18] /i gi::executeAction heFileSave -in [gi::getWindows 6]
+[19:59:26.20] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[19:59:26.35] /i gi::setActiveWindow 1
+[19:59:26.35] /i gi::setActiveWindow 1 -raise true
+[19:59:27.92] /i gi::setCurrentIndex {views} -index {ripple_carry_adder_SAE} -in [gi::getWindows 1]
+[19:59:27.93] /i gi::setItemSelection {views} -index {ripple_carry_adder_SAE} -in [gi::getWindows 1]
+[19:59:29.99] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:59:30.05] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[19:59:30.13] /r giWindowId 7
+[19:59:30.15] /r giWindowGeometry 600x500
+[19:59:30.70] /i db::setAttr geometry -of [gi::getFrames 7] -value 600x500+70+70
+[19:59:33.80] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[19:59:33.83] /m Information: License 'Simulation & Analysis Environment' checked in. (LICENSE-004)
+[19:59:33.91] /i gi::setActiveWindow 1
+[19:59:33.91] /i gi::setActiveWindow 1 -raise true
+[19:59:35.20] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[19:59:35.22] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[19:59:36.38] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:59:36.43] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[19:59:36.46] /r giWindowId 8
+[19:59:36.47] /r giWindowGeometry 1088x700
+[19:59:37.21] /i gi::setActiveDialog [gi::getDialogs {seMissingReferences} -parent [gi::getWindows 8]]
+[19:59:43.45] /i gi::pressButton {ok} -in [gi::getDialogs {seMissingReferences} -parent [gi::getWindows 8]]
+[19:59:45.47] /# gi::executeAction deSelectActive -in [gi::getWindows 8]
+[19:59:45.47] /i de::select [de::getActiveFigure [gi::getWindows 8] -point {6.8125 2.45} -index 0 -intent none] -replace true
+[19:59:45.48] /o oa:0x2a065850
+[19:59:47.57] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 8]
+[19:59:47.57] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]] -value true
+[19:59:49.19] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]]
+[19:59:49.22] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]]
+[19:59:51.09] /i gi::setField {attributes} -value {eecs168_library
+              /c ripple_carry_adder_4bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]]
+[19:59:52.29] /i gi::setField {attributes} -value {mylibrary
+              /c ripple_carry_adder_4bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]]
+[19:59:54.78] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.78] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.78] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.79] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.80] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.82] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.83] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.83] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.86] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.87] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:59:54.89] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[20:00:03.43] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 8]]
+[20:00:07.21] /# gi::executeAction dePanEast -in [gi::getWindows 8]
+[20:00:07.21] /i de::pan -direction E -multiplier 0.5
+[20:00:07.21] /o {3.6125 -0.35625} {9.9375 4.29375}
+[20:00:08.24] /# gi::executeAction dePanWest -in [gi::getWindows 8]
+[20:00:08.24] /i de::pan -direction W -multiplier 0.5
+[20:00:08.25] /o {0.45 -0.35625} {6.775 4.29375}
+[20:00:09.01] /# gi::executeAction dePanEast -in [gi::getWindows 8]
+[20:00:09.01] /i de::pan -direction E -multiplier 0.5
+[20:00:09.02] /o {3.6125 -0.35625} {9.9375 4.29375}
+[20:00:10.54] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 8]
+[20:00:10.54] /i ise::check
+[20:00:10.56] /m Information: 
+[20:00:10.56] /o Checking "mylibrary/ripple_carry_adder_4bit_testbench/schematic"
+[20:00:10.58] /o No rule violations found in "mylibrary/ripple_carry_adder_4bit_testbench/schematic"
+[20:00:10.58] /m Information: Checking process is completed: marking the design violations
+[20:00:10.69] /m Information: Marking of designs is completed
+[20:00:10.69] /o 1
+[20:00:21.09] /i db::setAttr iconified -of [gi::getFrames 8] -value true
+[20:00:21.11] /i gi::setActiveWindow 1
+[20:00:21.12] /i gi::setActiveWindow 1 -raise true
+[20:00:24.59] /i db::setAttr iconified -of [gi::getFrames 8] -value false
+[20:00:24.59] /i gi::setActiveWindow 8
+[20:00:24.59] /i gi::setActiveWindow 8 -raise true
+[20:00:26.31] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[20:00:26.69] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:00:26.78] /i gi::setActiveWindow 1
+[20:00:26.78] /i gi::setActiveWindow 1 -raise true
+[20:00:28.85] /i db::setAttr iconified -of [gi::getFrames 4] -value false
+[20:00:28.86] /i gi::setActiveWindow 4
+[20:00:28.86] /i gi::setActiveWindow 4 -raise true
+[20:00:30.92] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[20:00:31.51] /i gi::setActiveWindow 1
+[20:00:31.51] /i gi::setActiveWindow 1 -raise true
+[20:00:33.26] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 1]
+[20:00:33.27] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 1]
+[20:00:35.34] /i gi::executeAction dmOpenConfigWrite -in [gi::getWindows 1]
+[20:00:35.35] /r giWindowId 9
+[20:00:35.36] /r giWindowGeometry 750x750
+[20:00:35.82] /i db::setAttr geometry -of [gi::getFrames 9] -value 750x708+70+70
+[20:00:37.37] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 9]
+[20:00:37.41] /i gi::expand {heTreeWidget} -index {0,0} -in [gi::getWindows 9]
+[20:00:37.44] /i gi::setSectionSizes {heTreeWidget} -values {315 180 180 180} -in [gi::getWindows 9]
+[20:00:43.58] /i gi::expand {heTreeWidget} -index {0.0,0} -in [gi::getWindows 9]
+[20:00:44.47] /i gi::collapse {heTreeWidget} -index {0.0,0} -in [gi::getWindows 9]
+[20:00:45.04] /i gi::expand {heTreeWidget} -index {0.0,0} -in [gi::getWindows 9]
+[20:00:45.73] /i gi::collapse {heTreeWidget} -index {0.0,0} -in [gi::getWindows 9]
+[20:01:08.99] /i gi::setCurrentIndex {heTreeWidget} -index {0,0} -in [gi::getWindows 9]
+[20:01:09.92] /i gi::setCurrentIndex {heTreeWidget} -index {0.0,2} -in [gi::getWindows 9]
+[20:01:09.93] /i gi::setItemSelection {heTreeWidget} -index {0.0,all} -in [gi::getWindows 9]
+[20:01:13.84] /i gi::setField {heTreeWidget} -value {//starrc} -index {0.0,2} -in [gi::getWindows 9] 
+[20:01:13.85] /i gi::setCurrentIndex {heTreeWidget} -index {0.5,2} -in [gi::getWindows 9]
+[20:01:13.85] /i gi::setItemSelection {heTreeWidget} -index {0.5,all} -in [gi::getWindows 9]
+[20:01:15.23] /i gi::setCurrentIndex {heTreeWidget} -index {0.0,0} -in [gi::getWindows 9]
+[20:01:15.24] /i gi::setItemSelection {heTreeWidget} -index {0.0,all} -in [gi::getWindows 9]
+[20:01:37.81] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[20:01:37.98] /r giDialog gi::setActiveDialog [gi::getDialogs {heCloseConfig} -parent [gi::getWindows 9]]
+[20:01:38.63] /r giDialog db::setAttr geometry -of [gi::getDialogs {heCloseConfig} -parent [gi::getWindows 9]] -value 511x89+189+92
+[20:01:39.58] /r giDialog gi::pressButton {save} -in [gi::getDialogs {heCloseConfig} -parent [gi::getWindows 9]]
+[20:01:39.74] /i gi::setActiveWindow 1
+[20:01:39.74] /i gi::setActiveWindow 1 -raise true
+[20:01:41.50] /i gi::setCurrentIndex {views} -index {ripple_carry_adder_SAE} -in [gi::getWindows 1]
+[20:01:41.51] /i gi::setItemSelection {views} -index {ripple_carry_adder_SAE} -in [gi::getWindows 1]
+[20:01:41.68] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:01:41.74] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[20:01:41.83] /r giWindowId 10
+[20:01:41.84] /r giWindowGeometry 600x500
+[20:01:42.41] /i db::setAttr geometry -of [gi::getFrames 10] -value 600x500+70+70
+[20:01:49.37] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[20:01:49.40] /m Information: License 'Simulation & Analysis Environment' checked in. (LICENSE-004)
+[20:01:49.48] /i gi::setActiveWindow 1
+[20:01:49.49] /i gi::setActiveWindow 1 -raise true
+[20:01:59.94] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 1]
+[20:01:59.95] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 1]
+[20:02:01.51] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:02:01.52] /r giWindowId 11
+[20:02:01.53] /r giWindowGeometry 750x750
+[20:02:02.03] /i db::setAttr geometry -of [gi::getFrames 11] -value 750x708+70+70
+[20:02:04.60] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 11]
+[20:02:04.60] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[20:02:04.73] /i gi::setActiveWindow 1
+[20:02:04.73] /i gi::setActiveWindow 1 -raise true
+[20:02:09.17] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 1]
+[20:02:09.24] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:02:09.26] /r giWindowId 12
+[20:02:09.27] /r giWindowGeometry 1088x700
+[20:02:10.83] /# gi::executeAction deSelectActive -in [gi::getWindows 12]
+[20:02:10.83] /i de::select [de::getActiveFigure [gi::getWindows 12] -point {6.80625 2.66875} -index 0 -intent none] -replace true
+[20:02:10.83] /o oa:0x29c9b930
+[20:02:10.99] /# gi::executeAction deDescend -in [gi::getWindows 12]
+[20:02:10.99] /i ide::descend 12 -inPlace false -promptView false -readOnly [expr ![de::isEditable [db::getNext [de::getContexts -window 12]]]]
+[20:02:11.06] /# Navigating to mylibrary/ripple_carry_adder_4bit/starrc (I0)
+[20:02:12.02] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 12]]
+[20:02:12.02] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 12]]
+[20:02:12.11] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 12]] -value 190x550
+[20:02:13.32] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:13.32] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.425}
+[20:02:13.33] /o {-31.304 -32.877} {94.37 47.945}
+[20:02:13.33] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:13.33] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.425}
+[20:02:13.34] /o {-88.145 -70.179} {163.201 91.465}
+[20:02:13.35] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:13.35] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.426}
+[20:02:13.36] /o {-201.829 -144.783} {300.865 178.503}
+[20:02:13.39] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:13.39] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.426}
+[20:02:13.39] /o {-429.195 -293.993} {576.191 352.581}
+[20:02:13.40] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:13.40] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.426}
+[20:02:13.40] /o {-883.929 -592.412} {1126.845 700.736}
+[20:02:13.41] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:13.41] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.426}
+[20:02:13.42] /o {-1793.395 -1189.25} {2228.151 1397.046}
+[20:02:13.42] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:13.42] /i de::zoom -window 12 -factor 0.5 -center {25.537 4.425}
+[20:02:13.43] /o {-3612.328 -2382.924} {4430.766 2789.666}
+[20:02:13.81] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.81] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.82] /o {-1793.395 -1189.25} {2228.152 1397.046}
+[20:02:13.82] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.82] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.83] /o {-883.928 -592.412} {1126.845 700.735}
+[20:02:13.84] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.84] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.85] /o {-429.195 -293.994} {576.191 352.58}
+[20:02:13.87] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.87] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.88] /o {-201.829 -144.784} {300.865 178.503}
+[20:02:13.88] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.88] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.89] /o {-88.145 -70.18} {163.201 91.464}
+[20:02:13.93] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.93] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.94] /o {-31.304 -32.877} {94.37 47.944}
+[20:02:13.94] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.94] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.95] /o {-2.883 -14.226} {59.954 26.185}
+[20:02:13.97] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:13.97] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:13.97] /o {11.328 -4.901} {42.746 15.305}
+[20:02:14.14] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:14.14] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:14.15] /o {18.433 -0.238} {34.142 9.865}
+[20:02:14.20] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:14.20] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:14.20] /o {21.985 2.094} {29.84 7.145}
+[20:02:14.21] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:14.21] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:14.21] /o {23.762 3.259} {27.689 5.785}
+[20:02:14.35] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:14.35] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:14.35] /o {24.65 3.842} {26.613 5.105}
+[20:02:14.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:14.38] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:14.38] /o {25.094 4.134} {26.076 4.765}
+[20:02:14.42] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:14.42] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:14.42] /o {25.316 4.279} {25.807 4.595}
+[20:02:14.85] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:14.85] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.425}
+[20:02:14.86] /o {25.094 4.134} {26.076 4.765}
+[20:02:14.88] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:14.88] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.425}
+[20:02:14.89] /o {24.65 3.842} {26.613 5.105}
+[20:02:14.92] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:14.92] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.425}
+[20:02:14.93] /o {23.762 3.259} {27.689 5.785}
+[20:02:14.93] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:14.93] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.425}
+[20:02:14.94] /o {21.985 2.094} {29.84 7.145}
+[20:02:15.16] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:15.16] /i de::zoom -window 12 -factor 0.5 -center {25.538 4.425}
+[20:02:15.16] /o {18.433 -0.238} {34.142 9.865}
+[20:02:16.34] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:16.34] /i de::zoom -window 12 -factor 2.0 -center {25.538 4.425}
+[20:02:16.35] /o {21.985 2.094} {29.84 7.145}
+[20:02:17.19] /# gi::executeAction deSelectActive -in [gi::getWindows 12]
+[20:02:17.58] /# gi::executeAction dePanWest -in [gi::getWindows 12]
+[20:02:17.58] /i de::pan -direction W -multiplier 0.5
+[20:02:17.59] /o {18.063 2.094} {25.917 7.145}
+[20:02:17.79] /# gi::executeAction dePanWest -in [gi::getWindows 12]
+[20:02:17.79] /i de::pan -direction W -multiplier 0.5
+[20:02:17.83] /o {14.14 2.094} {21.995 7.145}
+[20:02:18.26] /# gi::executeAction dePanWest -in [gi::getWindows 12]
+[20:02:18.26] /i de::pan -direction W -multiplier 0.5
+[20:02:18.27] /o {10.217 2.094} {18.072 7.145}
+[20:02:18.57] /# gi::executeAction dePanWest -in [gi::getWindows 12]
+[20:02:18.57] /i de::pan -direction W -multiplier 0.5
+[20:02:18.58] /o {6.295 2.094} {14.149 7.145}
+[20:02:19.00] /# gi::executeAction dePanWest -in [gi::getWindows 12]
+[20:02:19.00] /i de::pan -direction W -multiplier 0.5
+[20:02:19.01] /o {2.372 2.094} {10.227 7.145}
+[20:02:19.49] /# gi::executeAction dePanEast -in [gi::getWindows 12]
+[20:02:19.49] /i de::pan -direction E -multiplier 0.5
+[20:02:19.51] /o {6.295 2.094} {14.149 7.145}
+[20:02:19.73] /# gi::executeAction dePanEast -in [gi::getWindows 12]
+[20:02:19.73] /i de::pan -direction E -multiplier 0.5
+[20:02:19.74] /o {10.217 2.094} {18.072 7.145}
+[20:02:19.95] /# gi::executeAction dePanEast -in [gi::getWindows 12]
+[20:02:19.95] /i de::pan -direction E -multiplier 0.5
+[20:02:19.96] /o {14.14 2.094} {21.995 7.145}
+[20:02:26.50] /# gi::executeAction dePanEast -in [gi::getWindows 12]
+[20:02:26.50] /i de::pan -direction E -multiplier 0.5
+[20:02:26.51] /o {18.063 2.094} {25.917 7.145}
+[20:02:27.14] /# gi::executeAction dePanWest -in [gi::getWindows 12]
+[20:02:27.14] /i de::pan -direction W -multiplier 0.5
+[20:02:27.15] /o {14.14 2.094} {21.995 7.145}
+[20:02:28.80] /# gi::executeAction deFitSelected -in [gi::getWindows 12]
+[20:02:28.80] /i de::fit -window 12 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 12]]]]
+[20:02:28.81] /o {14.14 2.094} {21.995 7.145}
+[20:02:30.50] /# gi::executeAction deFitSelected -in [gi::getWindows 12]
+[20:02:30.50] /i de::fit -window 12 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 12]]]]
+[20:02:30.50] /o {14.14 2.094} {21.995 7.145}
+[20:02:31.88] /# gi::executeAction deFitEdit -in [gi::getWindows 12]
+[20:02:31.88] /i de::fit -window 12 -fitEdit true
+[20:02:31.88] /o {-2.883 -14.226} {59.954 26.185}
+[20:02:33.62] /# gi::executeAction deFitSelected -in [gi::getWindows 12]
+[20:02:33.62] /i de::fit -window 12 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 12]]]]
+[20:02:33.62] /o {-2.883 -14.226} {59.954 26.185}
+[20:02:34.45] /# gi::executeAction deFitSelected -in [gi::getWindows 12]
+[20:02:34.45] /i de::fit -window 12 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 12]]]]
+[20:02:34.45] /o {-2.883 -14.226} {59.954 26.185}
+[20:02:34.63] /# gi::executeAction deFitSelected -in [gi::getWindows 12]
+[20:02:34.63] /i de::fit -window 12 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 12]]]]
+[20:02:34.64] /o {-2.883 -14.226} {59.954 26.185}
+[20:02:34.82] /# gi::executeAction deFitSelected -in [gi::getWindows 12]
+[20:02:34.82] /i de::fit -window 12 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 12]]]]
+[20:02:34.83] /o {-2.883 -14.226} {59.954 26.185}
+[20:02:35.96] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:35.96] /i de::zoom -window 12 -factor 0.5 -center {12.956 6.498}
+[20:02:35.97] /o {-18.722 -34.95} {106.952 45.872}
+[20:02:36.49] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:36.49] /i de::zoom -window 12 -factor 2.0 -center {12.956 6.497}
+[20:02:36.50] /o {-2.883 -14.226} {59.954 26.184}
+[20:02:36.50] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:36.50] /i de::zoom -window 12 -factor 2.0 -center {12.956 6.497}
+[20:02:36.51] /o {5.037 -3.865} {36.455 16.341}
+[20:02:36.53] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:36.53] /i de::zoom -window 12 -factor 2.0 -center {12.956 6.497}
+[20:02:36.54] /o {8.996 1.316} {24.705 11.419}
+[20:02:36.59] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:36.59] /i de::zoom -window 12 -factor 2.0 -center {12.956 6.497}
+[20:02:36.60] /o {10.976 3.907} {18.831 8.958}
+[20:02:36.65] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 12]
+[20:02:36.65] /i de::zoom -window 12 -factor 2.0 -center {12.956 6.497}
+[20:02:36.66] /o {11.966 5.202} {15.893 7.727}
+[20:02:37.26] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:37.26] /i de::zoom -window 12 -factor 0.5 -center {12.956 6.497}
+[20:02:37.27] /o {10.976 3.907} {18.831 8.958}
+[20:02:37.67] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 12]
+[20:02:37.67] /i de::zoom -window 12 -factor 0.5 -center {12.956 6.497}
+[20:02:37.68] /o {8.996 1.316} {24.705 11.419}
+[20:02:55.66] /i gi::executeAction giCloseWindow -in [gi::getWindows 12]
+[20:02:56.20] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:02:56.40] /i gi::setActiveWindow 1
+[20:02:56.40] /i gi::setActiveWindow 1 -raise true
+[20:02:57.68] /i gi::setCurrentIndex {views} -index {ripple_carry_adder_SAE} -in [gi::getWindows 1]
+[20:02:57.68] /i gi::setItemSelection {views} -index {ripple_carry_adder_SAE} -in [gi::getWindows 1]
+[20:02:57.85] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:02:57.91] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[20:02:57.98] /r giWindowId 13
+[20:02:57.99] /r giWindowGeometry 600x500
+[20:02:58.59] /i db::setAttr geometry -of [gi::getFrames 13] -value 600x500+70+70
+[20:03:00.13] /i gi::pressButton {plotButton} -in [gi::getWindows 13]
+[20:03:00.14] /e Error: Plotting failed: Error: System exception while executing sa::createResultsMap: The directory '/home/cemaj/tarora/simulation/HSPICE/nominal/results' does not exists. (COMMAND-001) (SAE-002)
+[20:03:04.56] /i gi::setActiveWindow 0
+[20:03:04.65] /i gi::setActiveWindow 0 -raise true
+[20:03:08.49] /i gi::setActiveWindow 13
+[20:03:08.51] /i gi::setActiveWindow 13 -raise true
+[20:03:09.65] /i gi::executeAction menuPreShow -in [gi::getWindows 13]
+[20:03:09.65] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 13]]
+[20:03:12.42] /i gi::sortItems {outputsTable} -column {Expression} -order {ascending} -in [gi::getWindows 13]
+[20:03:17.12] /i gi::executeAction menuPreShow -in [gi::getWindows 13]
+[20:03:17.12] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 13]]
+[20:03:23.82] /i gi::executeAction giCloseWindow -in [gi::getWindows 13]
+[20:03:24.00] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 13]]
+[20:03:24.22] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 13]] -value 295x89+222+92
+[20:03:26.19] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 13]]
+[20:03:26.23] /m Information: License 'Simulation & Analysis Environment' checked in. (LICENSE-004)
+[20:03:26.32] /i gi::setActiveWindow 0
+[20:03:26.33] /i gi::setActiveWindow 0 -raise true
+[20:03:28.40] /i gi::setActiveWindow 1
+[20:03:28.42] /i gi::setActiveWindow 1 -raise true
+[20:03:28.58] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[20:03:28.59] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[20:03:30.61] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:03:30.66] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:03:30.69] /r giWindowId 14
+[20:03:30.70] /r giWindowGeometry 1088x700
+[20:03:34.67] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 14]
+[20:03:34.67] /i sa::showConsole -context [db::getNext [de::getContexts -window 14]]
+[20:03:34.74] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[20:03:34.77] /r giWindowId 15
+[20:03:34.79] /r giWindowGeometry 600x500
+[20:03:34.98] /o oa:0x29df17b0
+[20:03:35.33] /i db::setAttr geometry -of [gi::getFrames 15] -value 600x500+99+61
+[20:03:36.99] /i gi::executeAction menuPreShow -in [gi::getWindows 15]
+[20:03:37.00] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 15]]
+[20:03:38.15] /# gi::executeAction saLoadState -in [gi::getWindows 15]
+[20:03:38.15] /i sa::showLoadState -parent 15
+[20:03:38.38] /o oa:0x29f5ec50
+[20:03:38.71] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 15]]
+[20:03:39.18] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 15]] -value 600x645+226+83
+[20:03:40.48] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 15]]
+[20:03:40.94] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 15]] -value 600x616+226+83
+[20:03:42.51] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 15]]
+[20:03:44.36] /i gi::executeAction menuPreShow -in [gi::getWindows 15]
+[20:03:44.36] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 15]]
+[20:03:45.28] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 15]
+[20:03:45.28] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 15]
+[20:03:45.59] /m Information: "Starting incremental netlisting for design "mylibrary/ripple_carry_adder_4bit_testbench/schematic"..." (NETLISTING-010)
+[20:03:45.63] /o No Design Integrity rule violations found in "mylibrary/ripple_carry_adder_4bit_testbench/schematic"
+[20:03:45.80] /m Information: "mylibrary adder_1bit schematic" renetlisted. (NETLISTING-056)
+[20:03:45.82] /m Information: "mylibrary ripple_carry_adder_4bit schematic" renetlisted. (NETLISTING-056)
+[20:03:45.96] /m Information: "mylibrary ripple_carry_adder_4bit_testbench schematic" renetlisted. (NETLISTING-056)
+[20:03:46.49] /m Information: "Netlisting design "mylibrary/ripple_carry_adder_4bit_testbench/schematic" finished successfully." (NETLISTING-012)
+[20:03:46.50] /m Information: "Composing simulator input file for design "mylibrary/ripple_carry_adder_4bit_testbench/schematic"..."
+[20:03:46.61] /m Information: "Simulator input file composed successfully for design "mylibrary/ripple_carry_adder_4bit_testbench/schematic""
+[20:03:47.12] /r giWindowId 16
+[20:03:47.13] /r giWindowGeometry 800x600
+[20:03:47.43] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 16]
+[20:03:47.43] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 16]
+[20:03:47.50] /m Information: "Starting HSPICE simulation for design: mylibrary/ripple_carry_adder_4bit_testbench/schematic"
+[20:03:47.51] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 16]
+[20:03:47.56] /o 1
+[20:03:47.56] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 16]
+[20:03:47.75] /i db::setAttr geometry -of [gi::getFrames 16] -value 800x600+119+81
+[20:04:04.16] /m Information: "Simulation completed successfully for design: mylibrary/ripple_carry_adder_4bit_testbench/schematic "
+[20:04:04.57] /m Information: Measurement calculations completed for testbench: default in 0s
+[20:04:04.59] /m Information: "Evaluating and plotting outputs..."
+[20:04:04.74] /m Information: Launching Waveform Viewer "cd /home/cemaj/tarora/simulation/mylibrary/ripple_carry_adder_4bit_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/cemaj/tarora/simulation/mylibrary/ripple_carry_adder_4bit_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[20:04:05.29] /e Error: Waveform Viewer exited abnormally.  See /home/cemaj/tarora/simulation/mylibrary/ripple_carry_adder_4bit_testbench/schematic/HSPICE/nominal/results/viewer.log for details.
+[20:04:17.96] /i gi::setActiveWindow 0
+[20:04:17.97] /i gi::setActiveWindow 0 -raise true
+[20:04:20.12] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[20:04:20.26] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[20:04:20.53] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[20:04:22.07] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[20:04:22.15] /m Information: License 'Simulation & Analysis Environment' checked in. (LICENSE-004)
+[20:04:22.69] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[20:04:23.19] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[20:04:23.25] /o Shutdown time: Tue Mar 12 20:04:23 2019
+[20:04:23.25] /o Elapsed session real time: 20.68 minutes
+[20:04:23.25] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.log

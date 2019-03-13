@@ -1,0 +1,37 @@
+<module name="vsl: mylibrary ripple_carry_adder_4bit schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping src="I1" dst="XI1"/>
+<mapping src="I0" dst="XI0"/>
+<mapping src="I2" dst="XI2"/>
+<mapping src="I3" dst="XI3"/>
+</forward>
+<reverse>
+<mapping src="XI2" dst="I2"/>
+<mapping src="XI0" dst="I0"/>
+<mapping src="XI1" dst="I1"/>
+<mapping src="XI3" dst="I3"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="A0 A1 A2 A3 B0 B1 B2 B3 C0 C4 S0 S1 S2 S3 VDD VSS"/>
+<mapping src="&lt;termOrder>" dst="A0 A1 A2 A3 B0 B1 B2 B3 C0 C4 S0 S1 S2 S3 VDD VSS"/>
+</forward>
+<reverse>
+<mapping src="A0 A1 A2 A3 B0 B1 B2 B3 C0 C4 S0 S1 S2 S3 VDD VSS" dst="&lt;unmappedTermOrder>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="adder_1bit">
+<instance name="I0"/>
+<instance name="I1"/>
+<instance name="I2"/>
+<instance name="I3"/>
+</instance_header>
+</master_instances>
+</module>

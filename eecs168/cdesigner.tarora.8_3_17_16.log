@@ -1,0 +1,134 @@
+[18:25:28.77] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Fri Mar  8 18:25:25 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[18:25:30.23] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[18:25:30.23] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[18:25:41.92] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[18:25:41.92] /i dm::showLibraryManager
+[18:25:41.93] /r giWindowId 1
+[18:25:41.93] /r giWindowGeometry 660x600+50+50
+[18:25:42.01] /o oa:0x22dcdfe0
+[18:25:43.66] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[18:25:43.74] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[18:25:46.05] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[18:25:46.17] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[18:25:49.85] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[18:25:49.87] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[18:25:51.42] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[18:25:51.48] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[18:25:51.52] /o 	############################################
+[18:25:51.52] /o 	--------------------------------------------
+[18:25:51.52] /o 	PDK Name................... : SAED_PDK_90
+[18:25:51.52] /o 	PDK Release Date........... : 29-Sep-2015
+[18:25:51.52] /o 	PDK Custom Designer Version : J-2014.12-2
+[18:25:51.52] /o 	--------------------------------------------
+[18:25:51.52] /o 	############################################
+[18:25:51.52] /o 
+[18:25:51.53] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[18:25:51.53] /o SAED PDK 90: Loaded callbacks
+[18:25:51.53] /o SAED PDK 90: Loaded display resources
+[18:25:51.70] /r giWindowId 2
+[18:25:51.70] /r giWindowGeometry 1088x700
+[18:25:52.77] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 190x550
+[18:25:53.04] /i gi::setActiveDialog [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[18:26:01.22] /i gi::setCurrentIndex {missingReferences} -index {0,1} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[18:26:03.83] /i gi::sortItems {missingReferences} -column {Design} -order {descending} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[18:26:04.45] /i gi::sortItems {missingReferences} -column {Design} -order {ascending} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[18:26:05.17] /i gi::setCurrentIndex {missingReferences} -index {0,0} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[18:26:12.39] /i db::setAttr geometry -of [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]] -value 627x435+294+200
+[18:26:12.82] /i db::setAttr geometry -of [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]] -value 734x548+294+200
+[18:26:14.82] /i db::setAttr geometry -of [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]] -value 734x547+294+200
+[18:26:17.34] /i gi::setCurrentIndex {missingReferences} -index {0,1} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[18:26:18.92] /i gi::closeWindows [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[18:26:22.60] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[18:26:23.08] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[18:26:23.17] /i gi::setActiveWindow 1
+[18:26:23.18] /i gi::setActiveWindow 1 -raise true
+[18:26:25.57] /i gi::setCurrentIndex {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[18:26:25.71] /i gi::setItemSelection {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[18:26:27.34] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[18:26:27.37] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[18:26:30.61] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[18:26:30.68] /i gi::setActiveWindow 0
+[18:26:30.68] /i gi::setActiveWindow 0 -raise true
+[18:28:08.45] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[18:28:08.46] /i dm::showLibraryManager
+[18:28:08.46] /r giWindowId 3
+[18:28:08.46] /r giWindowGeometry 660x600+50+50
+[18:28:08.96] /o oa:0x22fe52c0
+[18:28:10.47] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 3]
+[18:28:10.48] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 3]
+[18:28:12.22] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 3]
+[18:28:12.24] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 3]
+[18:28:13.97] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 3]
+[18:28:13.98] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 3]
+[18:28:14.13] /i gi::executeAction dmOpen -in [gi::getWindows 3]
+[18:28:14.18] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[18:28:14.21] /r giWindowId 4
+[18:28:14.21] /r giWindowGeometry 1088x700
+[18:28:14.79] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]] -value 190x550
+[18:28:14.85] /i gi::setActiveDialog [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 4]]
+[18:28:17.29] /i gi::setCurrentIndex {missingReferences} -index {0,1} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 4]]
+[18:28:20.32] /i gi::setCurrentIndex {missingReferences} -index {0,0} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 4]]
+[18:28:22.42] /i gi::pressButton {ok} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 4]]
+[18:28:25.01] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[18:28:25.56] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[18:28:25.64] /i gi::setActiveWindow 3
+[18:28:25.64] /i gi::setActiveWindow 3 -raise true
+[18:28:27.80] /i gi::executeAction dmOpen -in [gi::getWindows 3]
+[18:28:27.85] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[18:28:27.88] /r giWindowId 5
+[18:28:27.88] /r giWindowGeometry 1088x700
+[18:28:28.48] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]] -value 190x550
+[18:28:28.49] /i gi::setActiveDialog [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:28:33.56] /i db::setAttr geometry -of [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]] -value 786x558+294+200
+[18:28:33.95] /i db::setAttr geometry -of [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]] -value 785x558+294+200
+[18:28:39.32] /i gi::setCurrentIndex {missingReferences} -index {0,0} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:28:39.54] /i gi::setCurrentIndex {missingReferences} -index {0,1} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:28:40.92] /i gi::setCurrentIndex {missingReferences} -index {0,0} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:28:42.35] /i gi::setCurrentIndex {missingReferences} -index {0,1} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:28:45.64] /i db::setAttr geometry -of [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]] -value 785x558+83+90
+[18:28:48.97] /i db::setAttr geometry -of [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]] -value 1135x464+83+90
+[18:29:16.02] /i gi::setField {select} -value {true} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:17.25] /i gi::setField {select} -value {false} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:17.83] /i gi::setField {select} -value {true} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:18.58] /i gi::setField {select} -value {false} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:19.07] /i gi::setField {select} -value {true} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:19.94] /i gi::setField {select} -value {false} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:21.16] /i gi::pressButton {help} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:21.17] /e Error: System exception while executing gi::pressButton: Error: WebWorks could not show a topic hleMissingReferences from the collection cidCustomDesigner. (HELP-024) (COMMAND-001)
+[18:29:23.04] /i gi::pressButton {help} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:23.05] /e Error: System exception while executing gi::pressButton: Error: WebWorks could not show a topic hleMissingReferences from the collection cidCustomDesigner. (HELP-024) (COMMAND-001)
+[18:29:25.21] /i gi::pressButton {ok} -in [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 5]]
+[18:29:30.87] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:29:30.87] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {7.923 7.259} -index 0 -intent none] -replace true
+[18:29:30.88] /o oa:0x27a6d8f0
+[18:29:32.24] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:29:32.24] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {20.39 9.597} -index 0 -intent none] -replace true
+[18:29:32.25] /o oa:0x27f07980
+[18:29:34.09] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:29:34.09] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {38.001 7.025} -index 0 -intent none] -replace true
+[18:29:34.10] /o oa:0x27939960
+[18:29:35.93] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:29:35.93] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {53.507 8.272} -index 0 -intent none] -replace true
+[18:29:35.94] /o oa:0x27323990
+[18:29:48.93] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[18:29:49.42] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[18:29:49.50] /i gi::setActiveWindow 3
+[18:29:49.50] /i gi::setActiveWindow 3 -raise true
+[18:35:18.80] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[18:35:18.86] /i gi::setActiveWindow 0
+[18:35:18.87] /i gi::setActiveWindow 0 -raise true
+[18:35:21.03] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[18:35:21.15] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[18:35:21.46] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[18:35:22.97] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[18:35:23.02] /o Shutdown time: Fri Mar  8 18:35:23 2019
+[18:35:23.02] /o Elapsed session real time: 9.9 minutes
+[18:35:23.02] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.tarora.8_3_17_16.log

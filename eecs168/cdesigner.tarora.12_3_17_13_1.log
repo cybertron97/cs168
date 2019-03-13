@@ -1,0 +1,290 @@
+[18:13:56.75] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Tue Mar 12 18:13:54 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[18:13:58.25] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[18:13:58.26] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[18:14:01.70] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[18:14:01.70] /i dm::showLibraryManager
+[18:14:01.71] /r giWindowId 1
+[18:14:01.71] /r giWindowGeometry 660x600+50+50
+[18:14:01.81] /o oa:0x220ed2c0
+[18:14:03.13] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[18:14:03.15] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[18:14:04.43] /i gi::setCurrentIndex {cells} -index {adder_1bit_testbench} -in [gi::getWindows 1]
+[18:14:04.45] /i gi::setItemSelection {cells} -index {adder_1bit_testbench} -in [gi::getWindows 1]
+[18:14:05.65] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 1]
+[18:14:05.66] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 1]
+[18:14:05.81] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[18:14:05.85] /o 	############################################
+[18:14:05.85] /o 	--------------------------------------------
+[18:14:05.85] /o 	PDK Name................... : SAED_PDK_90
+[18:14:05.85] /o 	PDK Release Date........... : 29-Sep-2015
+[18:14:05.85] /o 	PDK Custom Designer Version : J-2014.12-2
+[18:14:05.85] /o 	--------------------------------------------
+[18:14:05.85] /o 	############################################
+[18:14:05.85] /o 
+[18:14:05.85] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[18:14:05.86] /o SAED PDK 90: Loaded callbacks
+[18:14:05.86] /o SAED PDK 90: Loaded display resources
+[18:14:05.92] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[18:14:05.98] /r giWindowId 2
+[18:14:05.98] /r giWindowGeometry 1088x700
+[18:14:06.40] /r giWindowId 3
+[18:14:06.40] /r giWindowGeometry 750x750
+[18:14:06.97] /i gi::setActiveWindow 2
+[18:14:06.98] /i gi::setActiveWindow 2 -raise true
+[18:14:07.04] /i gi::setActiveWindow 3
+[18:14:07.04] /i gi::setActiveWindow 3 -raise true
+[18:14:07.34] /i db::setAttr geometry -of [gi::getFrames 3] -value 750x735+27+43
+[18:14:09.50] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 3]
+[18:14:09.51] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[18:14:09.61] /i gi::setActiveWindow 2
+[18:14:09.62] /i gi::setActiveWindow 2 -raise true
+[18:14:11.35] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[18:14:11.75] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[18:14:11.92] /i gi::setActiveWindow 1
+[18:14:11.92] /i gi::setActiveWindow 1 -raise true
+[18:14:13.21] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[18:14:13.22] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[18:14:14.24] /i gi::setCurrentIndex {views} -index {Tran_DC_SAE} -in [gi::getWindows 1]
+[18:14:14.25] /i gi::setItemSelection {views} -index {Tran_DC_SAE} -in [gi::getWindows 1]
+[18:14:14.98] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[18:14:15.03] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[18:14:15.10] /r giWindowId 4
+[18:14:15.10] /r giWindowGeometry 600x500
+[18:14:15.65] /i db::setAttr geometry -of [gi::getFrames 4] -value 600x500+70+70
+[18:14:18.67] /i gi::pressButton {plotButton} -in [gi::getWindows 4]
+[18:14:18.75] /m Information: Launching Waveform Viewer "cd /home/cemaj/tarora/simulation/mylibrary/adder_1bit_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/cemaj/tarora/simulation/mylibrary/adder_1bit_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[18:17:23.72] /m Information: Waveform Viewer exited normally.
+[18:17:30.26] /i gi::setCurrentIndex {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[18:17:30.27] /i gi::setItemSelection {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[18:17:30.27] /i gi::setItemSelection {analysisPane} -index {0,3} -in [gi::getWindows 4]
+[18:17:31.26] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[18:17:31.47] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]] -value 511x596+183+92
+[18:18:45.32] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 4]]
+[18:18:47.67] /i db::setAttr iconified -of [gi::getFrames 4] -value true
+[18:18:47.68] /i gi::setActiveWindow 1
+[18:18:47.68] /i gi::setActiveWindow 1 -raise true
+[18:18:48.91] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[18:18:48.92] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[18:18:49.07] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[18:18:49.13] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[18:18:49.16] /r giWindowId 5
+[18:18:49.16] /r giWindowGeometry 1088x700
+[18:18:54.37] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:18:54.37] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {1.6625 1.69375} -index 0 -intent none] -replace true
+[18:18:54.38] /o oa:0x27db3ea0
+[18:18:56.29] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 5]
+[18:18:56.29] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]] -value true
+[18:19:00.15] /i gi::setItemSelection {parameters} -index {pw,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:00.16] /i gi::setCurrentIndex {parameters} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:12.96] /i gi::setField {parameters} -value {8n} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:14.57] /i gi::setItemSelection {parameters} -index {per,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:14.58] /i gi::setCurrentIndex {parameters} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:20.16] /i gi::setField {parameters} -value {16n} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:20.17] /i gi::setItemSelection {parameters} -index {pw,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:20.18] /i gi::setCurrentIndex {parameters} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:28.63] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:30.24] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:19:30.24] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {1.1625 1.65} -index 0 -intent none] -replace true
+[18:19:30.31] /o oa:0x27a562e0
+[18:19:45.83] /i gi::setItemSelection {parameters} -index {pw,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:45.84] /i gi::setCurrentIndex {parameters} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:49.18] /i gi::setField {parameters} -value {16n} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:52.53] /i gi::setItemSelection {parameters} -index {per,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:52.54] /i gi::setCurrentIndex {parameters} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:57.02] /i gi::setField {parameters} -value {32n} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:19:58.59] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:20:02.23] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 5]
+[18:20:02.23] /i ise::check
+[18:20:02.25] /m Information: 
+[18:20:02.25] /o Checking "mylibrary/adder_1bit_testbench/schematic"
+[18:20:02.26] /o No rule violations found in "mylibrary/adder_1bit_testbench/schematic"
+[18:20:02.26] /m Information: Checking process is completed: marking the design violations
+[18:20:02.36] /m Information: Marking of designs is completed
+[18:20:02.36] /o 0
+[18:20:06.75] /i db::setAttr iconified -of [gi::getFrames 4] -value false
+[18:20:06.76] /i gi::setActiveWindow 4
+[18:20:06.76] /i gi::setActiveWindow 4 -raise true
+[18:20:08.13] /i gi::executeAction menuPreShow -in [gi::getWindows 4]
+[18:20:08.13] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 4]]
+[18:20:09.05] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 4]
+[18:20:09.05] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 4]
+[18:20:09.12] /m Information: "Starting incremental netlisting for design "mylibrary/adder_1bit_testbench/schematic"..." (NETLISTING-010)
+[18:20:09.16] /o No Design Integrity rule violations found in "mylibrary/adder_1bit_testbench/schematic"
+[18:20:09.26] /m Information: "mylibrary adder_1bit_testbench schematic" renetlisted. (NETLISTING-056)
+[18:20:09.28] /m Information: "Netlisting design "mylibrary/adder_1bit_testbench/schematic" finished successfully." (NETLISTING-012)
+[18:20:09.29] /m Information: "Composing simulator input file for design "mylibrary/adder_1bit_testbench/schematic"..."
+[18:20:09.37] /m Information: "Simulator input file composed successfully for design "mylibrary/adder_1bit_testbench/schematic""
+[18:20:09.79] /r giWindowId 6
+[18:20:09.79] /r giWindowGeometry 800x600
+[18:20:09.93] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 6]
+[18:20:09.93] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 6]
+[18:20:10.00] /m Information: "Starting HSPICE simulation for design: mylibrary/adder_1bit_testbench/schematic"
+[18:20:10.01] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 6]
+[18:20:10.06] /o 1
+[18:20:10.06] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 6]
+[18:20:10.25] /i db::setAttr geometry -of [gi::getFrames 6] -value 800x600+90+90
+[18:20:10.55] /e Error: "Simulation failed for design: mylibrary/adder_1bit_testbench/schematic "
+[18:20:10.72] /m Information: Expression 'v(/S)' did not evaluate: No results found.
+[18:20:10.73] /m Information: Expression 'v(/COUT)' did not evaluate: No results found.
+[18:20:10.73] /m Information: Expression 'v(/AIN)' did not evaluate: No results found.
+[18:20:10.73] /m Information: Expression 'v(/BIN)' did not evaluate: No results found.
+[18:20:10.74] /m Information: Expression 'v(/CIN)' did not evaluate: No results found.
+[18:20:10.75] /m Information: Re-evaluating the failed expression 'v(/S)'
+[18:20:10.75] /m Information: Expression 'v(/S)' did not evaluate: No results found.
+[18:20:10.76] /m Information: Re-evaluating the failed expression 'v(/COUT)'
+[18:20:10.76] /m Information: Expression 'v(/COUT)' did not evaluate: No results found.
+[18:20:10.76] /m Information: Re-evaluating the failed expression 'v(/AIN)'
+[18:20:10.77] /m Information: Expression 'v(/AIN)' did not evaluate: No results found.
+[18:20:10.77] /m Information: Re-evaluating the failed expression 'v(/BIN)'
+[18:20:10.78] /m Information: Expression 'v(/BIN)' did not evaluate: No results found.
+[18:20:10.78] /m Information: Re-evaluating the failed expression 'v(/CIN)'
+[18:20:10.79] /m Information: Expression 'v(/CIN)' did not evaluate: No results found.
+[18:20:10.82] /m Information: Measurement calculations completed for testbench: default in 0s
+[18:20:12.62] /i gi::setCurrentIndex {jobMonitorTable} -index {0.0.0,1} -in [gi::getWindows 6]
+[18:20:12.63] /i gi::setItemSelection {jobMonitorTable} -index {0.0.0,all} -in [gi::getWindows 6]
+[18:20:16.94] /i gi::executeAction xtJobMonitorViewOutput -in 6
+[18:20:16.95] /# xt::_jobMonitorActions::viewOutput 6
+[18:20:16.95] /r giWindowId 7
+[18:20:16.96] /r giWindowGeometry 800x600
+[18:20:17.33] /i db::setAttr geometry -of [gi::getFrames 7] -value 800x600+110+110
+[18:20:30.39] /i gi::setActiveTab {tabs} -tabName {hspice.valog} -in [gi::getWindows 7]
+[18:20:31.40] /i gi::setActiveTab {tabs} -tabName {run.log} -in [gi::getWindows 7]
+[18:20:40.78] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[18:20:40.87] /i gi::setActiveWindow 6
+[18:20:40.89] /i gi::setActiveWindow 6 -raise true
+[18:20:42.44] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[18:20:42.51] /i gi::setActiveWindow 4
+[18:20:42.52] /i gi::setActiveWindow 4 -raise true
+[18:20:44.73] /i gi::setActiveWindow 5
+[18:20:44.74] /i gi::setActiveWindow 5 -raise true
+[18:20:44.75] /i db::setAttr iconified -of [gi::getFrames 4] -value true
+[18:20:58.20] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:20:58.20] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {1.675 1.73125} -index 0 -intent none] -replace true
+[18:20:58.39] /o oa:0x27381750
+[18:21:32.08] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:21:32.08] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {2.13125 1.58125} -index 0 -intent none] -replace true
+[18:21:32.16] /o oa:0x281484d0
+[18:21:35.92] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:21:35.92] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {1.60625 1.65} -index 0 -intent none] -replace true
+[18:21:36.10] /o oa:0x2815f980
+[18:21:38.73] /i gi::setItemSelection {parameters} -index {pw,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:21:38.78] /i gi::setCurrentIndex {parameters} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:21:42.58] /i gi::setItemSelection {parameters} -index {per,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:21:42.62] /i gi::setCurrentIndex {parameters} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:21:47.45] /i gi::setField {parameters} -value {16 n} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:21:47.47] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5 ]]
+[18:21:56.88] /i gi::setField {parameters} -value {16n } -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:21:56.89] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5 ]]
+[18:22:02.57] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:22:02.57] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {2.05 1.5625} -index 0 -intent none] -replace true
+[18:22:02.65] /o oa:0x27eb2650
+[18:22:08.26] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:22:08.26] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {1.63125 1.53125} -index 0 -intent none] -replace true
+[18:22:08.34] /o oa:0x27eb2650
+[18:22:13.26] /i gi::setItemSelection {parameters} -index {per,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:13.27] /i gi::setCurrentIndex {parameters} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:16.23] /i gi::setField {parameters} -value {16n} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:16.24] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5 ]]
+[18:22:17.90] /i gi::setItemSelection {parameters} -index {rhbac,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:17.91] /i gi::setCurrentIndex {parameters} -index {rhbac,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:21.27] /i gi::setItemSelection {parameters} -index {pw,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:21.29] /i gi::setCurrentIndex {parameters} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:24.18] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[18:22:24.18] /i de::select [de::getActiveFigure [gi::getWindows 5] -point {1.0875 1.7125} -index 0 -intent none] -replace true
+[18:22:24.25] /o oa:0x26bc07e0
+[18:22:28.52] /i gi::setItemSelection {parameters} -index {pw,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:28.53] /i gi::setCurrentIndex {parameters} -index {pw,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:30.31] /i gi::setItemSelection {parameters} -index {per,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:30.35] /i gi::setCurrentIndex {parameters} -index {per,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:31.67] /i gi::setItemSelection {parameters} -index {acm,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:31.68] /i gi::setCurrentIndex {parameters} -index {acm,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 5]]
+[18:22:39.05] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 5]
+[18:22:39.05] /i ise::check
+[18:22:39.09] /m Information: 
+[18:22:39.09] /o Checking "mylibrary/adder_1bit_testbench/schematic"
+[18:22:39.10] /o No rule violations found in "mylibrary/adder_1bit_testbench/schematic"
+[18:22:39.10] /m Information: Checking process is completed: marking the design violations
+[18:22:39.20] /m Information: Marking of designs is completed
+[18:22:39.20] /o 0
+[18:22:42.11] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 5]
+[18:22:42.11] /i sa::showConsole -context [db::getNext [de::getContexts -window 5]]
+[18:22:42.17] /r giWindowId 8
+[18:22:42.18] /r giWindowGeometry 600x500
+[18:22:42.46] /o oa:0x27ea7780
+[18:22:42.82] /i db::setAttr geometry -of [gi::getFrames 8] -value 600x500+45+61
+[18:22:44.69] /i gi::executeAction menuPreShow -in [gi::getWindows 8]
+[18:22:44.79] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 8]]
+[18:22:46.74] /# gi::executeAction saLoadState -in [gi::getWindows 8]
+[18:22:46.74] /i sa::showLoadState -parent 8
+[18:22:47.00] /o oa:0x28253a80
+[18:22:47.49] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 8]]
+[18:22:47.97] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 8]] -value 600x645+172+83
+[18:22:51.08] /i gi::setField {/simulators} -value {HSPICE} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 8]]
+[18:22:52.94] /i gi::setField {/cells} -value {adder_1bit_testbench} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 8]]
+[18:22:57.15] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 8]]
+[18:22:57.63] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 8]] -value 600x616+172+83
+[18:23:02.39] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 8]]
+[18:23:05.77] /i gi::executeAction menuPreShow -in [gi::getWindows 8]
+[18:23:05.77] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 8]]
+[18:23:06.80] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 8]
+[18:23:06.80] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 8]
+[18:23:06.88] /m Information: "Starting incremental netlisting for design "mylibrary/adder_1bit_testbench/schematic"..." (NETLISTING-010)
+[18:23:06.93] /o No Design Integrity rule violations found in "mylibrary/adder_1bit_testbench/schematic"
+[18:23:07.01] /m Information: "mylibrary adder_1bit_testbench schematic" renetlisted. (NETLISTING-056)
+[18:23:07.03] /m Information: "Netlisting design "mylibrary/adder_1bit_testbench/schematic" finished successfully." (NETLISTING-012)
+[18:23:07.04] /m Information: "Composing simulator input file for design "mylibrary/adder_1bit_testbench/schematic"..."
+[18:23:07.11] /m Information: "Simulator input file composed successfully for design "mylibrary/adder_1bit_testbench/schematic""
+[18:23:07.56] /r giWindowId 9
+[18:23:07.57] /r giWindowGeometry 800x600
+[18:23:07.77] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 9]
+[18:23:07.77] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 9]
+[18:23:07.83] /m Information: "Starting HSPICE simulation for design: mylibrary/adder_1bit_testbench/schematic"
+[18:23:07.84] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 9]
+[18:23:07.88] /o 1
+[18:23:07.88] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 9]
+[18:23:08.08] /i db::setAttr geometry -of [gi::getFrames 9] -value 800x600+65+81
+[18:23:08.19] /e Error: "Simulation failed for design: mylibrary/adder_1bit_testbench/schematic "
+[18:23:08.33] /m Information: Expression 'v(/S)' did not evaluate: No results found.
+[18:23:08.34] /m Information: Expression 'v(/COUT)' did not evaluate: No results found.
+[18:23:08.34] /m Information: Expression 'v(/AIN)' did not evaluate: No results found.
+[18:23:08.35] /m Information: Expression 'v(/BIN)' did not evaluate: No results found.
+[18:23:08.35] /m Information: Expression 'v(/CIN)' did not evaluate: No results found.
+[18:23:08.37] /m Information: Re-evaluating the failed expression 'v(/S)'
+[18:23:08.37] /m Information: Expression 'v(/S)' did not evaluate: No results found.
+[18:23:08.38] /m Information: Re-evaluating the failed expression 'v(/COUT)'
+[18:23:08.39] /m Information: Expression 'v(/COUT)' did not evaluate: No results found.
+[18:23:08.39] /m Information: Re-evaluating the failed expression 'v(/AIN)'
+[18:23:08.40] /m Information: Expression 'v(/AIN)' did not evaluate: No results found.
+[18:23:08.40] /m Information: Re-evaluating the failed expression 'v(/BIN)'
+[18:23:08.41] /m Information: Expression 'v(/BIN)' did not evaluate: No results found.
+[18:23:08.42] /m Information: Re-evaluating the failed expression 'v(/CIN)'
+[18:23:08.42] /m Information: Expression 'v(/CIN)' did not evaluate: No results found.
+[18:23:08.46] /m Information: Measurement calculations completed for testbench: default in 0s
+[18:23:08.49] /m Information: Measurement calculations completed for testbench: default in 0s
+[18:23:10.55] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[18:23:10.66] /i gi::setActiveWindow 8
+[18:23:10.69] /i gi::setActiveWindow 8 -raise true
+[18:23:11.77] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[18:23:13.70] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[18:23:14.19] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[18:23:14.28] /i gi::setActiveWindow 1
+[18:23:14.29] /i gi::setActiveWindow 1 -raise true
+[18:23:15.99] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[18:23:16.06] /i gi::setActiveWindow 0
+[18:23:16.06] /i gi::setActiveWindow 0 -raise true
+[18:23:17.84] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[18:23:17.93] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[18:23:18.33] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[18:23:19.36] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[18:23:19.51] /m Information: License 'Simulation & Analysis Environment' checked in. (LICENSE-004)
+[18:23:19.57] /o Shutdown time: Tue Mar 12 18:23:19 2019
+[18:23:19.57] /o Elapsed session real time: 9.36 minutes
+[18:23:19.57] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.tarora.12_3_17_13_1.log

@@ -1,0 +1,102 @@
+[11:54:47.14] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Wed Mar 13 11:54:44 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[11:54:48.68] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[11:54:48.68] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[11:55:18.10] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[11:55:18.10] /i dm::showLibraryManager
+[11:55:18.11] /r giWindowId 1
+[11:55:18.11] /r giWindowGeometry 660x600+50+50
+[11:55:18.19] /o oa:0x225f6f50
+[11:55:19.97] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[11:55:20.04] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[11:55:21.55] /i gi::setCurrentIndex {cells} -index {inverter} -in [gi::getWindows 1]
+[11:55:21.74] /i gi::setItemSelection {cells} -index {inverter} -in [gi::getWindows 1]
+[11:55:23.07] /i gi::setCurrentIndex {cells} -index {inverter_testbench} -in [gi::getWindows 1]
+[11:55:23.18] /i gi::setItemSelection {cells} -index {inverter_testbench} -in [gi::getWindows 1]
+[11:55:26.05] /i gi::setCurrentIndex {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[11:55:26.17] /i gi::setItemSelection {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[11:55:28.07] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[11:55:28.09] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[11:55:55.92] /i gi::setCurrentIndex {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[11:55:56.09] /i gi::setItemSelection {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[11:55:57.38] /i gi::setCurrentIndex {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[11:55:57.44] /i gi::setItemSelection {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[11:55:59.67] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[11:55:59.69] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[11:55:59.83] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[11:55:59.88] /o 	############################################
+[11:55:59.88] /o 	--------------------------------------------
+[11:55:59.88] /o 	PDK Name................... : SAED_PDK_90
+[11:55:59.88] /o 	PDK Release Date........... : 29-Sep-2015
+[11:55:59.88] /o 	PDK Custom Designer Version : J-2014.12-2
+[11:55:59.88] /o 	--------------------------------------------
+[11:55:59.88] /o 	############################################
+[11:55:59.88] /o 
+[11:55:59.88] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[11:55:59.89] /o SAED PDK 90: Loaded callbacks
+[11:55:59.89] /o SAED PDK 90: Loaded display resources
+[11:55:59.96] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[11:56:00.07] /r giWindowId 2
+[11:56:00.07] /r giWindowGeometry 1088x700
+[11:56:05.32] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[11:56:05.84] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[11:56:05.94] /i gi::setActiveWindow 1
+[11:56:05.94] /i gi::setActiveWindow 1 -raise true
+[11:56:07.06] /i gi::setCurrentIndex {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[11:56:07.10] /i gi::setItemSelection {cells} -index {ringOscillator} -in [gi::getWindows 1]
+[11:56:08.46] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[11:56:08.48] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[11:56:08.63] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[11:56:08.68] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[11:56:08.76] /r giWindowId 3
+[11:56:08.76] /r giWindowGeometry 1088x700
+[11:56:09.45] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 190x550
+[11:57:31.04] /# gi::executeAction xtDRCSetup -in [gi::getWindows 3]
+[11:57:31.04] /i xt::showDRCSetup -job drc -window 3
+[11:57:32.46] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[11:57:33.07] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]] -value 445x457+488+63
+[11:57:41.15] /o oa:0x281a51a0
+[11:57:43.04] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[11:57:43.06] /w Warning: Attribute 'foreground' is deprecated for objects of type 'giCell' and scheduled for removal in a future release. See instead 'style.foreground'. For migration assistance, see the Custom Designer Tcl Reference Manual. (TCL_OBJECT-061)
+[11:57:43.64] /# xt::physicalVerification::executePve drc 3
+[11:57:43.96] /r giWindowId 4
+[11:57:43.97] /r giWindowGeometry 800x600
+[11:57:44.35] /i db::setAttr geometry -of [gi::getFrames 4] -value 800x600+45+61
+[11:57:47.32] /i gi::setActiveTab {tabs} -tabName {ringOscillator.LAYOUT_ERRORS} -in [gi::getWindows 4]
+[11:57:52.03] /i gi::setActiveTab {tabs} -tabName {stdout.drc.log} -in [gi::getWindows 4]
+[11:57:52.42] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_1
+              /c --- ERROR SUMMARY -----------
+              /c  R.VIA1.E.1: VIA1 must be covered by M1 and M2, min. 
+              /c  enclosure is 0.005um
+              /c    not ................................................ 1 violation found.
+              /c  R.VIA1.W.1: Exact size = 0.14 x 0.14um
+              /c    not_rectangles ..................................... 2 violations found.
+              /c =============================
+              /c 
+[11:57:54.55] /i gi::setActiveWindow 0
+[11:57:54.60] /i gi::setActiveWindow 0 -raise true
+[11:58:00.31] /i gi::setActiveWindow 4
+[11:58:00.36] /i gi::setActiveWindow 4 -raise true
+[11:58:01.31] /i gi::setActiveTab {tabs} -tabName {ringOscillator.LAYOUT_ERRORS} -in [gi::getWindows 4]
+[11:58:04.42] /i gi::setActiveTab {tabs} -tabName {stdout.drc.log} -in [gi::getWindows 4]
+[11:58:05.49] /i gi::setActiveTab {tabs} -tabName {ringOscillator.RESULTS} -in [gi::getWindows 4]
+[11:58:10.00] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[11:58:10.10] /i gi::setActiveWindow 0
+[11:58:10.11] /i gi::setActiveWindow 0 -raise true
+[11:58:12.45] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[11:58:12.55] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[11:58:12.97] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[11:58:14.97] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[11:58:15.59] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[11:58:15.65] /o Shutdown time: Wed Mar 13 11:58:15 2019
+[11:58:15.65] /o Elapsed session real time: 3.46 minutes
+[11:58:15.65] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.log

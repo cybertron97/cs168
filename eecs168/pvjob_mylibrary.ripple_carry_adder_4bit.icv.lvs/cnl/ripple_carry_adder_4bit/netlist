@@ -1,0 +1,17 @@
+********************************************************************************
+* Library          : mylibrary
+* Cell             : ripple_carry_adder_4bit
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt ripple_carry_adder_4bit A0 A1 A2 A3 B0 B1 B2 B3 C0 C4 S0 S1 S2 S3 VDD
++ VSS
+*.PININFO A0:I A1:I A2:I A3:I B0:I B1:I B2:I B3:I C0:I C4:O S0:O S1:O S2:O S3:O
+*.PININFO VDD:I VSS:I
+XI3 A0 B0 C0 net40 S0 VDD VSS adder_1bit
+XI2 A1 B1 net40 net38 S1 VDD VSS adder_1bit
+XI1 A2 B2 net38 net43 S2 VDD VSS adder_1bit
+XI0 A3 B3 net43 C4 S3 VDD VSS adder_1bit
+.ends ripple_carry_adder_4bit
+

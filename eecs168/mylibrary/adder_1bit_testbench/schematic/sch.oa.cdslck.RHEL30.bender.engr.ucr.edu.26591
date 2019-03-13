@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      tarora
+HostName                       bender.engr.ucr.edu
+ProcessIdentifier              26591
+ProcessCreationTime_UTC        1552440237
+ProcessCreationTime_Readable   Tue 12 Mar 2019 06:23:57 PM PDT PDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/cemaj/tarora/eecs168/mylibrary/adder_1bit_testbench/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue 12 Mar 2019 06:28:05 PM PDT PDT

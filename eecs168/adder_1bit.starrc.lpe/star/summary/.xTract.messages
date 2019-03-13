@@ -1,0 +1,60 @@
+Parsing option_file: xtract.tech (EX-304)
+Running Amd_64b    
+Initializing extraction ... (EX-724)
+Reading binary grd file /usr/local/synopsys/pdk/SAED_PDK90nm/starrcxt/saed90nm.nxtgrd ... (EX-135)
+----- R mode: reuse cap  environments -----
+----- Importing design ----- 
+Ary stats nx=9 ny=7 dx=18762 dy=21372 nentry=680  max/cell=44 av/cell=10.7937
+ Ary stats nx=2 ny=1 dx=84426 dy=149601 nentry=0  max/cell=0 av/cell=0
+ DB Partition id = 0
+DB num polygons = 364
+DB num fill polygons = 0
+DB num skip c polygons = 117
+DB num vias = 0
+Import design time is 0 seconds.
+----- Initializing models ----- 
+Initialize models time is 0 seconds.
+----- Extracting 24 nets ----- 
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=271.988
+Completed   9%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  12%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  18%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  21%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  24%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  27%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  30%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  33%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  36%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  39%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  42%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  45%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  48%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  51%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  54%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  57%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  60%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  63%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  66%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  69%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Completed  72%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+ Processing non-critical polygons ... 
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=272.199
+Extraction time is 0 seconds.
+----- Reducing 24 nets ----- 
+----- Floating fill reduction ----- 
+Floating fill reduction time is 0 seconds.Mem=272.199
+Reduction time is 0 seconds.
+Total capacitance environments constructed = 2273
+Unique capacitance environments constructed = 1827 (80.3784%)
+Total resistance environments constructed = 0
+Unique resistance environments constructed = 0
+Extracted 652 capacitors, 393 resistors, 381 nodes
+Reduced to 194 nodes,  (49.0814%)
+Reduced to 181 resistors,  (53.944%)
+Reduced to 601 capacitors: 509 Cc and 92 Cg (7.82209%)
+INTERNAL Warning: There are still 4 branches in memory  
+xTractor      Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=272.2 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=272.2 
+

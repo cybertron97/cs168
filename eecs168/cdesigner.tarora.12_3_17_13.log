@@ -1,0 +1,109 @@
+[17:21:53.44] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Tue Mar 12 17:21:51 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[17:21:54.93] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[17:21:54.93] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[17:22:09.82] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[17:22:09.82] /i dm::showLibraryManager
+[17:22:09.83] /r giWindowId 1
+[17:22:09.83] /r giWindowGeometry 660x600+50+50
+[17:22:09.91] /o oa:0x287f68c0
+[17:23:07.39] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[17:23:07.41] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[17:23:09.06] /i gi::setCurrentIndex {cells} -index {adder_1bit_testbench} -in [gi::getWindows 1]
+[17:23:09.11] /i gi::setItemSelection {cells} -index {adder_1bit_testbench} -in [gi::getWindows 1]
+[17:23:10.22] /i gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 1]
+[17:23:10.24] /i gi::setItemSelection {views} -index {config} -in [gi::getWindows 1]
+[17:23:11.80] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[17:23:17.24] /i gi::setActiveWindow 0
+[17:23:17.24] /i gi::setActiveWindow 0 -raise true
+[17:23:21.12] /i gi::setActiveWindow 1
+[17:23:21.13] /i gi::setActiveWindow 1 -raise true
+[17:23:25.09] /i gi::executeAction dmOpenConfigWrite -in [gi::getWindows 1]
+[17:23:25.10] /r giWindowId 2
+[17:23:25.10] /r giWindowGeometry 750x750
+[17:23:25.59] /i db::setAttr geometry -of [gi::getFrames 2] -value 750x708+70+70
+[17:23:34.34] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 2]
+[17:23:50.80] /i gi::setField {heTopLCVSelectorView} -value {schematic} -in [gi::getWindows 2]
+[17:23:50.81] /i gi::sortItems {heTreeWidget} -column {Instance} -order {descending} -in [gi::getWindows 2]
+[17:24:02.85] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[17:24:02.95] /i gi::setActiveWindow 1
+[17:24:02.95] /i gi::setActiveWindow 1 -raise true
+[17:24:05.76] /i gi::executeAction dmOpenConfigDesignWrite -in [gi::getWindows 1]
+[17:24:05.82] /e Error: System exception while executing gi::executeAction: Failed to execute open procedure of 'Design Editor (configured)' application: Failed to eecs168/mylibrary/adder_1bit_testbench/schematic the file open, because filename does not exist. (COMMAND-001)
+[17:24:12.46] /i gi::executeAction dmOpenConfigWrite -in [gi::getWindows 1]
+[17:24:12.48] /r giWindowId 3
+[17:24:12.48] /r giWindowGeometry 750x750
+[17:24:13.01] /i db::setAttr geometry -of [gi::getFrames 3] -value 750x708+70+70
+[17:24:20.20] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 3]
+[17:24:20.21] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[17:24:20.32] /i gi::setActiveWindow 1
+[17:24:20.32] /i gi::setActiveWindow 1 -raise true
+[17:24:26.53] /i gi::executeAction dmDeleteCellView -in [gi::getWindows 1]
+[17:24:26.67] /r giDialog gi::setActiveDialog [gi::getDialogs {dmDelete}]
+[17:24:27.11] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmDelete}] -value 364x104+70+70
+[17:24:28.39] /r giDialog gi::pressButton {delete} -in [gi::getDialogs {dmDelete}]
+[17:24:28.42] /# db::destroy [dm::findCellView config -cell [dm::findCell adder\_1bit\_testbench -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary ]]]]
+[17:24:28.43] /# gi::setCurrentIndex {views} -index {adder_1bit_testbench} -in [gi::getWindows 1]
+[17:24:28.45] /# gi::setItemSelection {views} -index {} -in [gi::getWindows 1]
+[17:24:36.98] /i db::setAttr geometry -of [gi::getFrames 1] -value 891x676+50+50
+[17:24:41.88] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[17:24:41.92] /i gi::setActiveWindow 0
+[17:24:41.92] /i gi::setActiveWindow 0 -raise true
+[17:25:12.20] /# gi::executeAction dmShowNewCellView -in [gi::getWindows 0]
+[17:25:12.20] /i dm::showNewCellView -parent 0
+[17:25:12.23] /o oa:0x24a89ab0
+[17:25:12.33] /i gi::setActiveDialog [gi::getDialogs {dmNewCellView}]
+[17:25:12.57] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView}] -value 588x336+20+417
+[17:25:14.40] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[17:25:14.41] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getDialogs {dmNewCellView}]
+[17:25:15.73] /i gi::setCurrentIndex {cells} -index {adder_1bit_testbench} -in [gi::getDialogs {dmNewCellView}]
+[17:25:15.74] /i gi::setItemSelection {cells} -index {adder_1bit_testbench} -in [gi::getDialogs {dmNewCellView}]
+[17:25:34.96] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+88+239
+[17:25:38.34] /i db::setAttr geometry -of [gi::getDialogs {dmNewCellView}] -value 588x336+260+253
+[17:25:51.07] /i gi::pressButton {ok} -in [gi::getDialogs {dmNewCellView}]
+[17:25:51.08] /# db::getAttr viewType -of [dm::findCellView config -cell [dm::findCell adder\_1bit\_testbench -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]]
+[17:25:51.08] /# dm::createCellView config -cell [dm::findCell adder\_1bit\_testbench -lib [ oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]] -viewType config\.xml
+[17:25:51.11] /# de::open [dm::findCellView config -cell [dm::findCell adder\_1bit\_testbench -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary]]]] -application heEditor
+[17:25:51.13] /r giWindowId 4
+[17:25:51.14] /r giWindowGeometry 750x750
+[17:25:51.61] /i db::setAttr geometry -of [gi::getFrames 4] -value 750x505+280+273
+[17:25:59.63] /o 	############################################
+[17:25:59.64] /o 	--------------------------------------------
+[17:25:59.64] /o 	PDK Name................... : SAED_PDK_90
+[17:25:59.64] /o 	PDK Release Date........... : 29-Sep-2015
+[17:25:59.64] /o 	PDK Custom Designer Version : J-2014.12-2
+[17:25:59.64] /o 	--------------------------------------------
+[17:25:59.64] /o 	############################################
+[17:25:59.64] /o 
+[17:25:59.64] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[17:25:59.64] /o SAED PDK 90: Loaded callbacks
+[17:25:59.65] /o SAED PDK 90: Loaded display resources
+[17:25:59.67] /i gi::setField {heTopLCVSelectorView} -value {schematic} -in [gi::getWindows 4]
+[17:26:02.82] /i gi::setActiveWindow 0
+[17:26:02.83] /i gi::setActiveWindow 0 -raise true
+[17:26:04.83] /i gi::setActiveWindow 4
+[17:26:04.83] /i gi::setActiveWindow 4 -raise true
+[17:26:19.97] /i gi::setField {heViewSearchList} -value {schematic\ hspice} -in [gi::getWindows 4]
+[17:26:42.46] /i gi::setField {heViewSearchList} -value {schematic\ hspice\ symbol} -in [gi::getWindows 4]
+[17:26:54.29] /i gi::setCurrentIndex {heTreeWidget} -index {0.0,0} -in [gi::getWindows 4]
+[17:26:54.29] /i gi::setItemSelection {heTreeWidget} -index {0.0,all} -in [gi::getWindows 4]
+[17:27:05.50] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[17:27:05.66] /r giDialog gi::setActiveDialog [gi::getDialogs {heCloseConfig} -parent [gi::getWindows 4]]
+[17:27:06.01] /r giDialog db::setAttr geometry -of [gi::getDialogs {heCloseConfig} -parent [gi::getWindows 4]] -value 511x89+399+295
+[17:27:07.92] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {heCloseConfig} -parent [gi::getWindows 4]]
+[17:27:08.03] /i gi::setActiveWindow 0
+[17:27:08.04] /i gi::setActiveWindow 0 -raise true
+[17:30:37.95] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[17:30:38.05] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[17:30:38.42] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+108+259
+[17:30:39.46] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[17:30:39.52] /o Shutdown time: Tue Mar 12 17:30:39 2019
+[17:30:39.52] /o Elapsed session real time: 8.76 minutes
+[17:30:39.52] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.tarora.12_3_17_13.log

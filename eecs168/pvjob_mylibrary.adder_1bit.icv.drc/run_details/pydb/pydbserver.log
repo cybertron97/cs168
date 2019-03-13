@@ -1,0 +1,28 @@
+                                        
+                                PYDB_Server (R)
+                                        
+           Version K-2015.12-3 for linux64 - Dec 17, 2015 cl#3052145
+                                        
+                    Copyright (c) 2007 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+NFS filesystem detected
+Removing old database /home/cemaj/tarora/eecs168/pvjob_mylibrary.adder_1bit.icv.drc/run_details/pydb/PYDB_adder_1bit
+Listening for connections on port 8283
+PYDB_Server Started on host bender.engr.ucr.edu, Wed 03/13/2019 13:42:37
+Verified current licenses.
+Client bender.engr.ucr.edu(20879):6 connected (1 total client)
+Client bender.engr.ucr.edu(20934):15 connected (2 total clients)
+Client bender.engr.ucr.edu(20933):16 connected (3 total clients)
+Client bender.engr.ucr.edu(20934):15 disconnected (2 clients remain)
+Client bender.engr.ucr.edu(20934):15 connected (3 total clients)
+Client bender.engr.ucr.edu(20933):16 disconnected (2 clients remain)
+Client bender.engr.ucr.edu(20933):16 connected (3 total clients)
+Client bender.engr.ucr.edu(20934):15 disconnected (2 clients remain)
+Client bender.engr.ucr.edu(20933):16 disconnected (1 client remains)
+Shutdown requested by client bender.engr.ucr.edu(20879):6
+0 clients remain connected
+Overall server Time=0:00:05  User=0.02 Sys=0.09 Mem=9.858 MySQL=33.219 Unpooled=0.028

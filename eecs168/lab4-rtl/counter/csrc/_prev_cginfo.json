@@ -1,0 +1,94 @@
+{
+    "NameTable": {
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "timeunit": [
+            "timeunit",
+            "H0Y6L",
+            "module"
+        ],
+        "counter_testbench": [
+            "counter_testbench",
+            "uuCq7",
+            "module"
+        ]
+    },
+    "CurCompileUdps": {},
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.036628000000000001,
+            "ru_nivcsw": 2,
+            "ru_stime_sec": 0.014651000000000001,
+            "ru_nvcsw": 162,
+            "ru_maxrss_kb": 43064,
+            "ru_minflt": 10261,
+            "ru_majflt": 0
+        },
+        "nQuads": 237,
+        "mopSpeed": 34627.942945523275,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_majflt": 0
+        },
+        "nMops": 403,
+        "totalObjSize": 53478,
+        "outputSizePerQuad": 225.0,
+        "ru_self_end": {
+            "ru_utime_sec": 0.048266000000000003,
+            "ru_nivcsw": 2,
+            "ru_stime_sec": 0.020841999999999999,
+            "ru_nvcsw": 236,
+            "ru_maxrss_kb": 49100,
+            "ru_minflt": 12135,
+            "ru_majflt": 0
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_nivcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_majflt": 0
+        },
+        "quadSpeed": 20364.323766970265,
+        "mop/quad": 1.7004219409282701,
+        "CodeGen(%)": 24.112211494633907,
+        "Frontend(%)": 75.887788505366089
+    },
+    "CompileProcesses": [
+        "cgproc.5218.json"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "SIMBData": {
+        "bytes": 34042,
+        "out": "amcQwB.o"
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "timeunit",
+        "counter_testbench"
+    ],
+    "PEModules": [],
+    "Misc": {
+        "archive_dir": "archive.0",
+        "default_output_dir": "csrc",
+        "cwd": "/home/cemaj/tarora/eecs168/lab4-rtl/counter",
+        "csrc": "csrc",
+        "csrc_abs": "/home/cemaj/tarora/eecs168/lab4-rtl/counter/csrc",
+        "daidir_abs": "/home/cemaj/tarora/eecs168/lab4-rtl/counter/simv.daidir",
+        "daidir": "simv.daidir"
+    },
+    "CompileStatus": "Successful"
+}

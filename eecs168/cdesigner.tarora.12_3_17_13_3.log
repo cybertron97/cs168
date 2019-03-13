@@ -1,0 +1,945 @@
+[19:00:04.05] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Tue Mar 12 19:00:01 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[19:00:05.53] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[19:00:05.53] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[19:00:21.41] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[19:00:21.41] /i dm::showLibraryManager
+[19:00:21.41] /r giWindowId 1
+[19:00:21.42] /r giWindowGeometry 660x600+50+50
+[19:00:21.50] /o oa:0x23c70550
+[19:00:23.21] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[19:00:23.22] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[19:00:25.17] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[19:00:25.35] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[19:00:27.05] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[19:00:27.06] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[19:00:27.87] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:00:27.93] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[19:00:27.95] /o 	############################################
+[19:00:27.95] /o 	--------------------------------------------
+[19:00:27.95] /o 	PDK Name................... : SAED_PDK_90
+[19:00:27.95] /o 	PDK Release Date........... : 29-Sep-2015
+[19:00:27.95] /o 	PDK Custom Designer Version : J-2014.12-2
+[19:00:27.95] /o 	--------------------------------------------
+[19:00:27.95] /o 	############################################
+[19:00:27.95] /o 
+[19:00:27.95] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[19:00:27.96] /o SAED PDK 90: Loaded callbacks
+[19:00:27.96] /o SAED PDK 90: Loaded display resources
+[19:00:28.01] /r giWindowId 2
+[19:00:28.01] /r giWindowGeometry 1088x700
+[19:00:29.00] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 190x550
+[19:00:29.15] /i gi::setActiveDialog [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[19:00:39.76] /i gi::closeWindows [gi::getDialogs {leMissingReferences} -parent [gi::getWindows 2]]
+[19:00:42.39] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:00:42.39] /i de::zoom -window 2 -factor 0.5 -center {8.157 7.181}
+[19:00:42.40] /o {-14.753 -36.766} {117.559 48.324}
+[19:00:42.42] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:00:42.42] /i de::zoom -window 2 -factor 0.5 -center {8.156 7.182}
+[19:00:42.43] /o {-37.661 -80.715} {226.961 89.467}
+[19:00:42.89] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:00:42.89] /i de::zoom -window 2 -factor 2.0 -center {8.157 7.181}
+[19:00:42.89] /o {-14.752 -36.767} {117.559 48.324}
+[19:00:42.92] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:00:42.92] /i de::zoom -window 2 -factor 2.0 -center {8.157 7.181}
+[19:00:42.93] /o {-3.298 -14.793} {62.858 27.752}
+[19:00:42.93] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:00:42.93] /i de::zoom -window 2 -factor 2.0 -center {8.157 7.181}
+[19:00:42.94] /o {2.43 -3.806} {35.508 17.467}
+[19:00:42.99] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:00:42.99] /i de::zoom -window 2 -factor 2.0 -center {8.157 7.181}
+[19:00:42.99] /o {5.293 1.688} {21.832 12.324}
+[19:00:43.06] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:00:43.06] /i de::zoom -window 2 -factor 2.0 -center {8.157 7.181}
+[19:00:43.07] /o {6.725 4.434} {14.995 9.752}
+[19:00:43.09] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:00:43.09] /i de::zoom -window 2 -factor 2.0 -center {8.157 7.181}
+[19:00:43.10] /o {7.441 5.808} {11.576 8.467}
+[19:00:43.10] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:00:43.10] /i de::zoom -window 2 -factor 2.0 -center {8.157 7.181}
+[19:00:43.11] /o {7.799 6.494} {9.866 7.824}
+[19:00:43.69] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:00:43.69] /i de::zoom -window 2 -factor 0.5 -center {8.157 7.181}
+[19:00:43.70] /o {7.441 5.808} {11.576 8.467}
+[19:00:43.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:00:43.70] /i de::zoom -window 2 -factor 0.5 -center {8.157 7.181}
+[19:00:43.71] /o {6.725 4.434} {14.995 9.752}
+[19:00:43.72] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:00:43.72] /i de::zoom -window 2 -factor 0.5 -center {8.157 7.181}
+[19:00:43.73] /o {5.293 1.688} {21.832 12.324}
+[19:00:44.51] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:00:44.51] /i de::zoom -window 2 -factor 0.5 -center {8.157 7.181}
+[19:00:44.52] /o {2.43 -3.806} {35.508 17.467}
+[19:00:44.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:00:44.56] /i de::zoom -window 2 -factor 0.5 -center {8.157 7.181}
+[19:00:44.57] /o {-3.298 -14.793} {62.858 27.752}
+[19:00:45.93] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:00:45.93] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {8.157 7.181} -index 0 -intent none] -replace true
+[19:00:45.93] /o oa:0x28717ec0
+[19:00:47.32] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:00:47.32] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {8.157 6.558} -index 0 -intent none] -replace true
+[19:00:47.32] /o oa:0x2873f190
+[19:00:49.38] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:00:49.38] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {8.702 7.337} -index 0 -intent none] -replace true
+[19:00:49.39] /o oa:0x286d1270
+[19:01:08.82] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 2]
+[19:01:08.82] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[19:01:09.15] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 190x525
+[19:01:09.20] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 190x525
+[19:01:11.88] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:11.91] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:20.97] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 190x547
+[19:01:21.38] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 190x549
+[19:01:21.41] /i db::setAttr geometry -of [gi::getFrames 2] -value 1274x724+7+23
+[19:01:22.75] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:22.76] /e Error: Design "eecs168_library/adder_1bit/layout" does not exist.. (PROPERTY_EDITOR-005)
+[19:01:23.46] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 373x549
+[19:01:26.91] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:27.60] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:36.59] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:39.25] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:01:39.25] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {23.118 7.415} -index 0 -intent none] -replace true
+[19:01:39.26] /o oa:0x288b6f20
+[19:01:43.12] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:43.15] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:45.09] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:46.14] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:49.82] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:51.04] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:01:51.04] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {37.066 8.817} -index 0 -intent none] -replace true
+[19:01:51.05] /o oa:0x287c7270
+[19:01:53.33] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:53.36] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:55.57] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:01:56.50] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:02:01.58] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:02:02.80] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:02:02.80] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {51.793 6.324} -index 0 -intent none] -replace true
+[19:02:02.81] /o oa:0x27d30170
+[19:02:05.50] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:02:05.53] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:02:07.87] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:02:08.66] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c layout} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:02:11.71] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[19:02:15.92] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:15.92] /i de::zoom -window 2 -factor 0.5 -center {25.3 0.246}
+[19:02:15.93] /o {-31.895 -33.572} {100.884 55.259}
+[19:02:16.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:16.56] /i de::zoom -window 2 -factor 0.5 -center {25.3 0.246}
+[19:02:16.56] /o {-89.09 -67.39} {176.467 110.272}
+[19:02:16.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:16.56] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:16.57] /o {-203.479 -135.026} {327.635 220.297}
+[19:02:16.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:16.57] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:16.58] /o {-432.257 -270.298} {629.972 440.348}
+[19:02:16.58] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.58] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.59] /o {-203.479 -135.026} {327.635 220.297}
+[19:02:16.59] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.59] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.60] /o {-89.09 -67.39} {176.467 110.272}
+[19:02:16.60] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.60] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.60] /o {-31.896 -33.572} {100.883 55.259}
+[19:02:16.60] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.60] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.61] /o {-3.298 -16.663} {63.091 27.752}
+[19:02:16.61] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.61] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.62] /o {11.0 -8.209} {44.195 13.999}
+[19:02:16.62] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.62] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.63] /o {18.15 -3.981} {34.747 7.123}
+[19:02:16.63] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.63] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.63] /o {21.724 -1.868} {30.023 3.684}
+[19:02:16.71] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.71] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.71] /o {23.512 -0.811} {27.661 1.965}
+[19:02:16.72] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:02:16.72] /i de::zoom -window 2 -factor 2.0 -center {25.299 0.246}
+[19:02:16.73] /o {24.405 -0.282} {26.48 1.106}
+[19:02:17.28] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:17.28] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:17.29] /o {23.512 -0.811} {27.661 1.965}
+[19:02:17.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:17.49] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:17.51] /o {21.724 -1.868} {30.023 3.684}
+[19:02:17.51] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:17.51] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:17.52] /o {18.15 -3.981} {34.747 7.123}
+[19:02:17.55] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:17.55] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:17.57] /o {11.0 -8.209} {44.195 13.999}
+[19:02:17.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:17.75] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:17.77] /o {-3.298 -16.663} {63.091 27.752}
+[19:02:17.80] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:02:17.80] /i de::zoom -window 2 -factor 0.5 -center {25.299 0.246}
+[19:02:17.81] /o {-31.896 -33.572} {100.883 55.259}
+[19:02:19.52] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:02:19.52] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[19:02:23.93] /# gi::executeAction xtLVSSetup -in [gi::getWindows 2]
+[19:02:23.93] /i xt::showLVSSetup -job lvs -window 2
+[19:02:25.03] /o oa:0x287a0350
+[19:02:25.41] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:25.75] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 704x485+487+45
+[19:02:32.58] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/netlistingOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:34.09] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/controlVariablesTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:35.66] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/netlistingOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:37.60] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/customOptionsTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:39.81] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/mainTab} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:42.58] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:42.59] /w Warning: Attribute 'foreground' is deprecated for objects of type 'giCell' and scheduled for removal in a future release. See instead 'style.foreground'. For migration assistance, see the Custom Designer Tcl Reference Manual. (TCL_OBJECT-061)
+[19:02:43.22] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[19:02:43.23] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:02:43.56] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 654x337+507+65
+[19:02:47.79] /r giDialog gi::pressButton {selectAll} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:02:47.80] /r giDialog gi::setField {target} -index {0,0} -value {true} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:02:47.80] /r giDialog gi::setField {target} -index {0,1} -value {true} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:02:48.84] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[19:02:48.92] /# xt::physicalVerification::executePve lvs 2
+[19:02:48.98] /m Information: "Starting netlisting for design "mylibrary/ripple_carry_adder_4bit/schematic"..." (NETLISTING-010)
+[19:02:48.99] /# gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[19:02:49.05] /o No Design Integrity rule violations found in "mylibrary/ripple_carry_adder_4bit/schematic"
+[19:02:49.05] /e Error: "Cell eecs168_library/adder_1bit/symbol does not contain any of the required views: auCdl schematic symbol. The following instances of this cell in design mylibrary/ripple_carry_adder_4bit/schematic will not be netlistable: 
+              /c I3
+              /c I2
+              /c I1
+              /c I0." (NETLISTING-038)
+[19:02:49.06] /e Error: Fatal error occured, netlisting will be terminated. (NETLISTING-001)
+[19:02:49.06] /m Information: "Netlisting design "mylibrary/ripple_carry_adder_4bit/schematic" didn't finish." (NETLISTING-013)
+[19:02:54.28] /i gi::setActiveWindow 0
+[19:02:54.28] /i gi::setActiveWindow 0 -raise true
+[19:03:12.58] /i gi::setActiveWindow 2
+[19:03:12.59] /i gi::setActiveWindow 2 -raise true
+[19:03:14.76] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:03:14.76] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {35.585 5.077} -index 0 -intent none] -replace true
+[19:03:14.77] /o oa:0x287b2620
+[19:03:17.91] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 373x549
+[19:03:22.52] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[19:03:22.52] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {3.169 6.168} -index 0 -intent none] -replace true
+[19:03:22.53] /o oa:0x28be2ec0
+[19:03:27.22] /# gi::executeAction deDesignSummary -in [gi::getWindows 2]
+[19:03:27.22] /i puts [db::query [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]]
+[19:03:27.28] /o Design Summary
+              /c --------------
+              /c DESIGN: mylibrary ripple_carry_adder_4bit layout
+              /c BBOX: (0.01 0.0) (59.55 12.96) 
+              /c DBU per UU: 1000
+              /c User Units:  micron
+              /c  
+              /c OBJECT TYPE  : SHAPE
+              /c +------------------+----------------+------------------+------------------+------------------+
+              /c | Object           | Layer          | Purpose          | Count            | Distance         |
+              /c +------------------+----------------+------------------+------------------+------------------+
+              /c | Path             | M1             | drawing          | 2                | 113.63           |
+              /c | Path             | M2             | drawing          | 3                | 42.665           |
+              /c | Rect             | VIA1           | drawing          | 3                |                  |
+              /c | Text             | M1PIN          | drawing          | 7                |                  |
+              /c | Text             | M2PIN          | drawing          | 9                |                  |
+              /c +------------------+----------------+------------------+------------------+------------------+
+              /c 
+              /c OBJECT TYPE  : INSTANCE
+              /c +------------------+----------------+------------------+------------------+
+              /c | Library          | Cell           | View             | Count            |
+              /c +------------------+----------------+------------------+------------------+
+              /c | mylibrary        | adder_1bit     | layout           | 4                |
+              /c +------------------+----------------+------------------+------------------+
+              /c 
+[19:03:27.28] /o 
+[19:03:42.70] /i db::setAttr iconified -of [gi::getFrames 0] -value true
+[19:03:42.70] /i gi::setActiveWindow 2
+[19:03:42.71] /i gi::setActiveWindow 2 -raise true
+[19:03:45.64] /# gi::executeAction lePinRelationship -in [gi::getWindows 2]
+[19:03:45.64] /i ile::changePinRelationship
+[19:03:45.69] /w Warning: The requested change pin relationship action could not be completed because select objects are all not the oaRef/oaShape objects with pin. (ILE_EDIT_COMMANDS-048)
+[19:03:49.33] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[19:03:49.33] /i de::addPoint {10.026 10.688} -window 2
+[19:03:49.33] /w Warning: The requested change pin relationship action could not be completed because select objects are all not the oaRef/oaShape objects with pin. (ILE_EDIT_COMMANDS-048)
+[19:03:57.48] /i gi::executeAction deSaveDesign -in [gi::getWindows 2]
+[19:03:57.52] /m Information: Saving design 'mylibrary ripple_carry_adder_4bit layout'. (DESIGN_WINDOW-004)
+[19:04:07.13] /# gi::executeAction deDescendEdit -in [gi::getWindows 2]
+[19:04:07.13] /i ide::descend 2 -inPlace false -readOnly false -promptView false
+[19:04:31.09] /# gi::executeAction leShowDisplayOptions -in [gi::getWindows 2]
+[19:04:31.09] /i le::showDisplayOptions
+[19:04:31.16] /o oa:0x28cd76c0
+[19:04:31.25] /i gi::setActiveDialog [gi::getDialogs {deLayoutDisplayOptions} -parent [gi::getWindows 2]]
+[19:04:31.48] /i db::setAttr geometry -of [gi::getDialogs {deLayoutDisplayOptions} -parent [gi::getWindows 2]] -value 598x437+345+45
+[19:04:32.77] /i gi::pressButton {ok} -in [gi::getDialogs {deLayoutDisplayOptions} -parent [gi::getWindows 2]]
+[19:04:37.85] /i gi::setField {drcMode} -value {Visual} -in [gi::getToolbars {leDRCToolbar} -from [gi::getWindows 2]]
+[19:04:40.02] /i gi::setField {drcMode} -value {Assist} -in [gi::getToolbars {leDRCToolbar} -from [gi::getWindows 2]]
+[19:04:42.27] /i gi::setField {startLevel} -value {1} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 2]]
+[19:04:43.51] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:43.51] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:43.52] /o {-106.7 -75.961} {158.857 101.701}
+[19:04:43.54] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:43.54] /i de::zoom -window 2 -factor 0.5 -center {42.91 8.818}
+[19:04:43.55] /o {-256.31 -160.74} {274.804 194.583}
+[19:04:43.55] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:43.55] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.818}
+[19:04:43.56] /o {-555.529 -330.298} {506.7 380.348}
+[19:04:43.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:43.57] /i de::zoom -window 2 -factor 0.5 -center {42.91 8.817}
+[19:04:43.58] /o {-1153.969 -669.413} {970.489 751.879}
+[19:04:43.74] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:43.74] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.818}
+[19:04:43.75] /o {-2350.847 -1347.644} {1898.07 1494.941}
+[19:04:44.02] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.02] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.02] /o {-1153.969 -669.414} {970.489 751.879}
+[19:04:44.02] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.02] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.03] /o {-555.53 -330.298} {506.699 380.348}
+[19:04:44.05] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.05] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.06] /o {-256.31 -160.741} {274.804 194.582}
+[19:04:44.13] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.13] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.13] /o {-106.701 -75.962} {158.857 101.7}
+[19:04:44.17] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.17] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.17] /o {-31.896 -33.572} {100.883 55.258}
+[19:04:44.18] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.18] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.18] /o {5.507 -12.378} {71.896 32.038}
+[19:04:44.38] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.38] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.39] /o {24.208 -1.78} {57.402 20.427}
+[19:04:44.41] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.41] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.41] /o {33.558 3.518} {50.156 14.622}
+[19:04:44.42] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.42] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.43] /o {38.234 6.168} {46.532 11.72}
+[19:04:44.43] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.43] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.44] /o {40.571 7.492} {44.721 10.268}
+[19:04:44.46] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.46] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.47] /o {41.74 8.155} {43.815 9.543}
+[19:04:44.47] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:44.47] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:44.48] /o {42.325 8.486} {43.362 9.18}
+[19:04:44.84] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.84] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.84] /o {41.74 8.155} {43.815 9.543}
+[19:04:44.84] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.84] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.85] /o {40.571 7.492} {44.721 10.268}
+[19:04:44.85] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.85] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.86] /o {38.234 6.168} {46.532 11.72}
+[19:04:44.87] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.87] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.88] /o {33.558 3.518} {50.156 14.622}
+[19:04:44.91] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.91] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.91] /o {24.208 -1.78} {57.402 20.427}
+[19:04:44.92] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.92] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.92] /o {5.507 -12.378} {71.896 32.038}
+[19:04:44.92] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.92] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.93] /o {-31.896 -33.572} {100.883 55.258}
+[19:04:44.93] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.93] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.94] /o {-106.701 -75.962} {158.857 101.7}
+[19:04:44.95] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.95] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.96] /o {-256.31 -160.741} {274.804 194.582}
+[19:04:44.96] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:44.96] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:44.96] /o {-555.53 -330.298} {506.699 380.348}
+[19:04:46.29] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:04:46.30] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:46.30] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:46.31] /o {-1153.969 -669.414} {970.489 751.879}
+[19:04:46.34] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:04:46.84] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:46.84] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:46.85] /o {-555.53 -330.298} {506.699 380.348}
+[19:04:46.91] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:46.91] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.12] /o {-256.31 -160.741} {274.804 194.582}
+[19:04:47.12] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.12] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.13] /o {-106.701 -75.962} {158.857 101.7}
+[19:04:47.13] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.13] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.13] /o {-31.896 -33.572} {100.883 55.258}
+[19:04:47.13] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.14] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.14] /o {5.507 -12.378} {71.896 32.038}
+[19:04:47.14] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.14] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.15] /o {24.208 -1.78} {57.402 20.427}
+[19:04:47.15] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.15] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.16] /o {33.558 3.518} {50.156 14.622}
+[19:04:47.16] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.16] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.16] /o {38.234 6.168} {46.532 11.72}
+[19:04:47.16] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.16] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.17] /o {40.571 7.492} {44.721 10.268}
+[19:04:47.18] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.18] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.19] /o {41.74 8.155} {43.815 9.543}
+[19:04:47.20] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.20] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.21] /o {42.325 8.486} {43.362 9.18}
+[19:04:47.21] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.21] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.22] /o {42.617 8.651} {43.135 8.998}
+[19:04:47.24] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.24] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.24] /o {42.763 8.734} {43.022 8.908}
+[19:04:47.24] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.24] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.25] /o {42.836 8.776} {42.966 8.862}
+[19:04:47.25] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.25] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.26] /o {42.872 8.796} {42.937 8.84}
+[19:04:47.27] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.27] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.28] /o {42.888 8.805} {42.925 8.83}
+[19:04:47.28] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.28] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.28] /o {42.888 8.805} {42.925 8.83}
+[19:04:47.36] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.36] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.37] /o {42.888 8.805} {42.925 8.83}
+[19:04:47.41] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 2]
+[19:04:47.41] /i de::zoom -window 2 -factor 2.0 -center {42.909 8.817}
+[19:04:47.42] /o {42.888 8.805} {42.925 8.83}
+[19:04:47.70] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.70] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.71] /o {42.867 8.793} {42.942 8.843}
+[19:04:47.72] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.72] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.73] /o {42.825 8.769} {42.974 8.869}
+[19:04:47.75] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.75] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.76] /o {42.741 8.722} {43.04 8.922}
+[19:04:47.76] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.76] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.77] /o {42.572 8.626} {43.17 9.026}
+[19:04:47.77] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.77] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.78] /o {42.235 8.435} {43.431 9.235}
+[19:04:47.79] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.79] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.80] /o {41.562 8.053} {43.953 9.653}
+[19:04:47.80] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.80] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.80] /o {40.214 7.29} {44.997 10.49}
+[19:04:47.87] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.87] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.88] /o {37.52 5.763} {47.086 12.163}
+[19:04:47.92] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:47.92] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:47.93] /o {32.13 2.709} {51.263 15.509}
+[19:04:48.21] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.21] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.22] /o {21.351 -3.399} {59.616 22.201}
+[19:04:48.23] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.23] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.24] /o {-0.207 -15.615} {76.324 35.585}
+[19:04:48.24] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.24] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.25] /o {-43.323 -40.048} {109.738 62.352}
+[19:04:48.25] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.25] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.25] /o {-129.554 -88.912} {176.568 115.888}
+[19:04:48.27] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.27] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.28] /o {-302.017 -186.641} {310.227 222.959}
+[19:04:48.28] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.28] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.28] /o {-646.944 -382.099} {577.545 437.101}
+[19:04:48.29] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.29] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.29] /o {-1336.796 -773.016} {1112.181 865.384}
+[19:04:48.29] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.29] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.30] /o {-2716.502 -1554.849} {2181.452 1721.951}
+[19:04:48.30] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.30] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.31] /o {-5475.912 -3118.514} {4319.995 3435.086}
+[19:04:48.31] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.31] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.818}
+[19:04:48.32] /w Warning: Could not zoom to factor '4.35e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:04:48.32] /o {-6177.891 -3516.303} {4864.029 3870.897}
+[19:04:48.32] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.32] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.33] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:04:48.33] /o {-6177.891 -3516.303} {4864.029 3870.897}
+[19:04:48.33] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.33] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.34] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:04:48.34] /o {-6177.891 -3516.303} {4864.029 3870.897}
+[19:04:48.35] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.35] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.36] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:04:48.36] /o {-6177.891 -3516.303} {4864.029 3870.897}
+[19:04:48.36] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.36] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.37] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:04:48.37] /o {-6177.891 -3516.303} {4864.029 3870.897}
+[19:04:48.58] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.58] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.59] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:04:48.59] /o {-6177.891 -3516.303} {4864.029 3870.897}
+[19:04:48.59] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 2]
+[19:04:48.59] /i de::zoom -window 2 -factor 0.5 -center {42.909 8.817}
+[19:04:48.60] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[19:04:48.60] /o {-6177.891 -3516.303} {4864.029 3870.897}
+[19:04:57.05] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[19:04:57.81] /m Information: License 'Layout Editor' checked in. (LICENSE-004)
+[19:04:57.92] /i gi::setActiveWindow 1
+[19:04:57.93] /i gi::setActiveWindow 1 -raise true
+[19:04:59.60] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:04:59.65] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[19:04:59.71] /r giWindowId 3
+[19:04:59.72] /r giWindowGeometry 1088x700
+[19:05:00.97] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 190x550
+[19:05:08.42] /i gi::setField {checkOnModification} -value {true} -in [gi::getToolbars {leDRCToolbar} -from [gi::getWindows 3]]
+[19:05:09.16] /i gi::setField {checkOnModification} -value {false} -in [gi::getToolbars {leDRCToolbar} -from [gi::getWindows 3]]
+[19:05:10.45] /# gi::executeAction leAutoFix -in [gi::getWindows 3]
+[19:05:10.45] /i ile::autoFix
+[19:05:13.79] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[19:05:13.79] /i de::addPoint {48.832 7.883} -window 3
+[19:05:17.78] /# gi::executeAction deAddPoint -in [gi::getWindows 3]
+[19:05:17.78] /i de::addPoint {46.494 10.376} -window 3
+[19:05:19.46] /# gi::executeAction deAbortCommand -in [gi::getWindows 3]
+[19:05:19.46] /i de::abortCommand -window 3
+[19:05:31.44] /# gi::executeAction heDesignNavigatorToggle -in [gi::getWindows 3]
+[19:05:31.44] /i db::setAttr shown -of [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]] -value true
+[19:05:34.61] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[19:05:34.61] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {6.287 8.973} -index 0 -intent none] -replace true
+[19:05:34.62] /o oa:0x28c7ad80
+[19:05:36.78] /i gi::pressButton {heDesignNavigatorInstsButton} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:38.23] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I0} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:42.48] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I3} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:42.49] /i gi::setItemSelection {heDesignNavigatorAllInstancesView} -index {I3} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:43.57] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I0} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:43.58] /i gi::setItemSelection {heDesignNavigatorAllInstancesView} -index {I0} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:44.63] /i gi::pressButton {heDesignNavigatorNetsButton} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:46.55] /i gi::pressButton {heDesignNavigatorInstsButton} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:49.51] /i gi::setField {heDesignNavigatorInstsButton} -value {Unplaced Instances} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:51.75] /i gi::setField {heDesignNavigatorInstsButton} -value {All Instances} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:53.55] /i gi::pressButton {heDesignNavigatorTermsButton} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:55.68] /i gi::pressButton {heDesignNavigatorGroupsButton} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:56.73] /i gi::pressButton {heDesignNavigatorInstsButton} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:57.83] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I0} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:59.52] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I1} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:05:59.52] /i gi::setItemSelection {heDesignNavigatorAllInstancesView} -index {I1} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:02.50] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I2} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:02.51] /i gi::setItemSelection {heDesignNavigatorAllInstancesView} -index {I2} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:03.97] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I0} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:03.97] /i gi::setItemSelection {heDesignNavigatorAllInstancesView} -index {I0} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:04.40] /# gi::executeAction giPostContextMenu -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:06.33] /i gi::executeAction heNavigateTo -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:06.39] /# Navigating to mylibrary/adder_1bit/layout (I0)
+[19:06:06.44] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:06:06.44] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:06:08.73] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:06:08.74] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:06:08.75] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:06:08.77] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:06:08.79] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:06:08.81] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:08.81] /i de::zoom -window 3 -factor 0.5 -center {8.76 1.509}
+[19:06:08.81] /o {-10.414 -16.307} {22.664 13.349}
+[19:06:08.83] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:06:08.83] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[19:06:09.33] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:09.33] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:09.34] /o {-0.827 -7.399} {15.711 7.428}
+[19:06:09.35] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:09.35] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:09.36] /o {3.966 -2.946} {12.235 4.468}
+[19:06:09.39] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:09.39] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:09.39] /o {6.362 -0.719} {10.497 2.988}
+[19:06:09.40] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:09.40] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:09.40] /o {7.561 0.395} {9.628 2.248}
+[19:06:09.46] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:09.46] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:09.47] /o {8.16 0.951} {9.194 1.878}
+[19:06:09.51] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:09.51] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:09.51] /o {8.459 1.23} {8.976 1.693}
+[19:06:09.51] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:09.51] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:09.52] /o {8.609 1.369} {8.868 1.601}
+[19:06:09.93] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:09.93] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:09.94] /o {8.459 1.23} {8.976 1.693}
+[19:06:09.95] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:09.95] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:09.96] /o {8.16 0.951} {9.194 1.878}
+[19:06:09.98] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:09.98] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:09.99] /o {7.561 0.395} {9.628 2.248}
+[19:06:10.01] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:10.01] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:10.02] /o {6.362 -0.719} {10.497 2.988}
+[19:06:10.02] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:10.02] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:10.03] /o {3.966 -2.946} {12.235 4.468}
+[19:06:10.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:10.64] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:10.65] /o {-0.827 -7.399} {15.711 7.428}
+[19:06:10.69] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:10.69] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:10.70] /o {-10.414 -16.307} {22.664 13.349}
+[19:06:11.20] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:11.20] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:11.21] /o {-0.827 -7.399} {15.711 7.428}
+[19:06:11.22] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:11.22] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:11.24] /o {3.966 -2.946} {12.235 4.468}
+[19:06:13.98] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:13.98] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:13.99] /o {6.362 -0.719} {10.497 2.988}
+[19:06:14.78] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:14.78] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:14.78] /o {3.966 -2.946} {12.235 4.468}
+[19:06:14.80] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:14.80] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:14.81] /o {-0.827 -7.399} {15.711 7.428}
+[19:06:14.84] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:06:14.84] /i de::zoom -window 3 -factor 0.5 -center {8.759 1.508}
+[19:06:14.85] /o {-10.414 -16.307} {22.664 13.349}
+[19:06:17.26] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:06:17.26] /i de::zoom -window 3 -factor 2.0 -center {8.759 1.508}
+[19:06:17.26] /o {-0.827 -7.399} {15.711 7.428}
+[19:06:27.26] /i gi::executeAction deNavigateToLevel0 -in [gi::getWindows 3]
+[19:06:27.27] /# Navigating to mylibrary/ripple_carry_adder_4bit/layout
+[19:06:27.36] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:06:27.36] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:06:29.03] /i gi::setCurrentIndex {heDesignNavigatorAllInstancesView} -index {I1} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:29.03] /i gi::setItemSelection {heDesignNavigatorAllInstancesView} -index {I1} -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:29.65] /# gi::executeAction giPostContextMenu -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:32.32] /i gi::executeAction menuPreShow -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:32.33] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions leSelectConnectedCascade -from [db::getNext [gi::getMenus heLayoutInstContextMenu]]]]
+[19:06:33.05] /i gi::executeAction menuPreShow -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:33.06] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions heLayoutInstPlacementStatusCascade -from [db::getNext [gi::getMenus heLayoutInstContextMenu]]]]
+[19:06:34.17] /i gi::executeAction menuPreShow -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:34.17] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions leSelectConnectedCascade -from [db::getNext [gi::getMenus heLayoutInstContextMenu]]]]
+[19:06:35.61] /i gi::executeAction scnet -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:06:46.40] /i db::setAttr geometry -of [gi::getFrames 3] -value 1088x700+-10+22
+[19:06:49.44] /i db::setAttr dockSize -of [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]] -value 234x546
+[19:06:49.54] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 190x546
+[19:06:49.56] /i db::setAttr geometry -of [gi::getFrames 3] -value 1294x696+-10+22
+[19:06:51.65] /# gi::executeAction deFitSelected -in [gi::getWindows 3]
+[19:06:51.65] /i de::fit -window 3 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]]
+[19:06:51.66] /o {-3.374 -0.72} {18.279 13.68}
+[19:06:55.49] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[19:06:55.49] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {5.553 8.074} -index 0 -intent none] -replace true
+[19:06:55.49] /o oa:0x2806a580
+[19:06:57.26] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[19:06:57.26] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {6.058 7.304} -index 0 -intent none] -replace true
+[19:06:57.29] /o oa:0x28069c30
+[19:06:57.44] /w Warning: Nothing is bound to the 'Button1-Double' in the current active set. (WINDOW-015)
+[19:06:59.05] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[19:06:59.05] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {5.712 8.765} -index 0 -intent none] -replace true
+[19:06:59.05] /o oa:0x289ecea0
+[19:07:00.86] /# gi::executeAction deFitEdit -in [gi::getWindows 3]
+[19:07:00.86] /i de::fit -window 3 -fitEdit true
+[19:07:00.86] /o {-3.298 -15.518} {62.858 28.478}
+[19:07:01.68] /# gi::executeAction deFitEdit -in [gi::getWindows 3]
+[19:07:01.68] /i de::fit -window 3 -fitEdit true
+[19:07:01.68] /o {-3.298 -15.518} {62.858 28.478}
+[19:07:03.04] /# gi::executeAction deFitSelected -in [gi::getWindows 3]
+[19:07:03.04] /i de::fit -window 3 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]]
+[19:07:03.05] /o {5.431 8.494} {5.99 8.867}
+[19:07:05.25] /# gi::executeAction deFitEdit -in [gi::getWindows 3]
+[19:07:05.25] /i de::fit -window 3 -fitEdit true
+[19:07:05.26] /o {-3.298 -15.518} {62.858 28.478}
+[19:07:07.40] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[19:07:07.40] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {27.629 7.86} -index 0 -intent none] -replace true
+[19:07:07.40] /o oa:0x280b36b0
+[19:07:09.17] /# gi::executeAction deFitSelected -in [gi::getWindows 3]
+[19:07:09.17] /i de::fit -window 3 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]]
+[19:07:09.24] /o {11.511 -0.72} {33.164 13.68}
+[19:07:10.38] /# gi::executeAction deFitSelected -in [gi::getWindows 3]
+[19:07:10.39] /i de::fit -window 3 -set [de::getSelected -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 3]]]]
+[19:07:10.39] /o {11.511 -0.72} {33.164 13.68}
+[19:07:11.60] /# gi::executeAction deFitEdit -in [gi::getWindows 3]
+[19:07:11.60] /i de::fit -window 3 -fitEdit true
+[19:07:11.61] /o {-3.298 -15.518} {62.858 28.478}
+[19:07:18.19] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:18.19] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:18.21] /# Navigating to mylibrary/adder_1bit/layout (I1)
+[19:07:18.24] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:07:18.25] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:07:18.26] /o true
+[19:07:19.20] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:19.20] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:20.56] /# gi::executeAction deDescendInPlace -in [gi::getWindows 3]
+[19:07:20.56] /i ide::descend 3 -inPlace true -readOnly false -promptView false
+[19:07:21.14] /# gi::executeAction deDescendInPlace -in [gi::getWindows 3]
+[19:07:21.14] /i ide::descend 3 -inPlace true -readOnly false -promptView false
+[19:07:22.05] /# gi::executeAction deReturn -in [gi::getWindows 3]
+[19:07:22.05] /i de::return [db::getNext [de::getContexts -window 3]]
+[19:07:22.06] /# Navigating to mylibrary/ripple_carry_adder_4bit/layout
+[19:07:22.10] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:07:22.11] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:07:22.15] /o oa:0x281d29b0
+[19:07:23.91] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[19:07:23.91] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[19:07:25.24] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:25.24] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:25.94] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:25.94] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:26.45] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:26.45] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:26.86] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:26.86] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:27.33] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:27.33] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:28.68] /i gi::setField {newWindow} -value {true} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 3]]
+[19:07:30.58] /i gi::setField {deDescend} -value {true} -in [gi::getToolbars {deCommandOptions} -from [gi::getWindows 3]]
+[19:07:32.02] /# gi::executeAction deDescendRead -in [gi::getWindows 3]
+[19:07:32.02] /i ide::descend 3 -inPlace false -readOnly true -promptView false
+[19:07:32.76] /# gi::executeAction deDescendEdit -in [gi::getWindows 3]
+[19:07:32.76] /i ide::descend 3 -inPlace false -readOnly false -promptView false
+[19:07:39.00] /i gi::executeAction heNavigateTo -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:07:39.01] /# Navigating to mylibrary/adder_1bit/layout (I1)
+[19:07:39.09] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:07:39.09] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:07:44.13] /i gi::executeAction menuPreShow -in [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]
+[19:07:44.14] /r giMenuAccess db::geAttr menu -of [db::getNext [gi::getActions cmCreatePlacementConstraint -from db::getAttr toolbar -of [gi::getAssistants heDesignNavigator -from [gi::getWindows 3]]]]
+[19:07:49.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:49.57] /i de::zoom -window 3 -factor 0.5 -center {18.21 0.992}
+[19:07:49.58] /o {-19.865 -15.574} {24.402 13.865}
+[19:07:49.60] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:49.60] /i de::zoom -window 3 -factor 0.5 -center {18.21 0.992}
+[19:07:49.61] /o {-57.94 -32.139} {30.594 26.738}
+[19:07:49.61] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:49.61] /i de::zoom -window 3 -factor 0.5 -center {18.21 0.993}
+[19:07:49.62] /o {-134.09 -65.272} {42.977 52.483}
+[19:07:50.02] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:50.02] /i de::zoom -window 3 -factor 2.0 -center {18.209 0.992}
+[19:07:50.03] /o {-57.94 -32.14} {30.593 26.737}
+[19:07:50.06] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:50.06] /i de::zoom -window 3 -factor 2.0 -center {18.209 0.992}
+[19:07:50.07] /o {-19.866 -15.574} {24.401 13.865}
+[19:07:50.12] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:50.12] /i de::zoom -window 3 -factor 2.0 -center {18.209 0.992}
+[19:07:50.13] /o {-0.828 -7.291} {21.305 7.428}
+[19:07:50.17] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:50.17] /i de::zoom -window 3 -factor 2.0 -center {18.209 0.992}
+[19:07:50.18] /o {8.69 -3.149} {19.757 4.21}
+[19:07:50.18] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:50.18] /i de::zoom -window 3 -factor 2.0 -center {18.209 0.992}
+[19:07:50.19] /o {13.45 -1.079} {18.983 2.601}
+[19:07:50.22] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:50.22] /i de::zoom -window 3 -factor 2.0 -center {18.209 0.992}
+[19:07:50.23] /o {15.829 -0.043} {18.596 1.797}
+[19:07:50.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.64] /i de::zoom -window 3 -factor 0.5 -center {18.209 0.992}
+[19:07:50.65] /o {13.45 -1.079} {18.983 2.601}
+[19:07:50.66] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.66] /i de::zoom -window 3 -factor 0.5 -center {18.209 0.992}
+[19:07:50.66] /o {8.69 -3.149} {19.757 4.21}
+[19:07:50.68] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.68] /i de::zoom -window 3 -factor 0.5 -center {18.209 0.992}
+[19:07:50.71] /o {-0.828 -7.291} {21.305 7.428}
+[19:07:50.71] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.71] /i de::zoom -window 3 -factor 0.5 -center {18.209 0.992}
+[19:07:50.74] /o {-19.866 -15.574} {24.401 13.865}
+[19:07:50.77] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.77] /i de::zoom -window 3 -factor 0.5 -center {18.209 0.992}
+[19:07:50.78] /o {-57.94 -32.14} {30.593 26.737}
+[19:07:50.78] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.78] /i de::zoom -window 3 -factor 0.5 -center {18.209 0.992}
+[19:07:50.82] /o {-134.09 -65.272} {42.977 52.483}
+[19:07:50.82] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.82] /i de::zoom -window 3 -factor 0.5 -center {18.209 0.992}
+[19:07:50.85] /o {-286.388 -131.536} {67.745 103.974}
+[19:07:50.87] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.87] /i de::zoom -window 3 -factor 0.5 -center {18.21 0.993}
+[19:07:50.90] /o {-590.986 -264.064} {117.28 206.955}
+[19:07:50.90] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 3]
+[19:07:50.90] /i de::zoom -window 3 -factor 0.5 -center {18.21 0.992}
+[19:07:50.94] /o {-1200.182 -529.121} {216.35 412.917}
+[19:07:51.50] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:51.50] /i de::zoom -window 3 -factor 2.0 -center {18.21 0.993}
+[19:07:51.51] /o {-590.986 -264.064} {117.28 206.955}
+[19:07:51.55] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:51.55] /i de::zoom -window 3 -factor 2.0 -center {18.21 0.993}
+[19:07:51.55] /o {-286.388 -131.535} {67.745 103.974}
+[19:07:51.56] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 3]
+[19:07:51.56] /i de::zoom -window 3 -factor 2.0 -center {18.21 0.993}
+[19:07:51.56] /o {-134.089 -65.271} {42.978 52.484}
+[19:07:59.39] /i gi::executeAction deNavigateToLevel0 -in [gi::getWindows 3]
+[19:07:59.40] /# Navigating to mylibrary/ripple_carry_adder_4bit/layout
+[19:07:59.43] /# gi::setItemSelection {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:07:59.43] /# gi::setItemSelection {lpps} -index {} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[19:08:14.18] /# gi::executeAction xtDRCSetup -in [gi::getWindows 3]
+[19:08:14.18] /i xt::showDRCSetup -job drc -window 3
+[19:08:15.53] /# gi::setActiveDialog [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[19:08:16.09] /# db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]] -value 445x457+556+44
+[19:08:24.39] /o oa:0x28339160
+[19:08:25.87] /i gi::pressButton {/cancel} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[19:08:29.91] /# gi::executeAction xtLVSSetup -in [gi::getWindows 3]
+[19:08:29.91] /i xt::showLVSSetup -job lvs -window 3
+[19:08:31.16] /o oa:0x28492020
+[19:08:31.64] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[19:08:32.00] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]] -value 704x485+480+44
+[19:08:34.51] /i db::setAttr iconified -of [gi::getFrames 0] -value false
+[19:08:34.52] /i gi::setActiveWindow 0
+[19:08:34.52] /i gi::setActiveWindow 0 -raise true
+[19:08:44.83] /i gi::setField {/tabGroup/mainTab/schematicGroup/schematicFormat/netlist} -value {true} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[19:09:01.17] /i gi::setField {/tabGroup/mainTab/schematicGroup/schematicFormat/openAccess} -value {true} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[19:09:10.11] /i gi::setActiveWindow 3
+[19:09:10.15] /i gi::setActiveWindow 3 -raise true
+[19:09:10.93] /i gi::pressButton {/cancel} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[19:09:13.95] /i db::setAttr iconified -of [gi::getFrames 3] -value true
+[19:09:13.95] /i gi::setActiveWindow 0
+[19:09:13.95] /i gi::setActiveWindow 0 -raise true
+[19:09:15.75] /i gi::setActiveWindow 1
+[19:09:15.75] /i gi::setActiveWindow 1 -raise true
+[19:09:16.39] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[19:09:16.41] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[19:09:16.57] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:09:16.63] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[19:09:16.65] /r giWindowId 4
+[19:09:16.66] /r giWindowGeometry 1088x700
+[19:09:17.18] /i gi::setActiveDialog [gi::getDialogs {seMissingReferences} -parent [gi::getWindows 4]]
+[19:09:27.01] /i gi::setField {select} -value {true} -in [gi::getDialogs {seMissingReferences} -parent [gi::getWindows 4]]
+[19:09:28.22] /i gi::pressButton {ok} -in [gi::getDialogs {seMissingReferences} -parent [gi::getWindows 4]]
+[19:09:31.84] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 4]
+[19:09:31.84] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value true
+[19:09:33.63] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:33.66] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:36.16] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:37.33] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:41.25] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:42.49] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[19:09:42.49] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {7.2125 2.125} -index 0 -intent none] -replace true
+[19:09:42.50] /o oa:0x29284c10
+[19:09:44.28] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:44.30] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:46.26] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:47.10] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:48.81] /i gi::setItemSelection {attributes} -index {} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:48.81] /i gi::setCurrentIndex {attributes} -index {} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:50.21] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:51.69] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[19:09:51.69] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {3.90625 1.84375} -index 0 -intent none] -replace true
+[19:09:51.70] /o oa:0x29298f20
+[19:09:54.48] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:54.51] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:55.98] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:57.84] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:09:59.63] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:10:00.91] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[19:10:00.91] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {1.34375 1.61875} -index 0 -intent none] -replace true
+[19:10:00.93] /o oa:0x28cdd960
+[19:10:01.92] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[19:10:01.92] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {2.09375 1.98125} -index 0 -intent none] -replace true
+[19:10:01.94] /o oa:0x29070df0
+[19:10:04.54] /i gi::setItemSelection {attributes} -index {master,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:10:04.57] /i gi::setCurrentIndex {attributes} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:10:06.69] /i gi::setField {attributes} -value {eecs168_library
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:10:07.69] /i gi::setField {attributes} -value {mylibrary
+              /c adder_1bit
+              /c symbol} -index {master,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:10:10.03] /i gi::executeAction dePropertyEditorApplyChanges -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[19:10:11.21] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[19:10:11.21] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[19:10:17.44] /# gi::executeAction seSchCheckAndSave -in [gi::getWindows 4]
+[19:10:17.44] /i ise::check
+[19:10:17.46] /m Information: 
+              /c Cross view checking for mylibrary/ripple_carry_adder_4bit/symbol with mylibrary/ripple_carry_adder_4bit/schematic
+              /c No violations found. (DE_EDIT-007)
+[19:10:17.47] /m Information: 
+[19:10:17.47] /o Checking "mylibrary/ripple_carry_adder_4bit/schematic"
+[19:10:17.47] /o No rule violations found in "mylibrary/ripple_carry_adder_4bit/schematic"
+[19:10:17.48] /m Information: Checking process is completed: marking the design violations
+[19:10:17.52] /m Information: Marking of designs is completed
+[19:10:17.52] /o 1
+[19:10:20.86] /i gi::setActiveWindow 1
+[19:10:20.87] /i gi::setActiveWindow 1 -raise true
+[19:10:23.60] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[19:10:23.61] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[19:10:23.77] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[19:10:23.79] /r giWindowId 5
+[19:10:23.79] /r giWindowGeometry 1088x700
+[19:10:24.37] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]] -value 190x550
+[19:10:29.59] /# gi::executeAction xtLVSSetup -in [gi::getWindows 5]
+[19:10:29.59] /i xt::showLVSSetup -job lvs -window 5
+[19:10:30.67] /o oa:0x2946aed0
+[19:10:31.35] /i gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 5]]
+[19:10:31.69] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 5]] -value 704x485+448+45
+[19:10:36.22] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 5]]
+[19:10:36.65] /# xt::physicalVerification::executePve lvs 5
+[19:10:36.91] /m Information: "Starting netlisting for design "mylibrary/ripple_carry_adder_4bit/schematic"..." (NETLISTING-010)
+[19:10:36.93] /o No Design Integrity rule violations found in "mylibrary/ripple_carry_adder_4bit/schematic"
+[19:10:37.13] /m Information: "Netlisting design "mylibrary/ripple_carry_adder_4bit/schematic" finished successfully." (NETLISTING-012)
+[19:10:39.91] /i gi::setActiveWindow 0
+[19:10:39.92] /i gi::setActiveWindow 0 -raise true
+[19:10:51.18] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_1
+              /c --- EXTRACT ERROR SUMMARY ---
+              /c LAYOUT ERRORS RESULTS: CLEAN
+              /c --- COMPARE ERROR SUMMARY ---
+              /c 
+              /c =============================
+              /c 
+[19:10:53.93] /m Information: Connection established with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.
+[19:12:21.01] /i db::setAttr iconified -of [gi::getFrames 5] -value true
+[19:12:23.63] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[19:12:25.20] /i gi::setActiveWindow 4
+[19:12:25.20] /i gi::setActiveWindow 4 -raise true
+[19:12:27.12] /i db::setAttr iconified -of [gi::getFrames 4] -value true
+[19:12:27.12] /i gi::setActiveWindow 0
+[19:12:27.13] /i gi::setActiveWindow 0 -raise true
+[19:53:16.63] /m Information: Connection closed with 'IC Validator VUE' running on 'bender.engr.ucr.edu'.

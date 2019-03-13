@@ -1,0 +1,111 @@
+<module name="vsl: mylibrary adder_1bit schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping src="M13" dst="MM13"/>
+<mapping src="M26" dst="MM26"/>
+<mapping src="M29" dst="MM29"/>
+<mapping src="M30" dst="MM30"/>
+<mapping src="M0" dst="MM0"/>
+<mapping src="M32" dst="MM32"/>
+<mapping src="M22" dst="MM22"/>
+<mapping src="M21" dst="MM21"/>
+<mapping src="M1" dst="MM1"/>
+<mapping src="M17" dst="MM17"/>
+<mapping src="M19" dst="MM19"/>
+<mapping src="M37" dst="MM37"/>
+<mapping src="M27" dst="MM27"/>
+<mapping src="M28" dst="MM28"/>
+<mapping src="M35" dst="MM35"/>
+<mapping src="M3" dst="MM3"/>
+<mapping src="M34" dst="MM34"/>
+<mapping src="M36" dst="MM36"/>
+<mapping src="M23" dst="MM23"/>
+<mapping src="M20" dst="MM20"/>
+<mapping src="M14" dst="MM14"/>
+<mapping src="M16" dst="MM16"/>
+<mapping src="M2" dst="MM2"/>
+<mapping src="M38" dst="MM38"/>
+<mapping src="M24" dst="MM24"/>
+<mapping src="M31" dst="MM31"/>
+<mapping src="M15" dst="MM15"/>
+<mapping src="M25" dst="MM25"/>
+</forward>
+<reverse>
+<mapping src="MM13" dst="M13"/>
+<mapping src="MM1" dst="M1"/>
+<mapping src="MM14" dst="M14"/>
+<mapping src="MM15" dst="M15"/>
+<mapping src="MM16" dst="M16"/>
+<mapping src="MM27" dst="M27"/>
+<mapping src="MM28" dst="M28"/>
+<mapping src="MM3" dst="M3"/>
+<mapping src="MM29" dst="M29"/>
+<mapping src="MM30" dst="M30"/>
+<mapping src="MM17" dst="M17"/>
+<mapping src="MM0" dst="M0"/>
+<mapping src="MM2" dst="M2"/>
+<mapping src="MM22" dst="M22"/>
+<mapping src="MM19" dst="M19"/>
+<mapping src="MM37" dst="M37"/>
+<mapping src="MM36" dst="M36"/>
+<mapping src="MM31" dst="M31"/>
+<mapping src="MM35" dst="M35"/>
+<mapping src="MM23" dst="M23"/>
+<mapping src="MM38" dst="M38"/>
+<mapping src="MM26" dst="M26"/>
+<mapping src="MM24" dst="M24"/>
+<mapping src="MM21" dst="M21"/>
+<mapping src="MM34" dst="M34"/>
+<mapping src="MM25" dst="M25"/>
+<mapping src="MM20" dst="M20"/>
+<mapping src="MM32" dst="M32"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="AIN BIN CIN COUT S VDD VSS"/>
+<mapping src="&lt;termOrder>" dst="AIN BIN CIN COUT S VDD VSS"/>
+</forward>
+<reverse>
+<mapping src="AIN BIN CIN COUT S VDD VSS" dst="&lt;unmappedTermOrder>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos4t">
+<instance name="M1"/>
+<instance name="M13"/>
+<instance name="M14"/>
+<instance name="M15"/>
+<instance name="M16"/>
+<instance name="M17"/>
+<instance name="M26"/>
+<instance name="M27"/>
+<instance name="M28"/>
+<instance name="M29"/>
+<instance name="M3"/>
+<instance name="M30"/>
+<instance name="M31"/>
+<instance name="M32"/>
+</instance_header>
+<instance_header master="pmos4t">
+<instance name="M0"/>
+<instance name="M19"/>
+<instance name="M2"/>
+<instance name="M20"/>
+<instance name="M21"/>
+<instance name="M22"/>
+<instance name="M23"/>
+<instance name="M24"/>
+<instance name="M25"/>
+<instance name="M34"/>
+<instance name="M35"/>
+<instance name="M36"/>
+<instance name="M37"/>
+<instance name="M38"/>
+</instance_header>
+</master_instances>
+</module>

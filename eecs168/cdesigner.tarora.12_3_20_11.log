@@ -1,0 +1,1718 @@
+[20:29:27.18] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Tue Mar 12 20:29:24 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[20:29:28.70] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[20:29:28.70] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[20:29:33.59] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[20:29:33.59] /i dm::showLibraryManager
+[20:29:33.60] /r giWindowId 1
+[20:29:33.60] /r giWindowGeometry 660x600+50+50
+[20:29:33.67] /o oa:0x227b6f50
+[20:29:35.01] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[20:29:35.02] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[20:29:36.80] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[20:29:36.85] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[20:29:41.39] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[20:29:41.40] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[20:29:58.80] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[20:29:58.81] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[20:29:59.03] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:29:59.06] /o 	############################################
+[20:29:59.06] /o 	--------------------------------------------
+[20:29:59.06] /o 	PDK Name................... : SAED_PDK_90
+[20:29:59.06] /o 	PDK Release Date........... : 29-Sep-2015
+[20:29:59.06] /o 	PDK Custom Designer Version : J-2014.12-2
+[20:29:59.06] /o 	--------------------------------------------
+[20:29:59.06] /o 	############################################
+[20:29:59.06] /o 
+[20:29:59.06] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[20:29:59.06] /o SAED PDK 90: Loaded callbacks
+[20:29:59.07] /o SAED PDK 90: Loaded display resources
+[20:29:59.13] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[20:29:59.18] /r giWindowId 2
+[20:29:59.19] /r giWindowGeometry 1088x700
+[20:30:02.40] /i db::setAttr iconified -of [gi::getFrames 2] -value true
+[20:30:02.40] /i gi::setActiveWindow 1
+[20:30:02.41] /i gi::setActiveWindow 1 -raise true
+[20:30:07.44] /i gi::setCurrentIndex {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[20:30:07.54] /i gi::setItemSelection {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[20:30:11.68] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[20:30:11.70] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[20:30:13.09] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[20:30:13.10] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[20:30:13.28] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:30:13.33] /m Information: License 'Layout Editor' checked out. (LICENSE-003)
+[20:30:13.38] /r giWindowId 3
+[20:30:13.38] /r giWindowGeometry 1088x700
+[20:30:14.02] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 190x550
+[20:30:16.34] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[20:30:16.34] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {11.819 6.402} -index 0 -intent none] -replace true
+[20:30:16.34] /o oa:0x281eb650
+[20:30:17.65] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[20:30:17.65] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {7.222 8.973} -index 0 -intent none] -replace true
+[20:30:17.66] /o oa:0x28432450
+[20:30:20.56] /i gi::pressButton {qt_toolbar_ext_button} -in [gi::getToolbars {leEdit} -from [gi::getWindows 3]]
+[20:30:22.73] /i gi::pressButton {qt_toolbar_ext_button} -in [gi::getToolbars {leEdit} -from [gi::getWindows 3]]
+[20:30:24.65] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 3]
+[20:30:24.65] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value true
+[20:30:24.96] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 190x525
+[20:30:25.01] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value 190x525
+[20:30:30.35] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value 190x532
+[20:30:30.73] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value 190x538
+[20:30:30.76] /i db::setAttr geometry -of [gi::getFrames 3] -value 1257x713+25+41
+[20:30:32.65] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value 293x538
+[20:31:03.16] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[20:31:03.16] /i de::cycleActiveFigure [gi::getWindows 3] -direction next
+[20:31:03.17] /o oa:0x2841ceb0
+[20:31:03.17] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {8.157 13.025} -index 0 -intent none] -replace true
+[20:31:03.17] /o oa:0x2856af20
+[20:32:06.35] /# gi::executeAction deSelectActive -in [gi::getWindows 3]
+[20:32:06.35] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {33.871 11.935} -index 0 -intent none] -replace true
+[20:32:06.40] /o oa:0x21bc15b0
+[20:32:21.29] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 293x538
+[20:32:25.57] /i db::setAttr iconified -of [gi::getFrames 3] -value true
+[20:32:25.58] /i gi::setActiveWindow 1
+[20:32:25.59] /i gi::setActiveWindow 1 -raise true
+[20:32:26.83] /i gi::setCurrentIndex {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[20:32:26.87] /i gi::setItemSelection {cells} -index {adder_1bit} -in [gi::getWindows 1]
+[20:32:28.56] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[20:32:28.57] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[20:32:29.90] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:32:29.94] /r giWindowId 4
+[20:32:29.95] /r giWindowGeometry 1088x700
+[20:32:30.52] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]] -value 190x550
+[20:33:05.56] /# gi::executeAction deSelectByWindow -in [gi::getWindows 4]
+[20:33:05.56] /i de::deselectAll [db::getNext [de::getContexts -window 4]]; ide::selectByRegion -region rectangle -select true -point {-0.43 6.925} 
+[20:33:08.65] /# gi::executeAction deEndDrag -in [gi::getWindows 4]
+[20:33:08.65] /i de::endDrag {15.948 -6.948} -window 4
+[20:33:20.52] /i gi::pressButton {qt_toolbar_ext_button} -in [gi::getToolbars {leEdit} -from [gi::getWindows 4]]
+[20:33:22.76] /i gi::pressButton {qt_toolbar_ext_button} -in [gi::getToolbars {leEdit} -from [gi::getWindows 4]]
+[20:33:24.33] /# gi::executeAction dePropertyEditorToggle -in [gi::getWindows 4]
+[20:33:24.33] /i db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value true
+[20:33:24.69] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 4]] -value 190x525
+[20:33:24.85] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value 190x525
+[20:33:29.84] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]] -value 281x525
+[20:36:09.99] /i gi::setField {attributes} -value {NWELL
+              /c drw} -index {LPP,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 4]]
+[20:36:15.36] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:36:15.36] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {14.366 2.389} -index 0 -intent none] -replace true
+[20:36:15.54] /r giDialog gi::setActiveDialog [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 4]]
+[20:36:15.77] /r giDialog db::setAttr geometry -of [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 4]] -value 436x89+369+81
+[20:36:17.79] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {dbSelectionChange} -parent [gi::getWindows 4]]
+[20:36:17.82] /o oa:0x284ceca0
+[20:36:20.21] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:36:20.21] /i de::cycleActiveFigure [gi::getWindows 4] -direction next
+[20:36:20.21] /o oa:0x28be1600
+[20:36:20.21] /i de::select [de::getActiveFigure [gi::getWindows 4] -point {14.392 4.551} -index 0 -intent none] -replace true
+[20:36:20.22] /o oa:0x2842a120
+[20:36:29.39] /# gi::executeAction deSelectActive -in [gi::getWindows 4]
+[20:36:29.39] /i de::deselectAll [db::getNext [de::getContexts -window 4]]
+[20:39:40.82] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[20:39:41.48] /i gi::setActiveWindow 1
+[20:39:41.49] /i gi::setActiveWindow 1 -raise true
+[20:39:43.06] /i gi::setCurrentIndex {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[20:39:43.11] /i gi::setItemSelection {cells} -index {ripple_carry_adder_4bit} -in [gi::getWindows 1]
+[20:39:44.99] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 1]
+[20:39:45.00] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 1]
+[20:39:45.16] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[20:39:45.17] /r giWindowId 5
+[20:39:45.18] /r giWindowGeometry 1088x700
+[20:39:45.84] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]] -value 190x550
+[20:39:57.70] /# gi::executeAction deFitEdit -in [gi::getWindows 5]
+[20:39:57.70] /i de::fit -window 5 -fitEdit true
+[20:39:57.71] /o {-3.298 -14.793} {62.858 27.753}
+[20:39:58.96] /# gi::executeAction deFitEdit -in [gi::getWindows 5]
+[20:39:58.96] /i de::fit -window 5 -fitEdit true
+[20:39:58.97] /o {-3.298 -14.793} {62.858 27.753}
+[20:40:01.99] /i gi::setField {stopLevel} -value {4} -in [gi::getToolbars {leHierarchy} -from [gi::getWindows 5]]
+[20:40:04.10] /# gi::executeAction deFitEdit -in [gi::getWindows 5]
+[20:40:04.10] /i de::fit -window 5 -fitEdit true
+[20:40:04.11] /o {-3.298 -14.793} {62.858 27.753}
+[20:40:06.62] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[20:40:06.62] /i de::zoom -window 5 -factor 2.0
+[20:40:06.63] /o {13.241 -4.156} {46.319 17.116}
+[20:40:08.96] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:40:08.96] /i de::pan -direction W -multiplier 0.5
+[20:40:08.97] /o {-3.317 -4.156} {29.761 17.116}
+[20:40:24.47] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[20:40:24.47] /i de::zoom -window 5 -factor 2.0
+[20:40:24.48] /o {4.952 1.162} {21.491 11.798}
+[20:40:28.76] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:40:28.76] /i de::pan -direction W -multiplier 0.5
+[20:40:28.78] /o {-3.308 1.162} {13.231 11.798}
+[20:40:29.68] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:40:29.68] /i de::pan -direction N -multiplier 0.5
+[20:40:29.69] /o {-3.308 6.48} {13.231 17.116}
+[20:40:43.76] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:40:43.76] /i de::pan -direction S -multiplier 0.5
+[20:40:43.76] /o {-3.308 1.162} {13.231 11.798}
+[20:40:54.24] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:40:54.24] /i de::pan -direction S -multiplier 0.5
+[20:40:54.41] /o {-3.308 -4.156} {13.231 6.48}
+[20:41:01.29] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:41:01.29] /i de::pan -direction E -multiplier 0.5
+[20:41:01.30] /o {4.952 -4.156} {21.491 6.48}
+[20:41:09.09] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:41:09.09] /i de::pan -direction N -multiplier 0.5
+[20:41:09.10] /o {4.952 1.162} {21.491 11.798}
+[20:41:19.82] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:41:19.82] /i de::pan -direction N -multiplier 0.5
+[20:41:19.83] /o {4.952 6.48} {21.491 17.116}
+[20:41:23.27] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:41:23.27] /i de::pan -direction E -multiplier 0.5
+[20:41:23.28] /o {13.212 6.48} {29.751 17.116}
+[20:41:29.21] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:41:29.21] /i de::pan -direction S -multiplier 0.5
+[20:41:29.22] /o {13.212 1.162} {29.751 11.798}
+[20:41:35.75] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:41:35.75] /i de::pan -direction E -multiplier 0.5
+[20:41:35.76] /o {21.472 1.162} {38.01 11.798}
+[20:41:36.90] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:41:36.90] /i de::pan -direction S -multiplier 0.5
+[20:41:36.92] /o {21.472 -4.156} {38.01 6.48}
+[20:41:41.73] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:41:41.73] /i de::pan -direction E -multiplier 0.5
+[20:41:41.74] /o {29.731 -4.156} {46.27 6.48}
+[20:41:42.17] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:41:42.17] /i de::pan -direction N -multiplier 0.5
+[20:41:42.18] /o {29.731 1.162} {46.27 11.798}
+[20:41:42.99] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:41:42.99] /i de::pan -direction E -multiplier 0.5
+[20:41:43.04] /o {37.991 1.162} {54.53 11.798}
+[20:41:44.17] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:41:44.17] /i de::pan -direction S -multiplier 0.5
+[20:41:44.20] /o {37.991 -4.156} {54.53 6.48}
+[20:41:46.72] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:41:46.72] /i de::pan -direction E -multiplier 0.5
+[20:41:46.73] /o {46.251 -4.156} {62.79 6.48}
+[20:41:53.83] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:41:53.83] /i de::pan -direction N -multiplier 0.5
+[20:41:53.84] /o {46.251 1.162} {62.79 11.798}
+[20:41:54.15] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:41:54.15] /i de::pan -direction N -multiplier 0.5
+[20:41:54.16] /o {46.251 6.48} {62.79 17.116}
+[20:42:05.10] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:42:05.10] /i de::pan -direction W -multiplier 0.5
+[20:42:05.11] /o {37.991 6.48} {54.53 17.116}
+[20:42:08.32] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:42:08.32] /i de::pan -direction W -multiplier 0.5
+[20:42:08.37] /o {29.731 6.48} {46.27 17.116}
+[20:42:14.15] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:42:14.15] /i de::pan -direction W -multiplier 0.5
+[20:42:14.17] /o {21.472 6.48} {38.01 17.116}
+[20:42:14.73] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:42:14.73] /i de::pan -direction W -multiplier 0.5
+[20:42:14.75] /o {13.212 6.48} {29.751 17.116}
+[20:42:15.31] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:42:15.31] /i de::pan -direction W -multiplier 0.5
+[20:42:15.32] /o {4.952 6.48} {21.491 17.116}
+[20:42:23.53] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:42:23.53] /i de::pan -direction W -multiplier 0.5
+[20:42:23.54] /o {-3.308 6.48} {13.231 17.116}
+[20:42:24.13] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:42:24.13] /i de::pan -direction E -multiplier 0.5
+[20:42:24.14] /o {4.952 6.48} {21.491 17.116}
+[20:42:24.50] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:42:24.50] /i de::pan -direction E -multiplier 0.5
+[20:42:24.51] /o {13.212 6.48} {29.751 17.116}
+[20:42:24.86] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:42:24.86] /i de::pan -direction E -multiplier 0.5
+[20:42:24.87] /o {21.472 6.48} {38.01 17.116}
+[20:42:25.34] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:42:25.34] /i de::pan -direction E -multiplier 0.5
+[20:42:25.35] /o {29.731 6.48} {46.27 17.116}
+[20:42:26.00] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:42:26.00] /i de::pan -direction W -multiplier 0.5
+[20:42:26.00] /o {21.472 6.48} {38.01 17.116}
+[20:42:27.96] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:42:27.96] /i de::pan -direction E -multiplier 0.5
+[20:42:27.98] /o {29.731 6.48} {46.27 17.116}
+[20:42:28.34] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:42:28.34] /i de::pan -direction E -multiplier 0.5
+[20:42:28.36] /o {37.991 6.48} {54.53 17.116}
+[20:42:28.82] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:42:28.82] /i de::pan -direction E -multiplier 0.5
+[20:42:28.84] /o {46.251 6.48} {62.79 17.116}
+[20:47:33.92] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:47:33.92] /i de::pan -direction W -multiplier 0.5
+[20:47:33.93] /o {37.991 6.48} {54.53 17.116}
+[20:47:34.40] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:47:34.40] /i de::pan -direction W -multiplier 0.5
+[20:47:34.41] /o {29.731 6.48} {46.27 17.116}
+[20:47:37.63] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:47:37.63] /i de::pan -direction S -multiplier 0.5
+[20:47:37.64] /o {29.731 1.162} {46.27 11.798}
+[20:47:38.21] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:47:38.21] /i de::pan -direction S -multiplier 0.5
+[20:47:38.22] /o {29.731 -4.156} {46.27 6.48}
+[20:47:41.05] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:47:41.05] /i de::pan -direction N -multiplier 0.5
+[20:47:41.06] /o {29.731 1.162} {46.27 11.798}
+[20:47:41.31] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:47:41.31] /i de::pan -direction N -multiplier 0.5
+[20:47:41.32] /o {29.731 6.48} {46.27 17.116}
+[20:47:41.71] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:47:41.71] /i de::pan -direction S -multiplier 0.5
+[20:47:41.72] /o {29.731 1.162} {46.27 11.798}
+[20:47:41.96] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:47:41.96] /i de::pan -direction S -multiplier 0.5
+[20:47:41.97] /o {29.731 -4.156} {46.27 6.48}
+[20:47:42.32] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:47:42.32] /i de::pan -direction N -multiplier 0.5
+[20:47:42.33] /o {29.731 1.162} {46.27 11.798}
+[20:47:44.99] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:47:44.99] /i de::pan -direction E -multiplier 0.5
+[20:47:45.00] /o {37.991 1.162} {54.53 11.798}
+[20:47:45.46] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:47:45.46] /i de::pan -direction E -multiplier 0.5
+[20:47:45.47] /o {46.251 1.162} {62.79 11.798}
+[20:48:25.56] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:48:25.56] /i de::pan -direction W -multiplier 0.5
+[20:48:25.57] /o {37.991 1.162} {54.53 11.798}
+[20:48:26.28] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:48:26.28] /i de::pan -direction W -multiplier 0.5
+[20:48:26.29] /o {29.731 1.162} {46.27 11.798}
+[20:48:26.57] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:48:26.57] /i de::pan -direction W -multiplier 0.5
+[20:48:26.58] /o {21.472 1.162} {38.01 11.798}
+[20:48:27.01] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:48:27.01] /i de::pan -direction W -multiplier 0.5
+[20:48:27.01] /o {13.212 1.162} {29.751 11.798}
+[20:48:27.57] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:48:27.57] /i de::pan -direction W -multiplier 0.5
+[20:48:27.58] /o {4.952 1.162} {21.491 11.798}
+[20:48:28.25] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:48:28.25] /i de::pan -direction W -multiplier 0.5
+[20:48:28.26] /o {-3.308 1.162} {13.231 11.798}
+[20:48:28.49] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:48:28.49] /i de::pan -direction W -multiplier 0.5
+[20:48:28.50] /o {-11.567 1.162} {4.972 11.798}
+[20:48:28.84] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:48:28.84] /i de::pan -direction E -multiplier 0.5
+[20:48:28.85] /o {-3.308 1.162} {13.231 11.798}
+[20:48:29.01] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:48:29.01] /i de::pan -direction E -multiplier 0.5
+[20:48:29.02] /o {4.952 1.162} {21.491 11.798}
+[20:48:29.20] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:48:29.20] /i de::pan -direction E -multiplier 0.5
+[20:48:29.22] /o {13.212 1.162} {29.751 11.798}
+[20:50:56.35] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:50:56.35] /i de::pan -direction E -multiplier 0.5
+[20:50:56.36] /o {21.472 1.162} {38.01 11.798}
+[20:50:56.79] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:50:56.79] /i de::pan -direction E -multiplier 0.5
+[20:50:56.80] /o {29.731 1.162} {46.27 11.798}
+[20:50:57.09] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:50:57.09] /i de::pan -direction E -multiplier 0.5
+[20:50:57.26] /o {37.991 1.162} {54.53 11.798}
+[20:50:57.40] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:50:57.40] /i de::pan -direction E -multiplier 0.5
+[20:50:57.66] /o {46.251 1.162} {62.79 11.798}
+[20:50:57.82] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:50:57.82] /i de::pan -direction E -multiplier 0.5
+[20:50:57.98] /o {54.51 1.162} {71.049 11.798}
+[20:50:58.52] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:58.52] /i de::pan -direction W -multiplier 0.5
+[20:50:58.76] /o {46.251 1.162} {62.79 11.798}
+[20:50:58.77] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:58.77] /i de::pan -direction W -multiplier 0.5
+[20:50:58.79] /o {37.991 1.162} {54.53 11.798}
+[20:50:58.89] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:58.89] /i de::pan -direction W -multiplier 0.5
+[20:50:58.90] /o {29.731 1.162} {46.27 11.798}
+[20:50:59.11] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:59.11] /i de::pan -direction W -multiplier 0.5
+[20:50:59.12] /o {21.472 1.162} {38.01 11.798}
+[20:50:59.31] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:59.31] /i de::pan -direction W -multiplier 0.5
+[20:50:59.33] /o {13.212 1.162} {29.751 11.798}
+[20:50:59.50] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:59.50] /i de::pan -direction W -multiplier 0.5
+[20:50:59.51] /o {4.952 1.162} {21.491 11.798}
+[20:50:59.67] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:59.67] /i de::pan -direction W -multiplier 0.5
+[20:50:59.68] /o {-3.308 1.162} {13.231 11.798}
+[20:50:59.86] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:50:59.86] /i de::pan -direction W -multiplier 0.5
+[20:50:59.87] /o {-11.567 1.162} {4.972 11.798}
+[20:51:00.25] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:51:00.25] /i de::pan -direction E -multiplier 0.5
+[20:51:00.26] /o {-3.308 1.162} {13.231 11.798}
+[20:51:00.54] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:51:00.54] /i de::pan -direction E -multiplier 0.5
+[20:51:00.55] /o {4.952 1.162} {21.491 11.798}
+[20:51:00.80] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:51:00.80] /i de::pan -direction E -multiplier 0.5
+[20:51:00.81] /o {13.212 1.162} {29.751 11.798}
+[20:51:01.09] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:51:01.09] /i de::pan -direction E -multiplier 0.5
+[20:51:01.10] /o {21.472 1.162} {38.01 11.798}
+[20:51:01.38] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:51:01.38] /i de::pan -direction E -multiplier 0.5
+[20:51:01.39] /o {29.731 1.162} {46.27 11.798}
+[20:51:01.60] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:51:01.60] /i de::pan -direction E -multiplier 0.5
+[20:51:01.61] /o {37.991 1.162} {54.53 11.798}
+[20:51:01.91] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:51:01.91] /i de::pan -direction E -multiplier 0.5
+[20:51:01.91] /o {46.251 1.162} {62.79 11.798}
+[20:52:57.74] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:52:57.74] /i de::pan -direction W -multiplier 0.5
+[20:52:57.75] /o {37.991 1.162} {54.53 11.798}
+[20:52:57.94] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:52:57.94] /i de::pan -direction W -multiplier 0.5
+[20:52:57.97] /o {29.731 1.162} {46.27 11.798}
+[20:52:58.27] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:52:58.27] /i de::pan -direction W -multiplier 0.5
+[20:52:58.28] /o {21.472 1.162} {38.01 11.798}
+[20:52:58.51] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:52:58.51] /i de::pan -direction W -multiplier 0.5
+[20:52:58.52] /o {13.212 1.162} {29.751 11.798}
+[20:52:58.71] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:52:58.71] /i de::pan -direction W -multiplier 0.5
+[20:52:58.72] /o {4.952 1.162} {21.491 11.798}
+[20:52:58.93] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:52:58.93] /i de::pan -direction W -multiplier 0.5
+[20:52:58.94] /o {-3.308 1.162} {13.231 11.798}
+[20:52:59.13] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:52:59.13] /i de::pan -direction W -multiplier 0.5
+[20:52:59.13] /o {-11.567 1.162} {4.972 11.798}
+[20:52:59.59] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[20:52:59.59] /i de::pan -direction S -multiplier 0.5
+[20:52:59.60] /o {-11.567 -4.156} {4.972 6.48}
+[20:53:00.95] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:53:00.95] /i de::pan -direction E -multiplier 0.5
+[20:53:00.96] /o {-3.308 -4.156} {13.231 6.48}
+[20:53:01.64] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:53:01.64] /i de::pan -direction E -multiplier 0.5
+[20:53:01.65] /o {4.952 -4.156} {21.491 6.48}
+[20:53:02.37] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:53:02.37] /i de::pan -direction N -multiplier 0.5
+[20:53:02.38] /o {4.952 1.162} {21.491 11.798}
+[20:53:07.69] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:53:07.69] /i de::pan -direction W -multiplier 0.5
+[20:53:07.70] /o {-3.308 1.162} {13.231 11.798}
+[20:53:08.16] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:53:08.16] /i de::pan -direction E -multiplier 0.5
+[20:53:08.17] /o {4.952 1.162} {21.491 11.798}
+[20:53:10.99] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:53:10.99] /i de::pan -direction N -multiplier 0.5
+[20:53:10.99] /o {4.952 6.48} {21.491 17.116}
+[20:53:11.99] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[20:53:11.99] /i de::pan -direction W -multiplier 0.5
+[20:53:11.99] /o {-3.308 6.48} {13.231 17.116}
+[20:53:12.73] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[20:53:12.73] /i de::pan -direction E -multiplier 0.5
+[20:53:12.74] /o {4.952 6.48} {21.491 17.116}
+[20:53:14.01] /# gi::executeAction deSelectActive -in [gi::getWindows 5]
+[20:53:14.01] /i de::deselectAll [db::getNext [de::getContexts -window 5]]
+[20:53:46.91] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:53:46.91] /i de::zoom -window 5 -factor 0.5 -center {14.848 11.214}
+[20:53:46.92] /o {-4.944 1.746} {28.134 23.019}
+[20:53:47.30] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:53:47.30] /i de::zoom -window 5 -factor 2.0 -center {14.848 11.213}
+[20:53:47.32] /o {4.952 6.48} {21.491 17.116}
+[20:53:47.32] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:53:47.32] /i de::zoom -window 5 -factor 2.0 -center {14.848 11.213}
+[20:53:47.34] /o {9.9 8.846} {18.17 14.164}
+[20:53:47.36] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:53:47.36] /i de::zoom -window 5 -factor 2.0 -center {14.848 11.213}
+[20:53:47.38] /o {12.374 10.03} {16.509 12.689}
+[20:53:47.49] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:53:47.49] /i de::zoom -window 5 -factor 2.0 -center {14.848 11.213}
+[20:53:47.50] /o {13.611 10.621} {15.678 11.951}
+[20:53:47.51] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:53:47.51] /i de::zoom -window 5 -factor 2.0 -center {14.848 11.213}
+[20:53:47.53] /o {14.23 10.917} {15.263 11.582}
+[20:53:47.55] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:53:47.55] /i de::zoom -window 5 -factor 2.0 -center {14.848 11.213}
+[20:53:47.57] /o {14.539 11.065} {15.056 11.397}
+[20:53:47.87] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:53:47.87] /i de::zoom -window 5 -factor 0.5 -center {14.848 11.213}
+[20:53:47.88] /o {14.23 10.917} {15.263 11.582}
+[20:53:48.27] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:53:48.27] /i de::zoom -window 5 -factor 0.5 -center {14.848 11.213}
+[20:53:48.28] /o {13.611 10.621} {15.678 11.951}
+[20:53:48.28] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:53:48.28] /i de::zoom -window 5 -factor 0.5 -center {14.848 11.213}
+[20:53:48.29] /o {12.374 10.03} {16.509 12.689}
+[20:53:48.31] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:53:48.31] /i de::zoom -window 5 -factor 0.5 -center {14.848 11.213}
+[20:53:48.32] /o {9.9 8.846} {18.17 14.164}
+[20:56:37.96] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:56:37.96] /i de::zoom -window 5 -factor 0.5 -center {16.504 11.807}
+[20:56:37.97] /o {3.296 5.886} {19.835 16.522}
+[20:56:37.99] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:56:37.99] /i de::zoom -window 5 -factor 0.5 -center {16.504 11.808}
+[20:56:38.00] /o {-9.912 -0.037} {23.166 21.236}
+[20:56:38.02] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:56:38.02] /i de::zoom -window 5 -factor 0.5 -center {16.504 11.807}
+[20:56:38.03] /o {-36.327 -11.881} {29.828 30.664}
+[20:56:38.03] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:56:38.03] /i de::zoom -window 5 -factor 0.5 -center {16.504 11.807}
+[20:56:38.04] /o {-89.159 -35.569} {43.153 49.522}
+[20:56:38.31] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:38.31] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:38.32] /o {-36.328 -11.881} {29.828 30.664}
+[20:56:38.33] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:38.33] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:38.34] /o {-9.912 -0.037} {23.165 21.236}
+[20:56:38.37] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:38.37] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:38.38] /o {3.295 5.885} {19.834 16.521}
+[20:56:38.40] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:38.40] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:38.41] /o {9.899 8.846} {18.169 14.164}
+[20:56:38.85] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:38.85] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:38.86] /o {13.201 10.327} {17.336 12.986}
+[20:56:38.86] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:38.86] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:38.87] /o {14.852 11.067} {16.919 12.396}
+[20:56:40.06] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:40.06] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:40.07] /o {15.678 11.437} {16.711 12.102}
+[20:56:40.15] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:56:40.15] /i de::zoom -window 5 -factor 2.0 -center {16.503 11.807}
+[20:56:40.16] /o {16.09 11.622} {16.607 11.954}
+[20:56:41.84] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[20:56:41.84] /i de::pan -direction N -multiplier 0.5
+[20:56:41.85] /o {16.09 11.788} {16.607 12.121}
+[20:56:49.10] /# gi::executeAction leRuler -in [gi::getWindows 5]
+[20:56:49.10] /i ile::createRuler
+[20:56:51.35] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[20:56:51.35] /i de::addPoint {16.297 12.115} -window 5
+[20:56:55.09] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[20:56:55.09] /i de::addPoint {16.297 12.11} -window 5
+[20:57:57.88] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:57:57.88] /i de::zoom -window 5 -factor 0.5 -center {16.271 12.019}
+[20:57:57.89] /o {15.91 11.557} {16.943 12.222}
+[20:57:58.34] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:57:58.34] /i de::zoom -window 5 -factor 0.5 -center {16.271 12.02}
+[20:57:58.35] /o {15.548 11.095} {17.615 12.424}
+[20:57:58.35] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:57:58.35] /i de::zoom -window 5 -factor 0.5 -center {16.271 12.02}
+[20:57:58.36] /o {14.825 10.169} {18.96 12.828}
+[20:57:58.38] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:57:58.38] /i de::zoom -window 5 -factor 0.5 -center {16.272 12.02}
+[20:57:58.39] /o {13.378 8.318} {21.648 13.636}
+[20:57:58.43] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:57:58.43] /i de::zoom -window 5 -factor 0.5 -center {16.271 12.019}
+[20:57:58.44] /o {10.485 4.617} {27.024 15.253}
+[20:57:59.10] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:57:59.10] /i de::zoom -window 5 -factor 2.0 -center {16.271 12.02}
+[20:57:59.11] /o {13.378 8.319} {21.648 13.637}
+[20:58:08.30] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.30] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.731}
+[20:58:08.31] /o {8.323 3.906} {24.862 14.542}
+[20:58:08.33] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.33] /i de::zoom -window 5 -factor 0.5 -center {18.434 12.731}
+[20:58:08.34] /o {-1.787 -4.919} {31.29 16.354}
+[20:58:08.34] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.34] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.731}
+[20:58:08.46] /o {-22.008 -22.568} {44.148 19.977}
+[20:58:08.46] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.46] /i de::zoom -window 5 -factor 0.5 -center {18.434 12.73}
+[20:58:08.47] /o {-62.45 -57.867} {69.862 27.224}
+[20:58:08.48] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.48] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.73}
+[20:58:08.49] /o {-143.332 -128.463} {121.29 41.718}
+[20:58:08.49] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.49] /i de::zoom -window 5 -factor 0.5 -center {18.434 12.731}
+[20:58:08.50] /o {-305.098 -269.658} {224.146 70.704}
+[20:58:08.50] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.50] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.73}
+[20:58:08.50] /o {-628.629 -552.046} {429.86 128.678}
+[20:58:08.50] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.50] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.731}
+[20:58:08.51] /o {-1275.691 -1116.823} {841.287 244.626}
+[20:58:08.51] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.51] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.731}
+[20:58:08.52] /o {-2569.815 -2246.376} {1664.14 476.521}
+[20:58:08.52] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.52] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.731}
+[20:58:08.53] /o {-5158.064 -4505.484} {3309.847 940.311}
+[20:58:08.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.53] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.73}
+[20:58:08.54] /w Warning: Could not zoom to factor '5.01e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[20:58:08.54] /o {-6707.807 -5858.15} {4295.233 1218.01}
+[20:58:08.54] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.54] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.73}
+[20:58:08.55] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[20:58:08.55] /o {-6707.807 -5858.15} {4295.233 1218.01}
+[20:58:08.55] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.55] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.73}
+[20:58:08.56] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[20:58:08.56] /o {-6707.807 -5858.15} {4295.233 1218.01}
+[20:58:08.56] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[20:58:08.56] /i de::zoom -window 5 -factor 0.5 -center {18.433 12.73}
+[20:58:08.57] /w Warning: Could not zoom to factor '3.86e-05' because the length and width of the design must both remain at least one pixel in size. (CANVAS-002)
+[20:58:08.57] /o {-6707.807 -5858.15} {4295.233 1218.01}
+[20:58:08.80] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:08.80] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:08.81] /o {-3344.687 -2922.71} {2156.833 615.37}
+[20:58:08.99] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:08.99] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:09.00] /o {-1663.127 -1454.99} {1087.633 314.05}
+[20:58:09.10] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:09.10] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:09.11] /o {-822.347 -721.13} {553.033 163.39}
+[20:58:09.11] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:09.11] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:09.11] /o {-401.957 -354.2} {285.733 88.06}
+[20:58:09.30] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:09.30] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:09.31] /o {-191.762 -170.735} {152.083 50.395}
+[20:58:09.47] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:09.47] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:09.49] /o {-86.664 -79.002} {85.258 31.563}
+[20:58:09.63] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:09.63] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:09.64] /o {-34.116 -33.136} {51.846 22.146}
+[20:58:09.70] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:09.70] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:09.74] /o {-7.841 -10.203} {35.139 17.438}
+[20:58:10.23] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:10.23] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:10.25] /o {5.296 1.263} {26.786 15.084}
+[20:58:10.54] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:10.54] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:10.55] /o {11.864 6.997} {22.61 13.907}
+[20:58:10.63] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[20:58:10.63] /i de::zoom -window 5 -factor 2.0 -center {18.433 12.73}
+[20:58:10.64] /o {15.149 9.863} {20.521 13.319}
+[21:02:12.03] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:02:12.03] /i de::pan -direction S -multiplier 0.5
+[21:02:12.04] /o {15.149 8.136} {20.521 11.591}
+[21:02:12.44] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:02:12.44] /i de::pan -direction S -multiplier 0.5
+[21:02:12.45] /o {15.149 6.408} {20.521 9.863}
+[21:02:13.61] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:02:13.61] /i de::pan -direction S -multiplier 0.5
+[21:02:13.62] /o {15.149 4.681} {20.521 8.136}
+[21:02:15.11] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:02:15.11] /i de::pan -direction W -multiplier 0.5
+[21:02:15.13] /o {12.466 4.681} {17.838 8.136}
+[21:02:15.52] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:02:15.52] /i de::pan -direction W -multiplier 0.5
+[21:02:15.53] /o {9.782 4.681} {15.155 8.136}
+[21:02:15.83] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:02:15.83] /i de::pan -direction W -multiplier 0.5
+[21:02:15.84] /o {7.099 4.681} {12.472 8.136}
+[21:02:16.12] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:02:16.12] /i de::pan -direction W -multiplier 0.5
+[21:02:16.13] /o {4.416 4.681} {9.789 8.136}
+[21:02:16.38] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:02:16.38] /i de::pan -direction W -multiplier 0.5
+[21:02:16.39] /o {1.733 4.681} {7.106 8.136}
+[21:02:16.66] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:02:16.66] /i de::pan -direction W -multiplier 0.5
+[21:02:16.67] /o {-0.95 4.681} {4.423 8.136}
+[21:02:17.22] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:02:17.22] /i de::pan -direction E -multiplier 0.5
+[21:02:17.23] /o {1.733 4.681} {7.106 8.136}
+[21:02:18.22] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:02:18.22] /i de::pan -direction E -multiplier 0.5
+[21:02:18.23] /o {4.416 4.681} {9.789 8.136}
+[21:02:18.87] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:02:18.87] /i de::pan -direction E -multiplier 0.5
+[21:02:18.89] /o {7.099 4.681} {12.472 8.136}
+[21:02:19.24] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:02:19.24] /i de::pan -direction E -multiplier 0.5
+[21:02:19.24] /o {9.782 4.681} {15.155 8.136}
+[21:02:19.46] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:02:19.46] /i de::pan -direction E -multiplier 0.5
+[21:02:19.47] /o {12.466 4.681} {17.838 8.136}
+[21:02:19.68] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:02:19.68] /i de::pan -direction E -multiplier 0.5
+[21:02:19.69] /o {15.149 4.681} {20.521 8.136}
+[21:02:20.31] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:02:20.31] /i de::pan -direction E -multiplier 0.5
+[21:02:20.32] /o {17.832 4.681} {23.204 8.136}
+[21:03:30.75] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:03:30.75] /i de::pan -direction S -multiplier 0.5
+[21:03:30.76] /o {17.832 2.953} {23.204 6.408}
+[21:03:30.98] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:03:30.98] /i de::pan -direction S -multiplier 0.5
+[21:03:30.99] /o {17.832 1.225} {23.204 4.681}
+[21:03:31.44] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:03:31.44] /i de::pan -direction S -multiplier 0.5
+[21:03:31.45] /o {17.832 -0.502} {23.204 2.953}
+[21:03:31.66] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:03:31.66] /i de::pan -direction S -multiplier 0.5
+[21:03:31.67] /o {17.832 -2.23} {23.204 1.225}
+[21:03:32.06] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:32.06] /i de::pan -direction W -multiplier 0.5
+[21:03:32.07] /o {15.149 -2.23} {20.521 1.225}
+[21:03:32.28] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:32.28] /i de::pan -direction W -multiplier 0.5
+[21:03:32.29] /o {12.466 -2.23} {17.838 1.225}
+[21:03:32.48] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:32.48] /i de::pan -direction W -multiplier 0.5
+[21:03:32.48] /o {9.782 -2.23} {15.155 1.225}
+[21:03:32.99] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:32.99] /i de::pan -direction W -multiplier 0.5
+[21:03:33.00] /o {7.099 -2.23} {12.472 1.225}
+[21:03:33.20] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:33.20] /i de::pan -direction W -multiplier 0.5
+[21:03:33.21] /o {4.416 -2.23} {9.789 1.225}
+[21:03:33.41] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:33.41] /i de::pan -direction W -multiplier 0.5
+[21:03:33.42] /o {1.733 -2.23} {7.106 1.225}
+[21:03:33.66] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:33.66] /i de::pan -direction W -multiplier 0.5
+[21:03:33.67] /o {-0.95 -2.23} {4.423 1.225}
+[21:03:33.90] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:33.90] /i de::pan -direction W -multiplier 0.5
+[21:03:33.90] /o {-3.633 -2.23} {1.739 1.225}
+[21:03:34.25] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:03:34.25] /i de::pan -direction E -multiplier 0.5
+[21:03:34.26] /o {-0.95 -2.23} {4.423 1.225}
+[21:03:34.48] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:03:34.48] /i de::pan -direction E -multiplier 0.5
+[21:03:34.49] /o {1.733 -2.23} {7.106 1.225}
+[21:03:34.97] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:34.97] /i de::pan -direction W -multiplier 0.5
+[21:03:34.98] /o {-0.95 -2.23} {4.423 1.225}
+[21:03:35.30] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[21:03:35.30] /i de::pan -direction N -multiplier 0.5
+[21:03:35.32] /o {-0.95 -0.502} {4.423 2.953}
+[21:03:35.94] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:03:35.94] /i de::pan -direction E -multiplier 0.5
+[21:03:35.95] /o {1.733 -0.502} {7.106 2.953}
+[21:03:39.40] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:03:39.40] /i de::pan -direction E -multiplier 0.5
+[21:03:39.41] /o {4.416 -0.502} {9.789 2.953}
+[21:03:39.72] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:03:39.72] /i de::pan -direction E -multiplier 0.5
+[21:03:39.73] /o {7.099 -0.502} {12.472 2.953}
+[21:03:40.11] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:03:40.11] /i de::pan -direction E -multiplier 0.5
+[21:03:40.12] /o {9.782 -0.502} {15.155 2.953}
+[21:03:40.35] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:03:40.35] /i de::pan -direction E -multiplier 0.5
+[21:03:40.36] /o {12.466 -0.502} {17.838 2.953}
+[21:03:40.82] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:03:40.82] /i de::pan -direction W -multiplier 0.5
+[21:03:40.84] /o {9.782 -0.502} {15.155 2.953}
+[21:04:04.91] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:04.91] /i de::pan -direction W -multiplier 0.5
+[21:04:04.93] /o {7.099 -0.502} {12.472 2.953}
+[21:04:05.15] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:05.15] /i de::pan -direction W -multiplier 0.5
+[21:04:05.16] /o {4.416 -0.502} {9.789 2.953}
+[21:04:05.73] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:05.73] /i de::pan -direction W -multiplier 0.5
+[21:04:05.74] /o {1.733 -0.502} {7.106 2.953}
+[21:04:05.84] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:05.84] /i de::pan -direction W -multiplier 0.5
+[21:04:05.85] /o {-0.95 -0.502} {4.423 2.953}
+[21:04:05.98] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:05.98] /i de::pan -direction W -multiplier 0.5
+[21:04:06.00] /o {-3.633 -0.502} {1.739 2.953}
+[21:04:06.10] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:06.10] /i de::pan -direction W -multiplier 0.5
+[21:04:06.10] /o {-6.316 -0.502} {-0.944 2.953}
+[21:04:06.20] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:06.20] /i de::pan -direction W -multiplier 0.5
+[21:04:06.21] /o {-8.999 -0.502} {-3.627 2.953}
+[21:04:06.42] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:06.42] /i de::pan -direction E -multiplier 0.5
+[21:04:06.43] /o {-6.316 -0.502} {-0.944 2.953}
+[21:04:06.64] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:06.64] /i de::pan -direction E -multiplier 0.5
+[21:04:06.66] /o {-3.633 -0.502} {1.739 2.953}
+[21:04:06.80] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:06.80] /i de::pan -direction E -multiplier 0.5
+[21:04:06.82] /o {-0.95 -0.502} {4.423 2.953}
+[21:04:07.23] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:07.23] /i de::pan -direction E -multiplier 0.5
+[21:04:07.24] /o {1.733 -0.502} {7.106 2.953}
+[21:04:07.72] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:04:07.72] /i de::pan -direction W -multiplier 0.5
+[21:04:07.73] /o {-0.95 -0.502} {4.423 2.953}
+[21:04:12.20] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:12.20] /i de::pan -direction E -multiplier 0.5
+[21:04:12.21] /o {1.733 -0.502} {7.106 2.953}
+[21:04:12.38] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:12.38] /i de::pan -direction E -multiplier 0.5
+[21:04:12.39] /o {4.416 -0.502} {9.789 2.953}
+[21:04:12.55] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:12.55] /i de::pan -direction E -multiplier 0.5
+[21:04:12.56] /o {7.099 -0.502} {12.472 2.953}
+[21:04:12.75] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:12.75] /i de::pan -direction E -multiplier 0.5
+[21:04:12.76] /o {9.782 -0.502} {15.155 2.953}
+[21:04:12.96] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:04:12.96] /i de::pan -direction E -multiplier 0.5
+[21:04:12.97] /o {12.466 -0.502} {17.838 2.953}
+[21:05:57.61] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:05:57.61] /i de::pan -direction W -multiplier 0.5
+[21:05:57.62] /o {9.782 -0.502} {15.155 2.953}
+[21:05:57.93] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:05:57.93] /i de::pan -direction W -multiplier 0.5
+[21:05:57.94] /o {7.099 -0.502} {12.472 2.953}
+[21:05:58.23] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:05:58.23] /i de::pan -direction W -multiplier 0.5
+[21:05:58.24] /o {4.416 -0.502} {9.789 2.953}
+[21:05:58.54] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:05:58.54] /i de::pan -direction W -multiplier 0.5
+[21:05:58.55] /o {1.733 -0.502} {7.106 2.953}
+[21:05:58.76] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:05:58.76] /i de::pan -direction W -multiplier 0.5
+[21:05:58.77] /o {-0.95 -0.502} {4.423 2.953}
+[21:05:59.03] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:05:59.03] /i de::pan -direction W -multiplier 0.5
+[21:05:59.04] /o {-3.633 -0.502} {1.739 2.953}
+[21:05:59.53] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:05:59.53] /i de::pan -direction E -multiplier 0.5
+[21:05:59.54] /o {-0.95 -0.502} {4.423 2.953}
+[21:05:59.73] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:05:59.73] /i de::pan -direction E -multiplier 0.5
+[21:05:59.74] /o {1.733 -0.502} {7.106 2.953}
+[21:06:00.01] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:00.01] /i de::pan -direction E -multiplier 0.5
+[21:06:00.02] /o {4.416 -0.502} {9.789 2.953}
+[21:06:00.25] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:00.25] /i de::pan -direction E -multiplier 0.5
+[21:06:00.26] /o {7.099 -0.502} {12.472 2.953}
+[21:06:00.52] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:00.52] /i de::pan -direction E -multiplier 0.5
+[21:06:00.53] /o {9.782 -0.502} {15.155 2.953}
+[21:06:01.04] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[21:06:01.04] /i de::pan -direction N -multiplier 0.5
+[21:06:01.05] /o {9.782 1.225} {15.155 4.681}
+[21:06:01.29] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[21:06:01.29] /i de::pan -direction N -multiplier 0.5
+[21:06:01.30] /o {9.782 2.953} {15.155 6.408}
+[21:06:01.60] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[21:06:01.60] /i de::pan -direction N -multiplier 0.5
+[21:06:01.61] /o {9.782 4.681} {15.155 8.136}
+[21:06:02.08] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:02.08] /i de::pan -direction W -multiplier 0.5
+[21:06:02.09] /o {7.099 4.681} {12.472 8.136}
+[21:06:02.27] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:02.27] /i de::pan -direction W -multiplier 0.5
+[21:06:02.28] /o {4.416 4.681} {9.789 8.136}
+[21:06:02.45] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:02.45] /i de::pan -direction W -multiplier 0.5
+[21:06:02.46] /o {1.733 4.681} {7.106 8.136}
+[21:06:02.84] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:02.84] /i de::pan -direction W -multiplier 0.5
+[21:06:02.85] /o {-0.95 4.681} {4.423 8.136}
+[21:06:03.08] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:03.08] /i de::pan -direction W -multiplier 0.5
+[21:06:03.09] /o {-3.633 4.681} {1.739 8.136}
+[21:06:03.39] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:03.39] /i de::pan -direction E -multiplier 0.5
+[21:06:03.40] /o {-0.95 4.681} {4.423 8.136}
+[21:06:04.27] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:04.27] /i de::pan -direction E -multiplier 0.5
+[21:06:04.28] /o {1.733 4.681} {7.106 8.136}
+[21:06:04.60] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:04.60] /i de::pan -direction E -multiplier 0.5
+[21:06:04.61] /o {4.416 4.681} {9.789 8.136}
+[21:06:16.77] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:16.77] /i de::pan -direction W -multiplier 0.5
+[21:06:16.78] /o {1.733 4.681} {7.106 8.136}
+[21:06:17.10] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:17.10] /i de::pan -direction W -multiplier 0.5
+[21:06:17.11] /o {-0.95 4.681} {4.423 8.136}
+[21:06:17.31] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:17.31] /i de::pan -direction W -multiplier 0.5
+[21:06:17.32] /o {-3.633 4.681} {1.739 8.136}
+[21:06:18.68] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:18.68] /i de::pan -direction E -multiplier 0.5
+[21:06:18.68] /o {-0.95 4.681} {4.423 8.136}
+[21:06:28.95] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:28.95] /i de::pan -direction E -multiplier 0.5
+[21:06:28.95] /o {1.733 4.681} {7.106 8.136}
+[21:06:31.22] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:31.22] /i de::pan -direction E -multiplier 0.5
+[21:06:31.23] /o {4.416 4.681} {9.789 8.136}
+[21:06:37.42] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:37.42] /i de::pan -direction E -multiplier 0.5
+[21:06:37.43] /o {7.099 4.681} {12.472 8.136}
+[21:06:41.10] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:41.10] /i de::pan -direction E -multiplier 0.5
+[21:06:41.11] /o {9.782 4.681} {15.155 8.136}
+[21:06:41.51] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:41.51] /i de::pan -direction E -multiplier 0.5
+[21:06:41.53] /o {12.466 4.681} {17.838 8.136}
+[21:06:42.01] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:42.01] /i de::pan -direction E -multiplier 0.5
+[21:06:42.02] /o {15.149 4.681} {20.521 8.136}
+[21:06:42.43] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:42.43] /i de::pan -direction E -multiplier 0.5
+[21:06:42.44] /o {17.832 4.681} {23.204 8.136}
+[21:06:42.76] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:42.76] /i de::pan -direction E -multiplier 0.5
+[21:06:42.77] /o {20.515 4.681} {25.888 8.136}
+[21:06:43.38] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:43.38] /i de::pan -direction W -multiplier 0.5
+[21:06:43.39] /o {17.832 4.681} {23.204 8.136}
+[21:06:44.84] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:44.84] /i de::pan -direction W -multiplier 0.5
+[21:06:44.85] /o {15.149 4.681} {20.521 8.136}
+[21:06:45.06] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:45.06] /i de::pan -direction W -multiplier 0.5
+[21:06:45.07] /o {12.466 4.681} {17.838 8.136}
+[21:06:45.29] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:45.29] /i de::pan -direction W -multiplier 0.5
+[21:06:45.30] /o {9.782 4.681} {15.155 8.136}
+[21:06:45.50] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:45.50] /i de::pan -direction W -multiplier 0.5
+[21:06:45.51] /o {7.099 4.681} {12.472 8.136}
+[21:06:45.72] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:45.72] /i de::pan -direction W -multiplier 0.5
+[21:06:45.73] /o {4.416 4.681} {9.789 8.136}
+[21:06:45.95] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:06:45.95] /i de::pan -direction W -multiplier 0.5
+[21:06:45.96] /o {1.733 4.681} {7.106 8.136}
+[21:06:46.68] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:46.68] /i de::pan -direction E -multiplier 0.5
+[21:06:46.69] /o {4.416 4.681} {9.789 8.136}
+[21:06:50.84] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:06:50.84] /i de::zoom -window 5 -factor 0.5 -center {8.89 6.345}
+[21:06:50.85] /o {-0.058 3.016} {10.688 9.927}
+[21:06:51.36] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:06:51.36] /i de::zoom -window 5 -factor 0.5 -center {8.89 6.345}
+[21:06:51.37] /o {-9.005 -0.312} {12.485 13.508}
+[21:06:51.42] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:06:51.42] /i de::zoom -window 5 -factor 0.5 -center {8.891 6.345}
+[21:06:51.43] /o {-26.901 -6.97} {16.079 20.671}
+[21:06:53.64] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:53.64] /i de::pan -direction E -multiplier 0.5
+[21:06:53.65] /o {-5.436 -6.97} {37.544 20.671}
+[21:06:59.47] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:59.47] /i de::pan -direction E -multiplier 0.5
+[21:06:59.49] /o {16.029 -6.97} {59.009 20.671}
+[21:06:59.93] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:06:59.93] /i de::pan -direction E -multiplier 0.5
+[21:06:59.94] /o {37.494 -6.97} {80.474 20.671}
+[21:07:02.07] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:02.07] /i de::pan -direction W -multiplier 0.5
+[21:07:02.09] /o {16.029 -6.97} {59.009 20.671}
+[21:07:02.97] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:02.97] /i de::pan -direction W -multiplier 0.5
+[21:07:02.98] /o {-5.436 -6.97} {37.544 20.671}
+[21:07:11.06] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:11.06] /i de::pan -direction E -multiplier 0.5
+[21:07:11.07] /o {16.029 -6.97} {59.009 20.671}
+[21:07:11.43] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:11.43] /i de::pan -direction E -multiplier 0.5
+[21:07:11.43] /o {37.494 -6.97} {80.474 20.671}
+[21:07:13.83] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:13.83] /i de::pan -direction W -multiplier 0.5
+[21:07:13.84] /o {16.029 -6.97} {59.009 20.671}
+[21:07:14.10] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:14.10] /i de::pan -direction W -multiplier 0.5
+[21:07:14.10] /o {-5.436 -6.97} {37.544 20.671}
+[21:07:17.39] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[21:07:17.40] /i de::zoom -window 5 -factor 2.0
+[21:07:17.40] /o {5.309 -0.06} {26.799 13.761}
+[21:07:18.62] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[21:07:18.62] /i de::zoom -window 5 -factor 2.0
+[21:07:18.63] /o {10.681 3.395} {21.427 10.306}
+[21:07:21.45] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:21.45] /i de::pan -direction W -multiplier 0.5
+[21:07:21.46] /o {5.302 3.395} {16.048 10.306}
+[21:07:22.87] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:22.87] /i de::pan -direction W -multiplier 0.5
+[21:07:22.88] /o {-0.076 3.395} {10.669 10.306}
+[21:07:25.38] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:25.38] /i de::pan -direction E -multiplier 0.5
+[21:07:25.39] /o {5.29 3.395} {16.035 10.306}
+[21:07:25.86] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:25.86] /i de::pan -direction E -multiplier 0.5
+[21:07:25.87] /o {10.656 3.395} {21.401 10.306}
+[21:07:27.21] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:27.21] /i de::pan -direction E -multiplier 0.5
+[21:07:27.22] /o {16.022 3.395} {26.767 10.306}
+[21:07:29.00] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:29.00] /i de::pan -direction W -multiplier 0.5
+[21:07:29.01] /o {10.656 3.395} {21.401 10.306}
+[21:07:30.38] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:30.38] /i de::pan -direction W -multiplier 0.5
+[21:07:30.39] /o {5.29 3.395} {16.035 10.306}
+[21:07:30.73] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:30.73] /i de::pan -direction W -multiplier 0.5
+[21:07:30.74] /o {-0.076 3.395} {10.669 10.306}
+[21:07:31.02] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:31.02] /i de::pan -direction W -multiplier 0.5
+[21:07:31.03] /o {-5.443 3.395} {5.302 10.306}
+[21:07:31.79] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:31.79] /i de::pan -direction E -multiplier 0.5
+[21:07:31.79] /o {-0.076 3.395} {10.669 10.306}
+[21:07:32.40] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:32.40] /i de::pan -direction E -multiplier 0.5
+[21:07:32.41] /o {5.29 3.395} {16.035 10.306}
+[21:07:32.79] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:32.79] /i de::pan -direction E -multiplier 0.5
+[21:07:32.80] /o {10.656 3.395} {21.401 10.306}
+[21:07:33.29] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:33.29] /i de::pan -direction E -multiplier 0.5
+[21:07:33.30] /o {16.022 3.395} {26.767 10.306}
+[21:07:39.55] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:39.55] /i de::pan -direction E -multiplier 0.5
+[21:07:39.56] /o {21.389 3.395} {32.134 10.306}
+[21:07:39.83] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:39.83] /i de::pan -direction E -multiplier 0.5
+[21:07:39.84] /o {26.755 3.395} {37.5 10.306}
+[21:07:40.16] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:40.16] /i de::pan -direction E -multiplier 0.5
+[21:07:40.17] /o {32.121 3.395} {42.866 10.306}
+[21:07:40.95] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:40.95] /i de::pan -direction E -multiplier 0.5
+[21:07:40.96] /o {37.487 3.395} {48.232 10.306}
+[21:07:41.65] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:41.65] /i de::pan -direction E -multiplier 0.5
+[21:07:41.66] /o {42.854 3.395} {53.599 10.306}
+[21:07:43.93] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:43.93] /i de::pan -direction W -multiplier 0.5
+[21:07:43.94] /o {37.487 3.395} {48.232 10.306}
+[21:07:44.18] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:44.18] /i de::pan -direction W -multiplier 0.5
+[21:07:44.19] /o {32.121 3.395} {42.866 10.306}
+[21:07:44.39] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:44.39] /i de::pan -direction W -multiplier 0.5
+[21:07:44.39] /o {26.755 3.395} {37.5 10.306}
+[21:07:45.23] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:45.23] /i de::pan -direction W -multiplier 0.5
+[21:07:45.24] /o {21.389 3.395} {32.134 10.306}
+[21:07:45.43] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:45.43] /i de::pan -direction W -multiplier 0.5
+[21:07:45.45] /o {16.022 3.395} {26.767 10.306}
+[21:07:45.59] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:45.59] /i de::pan -direction W -multiplier 0.5
+[21:07:45.60] /o {10.656 3.395} {21.401 10.306}
+[21:07:45.75] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:45.75] /i de::pan -direction W -multiplier 0.5
+[21:07:45.75] /o {5.29 3.395} {16.035 10.306}
+[21:07:45.99] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:45.99] /i de::pan -direction W -multiplier 0.5
+[21:07:46.00] /o {-0.076 3.395} {10.669 10.306}
+[21:07:46.20] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:46.20] /i de::pan -direction W -multiplier 0.5
+[21:07:46.21] /o {-5.443 3.395} {5.302 10.306}
+[21:07:46.71] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:46.71] /i de::pan -direction E -multiplier 0.5
+[21:07:46.71] /o {-0.076 3.395} {10.669 10.306}
+[21:07:48.43] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:07:48.43] /i de::pan -direction E -multiplier 0.5
+[21:07:48.43] /o {5.29 3.395} {16.035 10.306}
+[21:07:58.26] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:58.26] /i de::pan -direction W -multiplier 0.5
+[21:07:58.27] /o {-0.076 3.395} {10.669 10.306}
+[21:07:58.81] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:07:58.81] /i de::pan -direction W -multiplier 0.5
+[21:07:58.82] /o {-5.443 3.395} {5.302 10.306}
+[21:08:16.45] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:08:16.45] /i de::pan -direction E -multiplier 0.5
+[21:08:16.46] /o {-0.076 3.395} {10.669 10.306}
+[21:08:18.90] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:08:18.90] /i de::pan -direction E -multiplier 0.5
+[21:08:18.91] /o {5.29 3.395} {16.035 10.306}
+[21:08:21.84] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:08:21.84] /i de::pan -direction W -multiplier 0.5
+[21:08:21.85] /o {-0.076 3.395} {10.669 10.306}
+[21:09:08.57] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:09:08.57] /i de::pan -direction S -multiplier 0.5
+[21:09:08.58] /o {-0.076 -0.06} {10.669 6.851}
+[21:09:09.38] /# gi::executeAction dePanNorth -in [gi::getWindows 5]
+[21:09:09.38] /i de::pan -direction N -multiplier 0.5
+[21:09:09.39] /o {-0.076 3.395} {10.669 10.306}
+[21:09:10.40] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.40] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.41] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.41] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.41] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.42] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.42] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.44] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.49] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.49] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.50] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.50] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:10.51] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[21:09:11.69] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:09:11.69] /i de::pan -direction E -multiplier 0.5
+[21:09:11.70] /o {5.29 3.395} {16.035 10.306}
+[21:09:12.21] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:09:12.21] /i de::pan -direction E -multiplier 0.5
+[21:09:12.22] /o {10.656 3.395} {21.401 10.306}
+[21:09:52.87] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:09:52.87] /i de::zoom -window 5 -factor 0.5 -center {20.287 6.332}
+[21:09:52.88] /o {1.025 0.459} {22.515 14.28}
+[21:09:53.14] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:09:53.14] /i de::zoom -window 5 -factor 2.0 -center {20.288 6.331}
+[21:09:53.14] /o {10.657 3.395} {21.402 10.305}
+[21:09:53.17] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:09:53.17] /i de::zoom -window 5 -factor 2.0 -center {20.288 6.331}
+[21:09:53.17] /o {15.472 4.863} {20.845 8.318}
+[21:09:53.32] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:09:53.32] /i de::zoom -window 5 -factor 2.0 -center {20.288 6.331}
+[21:09:53.33] /o {17.88 5.597} {20.566 7.325}
+[21:09:53.33] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:09:53.33] /i de::zoom -window 5 -factor 2.0 -center {20.288 6.331}
+[21:09:53.34] /o {19.084 5.964} {20.427 6.828}
+[21:09:53.44] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:09:53.44] /i de::zoom -window 5 -factor 2.0 -center {20.288 6.331}
+[21:09:53.45] /o {19.686 6.147} {20.358 6.579}
+[21:09:53.51] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:09:53.51] /i de::zoom -window 5 -factor 2.0 -center {20.288 6.331}
+[21:09:53.52] /o {19.987 6.239} {20.323 6.455}
+[21:09:54.65] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:09:54.65] /i de::zoom -window 5 -factor 0.5 -center {20.288 6.331}
+[21:09:54.66] /o {19.686 6.147} {20.358 6.579}
+[21:09:55.36] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[21:09:55.36] /i de::addPoint {20.288 6.331} -window 5
+[21:09:56.11] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:09:56.11] /i de::pan -direction E -multiplier 0.5
+[21:09:56.12] /o {20.022 6.147} {20.694 6.579}
+[21:10:41.56] /i gi::setCurrentIndex {lpps} -index {0,0} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 5]]
+[21:11:09.22] /# gi::executeAction deAbortCommand -in [gi::getWindows 5]
+[21:11:09.22] /i de::abortCommand -window 5
+[21:11:11.37] /# gi::executeAction leRuler -in [gi::getWindows 5]
+[21:11:11.37] /i ile::createRuler
+[21:11:13.80] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[21:11:13.80] /i de::addPoint {20.286 6.309} -window 5
+[21:11:21.37] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[21:11:21.37] /i de::addPoint {20.425 6.45} -window 5
+[21:11:25.21] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[21:11:25.21] /i de::addPoint {20.284 6.31} -window 5
+[21:11:27.10] /# gi::executeAction deAddPoint -in [gi::getWindows 5]
+[21:11:27.10] /i de::addPoint {20.426 6.31} -window 5
+[21:11:27.53] /# gi::executeAction deAbortCommand -in [gi::getWindows 5]
+[21:11:27.53] /i de::abortCommand -window 5
+[21:11:28.84] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:11:28.84] /i de::pan -direction W -multiplier 0.5
+[21:11:28.85] /o {19.686 6.147} {20.358 6.579}
+[21:11:29.04] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:11:29.04] /i de::pan -direction W -multiplier 0.5
+[21:11:29.05] /o {19.35 6.147} {20.021 6.579}
+[21:11:29.24] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:11:29.24] /i de::pan -direction W -multiplier 0.5
+[21:11:29.25] /o {19.014 6.147} {19.686 6.579}
+[21:11:29.44] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:11:29.44] /i de::pan -direction W -multiplier 0.5
+[21:11:29.45] /o {18.678 6.147} {19.35 6.579}
+[21:11:29.63] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:11:29.63] /i de::pan -direction W -multiplier 0.5
+[21:11:29.63] /o {18.342 6.147} {19.014 6.579}
+[21:11:37.56] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:11:37.56] /i de::pan -direction E -multiplier 0.5
+[21:11:37.57] /o {18.678 6.147} {19.35 6.579}
+[21:11:37.94] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:11:37.94] /i de::pan -direction E -multiplier 0.5
+[21:11:37.94] /o {19.014 6.147} {19.686 6.579}
+[21:11:38.14] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:11:38.14] /i de::pan -direction E -multiplier 0.5
+[21:11:38.14] /o {19.351 6.147} {20.022 6.579}
+[21:11:38.36] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:11:38.36] /i de::pan -direction E -multiplier 0.5
+[21:11:38.37] /o {19.686 6.147} {20.358 6.579}
+[21:11:38.56] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:11:38.56] /i de::pan -direction E -multiplier 0.5
+[21:11:38.57] /o {20.022 6.147} {20.694 6.579}
+[21:11:38.74] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:11:38.74] /i de::pan -direction E -multiplier 0.5
+[21:11:38.75] /o {20.358 6.147} {21.03 6.579}
+[21:11:39.28] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:11:39.28] /i de::pan -direction W -multiplier 0.5
+[21:11:39.29] /o {20.022 6.147} {20.694 6.579}
+[21:11:40.53] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:40.53] /i de::zoom -window 5 -factor 0.5 -center {20.408 6.351}
+[21:11:40.54] /o {19.636 5.944} {20.98 6.808}
+[21:11:40.57] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:40.57] /i de::zoom -window 5 -factor 0.5 -center {20.408 6.351}
+[21:11:40.57] /o {18.865 5.537} {21.551 7.265}
+[21:11:40.60] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:40.60] /i de::zoom -window 5 -factor 0.5 -center {20.409 6.35}
+[21:11:40.61] /o {17.321 4.724} {22.693 8.179}
+[21:11:40.61] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:40.61] /i de::zoom -window 5 -factor 0.5 -center {20.409 6.35}
+[21:11:40.61] /o {14.232 3.098} {24.978 10.008}
+[21:11:40.63] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:40.63] /i de::zoom -window 5 -factor 0.5 -center {20.409 6.351}
+[21:11:40.64] /o {8.056 -0.155} {29.546 13.666}
+[21:11:40.64] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:40.64] /i de::zoom -window 5 -factor 0.5 -center {20.408 6.35}
+[21:11:40.64] /o {-4.296 -6.66} {38.684 20.981}
+[21:11:41.65] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:11:41.65] /i de::zoom -window 5 -factor 2.0 -center {20.409 6.351}
+[21:11:41.66] /o {8.056 -0.155} {29.547 13.666}
+[21:11:42.16] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:11:42.16] /i de::zoom -window 5 -factor 2.0 -center {20.409 6.351}
+[21:11:42.17] /o {14.233 3.098} {24.978 10.009}
+[21:11:42.27] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:11:42.27] /i de::zoom -window 5 -factor 2.0 -center {20.409 6.351}
+[21:11:42.28] /o {17.321 4.725} {22.693 8.18}
+[21:11:43.05] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:43.05] /i de::zoom -window 5 -factor 0.5 -center {20.409 6.351}
+[21:11:43.05] /o {14.233 3.098} {24.978 10.009}
+[21:11:43.11] /# gi::executeAction deZoomOutAtPoint -in [gi::getWindows 5]
+[21:11:43.11] /i de::zoom -window 5 -factor 0.5 -center {20.409 6.351}
+[21:11:43.12] /o {8.056 -0.155} {29.547 13.666}
+[21:11:46.83] /# gi::executeAction deZoomInAtPoint -in [gi::getWindows 5]
+[21:11:46.83] /i de::zoom -window 5 -factor 2.0 -center {20.409 6.351}
+[21:11:46.83] /o {14.233 3.098} {24.978 10.009}
+[21:12:40.37] /# gi::executeAction deZoomOut -in [gi::getWindows 5]
+[21:12:40.37] /i de::zoom -window 5 -factor 0.5
+[21:12:40.38] /o {8.86 -0.357} {30.35 13.464}
+[21:12:45.79] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:12:45.79] /i de::pan -direction W -multiplier 0.5
+[21:12:45.80] /o {-1.872 -0.357} {19.618 13.464}
+[21:12:47.20] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:12:47.20] /i de::pan -direction E -multiplier 0.5
+[21:12:47.21] /o {8.86 -0.357} {30.35 13.464}
+[21:12:48.04] /# gi::executeAction dePanWest -in [gi::getWindows 5]
+[21:12:48.05] /i de::pan -direction W -multiplier 0.5
+[21:12:48.05] /o {-1.872 -0.357} {19.618 13.464}
+[21:12:54.38] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:12:54.38] /i de::pan -direction E -multiplier 0.5
+[21:12:54.39] /o {8.86 -0.357} {30.35 13.464}
+[21:12:59.69] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[21:12:59.69] /i de::zoom -window 5 -factor 2.0
+[21:12:59.70] /o {14.233 3.098} {24.978 10.009}
+[21:13:00.26] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[21:13:00.26] /i de::zoom -window 5 -factor 2.0
+[21:13:00.27] /o {16.919 4.826} {22.292 8.281}
+[21:13:00.73] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[21:13:00.73] /i de::zoom -window 5 -factor 2.0
+[21:13:00.73] /o {18.262 5.69} {20.948 7.417}
+[21:13:01.18] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[21:13:01.18] /i de::zoom -window 5 -factor 2.0
+[21:13:01.18] /o {18.934 6.121} {20.277 6.985}
+[21:13:01.72] /# gi::executeAction deZoomIn -in [gi::getWindows 5]
+[21:13:01.72] /i de::zoom -window 5 -factor 2.0
+[21:13:01.73] /o {19.269 6.337} {19.941 6.769}
+[21:13:02.85] /# gi::executeAction dePanSouth -in [gi::getWindows 5]
+[21:13:02.85] /i de::pan -direction S -multiplier 0.5
+[21:13:02.86] /o {19.269 6.121} {19.941 6.553}
+[21:13:03.69] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:13:03.69] /i de::pan -direction E -multiplier 0.5
+[21:13:03.69] /o {19.606 6.121} {20.277 6.553}
+[21:13:04.12] /# gi::executeAction dePanEast -in [gi::getWindows 5]
+[21:13:04.12] /i de::pan -direction E -multiplier 0.5
+[21:13:04.17] /o {19.941 6.121} {20.613 6.553}
+[23:25:02.58] /o Process killed
+              /c Information: The process was terminated by "Hangup" signal.
+              /c signal number = 1
+              /c Numeric Stack Dump 
+              /c '76737780 140668019704447 140668020467479 140668019924024 140668034513636 140668034521838 140668034522271 140668019719016 140668019719094 140668208520775 140668162031405 140668162021596 140668161962906 140668208752987 140668187663800 140668187665071 140668187665499 140668203902798 140668208753421 140668203727457 140668203728043 140668203745194 73943954 67895282 140668019622868 73908908'
+              /c PID Maps 
+              /c 00400000-0d54c000 r-xp 00000000 08:02 412671200                          /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0d74b000-0e115000 rw-p 0d14b000 08:02 412671200                          /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c 0e115000-1fc37000 rw-p 00000000 00:00 0 
+              /c 208a3000-28e5b000 rw-p 00000000 00:00 0                                  [heap]
+              /c 7fefa4000000-7fefa4064000 rw-p 00000000 00:00 0 
+              /c 7fefa4064000-7fefa8000000 ---p 00000000 00:00 0 
+              /c 7fefac000000-7fefac064000 rw-p 00000000 00:00 0 
+              /c 7fefac064000-7fefb0000000 ---p 00000000 00:00 0 
+              /c 7fefb0000000-7fefb0064000 rw-p 00000000 00:00 0 
+              /c 7fefb0064000-7fefb4000000 ---p 00000000 00:00 0 
+              /c 7fefb4000000-7fefb4064000 rw-p 00000000 00:00 0 
+              /c 7fefb4064000-7fefb8000000 ---p 00000000 00:00 0 
+              /c 7fefb8e36000-7fefb8e76000 rw-p 00000000 00:00 0 
+              /c 7fefb8e76000-7fefb8f0c000 r--p 00000000 08:02 347820206                  /usr/share/fonts/dejavu/DejaVuSans-BoldOblique.ttf
+              /c 7fefb8f0c000-7fefb8f40000 r--p 00000000 08:02 437652942                  /usr/share/fonts/stix/STIX-Bold.otf
+              /c 7fefb8f40000-7fefb8fa9000 r--p 00000000 08:02 437652945                  /usr/share/fonts/stix/STIX-Regular.otf
+              /c 7fefb8fa9000-7fefb8fdb000 r--p 00000000 08:02 412692207                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/TNR_WG__.ttf
+              /c 7fefb8fdb000-7fefb8fdc000 ---p 00000000 00:00 0 
+              /c 7fefb8fdc000-7fefb97dc000 rw-p 00000000 00:00 0 
+              /c 7fefb97dc000-7fefb97dd000 ---p 00000000 00:00 0 
+              /c 7fefb97dd000-7fefb9fdd000 rw-p 00000000 00:00 0 
+              /c 7fefb9fdd000-7fefb9fde000 ---p 00000000 00:00 0 
+              /c 7fefb9fde000-7fefba7de000 rw-p 00000000 00:00 0 
+              /c 7fefba7de000-7fefba7df000 ---p 00000000 00:00 0 
+              /c 7fefba7df000-7fefbafdf000 rw-p 00000000 00:00 0 
+              /c 7fefbafdf000-7fefbafe0000 ---p 00000000 00:00 0 
+              /c 7fefbafe0000-7fefbb7e0000 rw-p 00000000 00:00 0 
+              /c 7fefbb7e0000-7fefbbdfd000 r--s 00000000 08:02 1225345                    /var/lib/sss/mc/group
+              /c 7fefbbdfd000-7fefbbdff000 r-xp 00000000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7fefbbdff000-7fefbbffe000 ---p 00002000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7fefbbffe000-7fefbbfff000 r--p 00001000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7fefbbfff000-7fefbc000000 rw-p 00002000 08:02 782843                     /usr/lib64/libutil-2.17.so
+              /c 7fefbc000000-7fefbc074000 rw-p 00000000 00:00 0 
+              /c 7fefbc074000-7fefc0000000 ---p 00000000 00:00 0 
+              /c 7fefc000a000-7fefc0022000 r--p 00000000 08:02 134998953                  /usr/share/X11/fonts/TTF/GohaTibebZemen.ttf
+              /c 7fefc0022000-7fefc003a000 r--p 00000000 08:02 172801555                  /usr/share/fonts/default/Type1/n022003l.pfb
+              /c 7fefc003a000-7fefc0087000 r--p 00000000 08:02 342042148                  /usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf
+              /c 7fefc0087000-7fefc0201000 r-xp 00000000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7fefc0201000-7fefc0400000 ---p 0017a000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7fefc0400000-7fefc043c000 rw-p 00179000 08:02 412637573                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/Python/2.6.2/lib/libpython2.6.so.1.0
+              /c 7fefc043c000-7fefc044a000 rw-p 00000000 00:00 0 
+              /c 7fefc044a000-7fefc05a6000 r-xp 00000000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7fefc05a6000-7fefc07a5000 ---p 0015c000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7fefc07a5000-7fefc07b1000 rw-p 0015b000 08:02 412679128                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tclpy/PY2.6.2/tclpy.so
+              /c 7fefc07b1000-7fefc07b6000 r-xp 00000000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7fefc07b6000-7fefc09b5000 ---p 00005000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7fefc09b5000-7fefc09b6000 rw-p 00004000 08:02 24295959                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tdk/lib/libtbcload1.7.so
+              /c 7fefc09b6000-7fefc09b7000 ---p 00000000 00:00 0 
+              /c 7fefc09b7000-7fefc1bb8000 rw-p 00000000 00:00 0 
+              /c 7fefc1bb8000-7fefc1bc7000 r-xp 00000000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7fefc1bc7000-7fefc1dc6000 ---p 0000f000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7fefc1dc6000-7fefc1dc7000 r--p 0000e000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7fefc1dc7000-7fefc1dc8000 rw-p 0000f000 08:02 31865                      /usr/lib64/libbz2.so.1.0.6
+              /c 7fefc1dc8000-7fefc1ddf000 r-xp 00000000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7fefc1ddf000-7fefc1fde000 ---p 00017000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7fefc1fde000-7fefc1fdf000 r--p 00016000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7fefc1fdf000-7fefc1fe0000 rw-p 00017000 08:02 494600                     /usr/lib64/libelf-0.172.so
+              /c 7fefc1fe0000-7fefc1fe4000 r-xp 00000000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7fefc1fe4000-7fefc21e3000 ---p 00004000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7fefc21e3000-7fefc21e4000 r--p 00003000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7fefc21e4000-7fefc21e5000 rw-p 00004000 08:02 32132                      /usr/lib64/libattr.so.1.1.0
+              /c 7fefc21e5000-7fefc2231000 r-xp 00000000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7fefc2231000-7fefc2431000 ---p 0004c000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7fefc2431000-7fefc2433000 r--p 0004c000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7fefc2433000-7fefc2434000 rw-p 0004e000 08:02 814018                     /usr/lib64/libdw-0.172.so
+              /c 7fefc2434000-7fefc2438000 r-xp 00000000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7fefc2438000-7fefc2637000 ---p 00004000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7fefc2637000-7fefc2638000 r--p 00003000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7fefc2638000-7fefc2639000 rw-p 00004000 08:02 32759                      /usr/lib64/libgpg-error.so.0.10.0
+              /c 7fefc2639000-7fefc26b6000 r-xp 00000000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7fefc26b6000-7fefc28b5000 ---p 0007d000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7fefc28b5000-7fefc28b6000 r--p 0007c000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7fefc28b6000-7fefc28b9000 rw-p 0007d000 08:02 31722                      /usr/lib64/libgcrypt.so.11.8.2
+              /c 7fefc28b9000-7fefc28ba000 rw-p 00000000 00:00 0 
+              /c 7fefc28ba000-7fefc28ce000 r-xp 00000000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7fefc28ce000-7fefc2acd000 ---p 00014000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7fefc2acd000-7fefc2ace000 r--p 00013000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7fefc2ace000-7fefc2acf000 rw-p 00014000 08:02 634055                     /usr/lib64/liblz4.so.1.7.5
+              /c 7fefc2acf000-7fefc2af4000 r-xp 00000000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7fefc2af4000-7fefc2cf3000 ---p 00025000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7fefc2cf3000-7fefc2cf4000 r--p 00024000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7fefc2cf4000-7fefc2cf5000 rw-p 00025000 08:02 31744                      /usr/lib64/liblzma.so.5.2.2
+              /c 7fefc2cf5000-7fefc2cf9000 r-xp 00000000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7fefc2cf9000-7fefc2ef8000 ---p 00004000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7fefc2ef8000-7fefc2ef9000 r--p 00003000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7fefc2ef9000-7fefc2efa000 rw-p 00004000 08:02 32138                      /usr/lib64/libcap.so.2.22
+              /c 7fefc2efa000-7fefc2f29000 r-xp 00000000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7fefc2f29000-7fefc3129000 ---p 0002f000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7fefc3129000-7fefc312a000 r--p 0002f000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7fefc312a000-7fefc312b000 rw-p 00030000 08:02 814029                     /usr/lib64/libsystemd.so.0.6.0
+              /c 7fefc312b000-7fefc314f000 r-xp 00000000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7fefc314f000-7fefc334e000 ---p 00024000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7fefc334e000-7fefc334f000 r--p 00023000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7fefc334f000-7fefc3350000 rw-p 00024000 08:02 782851                     /usr/lib64/libselinux.so.1
+              /c 7fefc3350000-7fefc3352000 rw-p 00000000 00:00 0 
+              /c 7fefc3352000-7fefc3354000 r-xp 00000000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7fefc3354000-7fefc3553000 ---p 00002000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7fefc3553000-7fefc3554000 r--p 00001000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7fefc3554000-7fefc3555000 rw-p 00002000 08:02 681468                     /usr/lib64/libfreebl3.so
+              /c 7fefc3555000-7fefc35a3000 r-xp 00000000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7fefc35a3000-7fefc37a2000 ---p 0004e000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7fefc37a2000-7fefc37a3000 r--p 0004d000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7fefc37a3000-7fefc37a4000 rw-p 0004e000 08:02 814033                     /usr/lib64/libdbus-1.so.3.14.14
+              /c 7fefc37a4000-7fefc37a5000 rw-p 00000000 00:00 0 
+              /c 7fefc37a5000-7fefc37a8000 r-xp 00000000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7fefc37a8000-7fefc39a7000 ---p 00003000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7fefc39a7000-7fefc39a8000 r--p 00002000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7fefc39a8000-7fefc39a9000 rw-p 00003000 08:02 53265                      /usr/lib64/libkeyutils.so.1.5
+              /c 7fefc39a9000-7fefc39b6000 r-xp 00000000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7fefc39b6000-7fefc3bb6000 ---p 0000d000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7fefc3bb6000-7fefc3bb7000 r--p 0000d000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7fefc3bb7000-7fefc3bb8000 rw-p 0000e000 08:02 1611                       /usr/lib64/libkrb5support.so.0.1
+              /c 7fefc3bb8000-7fefc3bc0000 r-xp 00000000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7fefc3bc0000-7fefc3dbf000 ---p 00008000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7fefc3dbf000-7fefc3dc0000 r--p 00007000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7fefc3dc0000-7fefc3dc1000 rw-p 00008000 08:02 1592                       /usr/lib64/libcrypt-2.17.so
+              /c 7fefc3dc1000-7fefc3def000 rw-p 00000000 00:00 0 
+              /c 7fefc3def000-7fefc3dff000 r-xp 00000000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7fefc3dff000-7fefc3ffe000 ---p 00010000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7fefc3ffe000-7fefc3fff000 r--p 0000f000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7fefc3fff000-7fefc4000000 rw-p 00010000 08:02 34191                      /usr/lib64/libavahi-client.so.3.2.9
+              /c 7fefc4000000-7fefc4021000 rw-p 00000000 00:00 0 
+              /c 7fefc4021000-7fefc8000000 ---p 00000000 00:00 0 
+              /c 7fefc8007000-7fefc800a000 rw-p 00000000 00:00 0 
+              /c 7fefc800a000-7fefc8016000 r--p 00000000 08:02 412693763                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/td______.pfb
+              /c 7fefc8016000-7fefc8028000 r--p 00000000 08:02 412686441                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/COUR.ttf
+              /c 7fefc8028000-7fefc807a000 r--p 00000000 08:02 342042151                  /usr/share/fonts/dejavu/DejaVuSansMono.ttf
+              /c 7fefc807a000-7fefc8086000 r-xp 00000000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7fefc8086000-7fefc8285000 ---p 0000c000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7fefc8285000-7fefc8286000 r--p 0000b000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7fefc8286000-7fefc8287000 rw-p 0000c000 08:02 34196                      /usr/lib64/libavahi-common.so.3.5.3
+              /c 7fefc8287000-7fefc84bb000 r-xp 00000000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7fefc84bb000-7fefc86bb000 ---p 00234000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7fefc86bb000-7fefc86d7000 r--p 00234000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7fefc86d7000-7fefc86e4000 rw-p 00250000 08:02 1616                       /usr/lib64/libcrypto.so.1.0.2k
+              /c 7fefc86e4000-7fefc86e8000 rw-p 00000000 00:00 0 
+              /c 7fefc86e8000-7fefc874f000 r-xp 00000000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7fefc874f000-7fefc894f000 ---p 00067000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7fefc894f000-7fefc8953000 r--p 00067000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7fefc8953000-7fefc895a000 rw-p 0006b000 08:02 1623                       /usr/lib64/libssl.so.1.0.2k
+              /c 7fefc895a000-7fefc895d000 r-xp 00000000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7fefc895d000-7fefc8b5c000 ---p 00003000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7fefc8b5c000-7fefc8b5d000 r--p 00002000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7fefc8b5d000-7fefc8b5e000 rw-p 00003000 08:02 782872                     /usr/lib64/libcom_err.so.2.1
+              /c 7fefc8b5e000-7fefc8b77000 r-xp 00000000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7fefc8b77000-7fefc8d76000 ---p 00019000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7fefc8d76000-7fefc8d78000 r--p 00018000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7fefc8d78000-7fefc8d79000 rw-p 0001a000 08:02 1601                       /usr/lib64/libk5crypto.so.3.1
+              /c 7fefc8d79000-7fefc8e52000 r-xp 00000000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7fefc8e52000-7fefc9051000 ---p 000d9000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7fefc9051000-7fefc905f000 r--p 000d8000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7fefc905f000-7fefc9062000 rw-p 000e6000 08:02 1609                       /usr/lib64/libkrb5.so.3.3
+              /c 7fefc9062000-7fefc90ac000 r-xp 00000000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7fefc90ac000-7fefc92ac000 ---p 0004a000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7fefc92ac000-7fefc92ad000 r--p 0004a000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7fefc92ad000-7fefc92af000 rw-p 0004b000 08:02 782875                     /usr/lib64/libgssapi_krb5.so.2.2
+              /c 7fefc92af000-7fefc9312000 r-xp 00000000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7fefc9312000-7fefc9512000 ---p 00063000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7fefc9512000-7fefc9516000 r--p 00063000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7fefc9516000-7fefc9517000 rw-p 00067000 08:02 512449                     /usr/lib64/libcups.so.2
+              /c 7fefc9517000-7fefc9518000 rw-p 00000000 00:00 0 
+              /c 7fefc9518000-7fefc952e000 r-xp 00000000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7fefc952e000-7fefc972d000 ---p 00016000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7fefc972d000-7fefc972e000 r--p 00015000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7fefc972e000-7fefc972f000 rw-p 00016000 08:02 782837                     /usr/lib64/libresolv-2.17.so
+              /c 7fefc972f000-7fefc9731000 rw-p 00000000 00:00 0 
+              /c 7fefc9731000-7fefc9736000 r-xp 00000000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7fefc9736000-7fefc9936000 ---p 00005000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7fefc9936000-7fefc9937000 r--p 00005000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7fefc9937000-7fefc9938000 rw-p 00006000 08:02 782825                     /usr/lib64/libnss_dns-2.17.so
+              /c 7fefc9938000-7fefc9951000 r-xp 00000000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7fefc9951000-7fefc9b50000 ---p 00019000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7fefc9b50000-7fefc9b52000 rw-p 00018000 08:02 412673893                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/tcl-dp/lib/libdp42.so
+              /c 7fefc9b52000-7fefc9b64000 r-xp 00000000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7fefc9b64000-7fefc9d64000 ---p 00012000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7fefc9d64000-7fefc9d66000 rw-p 00012000 08:02 354137                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclEngine.so
+              /c 7fefc9d66000-7fefc9e43000 r-xp 00000000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7fefc9e43000-7fefca042000 ---p 000dd000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7fefca042000-7fefca049000 rw-p 000dc000 08:02 25101292                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/librq_plugin.so
+              /c 7fefca049000-7fefca0a6000 r-xp 00000000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7fefca0a6000-7fefca2a5000 ---p 0005d000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7fefca2a5000-7fefca2aa000 rw-p 0005c000 08:02 25101291                   /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/lib/libpcell_caching.so
+              /c 7fefca2aa000-7fefca2b4000 r-xp 00000000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7fefca2b4000-7fefca4b4000 ---p 0000a000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7fefca4b4000-7fefca4b5000 rw-p 0000a000 08:02 354127                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaNativeLock.so
+              /c 7fefca4b5000-7fefca4ec000 r-xp 00000000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7fefca4ec000-7fefca6eb000 ---p 00037000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7fefca6eb000-7fefca6ed000 rw-p 00036000 08:02 354144                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/libsnpsLibDef.so
+              /c 7fefca6ed000-7fefca6ee000 rw-p 00000000 00:00 0 
+              /c 7fefca6ee000-7fefca79e000 r--p 00000000 08:02 347820209                  /usr/share/fonts/dejavu/DejaVuSans.ttf
+              /c 7fefca79e000-7fefca7f7000 r-xp 00000000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7fefca7f7000-7fefca8f6000 ---p 00059000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7fefca8f6000-7fefca8f9000 rw-p 00058000 08:02 294590794                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqtiff.so
+              /c 7fefca8f9000-7fefca8fe000 r-xp 00000000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7fefca8fe000-7fefca9fe000 ---p 00005000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7fefca9fe000-7fefca9ff000 rw-p 00005000 08:02 294130453                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqsvg.so
+              /c 7fefca9ff000-7fefcaa5b000 r-xp 00000000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7fefcaa5b000-7fefcab5a000 ---p 0005c000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7fefcab5a000-7fefcab5e000 rw-p 0005b000 08:02 294130457                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqmng.so
+              /c 7fefcab5e000-7fefcab9a000 r-xp 00000000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7fefcab9a000-7fefcac9a000 ---p 0003c000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7fefcac9a000-7fefcac9b000 rw-p 0003c000 08:02 294130454                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqjpeg.so
+              /c 7fefcac9b000-7fefcaca2000 r-xp 00000000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7fefcaca2000-7fefcada1000 ---p 00007000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7fefcada1000-7fefcada2000 rw-p 00006000 08:02 294130456                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqico.so
+              /c 7fefcada2000-7fefcada9000 r-xp 00000000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7fefcada9000-7fefcaea8000 ---p 00007000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7fefcaea8000-7fefcaea9000 rw-p 00006000 08:02 294130455                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/plugins/imageformats/libqgif.so
+              /c 7fefcaea9000-7fefcaeab000 r-xp 00000000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7fefcaeab000-7fefcb0ab000 ---p 00002000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7fefcb0ab000-7fefcb0ac000 r--p 00002000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7fefcb0ac000-7fefcb0ad000 rw-p 00003000 08:02 134236303                  /usr/lib64/gconv/UTF-16.so
+              /c 7fefcb0ad000-7fefd15d7000 r--p 00000000 08:02 16790311                   /usr/lib/locale/locale-archive
+              /c 7fefd15d7000-7fefd1ddc000 r--s 00000000 08:02 1225344                    /var/lib/sss/mc/passwd
+              /c 7fefd1ddc000-7fefd1de4000 r-xp 00000000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7fefd1de4000-7fefd1fe3000 ---p 00008000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7fefd1fe3000-7fefd1fe4000 r--p 00007000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7fefd1fe4000-7fefd1fe5000 rw-p 00008000 08:02 813860                     /usr/lib64/libnss_sss.so.2
+              /c 7fefd1fe5000-7fefd1ff1000 r-xp 00000000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7fefd1ff1000-7fefd21f0000 ---p 0000c000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7fefd21f0000-7fefd21f1000 r--p 0000b000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7fefd21f1000-7fefd21f2000 rw-p 0000c000 08:02 782827                     /usr/lib64/libnss_files-2.17.so
+              /c 7fefd21f2000-7fefd21f8000 rw-p 00000000 00:00 0 
+              /c 7fefd21f8000-7fefd21fa000 r-xp 00000000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7fefd21fa000-7fefd23fa000 ---p 00002000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7fefd23fa000-7fefd23fb000 r--p 00002000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7fefd23fb000-7fefd23fc000 rw-p 00003000 08:02 532095                     /usr/lib64/libXau.so.6.0.0
+              /c 7fefd23fc000-7fefd245d000 r-xp 00000000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7fefd245d000-7fefd265c000 ---p 00061000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7fefd265c000-7fefd265d000 r--p 00060000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7fefd265d000-7fefd2662000 rw-p 00061000 08:02 495355                     /usr/lib64/libXt.so.6.0.0
+              /c 7fefd2662000-7fefd2663000 rw-p 00000000 00:00 0 
+              /c 7fefd2663000-7fefd2669000 r-xp 00000000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7fefd2669000-7fefd2868000 ---p 00006000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7fefd2868000-7fefd2869000 rw-p 00005000 08:02 354120                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSysBase.so
+              /c 7fefd2869000-7fefd288e000 r-xp 00000000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7fefd288e000-7fefd2a8e000 ---p 00025000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7fefd2a8e000-7fefd2a92000 r--p 00025000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7fefd2a92000-7fefd2a93000 rw-p 00029000 08:02 31710                      /usr/lib64/libtinfo.so.5.9
+              /c 7fefd2a93000-7fefd2aba000 r-xp 00000000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7fefd2aba000-7fefd2cb9000 ---p 00027000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7fefd2cb9000-7fefd2cba000 r--p 00026000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7fefd2cba000-7fefd2cbb000 rw-p 00027000 08:02 34188                      /usr/lib64/libxcb.so.1.1.0
+              /c 7fefd2cbb000-7fefd2ce2000 r-xp 00000000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7fefd2ce2000-7fefd2ee2000 ---p 00027000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7fefd2ee2000-7fefd2ee4000 r--p 00027000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7fefd2ee4000-7fefd2ee5000 rw-p 00029000 08:02 31856                      /usr/lib64/libexpat.so.1.6.0
+              /c 7fefd2ee5000-7fefd2eea000 r-xp 00000000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7fefd2eea000-7fefd30e9000 ---p 00005000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7fefd30e9000-7fefd30ea000 r--p 00004000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7fefd30ea000-7fefd30eb000 rw-p 00005000 08:02 532109                     /usr/lib64/libXfixes.so.3.1.0
+              /c 7fefd30eb000-7fefd30ef000 r-xp 00000000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7fefd30ef000-7fefd32ee000 ---p 00004000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7fefd32ee000-7fefd32ef000 r--p 00003000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7fefd32ef000-7fefd32f0000 rw-p 00004000 08:02 144630                     /usr/lib64/libuuid.so.1.3.0
+              /c 7fefd32f0000-7fefd3350000 r-xp 00000000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7fefd3350000-7fefd3550000 ---p 00060000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7fefd3550000-7fefd3551000 r--p 00060000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7fefd3551000-7fefd3552000 rw-p 00061000 08:02 31712                      /usr/lib64/libpcre.so.1.2.0
+              /c 7fefd3552000-7fefd3714000 r-xp 00000000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7fefd3714000-7fefd3914000 ---p 001c2000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7fefd3914000-7fefd3918000 r--p 001c2000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7fefd3918000-7fefd391a000 rw-p 001c6000 08:02 1588                       /usr/lib64/libc-2.17.so
+              /c 7fefd391a000-7fefd391f000 rw-p 00000000 00:00 0 
+              /c 7fefd391f000-7fefd3934000 r-xp 00000000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7fefd3934000-7fefd3b33000 ---p 00015000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7fefd3b33000-7fefd3b34000 rw-p 00014000 08:02 294115924                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgcc_s.so.1
+              /c 7fefd3b34000-7fefd3b42000 r-xp 00000000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7fefd3b42000-7fefd3d41000 ---p 0000e000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7fefd3d41000-7fefd3d42000 rw-p 0000d000 08:02 294115923                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libgomp.so.1.0.0
+              /c 7fefd3d42000-7fefd3d49000 r-xp 00000000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7fefd3d49000-7fefd3f48000 ---p 00007000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7fefd3f48000-7fefd3f49000 r--p 00006000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7fefd3f49000-7fefd3f4a000 rw-p 00007000 08:02 782839                     /usr/lib64/librt-2.17.so
+              /c 7fefd3f4a000-7fefd3f62000 r-xp 00000000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7fefd3f62000-7fefd4162000 ---p 00018000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7fefd4162000-7fefd4163000 r--p 00018000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7fefd4163000-7fefd4164000 rw-p 00019000 08:02 754330                     /usr/lib64/libXmu.so.6.2.0
+              /c 7fefd4164000-7fefd4165000 rw-p 00000000 00:00 0 
+              /c 7fefd4165000-7fefd416b000 r-xp 00000000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7fefd416b000-7fefd436a000 ---p 00006000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7fefd436a000-7fefd436b000 rw-p 00005000 08:02 412668065                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/ext/lib/webworks/libwwhapi.so
+              /c 7fefd436b000-7fefd436c000 rw-p 00000000 00:00 0 
+              /c 7fefd436c000-7fefd43b8000 r-xp 00000000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7fefd43b8000-7fefd45b7000 ---p 0004c000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7fefd45b7000-7fefd45ba000 rw-p 0004b000 08:02 354119                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDMFileSys.so
+              /c 7fefd45ba000-7fefd45bc000 rw-p 00000000 00:00 0 
+              /c 7fefd45bc000-7fefd4659000 r-xp 00000000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7fefd4659000-7fefd4859000 ---p 0009d000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7fefd4859000-7fefd4861000 rw-p 0009d000 08:02 354143                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaWafer.so
+              /c 7fefd4861000-7fefd4862000 rw-p 00000000 00:00 0 
+              /c 7fefd4862000-7fefd489a000 r-xp 00000000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7fefd489a000-7fefd4a9a000 ---p 00038000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7fefd4a9a000-7fefd4a9d000 rw-p 00038000 08:02 354113                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCM.so
+              /c 7fefd4a9d000-7fefd4aa0000 r-xp 00000000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7fefd4aa0000-7fefd4c9f000 ---p 00003000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7fefd4c9f000-7fefd4ca0000 rw-p 00002000 08:02 354139                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclPlugIn.so
+              /c 7fefd4ca0000-7fefd5284000 r-xp 00000000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7fefd5284000-7fefd5484000 ---p 005e4000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7fefd5484000-7fefd5485000 rw-p 005e4000 08:02 354138                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclHelp.so
+              /c 7fefd5485000-7fefd5565000 r-xp 00000000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7fefd5565000-7fefd5764000 ---p 000e0000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7fefd5764000-7fefd5771000 rw-p 000df000 08:02 354118                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDM.so
+              /c 7fefd5771000-7fefd5772000 rw-p 00000000 00:00 0 
+              /c 7fefd5772000-7fefd579f000 r-xp 00000000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7fefd579f000-7fefd599e000 ---p 0002d000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7fefd599e000-7fefd59a0000 rw-p 0002c000 08:02 354117                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaCommon.so
+              /c 7fefd59a0000-7fefd5ba6000 r-xp 00000000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7fefd5ba6000-7fefd5da6000 ---p 00206000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7fefd5da6000-7fefd5dc1000 rw-p 00206000 08:02 354140                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTech.so
+              /c 7fefd5dc1000-7fefd5dc3000 rw-p 00000000 00:00 0 
+              /c 7fefd5dc3000-7fefd60fa000 r-xp 00000000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7fefd60fa000-7fefd62fa000 ---p 00337000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7fefd62fa000-7fefd631e000 rw-p 00337000 08:02 354112                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaBase.so
+              /c 7fefd631e000-7fefd6342000 rw-p 00000000 00:00 0 
+              /c 7fefd6342000-7fefd6b39000 r-xp 00000000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7fefd6b39000-7fefd6d39000 ---p 007f7000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7fefd6d39000-7fefd6d91000 rw-p 007f7000 08:02 354123                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaDesign.so
+              /c 7fefd6d91000-7fefd6d98000 rw-p 00000000 00:00 0 
+              /c 7fefd6d98000-7fefd6da2000 r-xp 00000000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7fefd6da2000-7fefd6fa1000 ---p 0000a000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7fefd6fa1000-7fefd6fa2000 rw-p 00009000 08:02 354124                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangBase.so
+              /c 7fefd6fa2000-7fefd6fb5000 r-xp 00000000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7fefd6fb5000-7fefd71b5000 ---p 00013000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7fefd71b5000-7fefd71b7000 rw-p 00013000 08:02 354131                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaPlugIn.so
+              /c 7fefd71b7000-7fefd73d5000 r-xp 00000000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7fefd73d5000-7fefd75d5000 ---p 0021e000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7fefd75d5000-7fefd75f4000 rw-p 0021e000 08:02 354125                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaLangInfo.so
+              /c 7fefd75f4000-7fefd7603000 r-xp 00000000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7fefd7603000-7fefd7802000 ---p 0000f000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7fefd7802000-7fefd7804000 rw-p 0000e000 08:02 354135                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclCommon.so
+              /c 7fefd7804000-7fefd7816000 r-xp 00000000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7fefd7816000-7fefd7a16000 ---p 00012000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7fefd7a16000-7fefd7a17000 rw-p 00012000 08:02 354134                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTclBase.so
+              /c 7fefd7a17000-7fefd8ce7000 r-xp 00000000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7fefd8ce7000-7fefd8ee7000 ---p 012d0000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7fefd8ee7000-7fefd8f0c000 rw-p 012d0000 08:02 354133                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/OA/lib/linux_rhel50_gcc44x_64/opt/liboaTcl.so
+              /c 7fefd8f0c000-7fefd8f32000 r-xp 00000000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7fefd8f32000-7fefd9131000 ---p 00026000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7fefd9131000-7fefd9132000 r--p 00025000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7fefd9132000-7fefd9133000 rw-p 00026000 08:02 31700                      /usr/lib64/libncurses.so.5.9
+              /c 7fefd9133000-7fefd92b4000 r-xp 00000000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7fefd92b4000-7fefd94b4000 ---p 00181000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7fefd94b4000-7fefd94c0000 rw-p 00181000 08:02 354099                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsym_datacore-O.so
+              /c 7fefd94c0000-7fefd94e6000 r-xp 00000000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7fefd94e6000-7fefd96e5000 ---p 00026000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7fefd96e5000-7fefd96e8000 rw-p 00025000 08:02 354095                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libmym_core-O.so
+              /c 7fefd96e8000-7fefd97ba000 r-xp 00000000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7fefd97ba000-7fefd99ba000 ---p 000d2000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7fefd99ba000-7fefd99c2000 rw-p 000d2000 08:02 354094                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libgui_controls-O.so
+              /c 7fefd99c2000-7fefd9e27000 r-xp 00000000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7fefd9e27000-7fefda026000 ---p 00465000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7fefda026000-7fefda046000 rw-p 00464000 08:02 354097                     /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/MYMLibrary/lib/libsnpsst-O.so
+              /c 7fefda046000-7fefda047000 rw-p 00000000 00:00 0 
+              /c 7fefda047000-7fefda131000 r-xp 00000000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7fefda131000-7fefda330000 ---p 000ea000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7fefda330000-7fefda338000 r--p 000e9000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7fefda338000-7fefda33a000 rw-p 000f1000 08:02 294115921                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libstdc++.so.6.0.17
+              /c 7fefda33a000-7fefda34f000 rw-p 00000000 00:00 0 
+              /c 7fefda34f000-7fefda3a3000 r-xp 00000000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7fefda3a3000-7fefda5a3000 ---p 00054000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7fefda5a3000-7fefda5a6000 rw-p 00054000 08:02 294131101                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_wserialization.so.1.55.0
+              /c 7fefda5a6000-7fefda5bd000 r-xp 00000000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7fefda5bd000-7fefda7bd000 ---p 00017000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7fefda7bd000-7fefda7be000 rw-p 00017000 08:02 294130436                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_signals.so.1.55.0
+              /c 7fefda7be000-7fefda833000 r-xp 00000000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7fefda833000-7fefdaa33000 ---p 00075000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7fefdaa33000-7fefdaa37000 rw-p 00075000 08:02 294130447                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_serialization.so.1.55.0
+              /c 7fefdaa37000-7fefdaa38000 rw-p 00000000 00:00 0 
+              /c 7fefdaa38000-7fefdab30000 r-xp 00000000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7fefdab30000-7fefdad30000 ---p 000f8000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7fefdad30000-7fefdad36000 rw-p 000f8000 08:02 294130446                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_regex.so.1.55.0
+              /c 7fefdad36000-7fefdada2000 r-xp 00000000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7fefdada2000-7fefdafa1000 ---p 0006c000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7fefdafa1000-7fefdafa5000 rw-p 0006b000 08:02 294130433                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_program_options.so.1.55.0
+              /c 7fefdafa5000-7fefdafba000 r-xp 00000000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7fefdafba000-7fefdb1ba000 ---p 00015000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7fefdb1ba000-7fefdb1bb000 rw-p 00015000 08:02 294130432                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_iostreams.so.1.55.0
+              /c 7fefdb1bb000-7fefdb1bc000 rw-p 00000000 00:00 0 
+              /c 7fefdb1bc000-7fefdb1d2000 r-xp 00000000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7fefdb1d2000-7fefdb3d2000 ---p 00016000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7fefdb3d2000-7fefdb3d3000 rw-p 00016000 08:02 294131100                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_filesystem.so.1.55.0
+              /c 7fefdb3d3000-7fefdb3d6000 r-xp 00000000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7fefdb3d6000-7fefdb5d5000 ---p 00003000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7fefdb5d5000-7fefdb5d6000 rw-p 00002000 08:02 294130438                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_system.so.1.55.0
+              /c 7fefdb5d6000-7fefdb5e6000 r-xp 00000000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7fefdb5e6000-7fefdb7e5000 ---p 00010000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7fefdb7e5000-7fefdb7e7000 rw-p 0000f000 08:02 294131099                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/boost/lib/libsnps_boost_1_55_0_date_time.so.1.55.0
+              /c 7fefdb7e7000-7fefdb8e8000 r-xp 00000000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7fefdb8e8000-7fefdbae7000 ---p 00101000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7fefdbae7000-7fefdbae8000 r--p 00100000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7fefdbae8000-7fefdbae9000 rw-p 00101000 08:02 782817                     /usr/lib64/libm-2.17.so
+              /c 7fefdbae9000-7fefdbafe000 r-xp 00000000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7fefdbafe000-7fefdbcfd000 ---p 00015000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7fefdbcfd000-7fefdbcfe000 r--p 00014000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7fefdbcfe000-7fefdbcff000 rw-p 00015000 08:02 1228                       /usr/lib64/libz.so.1.2.7
+              /c 7fefdbcff000-7fefdbe37000 r-xp 00000000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7fefdbe37000-7fefdc037000 ---p 00138000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7fefdc037000-7fefdc038000 r--p 00138000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7fefdc038000-7fefdc03d000 rw-p 00139000 08:02 34236                      /usr/lib64/libX11.so.6.3.0
+              /c 7fefdc03d000-7fefdc04e000 r-xp 00000000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7fefdc04e000-7fefdc24d000 ---p 00011000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7fefdc24d000-7fefdc24e000 r--p 00010000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7fefdc24e000-7fefdc24f000 rw-p 00011000 08:02 532153                     /usr/lib64/libXext.so.6.4.0
+              /c 7fefdc24f000-7fefdc28f000 r-xp 00000000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7fefdc28f000-7fefdc48e000 ---p 00040000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7fefdc48e000-7fefdc490000 r--p 0003f000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7fefdc490000-7fefdc491000 rw-p 00041000 08:02 726271                     /usr/lib64/libfontconfig.so.1.11.1
+              /c 7fefdc491000-7fefdc50d000 r-xp 00000000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7fefdc50d000-7fefdc70c000 ---p 0007c000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7fefdc70c000-7fefdc712000 rw-p 0007b000 08:02 294115922                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/lib/libfreetype.so.6.3.20
+              /c 7fefdc712000-7fefdc714000 r-xp 00000000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7fefdc714000-7fefdc913000 ---p 00002000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7fefdc913000-7fefdc914000 r--p 00001000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7fefdc914000-7fefdc915000 rw-p 00002000 08:02 532173                     /usr/lib64/libXinerama.so.1.0.0
+              /c 7fefdc915000-7fefdc91e000 r-xp 00000000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7fefdc91e000-7fefdcb1e000 ---p 00009000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7fefdcb1e000-7fefdcb1f000 r--p 00009000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7fefdcb1f000-7fefdcb20000 rw-p 0000a000 08:02 34190                      /usr/lib64/libXcursor.so.1.0.2
+              /c 7fefdcb20000-7fefdcb2a000 r-xp 00000000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7fefdcb2a000-7fefdcd29000 ---p 0000a000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7fefdcd29000-7fefdcd2a000 r--p 00009000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7fefdcd2a000-7fefdcd2b000 rw-p 0000a000 08:02 532163                     /usr/lib64/libXrandr.so.2.2.0
+              /c 7fefdcd2b000-7fefdcd34000 r-xp 00000000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7fefdcd34000-7fefdcf34000 ---p 00009000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7fefdcf34000-7fefdcf35000 r--p 00009000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7fefdcf35000-7fefdcf36000 rw-p 0000a000 08:02 532100                     /usr/lib64/libXrender.so.1.3.0
+              /c 7fefdcf36000-7fefdcf45000 r-xp 00000000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7fefdcf45000-7fefdd144000 ---p 0000f000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7fefdd144000-7fefdd145000 r--p 0000e000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7fefdd145000-7fefdd146000 rw-p 0000f000 08:02 532102                     /usr/lib64/libXi.so.6.1.0
+              /c 7fefdd146000-7fefdd15d000 r-xp 00000000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7fefdd15d000-7fefdd35c000 ---p 00017000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7fefdd35c000-7fefdd35d000 r--p 00016000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7fefdd35d000-7fefdd35e000 rw-p 00017000 08:02 339308                     /usr/lib64/libICE.so.6.3.0
+              /c 7fefdd35e000-7fefdd362000 rw-p 00000000 00:00 0 
+              /c 7fefdd362000-7fefdd369000 r-xp 00000000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7fefdd369000-7fefdd568000 ---p 00007000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7fefdd568000-7fefdd569000 r--p 00006000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7fefdd569000-7fefdd56a000 rw-p 00007000 08:02 495410                     /usr/lib64/libSM.so.6.0.1
+              /c 7fefdd56a000-7fefdd67e000 r-xp 00000000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7fefdd67e000-7fefdd87d000 ---p 00114000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7fefdd87d000-7fefdd87e000 r--p 00113000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7fefdd87e000-7fefdd87f000 rw-p 00114000 08:02 32073                      /usr/lib64/libglib-2.0.so.0.5600.1
+              /c 7fefdd87f000-7fefdd880000 rw-p 00000000 00:00 0 
+              /c 7fefdd880000-7fefdd881000 r-xp 00000000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7fefdd881000-7fefdda80000 ---p 00001000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7fefdda80000-7fefdda81000 r--p 00000000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7fefdda81000-7fefdda82000 rw-p 00001000 08:02 917260                     /usr/lib64/libgthread-2.0.so.0.5600.1
+              /c 7fefdda82000-7fefddaa8000 r-xp 00000000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7fefddaa8000-7fefddca7000 ---p 00026000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7fefddca7000-7fefddca8000 r--p 00025000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7fefddca8000-7fefddca9000 rw-p 00026000 08:02 75828359                   /usr/lib64/libpng12.so.0.50.0
+              /c 7fefddca9000-7fefddcc0000 r-xp 00000000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7fefddcc0000-7fefddebf000 ---p 00017000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7fefddebf000-7fefddec0000 r--p 00016000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7fefddec0000-7fefddec1000 rw-p 00017000 08:02 782835                     /usr/lib64/libpthread-2.17.so
+              /c 7fefddec1000-7fefddec5000 rw-p 00000000 00:00 0 
+              /c 7fefddec5000-7fefddf03000 r-xp 00000000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7fefddf03000-7fefde002000 ---p 0003e000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7fefde002000-7fefde004000 rw-p 0003d000 08:02 143398000                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSql.so.4.7.4
+              /c 7fefde004000-7fefde05a000 r-xp 00000000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7fefde05a000-7fefde15a000 ---p 00056000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7fefde15a000-7fefde15d000 rw-p 00056000 08:02 143397998                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtSvg.so.4.7.4
+              /c 7fefde15d000-7fefde28c000 r-xp 00000000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7fefde28c000-7fefde38c000 ---p 0012f000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7fefde38c000-7fefde394000 rw-p 0012f000 08:02 143398016                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtNetwork.so.4.7.4
+              /c 7fefde394000-7fefde635000 r-xp 00000000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7fefde635000-7fefde735000 ---p 002a1000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7fefde735000-7fefde744000 rw-p 002a1000 08:02 143398015                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtCore.so.4.7.4
+              /c 7fefde744000-7fefdf1b6000 r-xp 00000000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7fefdf1b6000-7fefdf2b6000 ---p 00a72000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7fefdf2b6000-7fefdf307000 rw-p 00a72000 08:02 143397997                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtGui.so.4.7.4
+              /c 7fefdf307000-7fefdf30a000 rw-p 00000000 00:00 0 
+              /c 7fefdf30a000-7fefdf30c000 r-xp 00000000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7fefdf30c000-7fefdf50c000 ---p 00002000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7fefdf50c000-7fefdf50d000 r--p 00002000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7fefdf50d000-7fefdf50e000 rw-p 00003000 08:02 1594                       /usr/lib64/libdl-2.17.so
+              /c 7fefdf50e000-7fefdf530000 r-xp 00000000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7fefdf530000-7fefdf541000 r--p 00000000 08:02 412693171                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisr.ttf
+              /c 7fefdf541000-7fefdf552000 r--p 00000000 08:02 412688650                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisri.ttf
+              /c 7fefdf552000-7fefdf56e000 r--p 00000000 08:02 412692245                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/INFOT_Synopsys.ttf
+              /c 7fefdf56e000-7fefdf580000 r--p 00000000 08:02 412693764                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/auxx/fonts/luxisb.ttf
+              /c 7fefdf580000-7fefdf581000 ---p 00000000 00:00 0 
+              /c 7fefdf581000-7fefdf59a000 rw-p 00000000 00:00 0 
+              /c 7fefdf59a000-7fefdf5a6000 r--s 00000000 08:02 938255                     /usr/lib/fontconfig/cache/e3019ca6-b077-457e-a411-5236bffc3af2-le64.cache-7
+              /c 7fefdf5a6000-7fefdf5c5000 rw-p 00000000 00:00 0 
+              /c 7fefdf5c5000-7fefdf607000 r-xp 00000000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7fefdf607000-7fefdf706000 ---p 00042000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7fefdf706000-7fefdf709000 rw-p 00041000 08:02 143398007                  /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/qt/lib/libQtXml.so.4.7.4
+              /c 7fefdf709000-7fefdf70a000 rw-p 00000000 00:00 0 
+              /c 7fefdf70a000-7fefdf713000 r--p 00000000 08:02 172801571                  /usr/share/fonts/default/Type1/s050000l.pfb
+              /c 7fefdf713000-7fefdf715000 r--s 00000000 08:02 1111568                    /usr/lib/fontconfig/cache/57cac5c9-dbee-4497-a172-fc40e1ac2ce0-le64.cache-7
+              /c 7fefdf715000-7fefdf718000 r--s 00000000 08:02 1111572                    /usr/lib/fontconfig/cache/b07da3e5-a062-45bc-98d3-0973af7354c3-le64.cache-7
+              /c 7fefdf718000-7fefdf720000 r--s 00000000 08:02 1111570                    /usr/lib/fontconfig/cache/bcdb72a8-ef49-4f06-af7e-278f1c4329f0-le64.cache-7
+              /c 7fefdf720000-7fefdf721000 r--s 00000000 08:02 1111576                    /usr/lib/fontconfig/cache/67c4ea48-27e1-46ad-a590-63427a93bb5f-le64.cache-7
+              /c 7fefdf721000-7fefdf726000 r--s 00000000 08:02 1111574                    /usr/lib/fontconfig/cache/e0432c4e-2531-4780-a952-1c44f6029c72-le64.cache-7
+              /c 7fefdf726000-7fefdf72d000 r--s 00000000 08:02 134235954                  /usr/lib64/gconv/gconv-modules.cache
+              /c 7fefdf72d000-7fefdf72f000 rw-p 00000000 00:00 0 
+              /c 7fefdf72f000-7fefdf730000 r--p 00021000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7fefdf730000-7fefdf731000 rw-p 00022000 08:02 1580                       /usr/lib64/ld-2.17.so
+              /c 7fefdf731000-7fefdf732000 rw-p 00000000 00:00 0 
+              /c 7ffce7a28000-7ffce7a4a000 rw-p 00000000 00:00 0                          [stack]
+              /c 7ffce7b5c000-7ffce7b5e000 r-xp 00000000 00:00 0                          [vdso]
+              /c ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+              /c 
+[23:25:02.73] /e Error: The application was unexpectedly terminated.
+              /c See the session log file for recovery details. (SHUT_DOWN-001)

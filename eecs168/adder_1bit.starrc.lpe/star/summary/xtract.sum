@@ -1,0 +1,11 @@
+Parsing option_file: xtract.tech (EX-304)
+Initializing extraction ... (EX-724)
+Reading binary grd file /usr/local/synopsys/pdk/SAED_PDK90nm/starrcxt/saed90nm.nxtgrd ... (EX-135)
+Extracted 652 capacitors, 393 resistors, 381 nodes
+Reduced to 194 nodes,  (49.0814%)
+Reduced to 181 resistors,  (53.944%)
+Reduced to 601 capacitors: 509 Cc and 92 Cg (7.82209%)
+  
+xTractor      Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=272.2 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.1    Mem=272.2 

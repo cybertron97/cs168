@@ -1,0 +1,8 @@
+adder_1bit
+	Cell Level Device Counts
+		NMOS[n12] = 14
+		PMOS[p12] = 14
+
+********  DEVICE EXTRACTION STATS    TOPBLOCK = adder_1bit  *******
+		NMOS[n12] = 14
+		PMOS[p12] = 14

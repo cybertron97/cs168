@@ -1,0 +1,23 @@
+ripple_carry_adder_4bit Level=0 Count=1
+   adder_1bit Level=1 Count=4
+
++--------------------------------------------------------------------------+
+|                             CELL STATISTICS                              |
++--------------------------------------------------------------------------+
+
+
+CELL = ripple_carry_adder_4bit
+	Flat Placements      =	1
+
+CELL = adder_1bit
+	Flat Placements      =	4
+
+TOP CELL = ripple_carry_adder_4bit
+	Ports                =	16
+
++--------------------------------------------------------------------------+
+|                            DEVICE STATISTICS                             |
++--------------------------------------------------------------------------+
+
+	NMOS[n12] = 56
+	PMOS[p12] = 56

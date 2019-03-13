@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- created by Custom Designer, build#  on 2/12/2019 7:02:49 PM -->
+<synopsys_file version="1.0" name="synopsysProbeFile">
+        <probe>
+                <context version="1">
+                        <top_cell_view>
+                                <lib>mylibrary</lib>
+                                <cell>ripple_carry_adder_4bit</cell>
+                                <view>schematic</view>
+                        </top_cell_view>
+                        <view_search_list>auCdl schematic symbol</view_search_list>
+                        <view_stop_list>auCdl</view_stop_list>
+                        <context_node>
+                                <switched_master>
+                                        <lib>unbound</lib>
+                                        <cell>unbound</cell>
+                                        <view>unbound</view>
+                                </switched_master>
+                                <placed_master>
+                                        <lib>eecs168_library</lib>
+                                        <cell>adder_1bit</cell>
+                                        <view>symbol</view>
+                                </placed_master>
+                                <instance_name>I3</instance_name>
+                        </context_node>
+                </context>
+                <type>Cellview</type>
+                <tool>CDL netlister</tool>
+                <object></object>
+                <packet>highlight1</packet>
+                <description>Unbound instance</description>
+                <longDescription>Instance master mylibrary/ripple_carry_adder_4bit/schematic cannot be found.</longDescription>
+                <purpose>error</purpose>
+        </probe>
+</synopsys_file>

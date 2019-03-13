@@ -1,0 +1,33 @@
+                                        
+                                PYDB_Server (R)
+                                        
+           Version K-2015.12-3 for linux64 - Dec 17, 2015 cl#3052145
+                                        
+                    Copyright (c) 2007 - 2015 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+NFS filesystem detected
+Removing old database /home/cemaj/tarora/eecs168/pvjob_mylibrary.ringOscillator.icv.drc/run_details/pydb/PYDB_ringOscillator
+Listening for connections on port 7632
+PYDB_Server Started on host bender.engr.ucr.edu, Wed 03/13/2019 12:43:29
+Client bender.engr.ucr.edu(10047):6 connected (1 total client)
+Verified current licenses.
+Client bender.engr.ucr.edu(10092):17 connected (2 total clients)
+Client bender.engr.ucr.edu(10093):16 connected (3 total clients)
+Client bender.engr.ucr.edu(10093):16 disconnected (2 clients remain)
+Client bender.engr.ucr.edu(10093):16 connected (3 total clients)
+Begin error insertion: /home/cemaj/tarora/eecs168/pvjob_mylibrary.inverter.icv.drc/rules.drc.9m_saed90_icv.drc.rs:671:external1
+Error insertion complete: /home/cemaj/tarora/eecs168/pvjob_mylibrary.inverter.icv.drc/rules.drc.9m_saed90_icv.drc.rs:671:external1
+  Error Insertion Time=0:00:00  User=0.00 Sys=0.02 Mem=9.913 MySQL=33.268 Unpooled=0.042
+Client bender.engr.ucr.edu(10093):16 disconnected (2 clients remain)
+Client bender.engr.ucr.edu(10092):17 disconnected (1 client remains)
+ Total error insertion Time=0:00:02  User=0.00 Sys=0.02 Mem=9.968 MySQL=33.268 Unpooled=0.042
+  Total Commands: 1
+  Total Errors: 11
+  Avg Time/Cmd: Wall=0 User=0.00 Sys=0.02 Mem=9.913 MySQL Mem=0.042
+Shutdown requested by client bender.engr.ucr.edu(10047):6
+0 clients remain connected
+Overall server Time=0:00:05  User=0.05 Sys=0.14 Mem=10.155 MySQL=33.268 Unpooled=0.047

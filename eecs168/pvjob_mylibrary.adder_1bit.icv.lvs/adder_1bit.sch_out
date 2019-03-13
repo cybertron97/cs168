@@ -1,0 +1,93 @@
+{netlist adder_1bit.sch_out
+{version 2 1 0}
+{net_global VSS VDD12 VSS12 VDD22 VDD }
+{cell adder_1bit
+{port AIN BIN CIN COUT S VDD
+ VSS}
+{inst MM1=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin COUT=DRN net153=GATE VSS=SRC VSS=BULK}}
+{inst MM3=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin S=DRN net155=GATE VSS=SRC VSS=BULK}}
+{inst MM13=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net153=DRN AIN=GATE net140=SRC VSS=BULK}}
+{inst MM14=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net140=DRN BIN=GATE VSS=SRC VSS=BULK}}
+{inst MM15=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net153=DRN CIN=GATE net144=SRC VSS=BULK}}
+{inst MM16=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net144=DRN AIN=GATE VSS=SRC VSS=BULK}}
+{inst MM17=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net144=DRN BIN=GATE VSS=SRC VSS=BULK}}
+{inst MM26=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net155=DRN AIN=GATE net151=SRC VSS=BULK}}
+{inst MM27=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net151=DRN BIN=GATE net150=SRC VSS=BULK}}
+{inst MM28=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net150=DRN CIN=GATE VSS=SRC VSS=BULK}}
+{inst MM29=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net155=DRN net153=GATE net152=SRC VSS=BULK}}
+{inst MM30=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net152=DRN AIN=GATE VSS=SRC VSS=BULK}}
+{inst MM31=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net152=DRN BIN=GATE VSS=SRC VSS=BULK}}
+{inst MM32=n12 {TYPE MOS} 
+{prop W=0.25 L=0.1 NF=1}
+{pin net152=DRN CIN=GATE VSS=SRC VSS=BULK}}
+{inst MM0=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin COUT=DRN net153=GATE VDD=SRC VDD=BULK}}
+{inst MM22=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net148=DRN CIN=GATE net146=SRC VDD=BULK}}
+{inst MM21=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net146=DRN BIN=GATE net145=SRC VDD=BULK}}
+{inst MM20=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net145=DRN AIN=GATE VDD=SRC VDD=BULK}}
+{inst MM19=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net148=DRN net153=GATE VDD=SRC VDD=BULK}}
+{inst MM2=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin S=DRN net155=GATE VDD=SRC VDD=BULK}}
+{inst MM38=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net153=DRN CIN=GATE net138=SRC VDD=BULK}}
+{inst MM37=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net153=DRN BIN=GATE net139=SRC VDD=BULK}}
+{inst MM36=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net139=DRN AIN=GATE net138=SRC VDD=BULK}}
+{inst MM35=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net138=DRN BIN=GATE VDD=SRC VDD=BULK}}
+{inst MM34=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net138=DRN AIN=GATE VDD=SRC VDD=BULK}}
+{inst MM23=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net155=DRN AIN=GATE net148=SRC VDD=BULK}}
+{inst MM24=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net155=DRN BIN=GATE net148=SRC VDD=BULK}}
+{inst MM25=p12 {TYPE MOS} 
+{prop W=0.5 L=0.1 NF=1}
+{pin net155=DRN CIN=GATE net148=SRC VDD=BULK}}
+}
+
+}

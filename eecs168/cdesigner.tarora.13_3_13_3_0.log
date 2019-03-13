@@ -1,0 +1,819 @@
+[13:10:35.56] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Wed Mar 13 13:10:33 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[13:10:37.24] /m Information: ::xt::physicalVerification::_private::processValidationProc: Invalid process 'SAED 90nm'.
+[13:10:37.24] /m Information: ::xt::physicalVerification::_private::variantValidationProc: Invalid process ''.
+[13:10:41.00] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[13:10:41.00] /i dm::showLibraryManager
+[13:10:41.01] /r giWindowId 1
+[13:10:41.01] /r giWindowGeometry 660x600+50+50
+[13:10:41.09] /o oa:0x22521d70
+[13:10:44.04] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 1]
+[13:10:44.06] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 1]
+[13:10:46.08] /i gi::setCurrentIndex {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[13:10:46.10] /i gi::setItemSelection {cells} -index {ringOscillator_testbench} -in [gi::getWindows 1]
+[13:10:47.95] /i gi::setCurrentIndex {views} -index {schematic} -in [gi::getWindows 1]
+[13:10:47.96] /i gi::setItemSelection {views} -index {schematic} -in [gi::getWindows 1]
+[13:10:48.13] /i gi::executeAction dmOpen -in [gi::getWindows 1]
+[13:10:48.15] /o 	############################################
+[13:10:48.15] /o 	--------------------------------------------
+[13:10:48.15] /o 	PDK Name................... : SAED_PDK_90
+[13:10:48.15] /o 	PDK Release Date........... : 29-Sep-2015
+[13:10:48.15] /o 	PDK Custom Designer Version : J-2014.12-2
+[13:10:48.15] /o 	--------------------------------------------
+[13:10:48.15] /o 	############################################
+[13:10:48.15] /o 
+[13:10:48.15] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[13:10:48.16] /o SAED PDK 90: Loaded callbacks
+[13:10:48.16] /o SAED PDK 90: Loaded display resources
+[13:10:48.22] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[13:10:48.28] /r giWindowId 2
+[13:10:48.28] /r giWindowGeometry 1088x700
+[13:10:54.70] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 2]
+[13:10:54.70] /i sa::showConsole -context [db::getNext [de::getContexts -window 2]]
+[13:10:54.79] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[13:10:54.82] /r giWindowId 3
+[13:10:54.82] /r giWindowGeometry 600x500
+[13:10:55.08] /o oa:0x27947320
+[13:10:55.42] /i db::setAttr geometry -of [gi::getFrames 3] -value 600x500+27+43
+[13:10:56.21] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:10:56.21] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 3]]
+[13:10:58.11] /# gi::executeAction saLoadState -in [gi::getWindows 3]
+[13:10:58.11] /i sa::showLoadState -parent 3
+[13:10:58.52] /o oa:0x2684a690
+[13:10:58.89] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]]
+[13:10:59.24] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]] -value 600x645+154+65
+[13:11:00.17] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]]
+[13:11:00.92] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]] -value 600x616+154+65
+[13:11:02.67] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 3]]
+[13:11:13.16] /i gi::setCurrentIndex {outputsTable} -index {0,0} -in [gi::getWindows 3]
+[13:11:13.16] /i gi::setItemSelection {outputsTable} -index {0,0} -in [gi::getWindows 3]
+[13:11:13.17] /i gi::setItemSelection {outputsTable} -index {0,0} -in [gi::getWindows 3]
+[13:11:17.34] /i gi::setField {outputsTable} -index {0,0} -value {VIO1} -in [gi::getWindows 3]
+[13:11:17.35] /i gi::setCurrentIndex {outputsTable} -index {1,0} -in [gi::getWindows 3]
+[13:11:17.35] /i gi::setItemSelection {outputsTable} -index {1,0} -in [gi::getWindows 3]
+[13:11:17.36] /i gi::setItemSelection {outputsTable} -index {1,0} -in [gi::getWindows 3]
+[13:11:21.40] /i gi::setField {outputsTable} -index {1,0} -value {VIO2} -in [gi::getWindows 3]
+[13:11:21.41] /i gi::setCurrentIndex {outputsTable} -index {2,0} -in [gi::getWindows 3]
+[13:11:21.41] /i gi::setItemSelection {outputsTable} -index {2,0} -in [gi::getWindows 3]
+[13:11:21.42] /i gi::setItemSelection {outputsTable} -index {2,0} -in [gi::getWindows 3]
+[13:11:25.71] /i gi::setField {outputsTable} -index {2,0} -value {VIO3} -in [gi::getWindows 3]
+[13:11:25.72] /i gi::setCurrentIndex {outputsTable} -index {3,0} -in [gi::getWindows 3]
+[13:11:25.72] /i gi::setItemSelection {outputsTable} -index {3,0} -in [gi::getWindows 3]
+[13:11:25.73] /i gi::setItemSelection {outputsTable} -index {3,0} -in [gi::getWindows 3]
+[13:11:28.85] /i gi::setField {outputsTable} -index {3,0} -value {VIO4} -in [gi::getWindows 3]
+[13:11:28.86] /i gi::setCurrentIndex {outputsTable} -index {4,0} -in [gi::getWindows 3]
+[13:11:28.86] /i gi::setItemSelection {outputsTable} -index {4,0} -in [gi::getWindows 3]
+[13:11:28.87] /i gi::setItemSelection {outputsTable} -index {4,0} -in [gi::getWindows 3]
+[13:11:34.35] /i gi::setField {outputsTable} -index {4,0} -value {VIO5} -in [gi::getWindows 3]
+[13:11:34.36] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:11:34.37] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 3]]
+[13:11:35.47] /# gi::executeAction saSaveState -in [gi::getWindows 3]
+[13:11:35.47] /i sa::showSaveState -parent 3
+[13:11:35.76] /o oa:0x27a97350
+[13:11:36.21] /i gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 3]]
+[13:11:36.54] /i db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 3]] -value 506x565+154+65
+[13:11:44.33] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 3]]
+[13:11:46.33] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:11:46.34] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 3]]
+[13:11:48.80] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:11:48.81] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 3]]
+[13:11:51.80] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:11:51.81] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 3]]
+[13:11:53.16] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 3]
+[13:11:53.16] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 3]
+[13:11:53.24] /m Information: "Starting incremental netlisting for design "mylibrary/ringOscillator_testbench/schematic"..." (NETLISTING-010)
+[13:11:53.27] /o No Design Integrity rule violations found in "mylibrary/ringOscillator_testbench/schematic"
+[13:11:53.37] /m Information: "Netlisting design "mylibrary/ringOscillator_testbench/schematic" finished successfully." (NETLISTING-012)
+[13:11:53.38] /m Information: "Composing simulator input file for design "mylibrary/ringOscillator_testbench/schematic"..."
+[13:11:53.46] /m Information: "Simulator input file composed successfully for design "mylibrary/ringOscillator_testbench/schematic""
+[13:11:54.17] /r giWindowId 4
+[13:11:54.17] /r giWindowGeometry 800x600
+[13:11:54.30] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 4]
+[13:11:54.30] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[13:11:54.60] /m Information: "Starting HSPICE simulation for design: mylibrary/ringOscillator_testbench/schematic"
+[13:11:54.61] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[13:11:54.64] /o 1
+[13:11:54.65] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[13:11:54.67] /i db::setAttr geometry -of [gi::getFrames 4] -value 800x600+47+63
+[13:11:55.16] /e Error: "Simulation failed for design: mylibrary/ringOscillator_testbench/schematic "
+[13:11:55.40] /m Information: Expression 'v(/VIO1)' did not evaluate: No results found.
+[13:11:55.40] /m Information: Expression 'v(/VIO2)' did not evaluate: No results found.
+[13:11:55.40] /m Information: Expression 'v(/VIO3)' did not evaluate: No results found.
+[13:11:55.41] /m Information: Expression 'v(/VIO4)' did not evaluate: No results found.
+[13:11:55.41] /m Information: Expression 'v(/VIO5)' did not evaluate: No results found.
+[13:11:55.42] /m Information: Re-evaluating the failed expression 'v(/VIO1)'
+[13:11:55.42] /m Information: Expression 'v(/VIO1)' did not evaluate: No results found.
+[13:11:55.43] /m Information: Re-evaluating the failed expression 'v(/VIO2)'
+[13:11:55.43] /m Information: Expression 'v(/VIO2)' did not evaluate: No results found.
+[13:11:55.43] /m Information: Re-evaluating the failed expression 'v(/VIO3)'
+[13:11:55.44] /m Information: Expression 'v(/VIO3)' did not evaluate: No results found.
+[13:11:55.44] /m Information: Re-evaluating the failed expression 'v(/VIO4)'
+[13:11:55.45] /m Information: Expression 'v(/VIO4)' did not evaluate: No results found.
+[13:11:55.45] /m Information: Re-evaluating the failed expression 'v(/VIO5)'
+[13:11:55.45] /m Information: Expression 'v(/VIO5)' did not evaluate: No results found.
+[13:11:55.50] /m Information: Measurement calculations completed for testbench: default in 0s
+[13:11:57.32] /i gi::setCurrentIndex {jobMonitorTable} -index {0.0.0,0} -in [gi::getWindows 4]
+[13:11:57.32] /i gi::setItemSelection {jobMonitorTable} -index {0.0.0,all} -in [gi::getWindows 4]
+[13:11:57.45] /i gi::executeAction xtJobMonitorViewOutput -in 4
+[13:11:57.46] /# xt::_jobMonitorActions::viewOutput 4
+[13:11:57.46] /r giWindowId 5
+[13:11:57.47] /r giWindowGeometry 800x600
+[13:11:57.85] /i db::setAttr geometry -of [gi::getFrames 5] -value 800x600+67+83
+[13:12:17.58] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[13:12:17.66] /i gi::setActiveWindow 4
+[13:12:17.67] /i gi::setActiveWindow 4 -raise true
+[13:12:22.93] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[13:12:23.03] /i gi::setActiveWindow 3
+[13:12:23.04] /i gi::setActiveWindow 3 -raise true
+[13:12:27.54] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:12:27.54] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 3]]
+[13:12:28.52] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:12:28.52] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 3]]
+[13:12:30.57] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 3]
+[13:12:30.57] /i sa::showEditAnalyses -parent 3 -analysisName "" 
+[13:12:30.76] /o oa:0x27fedcc0
+[13:12:30.92] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]]
+[13:12:31.45] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]] -value 511x596+140+65
+[13:12:36.45] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/dc} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]]
+[13:12:41.78] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/tran} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]]
+[13:12:42.47] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]] -value 511x624+140+65
+[13:12:47.06] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {10ps} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]]
+[13:12:49.96] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {100ns} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]]
+[13:12:49.98] /i gi::pressButton {/apply} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]]
+[13:12:50.00] /o tran
+[13:12:51.26] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession0} -parent [gi::getWindows 3]]
+[13:12:53.22] /i gi::pressButton {plotButton} -in [gi::getWindows 3]
+[13:12:53.23] /m Information: Expression 'v(/VIO1)' did not evaluate: No results found.
+[13:12:53.23] /m Information: Expression 'v(/VIO2)' did not evaluate: No results found.
+[13:12:53.23] /m Information: Expression 'v(/VIO3)' did not evaluate: No results found.
+[13:12:53.24] /m Information: Expression 'v(/VIO4)' did not evaluate: No results found.
+[13:12:53.24] /m Information: Expression 'v(/VIO5)' did not evaluate: No results found.
+[13:12:53.25] /w Warning: No data available to plot
+[13:12:56.09] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:12:56.10] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 3]]
+[13:12:57.09] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:12:57.09] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 3]]
+[13:12:58.08] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 3]
+[13:12:58.08] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 3]
+[13:12:58.16] /m Information: "Starting incremental netlisting for design "mylibrary/ringOscillator_testbench/schematic"..." (NETLISTING-010)
+[13:12:58.19] /o No Design Integrity rule violations found in "mylibrary/ringOscillator_testbench/schematic"
+[13:12:58.29] /m Information: "Netlisting design "mylibrary/ringOscillator_testbench/schematic" finished successfully." (NETLISTING-012)
+[13:12:58.29] /m Information: "Composing simulator input file for design "mylibrary/ringOscillator_testbench/schematic"..."
+[13:12:58.36] /m Information: "Simulator input file composed successfully for design "mylibrary/ringOscillator_testbench/schematic""
+[13:12:58.82] /r giWindowId 6
+[13:12:58.83] /r giWindowGeometry 800x600
+[13:12:59.17] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 6]
+[13:12:59.17] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 6]
+[13:12:59.30] /m Information: "Starting HSPICE simulation for design: mylibrary/ringOscillator_testbench/schematic"
+[13:12:59.31] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 6]
+[13:12:59.33] /o 1
+[13:12:59.34] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 6]
+[13:12:59.55] /i db::setAttr geometry -of [gi::getFrames 6] -value 800x600+47+63
+[13:12:59.69] /e Error: "Simulation failed for design: mylibrary/ringOscillator_testbench/schematic "
+[13:12:59.84] /m Information: Expression 'v(/VIO1)' did not evaluate: No results found.
+[13:12:59.85] /m Information: Expression 'v(/VIO2)' did not evaluate: No results found.
+[13:12:59.85] /m Information: Expression 'v(/VIO3)' did not evaluate: No results found.
+[13:12:59.85] /m Information: Expression 'v(/VIO4)' did not evaluate: No results found.
+[13:12:59.86] /m Information: Expression 'v(/VIO5)' did not evaluate: No results found.
+[13:12:59.87] /m Information: Re-evaluating the failed expression 'v(/VIO1)'
+[13:12:59.87] /m Information: Expression 'v(/VIO1)' did not evaluate: No results found.
+[13:12:59.88] /m Information: Re-evaluating the failed expression 'v(/VIO2)'
+[13:12:59.88] /m Information: Expression 'v(/VIO2)' did not evaluate: No results found.
+[13:12:59.89] /m Information: Re-evaluating the failed expression 'v(/VIO3)'
+[13:12:59.89] /m Information: Expression 'v(/VIO3)' did not evaluate: No results found.
+[13:12:59.89] /m Information: Re-evaluating the failed expression 'v(/VIO4)'
+[13:12:59.90] /m Information: Expression 'v(/VIO4)' did not evaluate: No results found.
+[13:12:59.90] /m Information: Re-evaluating the failed expression 'v(/VIO5)'
+[13:12:59.91] /m Information: Expression 'v(/VIO5)' did not evaluate: No results found.
+[13:12:59.95] /m Information: Measurement calculations completed for testbench: default in 0s
+[13:13:01.95] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[13:13:02.02] /i gi::setActiveWindow 3
+[13:13:02.02] /i gi::setActiveWindow 3 -raise true
+[13:13:11.79] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:13:11.79] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 3]]
+[13:13:12.87] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:13:12.87] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 3]]
+[13:13:17.70] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:13:17.71] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 3]]
+[13:13:20.03] /i gi::executeAction menuPreShow -in [gi::getWindows 3]
+[13:13:20.03] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 3]]
+[13:13:59.20] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[13:13:59.36] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 3]]
+[13:13:59.63] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 3]] -value 295x89+179+65
+[13:14:00.59] /r giDialog gi::pressButton {save} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 3]]
+[13:14:01.13] /r giDialog gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 3]]
+[13:14:01.44] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 3]] -value 506x565+103+110
+[13:14:02.66] /r giDialog gi::pressButton {/ok} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 3]]
+[13:14:06.04] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+552+38
+[13:14:08.08] /i gi::setActiveWindow 1
+[13:14:08.08] /i gi::setActiveWindow 1 -raise true
+[13:14:08.73] /i gi::setItemSelection {views} -index {} -in [gi::getWindows 1]
+[13:14:10.86] /i gi::executeAction giCloseWindow -in [gi::getWindows 1]
+[13:14:10.93] /i gi::setActiveWindow 2
+[13:14:10.94] /i gi::setActiveWindow 2 -raise true
+[13:14:13.45] /i gi::setActiveWindow 0
+[13:14:13.46] /i gi::setActiveWindow 0 -raise true
+[13:14:14.07] /# gi::executeAction dmShowLibraryManager -in [gi::getWindows 0]
+[13:14:14.07] /i dm::showLibraryManager
+[13:14:14.07] /r giWindowId 7
+[13:14:14.08] /r giWindowGeometry 660x600+50+50
+[13:14:14.16] /o oa:0x27c393e0
+[13:14:15.57] /i gi::setCurrentIndex {libs} -index {mylibrary} -in [gi::getWindows 7]
+[13:14:15.58] /i gi::setItemSelection {libs} -index {mylibrary} -in [gi::getWindows 7]
+[13:14:16.65] /i gi::setCurrentIndex {cells} -index {ringOscillator_testbench} -in [gi::getWindows 7]
+[13:14:16.68] /i gi::setItemSelection {cells} -index {ringOscillator_testbench} -in [gi::getWindows 7]
+[13:14:17.97] /i gi::setCurrentIndex {views} -index {ring_tran_dc} -in [gi::getWindows 7]
+[13:14:17.98] /i gi::setItemSelection {views} -index {ring_tran_dc} -in [gi::getWindows 7]
+[13:14:18.15] /i gi::executeAction dmOpen -in [gi::getWindows 7]
+[13:14:18.23] /r giWindowId 8
+[13:14:18.24] /r giWindowGeometry 600x500
+[13:14:18.84] /i db::setAttr geometry -of [gi::getFrames 8] -value 600x500+70+70
+[13:14:27.31] /i gi::setCurrentIndex {analysisPane} -index {1,1} -in [gi::getWindows 8]
+[13:14:27.31] /i gi::setItemSelection {analysisPane} -index {1,1} -in [gi::getWindows 8]
+[13:14:27.32] /i gi::setItemSelection {analysisPane} -index {1,1} -in [gi::getWindows 8]
+[13:14:28.03] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession3} -parent [gi::getWindows 8]]
+[13:14:28.39] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession3} -parent [gi::getWindows 8]] -value 511x500+183+92
+[13:14:33.27] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession3} -parent [gi::getWindows 8]]
+[13:14:35.61] /i gi::setCurrentIndex {analysisPane} -index {0,0} -in [gi::getWindows 8]
+[13:14:35.62] /i gi::setItemSelection {analysisPane} -index {0,0} -in [gi::getWindows 8]
+[13:14:35.62] /i gi::setItemSelection {analysisPane} -index {0,0} -in [gi::getWindows 8]
+[13:14:36.19] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession3} -parent [gi::getWindows 8]]
+[13:14:36.29] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession3} -parent [gi::getWindows 8]] -value 511x596+183+92
+[13:14:43.74] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession3} -parent [gi::getWindows 8]]
+[13:14:45.91] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[13:14:46.04] /i gi::setActiveWindow 7
+[13:14:46.04] /i gi::setActiveWindow 7 -raise true
+[13:14:48.39] /i gi::setActiveWindow 2
+[13:14:48.39] /i gi::setActiveWindow 2 -raise true
+[13:14:57.37] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 2]
+[13:14:57.37] /i sa::showConsole -context [db::getNext [de::getContexts -window 2]]
+[13:14:57.43] /r giWindowId 9
+[13:14:57.44] /r giWindowGeometry 600x500
+[13:14:57.63] /o oa:0x281ca320
+[13:14:58.00] /i db::setAttr geometry -of [gi::getFrames 9] -value 600x500+572+58
+[13:14:58.98] /i gi::executeAction menuPreShow -in [gi::getWindows 9]
+[13:14:58.99] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 9]]
+[13:15:00.12] /# gi::executeAction saLoadState -in [gi::getWindows 9]
+[13:15:00.12] /i sa::showLoadState -parent 9
+[13:15:00.32] /o oa:0x282a94c0
+[13:15:00.45] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:15:01.16] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x645+699+80
+[13:15:01.98] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:15:02.45] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x616+699+80
+[13:15:11.41] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:15:15.31] /i gi::executeAction menuPreShow -in [gi::getWindows 9]
+[13:15:15.32] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 9]]
+[13:15:17.00] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 9]
+[13:15:17.00] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 9]
+[13:15:17.06] /m Information: "Starting incremental netlisting for design "mylibrary/ringOscillator_testbench/schematic"..." (NETLISTING-010)
+[13:15:17.11] /o No Design Integrity rule violations found in "mylibrary/ringOscillator_testbench/schematic"
+[13:15:17.21] /m Information: "Netlisting design "mylibrary/ringOscillator_testbench/schematic" finished successfully." (NETLISTING-012)
+[13:15:17.22] /m Information: "Composing simulator input file for design "mylibrary/ringOscillator_testbench/schematic"..."
+[13:15:17.31] /m Information: "Simulator input file composed successfully for design "mylibrary/ringOscillator_testbench/schematic""
+[13:15:17.75] /r giWindowId 10
+[13:15:17.76] /r giWindowGeometry 800x600
+[13:15:18.01] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 10]
+[13:15:18.01] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 10]
+[13:15:18.20] /m Information: "Starting HSPICE simulation for design: mylibrary/ringOscillator_testbench/schematic"
+[13:15:18.23] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 10]
+[13:15:18.28] /o 1
+[13:15:18.35] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 10]
+[13:15:18.38] /i db::setAttr geometry -of [gi::getFrames 10] -value 688x600+592+78
+[13:15:18.74] /m Information: "Simulation completed successfully for design: mylibrary/ringOscillator_testbench/schematic "
+[13:15:19.02] /m Information: Measurement calculations completed for testbench: default in 0s
+[13:15:19.03] /m Information: "Evaluating and plotting outputs..."
+[13:15:19.09] /m Information: Launching Waveform Viewer "cd /home/cemaj/tarora/simulation/mylibrary/ringOscillator_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/cemaj/tarora/simulation/mylibrary/ringOscillator_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[13:15:32.30] /i db::setAttr geometry -of [gi::getFrames 10] -value 688x600+158+62
+[13:15:34.08] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[13:15:34.12] /i gi::setActiveWindow 9
+[13:15:34.13] /i gi::setActiveWindow 9 -raise true
+[13:15:39.47] /i gi::setActiveTab {outputsTab} -tabName {specsView} -in [gi::getWindows 9]
+[13:15:45.28] /i gi::setActiveWindow 7
+[13:15:45.41] /i gi::setActiveWindow 7 -raise true
+[13:15:54.43] /i gi::executeAction dmOpenWrite -in [gi::getWindows 7]
+[13:15:54.52] /r giWindowId 11
+[13:15:54.52] /r giWindowGeometry 600x500
+[13:15:55.34] /i db::setAttr geometry -of [gi::getFrames 11] -value 600x500+70+70
+[13:15:59.25] /i gi::executeAction menuPreShow -in [gi::getWindows 11]
+[13:15:59.26] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 11]]
+[13:16:01.78] /i gi::executeAction menuPreShow -in [gi::getWindows 11]
+[13:16:01.79] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 11]]
+[13:16:03.44] /i gi::executeAction menuPreShow -in [gi::getWindows 11]
+[13:16:03.44] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 11]]
+[13:16:05.59] /i gi::executeAction menuPreShow -in [gi::getWindows 11]
+[13:16:05.59] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 11]]
+[13:16:11.92] /i gi::setCurrentIndex {analysisPane} -index {1,1} -in [gi::getWindows 11]
+[13:16:11.93] /i gi::setItemSelection {analysisPane} -index {1,1} -in [gi::getWindows 11]
+[13:16:11.94] /i gi::setItemSelection {analysisPane} -index {1,1} -in [gi::getWindows 11]
+[13:16:13.69] /i gi::setCurrentIndex {analysisPane} -index {1,0} -in [gi::getWindows 11]
+[13:16:13.70] /i gi::setItemSelection {analysisPane} -index {1,0} -in [gi::getWindows 11]
+[13:16:13.70] /i gi::setItemSelection {analysisPane} -index {1,0} -in [gi::getWindows 11]
+[13:16:14.36] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]]
+[13:16:14.56] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]] -value 511x500+183+92
+[13:16:20.36] /i gi::pressButton {/cancel} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]]
+[13:16:27.96] /i gi::setActiveWindow 9
+[13:16:28.28] /i gi::setActiveWindow 9 -raise true
+[13:16:29.46] /i gi::executeAction menuPreShow -in [gi::getWindows 9]
+[13:16:29.47] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 9]]
+[13:16:30.76] /# gi::executeAction saLoadState -in [gi::getWindows 9]
+[13:16:30.76] /i sa::showLoadState -parent 9
+[13:16:30.98] /o oa:0x27668a60
+[13:16:31.33] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:16:31.70] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x616+699+80
+[13:16:35.29] /i gi::setField {/states} -value {TRAN_DC_SAE} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:16:43.03] /i gi::setField {/states} -value {ring_tran_dc} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:16:54.85] /i gi::setField {/states} -value {TRAN_DC_SAE} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:03.00] /i gi::setField {/loadFrom/statesDirectory} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:03.83] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x645+699+80
+[13:17:09.11] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:09.64] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x616+699+80
+[13:17:16.72] /i gi::setField {/loadFrom/statesDirectory} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:17.46] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x645+699+80
+[13:17:21.16] /i gi::setField {/loadFrom/directory} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:21.50] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x558+699+80
+[13:17:23.56] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:23.87] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x616+699+80
+[13:17:27.09] /i gi::setField {/states} -value {TRAN_DC_SAE} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:31.05] /i gi::setField {/stateInformation} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:31.70] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]] -value 600x659+699+80
+[13:17:48.76] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 9]]
+[13:17:48.88] /i gi::setCurrentIndex {variablesTable} -index {0,0} -in [gi::getWindows 9]
+[13:17:53.65] /i gi::setActiveTab {outputsTab} -tabName {outputsTable} -in [gi::getWindows 9]
+[13:17:57.36] /i gi::setCurrentIndex {analysisPane} -index {0,2} -in [gi::getWindows 9]
+[13:17:57.36] /i gi::setItemSelection {analysisPane} -index {0,2} -in [gi::getWindows 9]
+[13:17:57.39] /i gi::setField {analysisPane} -index {0,2} -value {false} -in [gi::getWindows 9]
+[13:17:57.84] /i gi::setCurrentIndex {analysisPane} -index {0,2} -in [gi::getWindows 9]
+[13:17:57.85] /i gi::setItemSelection {analysisPane} -index {0,2} -in [gi::getWindows 9]
+[13:17:57.86] /i gi::setField {analysisPane} -index {0,2} -value {true} -in [gi::getWindows 9]
+[13:18:00.17] /i gi::setCurrentIndex {analysisPane} -index {1,2} -in [gi::getWindows 9]
+[13:18:00.18] /i gi::setItemSelection {analysisPane} -index {1,2} -in [gi::getWindows 9]
+[13:18:00.19] /i gi::setField {analysisPane} -index {1,2} -value {false} -in [gi::getWindows 9]
+[13:18:00.56] /i gi::setCurrentIndex {analysisPane} -index {1,2} -in [gi::getWindows 9]
+[13:18:00.56] /i gi::setItemSelection {analysisPane} -index {1,2} -in [gi::getWindows 9]
+[13:18:00.57] /i gi::setField {analysisPane} -index {1,2} -value {true} -in [gi::getWindows 9]
+[13:18:05.59] /i gi::setCurrentIndex {analysisPane} -index {1,0} -in [gi::getWindows 9]
+[13:18:05.60] /i gi::setItemSelection {analysisPane} -index {1,0} -in [gi::getWindows 9]
+[13:18:06.39] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:18:07.89] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]] -value 511x500+675+178
+[13:18:12.07] /i gi::pressButton {/analysesGroups/tabGeneral/anaPane/gsource} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:18:15.36] /# gi::executeAction deAddPoint -in [gi::getWindows 2]
+[13:18:15.36] /i de::addPoint {1.6375 1.45625} -window 2
+[13:18:15.68] /i de::commandOption acceptDelayedAddPoint
+[13:18:18.22] /i gi::setCurrentIndex {analysisPane} -index {1,1} -in [gi::getWindows 9]
+[13:18:18.22] /i gi::setItemSelection {analysisPane} -index {1,1} -in [gi::getWindows 9]
+[13:18:36.17] /i gi::setCurrentIndex {analysisPane} -index {0,0} -in [gi::getWindows 9]
+[13:18:36.17] /i gi::setItemSelection {analysisPane} -index {0,0} -in [gi::getWindows 9]
+[13:18:43.39] /i gi::setActiveWindow 11
+[13:18:43.43] /i gi::setActiveWindow 11 -raise true
+[13:18:43.57] /i gi::setCurrentIndex {analysisPane} -index {1,3} -in [gi::getWindows 11]
+[13:18:43.58] /i gi::setItemSelection {analysisPane} -index {1,3} -in [gi::getWindows 11]
+[13:18:43.58] /i gi::setItemSelection {analysisPane} -index {1,3} -in [gi::getWindows 11]
+[13:18:45.66] /i gi::setCurrentIndex {analysisPane} -index {1,2} -in [gi::getWindows 11]
+[13:18:45.66] /i gi::setItemSelection {analysisPane} -index {1,2} -in [gi::getWindows 11]
+[13:18:45.67] /i gi::setItemSelection {analysisPane} -index {1,2} -in [gi::getWindows 11]
+[13:18:46.24] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]]
+[13:18:46.42] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]] -value 511x500+183+92
+[13:18:49.01] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/tran} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]]
+[13:18:49.50] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]] -value 511x624+183+92
+[13:18:52.70] /i gi::setActiveWindow 9
+[13:18:52.75] /i gi::setActiveWindow 9 -raise true
+[13:18:52.88] /i gi::setCurrentIndex {analysisPane} -index {0,1} -in [gi::getWindows 9]
+[13:18:52.88] /i gi::setItemSelection {analysisPane} -index {0,1} -in [gi::getWindows 9]
+[13:18:54.48] /i gi::setCurrentIndex {analysisPane} -index {0,0} -in [gi::getWindows 9]
+[13:18:54.48] /i gi::setItemSelection {analysisPane} -index {0,0} -in [gi::getWindows 9]
+[13:18:57.01] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/tran} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:18:57.49] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]] -value 511x624+675+178
+[13:19:13.88] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:15.29] /i gi::executeAction menuPreShow -in [gi::getWindows 9]
+[13:19:15.31] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 9]]
+[13:19:16.15] /i gi::executeAction menuPreShow -in [gi::getWindows 9]
+[13:19:16.16] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 9]]
+[13:19:17.44] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 9]
+[13:19:17.44] /i sa::showEditAnalyses -parent 9 -analysisName "" 
+[13:19:17.69] /o oa:0x2874b2a0
+[13:19:17.92] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:18.06] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]] -value 511x624+0+22
+[13:19:20.86] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]] -value 511x624+648+22
+[13:19:21.47] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]]
+[13:19:23.08] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]] -value 511x624+127+38
+[13:19:30.12] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:33.92] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {1ps} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:37.68] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {1n} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:37.69] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:40.40] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:40.71] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]] -value 511x624+648+22
+[13:19:44.07] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {1ns} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:44.07] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession4} -parent [gi::getWindows 9]]
+[13:19:48.02] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]]
+[13:19:51.02] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession6} -parent [gi::getWindows 11]]
+[13:19:51.07] /i gi::setActiveWindow 11
+[13:19:51.08] /i gi::setActiveWindow 11 -raise true
+[13:19:52.59] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[13:19:52.72] /i gi::setActiveWindow 9
+[13:19:52.72] /i gi::setActiveWindow 9 -raise true
+[13:19:57.77] /i gi::executeAction menuPreShow -in [gi::getWindows 9]
+[13:19:57.78] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 9]]
+[13:19:58.74] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 9]
+[13:19:58.74] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 9]
+[13:19:58.81] /m Information: "Starting incremental netlisting for design "mylibrary/ringOscillator_testbench/schematic"..." (NETLISTING-010)
+[13:19:58.85] /o No Design Integrity rule violations found in "mylibrary/ringOscillator_testbench/schematic"
+[13:19:58.95] /m Information: "Netlisting design "mylibrary/ringOscillator_testbench/schematic" finished successfully." (NETLISTING-012)
+[13:19:58.95] /m Information: "Composing simulator input file for design "mylibrary/ringOscillator_testbench/schematic"..."
+[13:19:59.04] /m Information: "Simulator input file composed successfully for design "mylibrary/ringOscillator_testbench/schematic""
+[13:19:59.55] /r giWindowId 12
+[13:19:59.56] /r giWindowGeometry 800x600
+[13:19:59.69] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 12]
+[13:19:59.69] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 12]
+[13:19:59.80] /m Information: "Starting HSPICE simulation for design: mylibrary/ringOscillator_testbench/schematic"
+[13:19:59.82] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 12]
+[13:19:59.99] /o 1
+[13:20:00.00] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 12]
+[13:20:00.08] /i db::setAttr geometry -of [gi::getFrames 12] -value 688x600+592+78
+[13:20:00.34] /e Error: "Simulation failed for design: mylibrary/ringOscillator_testbench/schematic "
+[13:20:00.47] /m Information: Expression 'v(/VIO1)' did not evaluate: No results found.
+[13:20:00.47] /m Information: Expression 'v(/VIO2)' did not evaluate: No results found.
+[13:20:00.48] /m Information: Expression 'v(/VIO3)' did not evaluate: No results found.
+[13:20:00.48] /m Information: Expression 'v(/VIO4)' did not evaluate: No results found.
+[13:20:00.49] /m Information: Expression 'v(/VIO5)' did not evaluate: No results found.
+[13:20:00.50] /m Information: Re-evaluating the failed expression 'v(/VIO1)'
+[13:20:00.50] /m Information: Expression 'v(/VIO1)' did not evaluate: No results found.
+[13:20:00.51] /m Information: Re-evaluating the failed expression 'v(/VIO2)'
+[13:20:00.51] /m Information: Expression 'v(/VIO2)' did not evaluate: No results found.
+[13:20:00.52] /m Information: Re-evaluating the failed expression 'v(/VIO3)'
+[13:20:00.52] /m Information: Expression 'v(/VIO3)' did not evaluate: No results found.
+[13:20:00.53] /m Information: Re-evaluating the failed expression 'v(/VIO4)'
+[13:20:00.53] /m Information: Expression 'v(/VIO4)' did not evaluate: No results found.
+[13:20:00.54] /m Information: Re-evaluating the failed expression 'v(/VIO5)'
+[13:20:00.54] /m Information: Expression 'v(/VIO5)' did not evaluate: No results found.
+[13:20:00.58] /m Information: Measurement calculations completed for testbench: default in 0s
+[13:20:11.26] /i gi::setCurrentIndex {jobMonitorTable} -index {0,0} -in [gi::getWindows 12]
+[13:20:13.22] /i gi::setActiveWindow 7
+[13:20:13.23] /i gi::setActiveWindow 7 -raise true
+[13:20:17.37] /i gi::executeAction dmDelete -in [gi::getWindows 7]
+[13:20:17.49] /r giDialog gi::setActiveDialog [gi::getDialogs {dmDelete}]
+[13:20:17.87] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmDelete}] -value 364x104+70+70
+[13:20:20.11] /r giDialog gi::pressButton {delete} -in [gi::getDialogs {dmDelete}]
+[13:20:20.39] /# db::destroy [dm::findCellView ring\_tran\_dc -cell [dm::findCell ringOscillator\_testbench -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary ]]]]
+[13:20:20.47] /# gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 7]
+[13:20:20.60] /# gi::setItemSelection {views} -index {} -in [gi::getWindows 7]
+[13:20:22.42] /i gi::setActiveWindow 12
+[13:20:22.47] /i gi::setActiveWindow 12 -raise true
+[13:20:29.48] /i gi::setCurrentIndex {jobMonitorTable} -index {0.0.0,0} -in [gi::getWindows 12]
+[13:20:29.48] /i gi::setItemSelection {jobMonitorTable} -index {0.0.0,all} -in [gi::getWindows 12]
+[13:20:30.21] /i gi::executeAction xtJobMonitorViewOutput -in 12
+[13:20:30.21] /# xt::_jobMonitorActions::viewOutput 12
+[13:20:30.21] /r giWindowId 13
+[13:20:30.22] /r giWindowGeometry 800x600
+[13:20:30.61] /i db::setAttr geometry -of [gi::getFrames 13] -value 668x600+612+98
+[13:20:40.33] /i gi::executeAction giCloseWindow -in [gi::getWindows 13]
+[13:20:40.43] /i gi::setActiveWindow 12
+[13:20:40.44] /i gi::setActiveWindow 12 -raise true
+[13:20:43.41] /i gi::executeAction giCloseWindow -in [gi::getWindows 12]
+[13:20:43.51] /i gi::setActiveWindow 7
+[13:20:43.51] /i gi::setActiveWindow 7 -raise true
+[13:20:44.46] /i gi::setActiveWindow 9
+[13:20:44.47] /i gi::setActiveWindow 9 -raise true
+[13:21:06.68] /i gi::setCurrentIndex {outputsTable} -index {0,0} -in [gi::getWindows 9]
+[13:21:09.19] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[13:21:09.42] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 9]]
+[13:21:09.59] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 9]] -value 295x89+724+80
+[13:21:10.86] /r giDialog gi::pressButton {discard} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 9]]
+[13:21:14.96] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 2]
+[13:21:14.96] /i sa::showConsole -context [db::getNext [de::getContexts -window 2]]
+[13:21:15.03] /r giWindowId 14
+[13:21:15.03] /r giWindowGeometry 600x500
+[13:21:15.25] /o oa:0x27ad7df0
+[13:21:15.61] /i db::setAttr geometry -of [gi::getFrames 14] -value 600x500+572+58
+[13:21:17.78] /i gi::executeAction menuPreShow -in [gi::getWindows 14]
+[13:21:17.79] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 14]]
+[13:21:19.97] /# gi::executeAction saEditModels -in [gi::getWindows 14]
+[13:21:19.97] /i sa::showModelFiles -parent 14
+[13:21:20.21] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:21:20.47] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]] -value 760x500+645+31
+[13:22:31.65] /i gi::setCurrentIndex {modelFilesTable} -index {0,1} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:40.96] /i gi::setField {modelFilesTable} -index {0,1} -value {/usr/local/synopsys/pdk/SAED_PDK90nm/hspice/SAED90nm.lib} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:40.97] /i gi::setField {modelFilesTable} -index {0,1} -value {/usr/local/synopsys/pdk/SAED_PDK90nm/hspice/SAED90nm.lib} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:40.99] /i gi::pressButton {apply} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:44.73] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]] -value 760x500+378+74
+[13:22:45.32] /i gi::setCurrentIndex {modelFilesTable} -index {0,2} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:45.33] /i gi::setItemSelection {modelFilesTable} -index {0,2} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:49.15] /i gi::setField {modelFilesTable} -index {0,2} -value {BJT_12} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:49.16] /i gi::closeWindows [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:22:50.51] /i gi::executeAction menuPreShow -in [gi::getWindows 14]
+[13:22:50.51] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 14]]
+[13:22:52.02] /# gi::executeAction saLoadState -in [gi::getWindows 14]
+[13:22:52.02] /i sa::showLoadState -parent 14
+[13:22:52.31] /o oa:0x28c45e40
+[13:22:52.54] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 14]]
+[13:22:53.00] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 14]] -value 600x645+699+80
+[13:22:54.11] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 14]]
+[13:22:54.57] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 14]] -value 600x616+699+80
+[13:22:55.93] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 14]]
+[13:22:57.87] /i gi::executeAction menuPreShow -in [gi::getWindows 14]
+[13:22:57.88] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 14]]
+[13:22:59.12] /# gi::executeAction saShowEditAnalyses -in [gi::getWindows 14]
+[13:22:59.12] /i sa::showEditAnalyses -parent 14 -analysisName "" 
+[13:22:59.31] /o oa:0x28da9f10
+[13:22:59.60] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:23:00.18] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]] -value 511x596+685+80
+[13:23:00.95] /i gi::closeWindows [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:23:01.78] /i gi::executeAction menuPreShow -in [gi::getWindows 14]
+[13:23:01.79] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 14]]
+[13:23:03.13] /# gi::executeAction saEditModels -in [gi::getWindows 14]
+[13:23:03.13] /i sa::showModelFiles -parent 14
+[13:23:03.31] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:23:03.46] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]] -value 760x500+378+74
+[13:23:04.46] /i gi::setCurrentIndex {modelFilesTable} -index {0,2} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:23:04.46] /i gi::setItemSelection {modelFilesTable} -index {0,2} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:23:13.20] /i gi::setField {modelFilesTable} -index {0,2} -value {TT_12} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:23:13.21] /i gi::pressButton {apply} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:23:14.19] /i gi::pressButton {ok} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:23:14.20] /i gi::closeWindows [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:23:16.28] /i gi::executeAction menuPreShow -in [gi::getWindows 14]
+[13:23:16.29] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 14]]
+[13:23:17.15] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 14]
+[13:23:17.15] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 14]
+[13:23:17.22] /m Information: "Starting incremental netlisting for design "mylibrary/ringOscillator_testbench/schematic"..." (NETLISTING-010)
+[13:23:17.26] /o No Design Integrity rule violations found in "mylibrary/ringOscillator_testbench/schematic"
+[13:23:17.36] /m Information: "Netlisting design "mylibrary/ringOscillator_testbench/schematic" finished successfully." (NETLISTING-012)
+[13:23:17.37] /m Information: "Composing simulator input file for design "mylibrary/ringOscillator_testbench/schematic"..."
+[13:23:17.44] /m Information: "Simulator input file composed successfully for design "mylibrary/ringOscillator_testbench/schematic""
+[13:23:17.83] /r giWindowId 15
+[13:23:17.83] /r giWindowGeometry 800x600
+[13:23:17.97] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 15]
+[13:23:17.97] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 15]
+[13:23:18.07] /m Information: "Starting HSPICE simulation for design: mylibrary/ringOscillator_testbench/schematic"
+[13:23:18.09] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 15]
+[13:23:18.19] /o 1
+[13:23:18.21] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 15]
+[13:23:18.30] /i db::setAttr geometry -of [gi::getFrames 15] -value 688x600+592+78
+[13:23:18.59] /m Information: "Simulation completed successfully for design: mylibrary/ringOscillator_testbench/schematic "
+[13:23:18.85] /m Information: Measurement calculations completed for testbench: default in 0s
+[13:23:18.87] /m Information: "Evaluating and plotting outputs..."
+[13:23:49.31] /i gi::executeAction giCloseWindow -in [gi::getWindows 15]
+[13:23:49.41] /i gi::setActiveWindow 14
+[13:23:49.41] /i gi::setActiveWindow 14 -raise true
+[13:23:53.82] /i gi::setActiveWindow 2
+[13:23:53.86] /i gi::setActiveWindow 2 -raise true
+[13:23:55.86] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+160+60
+[13:23:59.18] /# gi::executeAction deSelectActive -in [gi::getWindows 2]
+[13:24:01.28] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+-100+22
+[13:24:01.77] /i gi::setActiveWindow 14
+[13:24:01.81] /i gi::setActiveWindow 14 -raise true
+[13:24:05.07] /i gi::setCurrentIndex {analysisPane} -index {0,1} -in [gi::getWindows 14]
+[13:24:05.07] /i gi::setItemSelection {analysisPane} -index {0,1} -in [gi::getWindows 14]
+[13:24:07.45] /i gi::setCurrentIndex {analysisPane} -index {0,0} -in [gi::getWindows 14]
+[13:24:07.45] /i gi::setItemSelection {analysisPane} -index {0,0} -in [gi::getWindows 14]
+[13:24:07.98] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:24:08.37] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]] -value 511x596+685+80
+[13:24:13.49] /i gi::setField {/analysesGroups/tabGeneral/anaPane/step} -value {1ps} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:24:16.94] /i gi::setField {/analysesGroups/tabGeneral/anaPane/stop} -value {1ns} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:24:16.96] /i gi::pressButton {/apply} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:24:16.99] /o tran
+[13:24:18.17] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:24:18.24] /i gi::setCurrentIndex {analysisPane} -index {0,0} -in [gi::getWindows 14]
+[13:24:21.45] /i gi::executeAction menuPreShow -in [gi::getWindows 14]
+[13:24:21.46] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 14]]
+[13:24:22.64] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 14]
+[13:24:22.64] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 14]
+[13:24:22.70] /m Information: "Starting incremental netlisting for design "mylibrary/ringOscillator_testbench/schematic"..." (NETLISTING-010)
+[13:24:22.75] /o No Design Integrity rule violations found in "mylibrary/ringOscillator_testbench/schematic"
+[13:24:22.84] /m Information: "Netlisting design "mylibrary/ringOscillator_testbench/schematic" finished successfully." (NETLISTING-012)
+[13:24:22.85] /m Information: "Composing simulator input file for design "mylibrary/ringOscillator_testbench/schematic"..."
+[13:24:22.93] /m Information: "Simulator input file composed successfully for design "mylibrary/ringOscillator_testbench/schematic""
+[13:24:23.47] /r giWindowId 16
+[13:24:23.47] /r giWindowGeometry 800x600
+[13:24:23.62] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 16]
+[13:24:23.62] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 16]
+[13:24:23.72] /m Information: "Starting HSPICE simulation for design: mylibrary/ringOscillator_testbench/schematic"
+[13:24:23.78] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 16]
+[13:24:23.81] /o 1
+[13:24:23.83] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 16]
+[13:24:23.97] /i db::setAttr geometry -of [gi::getFrames 16] -value 688x600+592+78
+[13:24:24.14] /m Information: "Simulation completed successfully for design: mylibrary/ringOscillator_testbench/schematic "
+[13:24:24.43] /m Information: Measurement calculations completed for testbench: default in 0s
+[13:24:24.44] /m Information: "Evaluating and plotting outputs..."
+[13:24:45.37] /i gi::executeAction giCloseWindow -in [gi::getWindows 16]
+[13:24:45.49] /i gi::setActiveWindow 14
+[13:24:45.69] /i gi::setActiveWindow 14 -raise true
+[13:24:46.87] /i gi::setCurrentIndex {analysisPane} -index {1,0} -in [gi::getWindows 14]
+[13:24:46.88] /i gi::setItemSelection {analysisPane} -index {1,0} -in [gi::getWindows 14]
+[13:24:48.46] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:24:48.77] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]] -value 511x596+685+80
+[13:24:52.19] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/tran} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:24:52.67] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]] -value 511x624+685+80
+[13:24:57.63] /i gi::pressButton {/ok} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession8} -parent [gi::getWindows 14]]
+[13:25:19.43] /i gi::setActiveWindow 2
+[13:25:19.44] /i gi::setActiveWindow 2 -raise true
+[13:25:20.71] /i gi::setActiveWindow 14
+[13:25:20.73] /i gi::setActiveWindow 14 -raise true
+[13:25:28.23] /i db::setAttr iconified -of [gi::getFrames 14] -value true
+[13:25:28.24] /i gi::setActiveWindow 2
+[13:25:28.24] /i gi::setActiveWindow 2 -raise true
+[13:25:30.19] /i db::setAttr geometry -of [gi::getFrames 2] -value 1088x700+537+136
+[13:25:31.36] /i gi::setActiveWindow 7
+[13:25:31.37] /i gi::setActiveWindow 7 -raise true
+[13:25:33.80] /i gi::setCurrentIndex {cells} -index {ringOscillator} -in [gi::getWindows 7]
+[13:25:33.98] /i gi::setItemSelection {cells} -index {ringOscillator} -in [gi::getWindows 7]
+[13:25:35.28] /i gi::setCurrentIndex {cells} -index {ringOscillator_testbench} -in [gi::getWindows 7]
+[13:25:35.32] /i gi::setItemSelection {cells} -index {ringOscillator_testbench} -in [gi::getWindows 7]
+[13:25:37.00] /i gi::setCurrentIndex {views} -index {ring_tran_dc} -in [gi::getWindows 7]
+[13:25:37.01] /i gi::setItemSelection {views} -index {ring_tran_dc} -in [gi::getWindows 7]
+[13:25:39.50] /i gi::executeAction dmOpenWrite -in [gi::getWindows 7]
+[13:25:39.58] /r giWindowId 17
+[13:25:39.59] /r giWindowGeometry 600x500
+[13:25:40.31] /i db::setAttr geometry -of [gi::getFrames 17] -value 600x500+70+70
+[13:25:44.55] /i gi::executeAction menuPreShow -in [gi::getWindows 17]
+[13:25:44.55] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 17]]
+[13:25:46.05] /# gi::executeAction saEditModels -in [gi::getWindows 17]
+[13:25:46.05] /i sa::showModelFiles -parent 17
+[13:25:46.60] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 17]]
+[13:25:47.10] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 17]] -value 760x500+143+43
+[13:25:50.77] /i gi::pressButton {apply} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 17]]
+[13:25:51.85] /i gi::pressButton {ok} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 17]]
+[13:25:53.95] /i gi::executeAction menuPreShow -in [gi::getWindows 17]
+[13:25:53.96] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 17]]
+[13:25:56.86] /# gi::executeAction saOutputsOptions -in [gi::getWindows 17]
+[13:25:56.86] /i sa::showSaveOptions -parent 17
+[13:25:56.93] /o oa:0x28a6d9c0
+[13:25:57.25] /i gi::setActiveDialog [gi::getDialogs {saSaveOptionsDialog} -parent [gi::getWindows 17]]
+[13:25:57.43] /i db::setAttr geometry -of [gi::getDialogs {saSaveOptionsDialog} -parent [gi::getWindows 17]] -value 428x289+216+92
+[13:25:59.78] /i gi::pressButton {/cancel} -in [gi::getDialogs {saSaveOptionsDialog} -parent [gi::getWindows 17]]
+[13:26:04.15] /i gi::executeAction menuPreShow -in [gi::getWindows 17]
+[13:26:04.16] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 17]]
+[13:26:07.28] /# gi::executeAction saSessionOptions -in [gi::getWindows 17]
+[13:26:07.28] /i sa::showSessionOptions -parent 17
+[13:26:07.33] /o oa:0x286d0e90
+[13:26:07.74] /i gi::setActiveDialog [gi::getDialogs {saSessionOptionsDialog} -parent [gi::getWindows 17]]
+[13:26:08.20] /i db::setAttr geometry -of [gi::getDialogs {saSessionOptionsDialog} -parent [gi::getWindows 17]] -value 325x158+348+92
+[13:26:09.43] /i gi::setField {/displaySimulationLog} -value {true} -in [gi::getDialogs {saSessionOptionsDialog} -parent [gi::getWindows 17]]
+[13:26:09.99] /i gi::setField {/displaySimulationLog} -value {false} -in [gi::getDialogs {saSessionOptionsDialog} -parent [gi::getWindows 17]]
+[13:26:11.27] /i gi::pressButton {/ok} -in [gi::getDialogs {saSessionOptionsDialog} -parent [gi::getWindows 17]]
+[13:26:13.44] /i gi::setCurrentIndex {analysisPane} -index {1,3} -in [gi::getWindows 17]
+[13:26:13.45] /i gi::setItemSelection {analysisPane} -index {1,3} -in [gi::getWindows 17]
+[13:26:13.45] /i gi::setItemSelection {analysisPane} -index {1,3} -in [gi::getWindows 17]
+[13:26:14.11] /i gi::setActiveDialog [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:14.67] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]] -value 511x500+183+92
+[13:26:18.07] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/tran} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:18.75] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]] -value 511x624+183+92
+[13:26:21.77] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/op} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:25.35] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/ac} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:27.91] /i gi::setField {/analysesGroups/tabGeneral/analysisTypeSel/tran} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:29.17] /i gi::setActiveTab {/analysesGroups} -tabName {/analysesGroups/tabRF} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:29.44] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]] -value 511x631+183+92
+[13:26:34.95] /i gi::setField {/analysesGroups/tabRF/anaPane/sweep} -value {true} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:35.28] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]] -value 511x651+183+92
+[13:26:36.23] /i gi::setField {/analysesGroups/tabRF/anaPane/sweep} -value {false} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:36.53] /i db::setAttr geometry -of [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]] -value 511x596+183+92
+[13:26:39.33] /i gi::pressButton {/cancel} -in [gi::getDialogs {saEditAnalysesDialogXsaeSession11} -parent [gi::getWindows 17]]
+[13:26:44.83] /i gi::executeAction giCloseWindow -in [gi::getWindows 17]
+[13:26:45.00] /i gi::setActiveWindow 7
+[13:26:45.01] /i gi::setActiveWindow 7 -raise true
+[13:26:46.33] /i gi::setCurrentIndex {views} -index {TRAN_DC_SAE} -in [gi::getWindows 7]
+[13:26:46.34] /i gi::setItemSelection {views} -index {TRAN_DC_SAE} -in [gi::getWindows 7]
+[13:26:47.50] /i gi::setCurrentIndex {views} -index {ring_tran_dc} -in [gi::getWindows 7]
+[13:26:47.51] /i gi::setItemSelection {views} -index {ring_tran_dc} -in [gi::getWindows 7]
+[13:26:47.68] /i gi::executeAction dmOpen -in [gi::getWindows 7]
+[13:26:47.77] /r giWindowId 18
+[13:26:47.78] /r giWindowGeometry 600x500
+[13:26:48.74] /i db::setAttr geometry -of [gi::getFrames 18] -value 600x500+70+70
+[13:26:49.42] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:26:49.43] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 18]]
+[13:26:50.97] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:26:50.98] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 18]]
+[13:26:52.06] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:26:52.06] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 18]]
+[13:26:55.98] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:26:55.99] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 18]]
+[13:27:00.42] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:00.43] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 18]]
+[13:27:01.83] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:01.84] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 18]]
+[13:27:03.75] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:03.75] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 18]]
+[13:27:06.72] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:06.95] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions saNetlistCascade -from [db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 18]]]]]
+[13:27:09.15] /# gi::executeAction saSimulatorOptions -in [gi::getWindows 18]
+[13:27:09.15] /i sa::showGlobalSimulatorOptions -parent 18
+[13:27:09.34] /# gi::expand {simulatorOptionsTable} -index {0,0} -in [gi::getDialogs {saGlobalSimulatorOptionsSetup} -parent [gi::getWindows 18]]
+[13:27:09.34] /# gi::expand {simulatorOptionsTable} -index {1,0} -in [gi::getDialogs {saGlobalSimulatorOptionsSetup} -parent [gi::getWindows 18]]
+[13:27:09.34] /# gi::expand {simulatorOptionsTable} -index {2,0} -in [gi::getDialogs {saGlobalSimulatorOptionsSetup} -parent [gi::getWindows 18]]
+[13:27:09.34] /# gi::expand {simulatorOptionsTable} -index {3,0} -in [gi::getDialogs {saGlobalSimulatorOptionsSetup} -parent [gi::getWindows 18]]
+[13:27:09.52] /i gi::setActiveDialog [gi::getDialogs {saGlobalSimulatorOptionsSetup} -parent [gi::getWindows 18]]
+[13:27:09.77] /i db::setAttr geometry -of [gi::getDialogs {saGlobalSimulatorOptionsSetup} -parent [gi::getWindows 18]] -value 500x400+120+92
+[13:27:12.38] /i gi::pressButton {cancel} -in [gi::getDialogs {saGlobalSimulatorOptionsSetup} -parent [gi::getWindows 18]]
+[13:27:13.83] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:13.83] /r giMenuAccess db::getNext [gi::getMenus saToolsMenu -from [gi::getWindows 18]]
+[13:27:29.54] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:29.55] /r giMenuAccess db::getNext [gi::getMenus saToolsMenu -from [gi::getWindows 18]]
+[13:27:30.06] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:30.06] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 18]]
+[13:27:30.16] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:30.17] /r giMenuAccess db::getNext [gi::getMenus saToolsMenu -from [gi::getWindows 18]]
+[13:27:34.01] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:34.01] /r giMenuAccess db::getNext [gi::getMenus saResultsMenu -from [gi::getWindows 18]]
+[13:27:37.39] /# gi::executeAction saResultsOptions -in [gi::getWindows 18]
+[13:27:37.39] /i sa::showResultOptions -parent 18
+[13:27:37.55] /o oa:0x28662900
+[13:27:37.66] /i gi::setActiveDialog [gi::getDialogs {saResultOptionsDialog} -parent [gi::getWindows 18]]
+[13:27:38.18] /i db::setAttr geometry -of [gi::getDialogs {saResultOptionsDialog} -parent [gi::getWindows 18]] -value 573x328+296+92
+[13:27:39.51] /i gi::setActiveTab {/tabGroup} -tabName {/tabGroup/tabGroupTextOutput} -in [gi::getDialogs {saResultOptionsDialog} -parent [gi::getWindows 18]]
+[13:27:41.03] /i gi::closeWindows [gi::getDialogs {saResultOptionsDialog} -parent [gi::getWindows 18]]
+[13:27:42.01] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:42.01] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 18]]
+[13:27:42.99] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:42.99] /r giMenuAccess db::getAttr menu -of [db::getNext [gi::getActions saNetlistCascade -from [db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 18]]]]]
+[13:27:45.91] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:45.91] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 18]]
+[13:27:46.56] /i gi::executeAction menuPreShow -in [gi::getWindows 18]
+[13:27:46.58] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 18]]
+[13:27:47.93] /# gi::executeAction saSpecifyOutputs -in [gi::getWindows 18]
+[13:27:47.93] /i sa::showOutputSetup -parent 18
+[13:27:48.04] /o 0
+[13:27:48.18] /i gi::setActiveDialog [gi::getDialogs {saOutputSetup} -parent [gi::getWindows 18]]
+[13:27:48.42] /i db::setAttr geometry -of [gi::getDialogs {saOutputSetup} -parent [gi::getWindows 18]] -value 680x325+30+92
+[13:27:54.81] /i gi::closeWindows [gi::getDialogs {saOutputSetup} -parent [gi::getWindows 18]]
+[13:28:04.89] /# gi::executeAction giPostContextMenu -in [gi::getWindows 18]
+[13:28:05.68] /# gi::executeAction giPostContextMenu -in [gi::getWindows 18]
+[13:28:17.15] /i gi::executeAction giCloseWindow -in [gi::getWindows 18]
+[13:28:17.16] /# gi::closeWindows [gi::getDialogs {saOutputSetup} -parent [gi::getWindows 18]]
+[13:28:17.90] /i gi::setActiveWindow 7
+[13:28:17.90] /i gi::setActiveWindow 7 -raise true
+[13:28:22.09] /i gi::executeAction dmDeleteCellView -in [gi::getWindows 7]
+[13:28:22.35] /r giDialog gi::setActiveDialog [gi::getDialogs {dmDelete}]
+[13:28:22.66] /r giDialog db::setAttr geometry -of [gi::getDialogs {dmDelete}] -value 364x104+70+70
+[13:28:23.86] /r giDialog gi::pressButton {delete} -in [gi::getDialogs {dmDelete}]
+[13:28:23.90] /# db::destroy [dm::findCellView ring\_tran\_dc -cell [dm::findCell ringOscillator\_testbench -lib [oa::LibFind [oa::ScalarName [oa::CdbaNS] mylibrary ]]]]
+[13:28:23.96] /# gi::setCurrentIndex {views} -index {config} -in [gi::getWindows 7]
+[13:28:23.98] /# gi::setItemSelection {views} -index {} -in [gi::getWindows 7]
+[13:28:45.18] /i gi::setActiveWindow 2
+[13:28:45.18] /i gi::setActiveWindow 2 -raise true
+[13:28:59.37] /m Information: Waveform Viewer exited normally.
+[13:29:02.05] /i gi::setActiveWindow 7
+[13:29:02.06] /i gi::setActiveWindow 7 -raise true
+[13:29:03.49] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[13:29:03.52] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[13:29:03.56] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[13:29:03.56] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[13:29:03.59] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[13:29:03.59] /w Warning: Nothing is bound to the 'Button7' in the current active set. (WINDOW-015)
+[13:29:08.11] /i gi::setCurrentIndex {views} -index {TRAN_DC_SAE} -in [gi::getWindows 7]
+[13:29:08.13] /i gi::setItemSelection {views} -index {TRAN_DC_SAE} -in [gi::getWindows 7]
+[13:29:10.06] /i gi::executeAction dmOpen -in [gi::getWindows 7]
+[13:29:10.14] /r giWindowId 19
+[13:29:10.15] /r giWindowGeometry 600x500
+[13:29:10.73] /i db::setAttr geometry -of [gi::getFrames 19] -value 600x500+70+70
+[13:29:22.47] /i gi::executeAction menuPreShow -in [gi::getWindows 19]
+[13:29:22.48] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 19]]
+[13:29:25.09] /# gi::executeAction saEditModels -in [gi::getWindows 19]
+[13:29:25.09] /i sa::showModelFiles -parent 19
+[13:29:25.40] /i gi::setActiveDialog [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 19]]
+[13:29:25.61] /i db::setAttr geometry -of [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 19]] -value 760x500+143+43
+[13:29:28.61] /i gi::setCurrentIndex {modelFilesTable} -index {0,2} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 19]]
+[13:29:28.62] /i gi::setItemSelection {modelFilesTable} -index {0,2} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 19]]
+[13:29:37.85] /i gi::setField {modelFilesTable} -index {0,2} -value {TT_12} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 19]]
+[13:29:37.98] /i gi::pressButton {apply} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 19]]
+[13:29:39.35] /i gi::pressButton {ok} -in [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 19]]
+[13:29:42.14] /i gi::pressButton {plotButton} -in [gi::getWindows 19]
+[13:29:42.23] /m Information: Launching Waveform Viewer "cd /home/cemaj/tarora/simulation/mylibrary/ringOscillator_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/cemaj/tarora/simulation/mylibrary/ringOscillator_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[13:29:42.75] /e Error: Waveform Viewer exited abnormally.  See /home/cemaj/tarora/simulation/mylibrary/ringOscillator_testbench/schematic/HSPICE/nominal/results/viewer.log for details.
+[13:29:44.65] /i gi::setActiveWindow 0
+[13:29:44.65] /i gi::setActiveWindow 0 -raise true
+[13:29:48.09] /i gi::executeAction giCloseWindow -in [gi::getWindows 0]
+[13:29:48.23] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[13:29:48.54] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 371x218+20+417
+[13:29:49.60] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[13:29:49.67] /i db::setAttr iconified -of [gi::getFrames 14] -value false
+[13:29:49.73] /i gi::setActiveWindow 0
+[13:29:49.79] /i gi::setActiveWindow 0 -raise true
+[13:29:50.32] /i gi::setActiveWindow 14
+[13:29:50.33] /i gi::setActiveWindow 14 -raise true
+[13:29:50.71] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 14]] -value 295x89+724+80
+[13:29:50.74] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 14]]
+[13:29:51.02] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 14]] -value 295x89+724+80
+[13:29:53.29] /r giDialog gi::pressButton {save} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 14]]
+[13:29:53.65] /r giDialog gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 14]]
+[13:29:53.90] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 14]] -value 506x565+648+125
+[13:29:56.16] /r giDialog gi::pressButton {/ok} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 14]]
+[13:29:56.56] /i gi::closeWindows [gi::getDialogs {saModelFilesSetup} -parent [gi::getWindows 14]]
+[13:29:56.78] /i gi::setActiveWindow 2
+[13:29:56.79] /i gi::setActiveWindow 2 -raise true
+[13:29:56.88] /i gi::setActiveWindow 19
+[13:29:56.88] /i gi::setActiveWindow 19 -raise true
+[13:29:56.93] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 19]]
+[13:29:57.22] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 19]] -value 295x89+222+92
+[13:29:58.40] /r giDialog gi::pressButton {save} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 19]]
+[13:29:58.79] /r giDialog gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 19]]
+[13:29:59.06] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 19]] -value 506x565+146+137
+[13:29:59.98] /r giDialog gi::pressButton {/ok} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 19]]
+[13:30:01.21] /m Information: License 'Schematic Editor' checked in. (LICENSE-004)
+[13:30:01.28] /o Shutdown time: Wed Mar 13 13:30:01 2019
+[13:30:01.28] /o Elapsed session real time: 19.41 minutes
+[13:30:01.28] /o Session terminated. Log is at /home/cemaj/tarora/eecs168/cdesigner.tarora.13_3_13_3_0.log

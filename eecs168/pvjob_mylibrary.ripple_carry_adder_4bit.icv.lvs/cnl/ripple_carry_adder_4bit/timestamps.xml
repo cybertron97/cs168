@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Created by Custom Designer (TM), build , on Wed Mar 13 13:45:16 2019-->
+<file-format version="1.0" name="netlisting-timestamps">
+<module contextID="switched: mylibrary ripple_carry_adder_4bit schematic vl: auCdl schematic symbol sl: auCdl" isSubcircuit="1" viewStopList="auCdl" timestamp="1310" viewSearchList="auCdl schematic symbol">
+<parameterizedConnections>
+<connectDefs timestamp="0"/>
+<oaAssignments timestamp="0"/>
+<dbAssignValue timestamp="0"/>
+<dbAssignAssignment timestamp="0"/>
+</parameterizedConnections>
+<parameters timestamp="2"/>
+<LineageParams/>
+<ParentParams/>
+<Terms timestamp="983"/>
+<PortOrder>A0A1A2A3B0B1B2B3C0C4S0S1S2S3VDDVSS</PortOrder>
+</module>
+</file-format>
